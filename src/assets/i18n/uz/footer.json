@@ -1,0 +1,47 @@
+{
+  "doslogistic.web": {
+    "footer": {
+      "logo":{
+        "info":"10 kundan kamroq vaqt ichida Germaniya tezkor va ishonchli posilkalar yetkazib berish!",
+        "join":"Ishtirok etish"
+      },
+      "aboutCompony":{
+        "aboutCompony": "Kompaniya haqida",
+        "aboutUs": "Biz haqimizda",
+        "price": "Tariflar va narxlar",
+        "news": "Yangiliklar",
+        "services": "Xizmatlarimiz",
+        "customers": "Mijozlarimiz",
+        "contacts": "Kontaktlar"
+      },
+      "forCustomers": {
+        "forCustomers": "Xaridorlarga",
+        "discounts": "Chegirmalar",
+        "shipmentTracking": "Jo‘natmalarni kuzatish",
+        "help": "Yordam",
+        "purchaseSupport": "Xarid ko'magi",
+        "restrictionsAndProhibitions": "Cheklovlar va taqiqlar",
+        "popularStores": "Ommabop do'konlar"
+      },
+      "useful": {
+        "useful": "Foydali",
+        "deliveryOfParcels":"Posilkalarni yetkazish",
+        "sendingParcels":"Posilkalarni yuborish",
+        "customsLimits":"Bojxona limitlari",
+        "shipmentInsurance":"Jo'natmalarni sug'urtalash",
+        "tableOfMeasurements":"O‘lchovlar jadvali",
+        "calculationOfCosts":"Xarajatlarni hisoblash"
+      },
+      "contacts": {
+        "haveQuestions": "Savollar bormi?",
+        "germeny": "Germany, Berlin",
+        "uzbekistan": "Uzbekistan, Toshkent",
+        "hours": "09:00 dan 20:00 cha"
+      },
+      "copywriting": {
+        "copywriting": "© 2017-2023 Turon Express kuryerlik xizmati. Barcha huquqlar himoyalangan.",
+        "termsOfUse": "Foydalanish qoidalari"
+      }
+    }
+  }
+}

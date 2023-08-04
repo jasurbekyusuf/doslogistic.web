@@ -1,0 +1,39 @@
+{
+  "doslogistic.web": {
+    "help": {
+      "frequentlyAskedQuestions": "Ko‘p so‘raladigan savollar",
+      "questionsAndAnswers": "Savolar va Javoblar",
+      "login": {
+        "login": "Ro'yxatdan o'tish",
+        "howToCreatePersonalCabinet": "Shaxsiy kabinetni qanday yaratish kerak?"
+      },
+      "purchases": {
+        "purchases": "Xaridlar",
+        "isWarehouseStates": "Shtatlarda ombor soliqsiz bo'ladimi?"
+      },
+      "payment": "To'lov",
+      "delivery": {
+        "delivery": "Yetkazib berish",
+        "whatIsTheDeliveryTime": "Yetkazib berish muddati qancha?",
+        "whatIsTheDeliveryTimeAnswer": "Buyurtmangiz skladga kelib tushganidan keyin — 3-10 kun",
+        "whatAreTheShippingRates": {
+          "answerOne": "3 kilogramgacha — $10/kg.",
+          "answerTwo": "3 kilogramdan ko‘p bo‘lsa — $9/kg."
+        }
+      },
+      "acceptance": {
+        "acceptance": "Qabul qilish",
+        "orderDays": {
+          "orderDays": "Qaysi kunlari buyurtmalar Germaniyadan O‘zbekistonga yuboriladi?",
+          "aswer": "Bir haftada ikki marotaba — dushanba va payshanba kunlari"
+        }
+      },
+      "services": {
+        "services": "Xizmatlar",
+        "questionOne": "Men har xil internet-magazinlardan xarid qildim. Hammasini bitta qilib yuborasizmi?",
+        "asnwerOne": "Ha, bizda bu xizmat bepul. Barcha buyurtmalarni bitta qilib yuboramiz.",
+        "questionTwo": "Germaniya O'zbekistonga qanday qilib jo'natmani yuborish mumkin?"
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "doslogistic.web": {
+    "footer": {
+      "logo":{
+        "info":"Schnelle und zuverlässige Paketzustellung aus Deutschland in weniger als 10 Tagen!",
+        "join":"Verbinden"
+      },
+      "aboutCompony":{
+        "aboutCompony": "Über das Unternehmen",
+        "aboutUs": "Über den Service",
+        "price": "Tarife und Preise",
+        "news": "Nachricht",
+        "services": "Unsere Dienstleistungen",
+        "customers": "Kundenbewertungen",
+        "contacts": "Kontakte"
+      },
+      "forCustomers": {
+        "forCustomers": "Käufer",
+        "discounts": "Verkauf",
+        "shipmentTracking": "Um das Paket zu verfolgen",
+        "help": "Hilfe",
+        "purchaseSupport": "Hilfe beim Kauf",
+        "restrictionsAndProhibitions": "Einschränkungen und Verbote",
+        "popularStores": "Beliebte Geschäfte"
+      },
+      "useful": {
+        "useful": "Nützlich",
+        "deliveryOfParcels":"Paketzustellung",
+        "sendingParcels":"Pakete versenden",
+        "customsLimits":"Zollgrenzen",
+        "shipmentInsurance":"Paketversicherung",
+        "tableOfMeasurements":"Таблица размеров",
+        "calculationOfCosts":"Größentabelle"
+      },
+      "contacts": {
+        "haveQuestions": "Остались вопросы?",
+        "germeny": "Haben Sie irgendwelche Fragen?",
+        "uzbekistan": "Usbekistan, Taschkent",
+        "hours": "von 09:00 bis 20:00 Uhr"
+      },
+      "copywriting": {
+        "copywriting": "© 2017-2023 Turon Express Courier Service. Alle Rechte vorbehalten.",
+        "termsOfUse": "Nutzungsbedingungen"
+      }
+    }
+  }
+}

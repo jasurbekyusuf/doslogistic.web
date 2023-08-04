@@ -1,0 +1,55 @@
+{
+  "doslogistic.web": {
+    "home": {
+      "header-info-one": {
+        "header-info-one": "Germaniya tez va ishonchli yetkazib berish",
+        "info": "Germaniya posilkalar va onlayn xaridlarni atagi 10 dollardan 7-10 kun ichida O'zbekistonga yetkazib beramiz",
+        "startUsing": "Foydalanishni boshlang"
+      },
+      "header-info-two": {
+        "header-info-two": "Germaniya shaxsiy manzilingiza hoziroq ega bo‘ling",
+        "info": "Germaniya posilkalar va onlayn xaridlarni atagi 10 dollardan 7-10 kun ichida O'zbekistonga yetkazib beramiz",
+        "startUsing": "Boshlash"
+      },
+      "header-info-three": {
+        "header-info-three": "Innovatsion ombor",
+        "info": "Biz posilkalaringizni xatolarsiz yig'amiz va uyingizga yetkazib beramiz.",
+        "startUsing": "Sinab ko'rmoqchiman!"
+      },
+      "howdoesItWork": {
+        "howdoesItWork": "Bu qanday ishlaydi?",
+        "info": "Germaniya xaridlarni amalga oshirish uchun to‘rtta oddiy qadamni bajaring",
+        "register": {
+          "register": "1. Ro‘yxatdan o‘ting",
+          "info": "Germaniya shaxsiy manzilni olish uchun saytda ro‘yxatdan o‘ting. Bu 1 daqiqa vaqt oladi.",
+          "getAddress":"Shaxsiy manzilni oling"
+        },
+        "shopOnline":{
+          "shopOnline": "2. Onlayn xaridlar qiling",
+          "info": "Germaniya onlayn-do‘konlaridan mahsulotlarga buyurtma bering va to‘lov paytida Turondan olgan manzilingizni kiriting.",
+          "popularStores": "Ommabop do‘konlar"
+        },
+        "registerPurchases": {
+          "registerPurchases": "3. Xaridlarni ro‘yxatdan o‘tkazing",
+          "info": "Xaridlaringizni shaxsiy hisobingizda ro‘yxatdan o‘tkazing, Visa yoki Mastercard orqali to‘lang.",
+          "aboutDelivery": "Yetkazib berish haqida"
+        },
+        "acceptIt": {
+          "acceptIt": "4. Qabul qiling",
+          "info": "Yetkazib berish jo‘natilgan kundan boshlab 7 kun davom etadi. Shaxsiy kabinetda siz etkazib berish holatini kuzatishingiz mumkin."
+        }
+      },
+      "needHelpBuying": {
+        "needHelpBuying": "Sotib olishda yordam kerakmi?",
+        "infoOne": "Internet - do‘kondan sotib olish qiyinmi? Do‘kon sizning to‘lov kartangizni qabul qilmayaptimi? Biz sizga yordam beramiz!",
+        "infoTwo": "Sizga kerak bo‘lgan mahsulotlarga havolalar berib, xarid qilishda yordam xizmatiga buyurtma bering. Faqat 10% evaziga biz ularni sotib olamiz va yetkazib beramiz!",
+        "moreAboutTheService": "Xizmat haqida batafsilroq"
+      },
+      "news":"Yangiliklar",
+      "reviewsFromOurCustomers": {
+        "reviewsFromOurCustomers": "Mijozlarimiz sharhlari",
+        "allReviews": "Barcha sharhlar"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "doslogistic.web": {
+    "price": {
+      "tariffs": "Tariflar",
+      "kg": "kg",
+      "free": "Bepul!",
+      "noCommission": "Komissiya yo'q",
+      "ourRates": {
+        "ourRates": "Bizning tariflarimiz",
+        "shipmentWeightOne": "Jo’natmaning vazni 1-3 kg",
+        "shipmentWeightTwo": "Jo’natmaning vazni 3-10 kg",
+        "shipmentWeightTree": "Jo’natmaning vazni 10-30 kg",
+        "minimumWeight": "Minimal og'irlik",
+        "receivingShipments": "Jo’natmalarni qabul qilish",
+        "consolidationCost": "Konsolidatsiya qiymati"
+      },
+      "localDeliveryRates": {
+        "localDeliveryRates": "Mahalliy yetkazib berish tariflari",
+        "localDeliveryRatesOne": "Toshkentdagi omborxonadan olib ketish",
+        "localDeliveryRatesTwo": "Toshkent shahri bo’ylab yetkazib berish",
+        "localDeliveryRatesThree": "O'zbekiston bo'ylab yetkazib berish"
+      },
+      "tariffsForStorage": {
+        "tariffsForStorage": "Ombor va qo'shimcha xizmatlar uchun tariflar",
+        "commissionWhenFillingTheAccount": "Hisobni to'ldirishda komissiya",
+        "receivingShipmentsToTheWarehouse":"Omborga jo’natmalarni qabul qilish",
+        "consolidationService":"Konsolidatsiya xizmati",
+        "deleteAccountInvoices":"Hisob fakturalarni o'chirish",
+        "unpackingShoes":"Oyoq kiyimlar qadoqlarini olib tashlash",
+        "storageOfIncomingShipments":"Kiruvchi jo’natmalarni saqlash",
+        "Photograph":"Fotosurat",
+        "registeringUnknownPerson":"Noma'lum shaxsdan kelgan jo’natmani ro'yxatdan o'tkazish",
+        "outboundPackageRepackaging":"Chiquvchi paketni qayta qadoqlash",
+        "openingTheIncomingShipmentPhoto":"Kiruvchi jo’natmani ochish + fotosurat",
+        "checkTheProductPhoto":"Hisob faktura + fotosurat orqali mahsulotni tekshirish",
+        "returningTheProductStore":"Mahsulotni do'konga qaytarish"
+      },
+      "": ""
+    }
+  }
+}

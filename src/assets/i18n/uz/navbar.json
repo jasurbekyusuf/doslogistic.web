@@ -1,0 +1,15 @@
+{
+  "doslogistic.web": {
+    "navbar": {
+      "price": "Narxlar",
+      "services": "Xizmatlar",
+      "Shops": "Do'konlar",
+      "aboutUs": "Biz haqimizda",
+      "reviews": "Taqrizlar",
+      "contacts": "Aloqa",
+      "help": "Yordam",
+      "login": "Kirish",
+      "register": "A'zolik"
+    }
+  }
+}

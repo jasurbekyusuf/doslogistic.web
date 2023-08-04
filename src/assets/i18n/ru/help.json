@@ -1,0 +1,40 @@
+{
+  "doslogistic.web": {
+    "help": {
+      "frequentlyAskedQuestions": "Ko‘p so‘raladigan savollar",
+      "questionsAndAnswers": "Вопросы и ответы",
+      "login": {
+        "login": "Регистрация",
+        "howToCreatePersonalCabinet": "Как создать личный кабинет?"
+      },
+      "purchases": {
+        "purchases": "Покупки",
+        "isWarehouseStates": "Будет ли склад в безналоговом штате?"
+      },
+      "payment": "Оплата",
+      "delivery": {
+        "delivery": "Доставка",
+        "whatIsTheDeliveryTime": "Какие сроки доставки?",
+        "whatIsTheDeliveryTimeAnswer": "После получения складом вашего товара — 3-10 дней",
+        "whatAreTheShippingRates": {
+          "question": "Какие тарифы на доставку?",
+          "answerOne": "До 3 кг. — $10/кг",
+          "answerTwo": "Свыше 3 кг. — $9/кг"
+        }
+      },
+      "acceptance": {
+        "acceptance": "Получение",
+        "orderDays": {
+          "orderDays": "В какие дни отправляете из Германия в Узбекистан?",
+          "aswer": "Посылки отправляем два раза в неделю — понедельник и четверг."
+        }
+      },
+      "services": {
+        "services": "Услуги",
+        "questionOne": "Я купил товар в разных интернет-магазинах. Объедините посылку?",
+        "asnwerOne": "Да, у нас консолидация — бесплатная. Мы соберем ваши покупки с разных магазинов и отправим как единое.",
+        "questionTwo": "Как отправить посылку из Германия в Узбекистан ?"
+      }
+    }
+  }
+}

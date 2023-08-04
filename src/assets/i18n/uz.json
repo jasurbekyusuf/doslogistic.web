@@ -1,0 +1,98 @@
+{
+  "appComponent": {
+    "language": "Uz"
+  },
+  "l": {
+    "language":"Uz",
+    "for_legal": "Jismoniy shaxslar uchun",
+    "fee_support": "Bepul konsultatsiya",
+    "title": "HUMO milliy kartalarida birinchi keshbek tizimi",
+    "description": "Hamkorlik tarmog‘ida Humo kartangiz bilan to‘lang va har bir xarid uchun 1% cashback oling.",
+    "partner_humo": "Hamkorlar uchun ma'lumot",
+    "features": {
+      "firstTitle": "Xaridlardan pul tejash",
+      "firstDescription": "Har bir toʻlovdan keshbek oling",
+      "secondTitle": "Kartaga darhol qaytib tushadi",
+      "secondDescription": "Kutish kerak emas! Keshbek darhol kartaga tushadi",
+      "threeTitle": "Ortiqcha ilovalarni kerakligi yo'q ",
+      "threeDescription": "Sizga faqat Humo kartasi kerak bo'ladi."
+    },
+    "whatIsCashBack": {
+      "title": "Keshbek bu nima?",
+      "description": "Keshbek - bu xaridlarga sarflangan pulning bir qismini qaytarish tizimi. Bunday holda siz xarid summasining 1% qaytarasiz. Keshbekni istalgan vaqtda istalgan narsaga sarflashingiz mumkin."
+    },
+    "howItsWork": {
+      "title": "Bu qanday ishlaydi?",
+      "pay": "Xaridni HUMO kartasi bilan toʻlang",
+      "payDescription": "Hamkorlarimizdan - Humo kartasi orqali xarid uchun to‘lovni amalga oshirish kifoya",
+      "back": "Darhol kartaga keshbekni qaytarib oling",
+      "backDescription": "Xarid summasining 1% miqdorida to'langan pulingizdan, darhol Humo kartangizga qaytariladi"
+    },
+    "faq": {
+      "title": "Ko’p beriladigan savollar",
+      "description": "Eng muhim savollarga foydali javoblar"
+    }
+  },
+  "d": {
+    "client_humo": "Jismoniy shaxslarga",
+    "profile": "Kirish",
+    "title": "HUMO milliy kartalarida birinchi keshbek tizimi",
+    "description": "\"HUMObonus\" sodiqlik tizimiga ulaning va millionlab yangi mijozlarga ega bo'ling",
+    "become_partner": "Hamkor bo'lish",
+    "nice_solution": "Quyidagilar uchun ideal yechim:",
+    "howItsWork": {
+      "title": "Bu qanday ishlaydi?",
+      "client_pay": "Mijoz xaridini “HUMO” kartasi bilan to‘laydi",
+      "after_payment": "To'lovdan so'ng <span>&ndash;</span> mijozning kartasiga darhol keshbek qaytib tushadi"
+    },
+    "chart": {
+      "title": "Sizning mijozlaringiz allaqachon shu yerda",
+      "description": "Hozirda HUMO karta egalari mavjud bo'lib, ular keyinchalik biznesingiz samaradorligiga ta'sir qiladi:",
+      "first": {
+        "from": "Sizning biznesingizda",
+        "to": "gacha qiziqishni kopaytirish"
+      },
+      "second": {
+        "from": "Mijozlarning qaytib kelishini",
+        "to": "gacha oshirish"
+      },
+      "three": {
+        "from": "Xarid qilish korsatkichlari",
+        "to": "gacha o'sishi"
+      },
+      "four": {
+        "from": "O'rtacha chekni",
+        "to": "gacha o'sishi"
+      }
+    },
+    "explanations": {
+      "upper": "foydalanish",
+      "title": "foydalanish va ulanishning soddaligi va qulayligi",
+      "first": "Qoshimcha ilovalarni ulamasdan,faqat \"HUMO\" terminali kerak bo'ladi",
+      "second": "QR-kodlarni skaner qilmasdan va keshbek olish uchun har oyni ohirini kutish shart emas",
+      "three": "To'lovdan so'ng darhol kartaga keshbek qaytib tushadi"
+    },
+    "connecting": {
+      "title": "2 Bosqichda ulanish",
+      "first": "1 Bosqish",
+      "firstDescription": "Shartnoma imzolash",
+      "second": "2 Bosqish",
+      "secondDescription": "Qolgan ish bizga qoladi"
+    },
+    "form": {
+      "title": "So'rov qoldiring va menejerimiz sizga batafsil malumot beradi",
+      "name": "Ism",
+      "phone": "Telefon",
+      "email": "Pochta",
+      "button": "Ariza yuborish",
+      "condition": "Men shaxsiy ma'lumotlarni qayta korib chiqilshiga rozilik bildiraman va maxfiylik siyosatiga roziman."
+    }
+  },
+  "faq": {
+    "title": "Siz bilmoqchi bo'lgan malumotlar",
+    "description": "Eng muhim savollarga foydali javoblar"
+  },
+  "footer": {
+    "security": "Barcha huquqlar himoyalangan."
+  }
+}

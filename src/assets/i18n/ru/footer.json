@@ -1,0 +1,47 @@
+{
+  "doslogistic.web": {
+    "footer": {
+      "logo":{
+        "info":"Быстрая и надежная доставка посылок из Германия менее чем за 10 дней!",
+        "join":"Присоединяйтесь"
+      },
+      "aboutCompony":{
+        "aboutCompony": "О компании",
+        "aboutUs": "О сервисе",
+        "price": "Тарифы и цены",
+        "news": "Новости",
+        "services": "Наши услуги",
+        "customers": "Отзывы клиентов",
+        "contacts": "Контакты"
+      },
+      "forCustomers": {
+        "forCustomers": "Покупателям",
+        "discounts": "Распродажи",
+        "shipmentTracking": "Отследить посылку",
+        "help": "Помощь",
+        "purchaseSupport": "Помощь в покупке",
+        "restrictionsAndProhibitions": "Ограничения и запреты",
+        "popularStores": "Популярные магазины"
+      },
+      "useful": {
+        "useful": "Полезное",
+        "deliveryOfParcels":"Доставка посылок",
+        "sendingParcels":"Отправка посылок",
+        "customsLimits":"Таможенные лимиты",
+        "shipmentInsurance":"Страхование посылок",
+        "tableOfMeasurements":"Таблица размеров",
+        "calculationOfCosts":"Расчет стоимости"
+      },
+      "contacts": {
+        "haveQuestions": "Остались вопросы?",
+        "germeny": "Германия, Берлин",
+        "uzbekistan": "Узбекистан, Ташкент",
+        "hours": "c 09:00 до 20:00"
+      },
+      "copywriting": {
+        "copywriting": "© 2017-2023 Курьерская служба Turon Express. Все права защищены.",
+        "termsOfUse": "Пользовательское соглашение"
+      }
+    }
+  }
+}
