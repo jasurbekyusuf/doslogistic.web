@@ -39,7 +39,7 @@ export function initializeApp(appInitService: AppInitService) {
   imports: [
     BrowserModule,
     SharedModule,
-    
+
   ], schemas: [NO_ERRORS_SCHEMA],
   providers: [
     { provide: NZ_I18N, useValue: ru_RU },
