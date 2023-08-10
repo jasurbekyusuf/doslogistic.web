@@ -5,13 +5,15 @@ body{
   width: 100%;
   background: #EEECEB;
 }
+
 footer{
-  position: fixed;
+  position: relative; //position:fixed;
   background: #140B5C;
   width: 100%;
   bottom: 0;
   left: 0;
 }
+
 footer::before{
   content: '';
   position: absolute;
@@ -21,24 +23,29 @@ footer::before{
   width: 100%;
   background: #AFAFB6;
 }
+
 footer .content{
   max-width: 1250px;
   margin: auto;
-  padding: 30px 40px 40px 40px;
+  padding: 28px 40px 40px 28px;
 }
+
 footer .content .top{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
+
 .content .top .logo-details{
   color: #fff;
   font-size: 30px;
 }
+
 .content .top .media-icons{
   display: flex;
 }
+
 .content .top .media-icons a{
   height: 40px;
   width: 40px;
@@ -51,9 +58,11 @@ footer .content .top{
   text-decoration: none;
   transition: all 0.4s ease;
 }
+
 .top .media-icons a:nth-child(1){
   background: #4267B2;
 }
+
 .top .media-icons a:nth-child(1):hover{
   color: #4267B2;
   background: #fff;
@@ -96,11 +105,12 @@ footer .content .link-boxes .box{
 }
 .content .link-boxes .box .link_name{
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
 }
+
 .link-boxes .box .link_name::before{
   content: '';
   position: absolute;
@@ -110,25 +120,30 @@ footer .content .link-boxes .box{
   width: 35px;
   background: #fff;
 }
+
 .content .link-boxes .box li{
-  margin: 6px 0;
+  margin: 9px 0;
   list-style: none;
 }
+
 .content .link-boxes .box li a{
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   opacity: 0.8;
   transition: all 0.4s ease
 }
+
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
 }
+
 .content .link-boxes .input-box{
   margin-right: 55px;
 }
+
 .link-boxes .input-box input{
   height: 40px;
   width: calc(100% + 55px);
@@ -141,10 +156,12 @@ footer .content .link-boxes .box{
   color: #fff;
   margin-top: 5px;
 }
+
 .link-boxes .input-box input::placeholder{
   color: #AFAFB6;
   font-size: 16px;
 }
+
 .link-boxes .input-box input[type="button"]{
   background: #fff;
   color: #140B5C;
@@ -156,9 +173,35 @@ footer .content .link-boxes .box{
   cursor: pointer;
   transition: all 0.4s ease;
 }
+
 .input-box input[type="button"]:hover{
   opacity: 1;
 }
+
+.link-boxes .box .city{
+  font-size: 18px;
+  color: #1DA1F2;
+  text-shadow: 2px 2px 2px black, 0 0 30px blue, 0 0 7px darkblue;
+  margin-bottom: 7px;
+}
+.link-boxes .box .hours{
+  color: #AFAFB6;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+.link-boxes .box .tel{
+  font-size: 10px;
+}
+
+.link-boxes .box li i{
+  margin-right: 10px;
+}
+
+.link-boxes .box li a{
+  font-size: 16px;
+}
+
 footer .bottom-details{
   width: 100%;
   background: #0F0844;
