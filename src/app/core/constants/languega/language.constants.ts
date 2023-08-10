@@ -1,11 +1,11 @@
 export const LANGUAGES: string[] = [
   'uz',
+  'ge',
   'ru',
-  'en',
 ];
 
 export enum Lang {
   UZ = 'uz',
+  GE = 'ge',
   RU = 'ru',
-  EN = 'en',
 }

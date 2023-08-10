@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -25,7 +25,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     NzLayoutModule,
     NzDropDownModule,
-    // NzButtonModule,
     NgxWebstorageModule.forRoot({prefix: 'app', separator: '-', caseSensitive: true}),
     TranslateModule.forRoot({
       loader: {

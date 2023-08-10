@@ -1,98 +1,212 @@
 {
-  "appComponent": {
-    "language": "Uz"
-  },
-  "l": {
-    "language":"Uz",
-    "for_legal": "Jismoniy shaxslar uchun",
-    "fee_support": "Bepul konsultatsiya",
-    "title": "HUMO milliy kartalarida birinchi keshbek tizimi",
-    "description": "Hamkorlik tarmog‘ida Humo kartangiz bilan to‘lang va har bir xarid uchun 1% cashback oling.",
-    "partner_humo": "Hamkorlar uchun ma'lumot",
-    "features": {
-      "firstTitle": "Xaridlardan pul tejash",
-      "firstDescription": "Har bir toʻlovdan keshbek oling",
-      "secondTitle": "Kartaga darhol qaytib tushadi",
-      "secondDescription": "Kutish kerak emas! Keshbek darhol kartaga tushadi",
-      "threeTitle": "Ortiqcha ilovalarni kerakligi yo'q ",
-      "threeDescription": "Sizga faqat Humo kartasi kerak bo'ladi."
+  "doslogistic.web": {
+    "aboutUs": {
+      "aboutUs": "Biz haqimizda",
+      "info":"TuronExpress kompaniyasi AQShdan O‘zbekistonga internet-do‘konlardan xarid qilingan buyurtmalarni yuborish bilan 2017 yildan buyon shug‘ullanadi."
     },
-    "whatIsCashBack": {
-      "title": "Keshbek bu nima?",
-      "description": "Keshbek - bu xaridlarga sarflangan pulning bir qismini qaytarish tizimi. Bunday holda siz xarid summasining 1% qaytarasiz. Keshbekni istalgan vaqtda istalgan narsaga sarflashingiz mumkin."
-    },
-    "howItsWork": {
-      "title": "Bu qanday ishlaydi?",
-      "pay": "Xaridni HUMO kartasi bilan toʻlang",
-      "payDescription": "Hamkorlarimizdan - Humo kartasi orqali xarid uchun to‘lovni amalga oshirish kifoya",
-      "back": "Darhol kartaga keshbekni qaytarib oling",
-      "backDescription": "Xarid summasining 1% miqdorida to'langan pulingizdan, darhol Humo kartangizga qaytariladi"
-    },
-    "faq": {
-      "title": "Ko’p beriladigan savollar",
-      "description": "Eng muhim savollarga foydali javoblar"
-    }
-  },
-  "d": {
-    "client_humo": "Jismoniy shaxslarga",
-    "profile": "Kirish",
-    "title": "HUMO milliy kartalarida birinchi keshbek tizimi",
-    "description": "\"HUMObonus\" sodiqlik tizimiga ulaning va millionlab yangi mijozlarga ega bo'ling",
-    "become_partner": "Hamkor bo'lish",
-    "nice_solution": "Quyidagilar uchun ideal yechim:",
-    "howItsWork": {
-      "title": "Bu qanday ishlaydi?",
-      "client_pay": "Mijoz xaridini “HUMO” kartasi bilan to‘laydi",
-      "after_payment": "To'lovdan so'ng <span>&ndash;</span> mijozning kartasiga darhol keshbek qaytib tushadi"
-    },
-    "chart": {
-      "title": "Sizning mijozlaringiz allaqachon shu yerda",
-      "description": "Hozirda HUMO karta egalari mavjud bo'lib, ular keyinchalik biznesingiz samaradorligiga ta'sir qiladi:",
-      "first": {
-        "from": "Sizning biznesingizda",
-        "to": "gacha qiziqishni kopaytirish"
-      },
-      "second": {
-        "from": "Mijozlarning qaytib kelishini",
-        "to": "gacha oshirish"
-      },
-      "three": {
-        "from": "Xarid qilish korsatkichlari",
-        "to": "gacha o'sishi"
-      },
-      "four": {
-        "from": "O'rtacha chekni",
-        "to": "gacha o'sishi"
+    "contacts": {
+      "contacts": "Bizning aloqalarimiz",
+      "addressUz": "O'zbekistondagi manzil",
+      "addressGer": "Germaniyadagi manzil",
+      "Toshkent": "Toshkent",
+      "berlin": "Berlin",
+      "form": {
+        "writeToUs": "Bizga yozing",
+        "fillForm": "Biz sizning savollaringizga javob berishdan xursand bo'lamiz, iltimos, quyidagi shaklni to'ldiring.",
+        "name": "Ism",
+        "phone": "Telefon raqami",
+        "email": "E-mail",
+        "message": "Xabar",
+        "sendMessage": "Xabar yubormoq",
+        "infoOne": "Savolingizga tezda javob olishni xohlaysizmi? Veb-saytning tez-tez so'raladigan savollar bo'limi bilan tanishing, u erda biz eng ko'p beriladigan savollarga javoblarni to'pladik.",
+        "infoTwo": "Agar sizning savolingiz kiruvchi posilka qachon tizimga kiritilishi bilan bog'liq bo'lsa, biz sizga yukni kiritish uchun 1-2 ish kuni kerakligini eslatib o'tamiz, kamdan-kam hollarda biroz ko'proq. Agar yuk 3 kundan ortiq olib kelmagan bo'lsa, ushbu masala bo'yicha yozishni maslahat beramiz."
       }
     },
-    "explanations": {
-      "upper": "foydalanish",
-      "title": "foydalanish va ulanishning soddaligi va qulayligi",
-      "first": "Qoshimcha ilovalarni ulamasdan,faqat \"HUMO\" terminali kerak bo'ladi",
-      "second": "QR-kodlarni skaner qilmasdan va keshbek olish uchun har oyni ohirini kutish shart emas",
-      "three": "To'lovdan so'ng darhol kartaga keshbek qaytib tushadi"
+    "footer": {
+      "logo":{
+        "info":"10 kundan kamroq vaqt ichida Germaniya tezkor va ishonchli posilkalar yetkazib berish!",
+        "join":"Ishtirok etish"
+      },
+      "aboutCompony":{
+        "aboutCompony": "Kompaniya haqida",
+        "aboutUs": "Biz haqimizda",
+        "price": "Tariflar va narxlar",
+        "news": "Yangiliklar",
+        "services": "Xizmatlarimiz",
+        "customers": "Mijozlarimiz",
+        "contacts": "Kontaktlar"
+      },
+      "forCustomers": {
+        "forCustomers": "Xaridorlarga",
+        "discounts": "Chegirmalar",
+        "shipmentTracking": "Jo‘natmalarni kuzatish",
+        "help": "Yordam",
+        "purchaseSupport": "Xarid ko'magi",
+        "restrictionsAndProhibitions": "Cheklovlar va taqiqlar",
+        "popularStores": "Ommabop do'konlar"
+      },
+      "useful": {
+        "useful": "Foydali",
+        "deliveryOfParcels":"Posilkalarni yetkazish",
+        "sendingParcels":"Posilkalarni yuborish",
+        "customsLimits":"Bojxona limitlari",
+        "shipmentInsurance":"Jo'natmalarni sug'urtalash",
+        "tableOfMeasurements":"O‘lchovlar jadvali",
+        "calculationOfCosts":"Xarajatlarni hisoblash"
+      },
+      "contacts": {
+        "haveQuestions": "Savollar bormi?",
+        "germeny": "Germany, Berlin",
+        "uzbekistan": "Uzbekistan, Toshkent",
+        "hours": "09:00 dan 20:00 cha"
+      },
+      "copywriting": {
+        "copywriting": "© 2017-2023 Turon Express kuryerlik xizmati. Barcha huquqlar himoyalangan.",
+        "termsOfUse": "Foydalanish qoidalari"
+      }
     },
-    "connecting": {
-      "title": "2 Bosqichda ulanish",
-      "first": "1 Bosqish",
-      "firstDescription": "Shartnoma imzolash",
-      "second": "2 Bosqish",
-      "secondDescription": "Qolgan ish bizga qoladi"
+    "help": {
+      "frequentlyAskedQuestions": "Ko‘p so‘raladigan savollar",
+      "questionsAndAnswers": "Savolar va Javoblar",
+      "login": {
+        "login": "Ro'yxatdan o'tish",
+        "howToCreatePersonalCabinet": "Shaxsiy kabinetni qanday yaratish kerak?"
+      },
+      "purchases": {
+        "purchases": "Xaridlar",
+        "isWarehouseStates": "Shtatlarda ombor soliqsiz bo'ladimi?"
+      },
+      "payment": "To'lov",
+      "delivery": {
+        "delivery": "Yetkazib berish",
+        "whatIsTheDeliveryTime": "Yetkazib berish muddati qancha?",
+        "whatIsTheDeliveryTimeAnswer": "Buyurtmangiz skladga kelib tushganidan keyin — 3-10 kun",
+        "whatAreTheShippingRates": {
+          "answerOne": "3 kilogramgacha — $10/kg.",
+          "answerTwo": "3 kilogramdan ko‘p bo‘lsa — $9/kg."
+        }
+      },
+      "acceptance": {
+        "acceptance": "Qabul qilish",
+        "orderDays": {
+          "orderDays": "Qaysi kunlari buyurtmalar Germaniyadan O‘zbekistonga yuboriladi?",
+          "aswer": "Bir haftada ikki marotaba — dushanba va payshanba kunlari"
+        }
+      },
+      "services": {
+        "services": "Xizmatlar",
+        "questionOne": "Men har xil internet-magazinlardan xarid qildim. Hammasini bitta qilib yuborasizmi?",
+        "asnwerOne": "Ha, bizda bu xizmat bepul. Barcha buyurtmalarni bitta qilib yuboramiz.",
+        "questionTwo": "Germaniya O'zbekistonga qanday qilib jo'natmani yuborish mumkin?"
+      }
     },
-    "form": {
-      "title": "So'rov qoldiring va menejerimiz sizga batafsil malumot beradi",
-      "name": "Ism",
-      "phone": "Telefon",
-      "email": "Pochta",
-      "button": "Ariza yuborish",
-      "condition": "Men shaxsiy ma'lumotlarni qayta korib chiqilshiga rozilik bildiraman va maxfiylik siyosatiga roziman."
+    "home": {
+      "language":"Uz",
+      "header-info-one": {
+        "header-info-one": "Germaniya tez va ishonchli yetkazib berish",
+        "info": "Germaniya posilkalar va onlayn xaridlarni atagi 10 dollardan 7-10 kun ichida O'zbekistonga yetkazib beramiz",
+        "startUsing": "Foydalanishni boshlang"
+      },
+      "header-info-two": {
+        "header-info-two": "Germaniya shaxsiy manzilingiza hoziroq ega bo‘ling",
+        "info": "Germaniya posilkalar va onlayn xaridlarni atagi 10 dollardan 7-10 kun ichida O'zbekistonga yetkazib beramiz",
+        "startUsing": "Boshlash"
+      },
+      "header-info-three": {
+        "header-info-three": "Innovatsion ombor",
+        "info": "Biz posilkalaringizni xatolarsiz yig'amiz va uyingizga yetkazib beramiz.",
+        "startUsing": "Sinab ko'rmoqchiman!"
+      },
+      "howdoesItWork": {
+        "howdoesItWork": "Bu qanday ishlaydi?",
+        "info": "Germaniya xaridlarni amalga oshirish uchun to‘rtta oddiy qadamni bajaring",
+        "register": {
+          "register": "1. Ro‘yxatdan o‘ting",
+          "info": "Germaniya shaxsiy manzilni olish uchun saytda ro‘yxatdan o‘ting. Bu 1 daqiqa vaqt oladi.",
+          "getAddress":"Shaxsiy manzilni oling"
+        },
+        "shopOnline":{
+          "shopOnline": "2. Onlayn xaridlar qiling",
+          "info": "Germaniya onlayn-do‘konlaridan mahsulotlarga buyurtma bering va to‘lov paytida Turondan olgan manzilingizni kiriting.",
+          "popularStores": "Ommabop do‘konlar"
+        },
+        "registerPurchases": {
+          "registerPurchases": "3. Xaridlarni ro‘yxatdan o‘tkazing",
+          "info": "Xaridlaringizni shaxsiy hisobingizda ro‘yxatdan o‘tkazing, Visa yoki Mastercard orqali to‘lang.",
+          "aboutDelivery": "Yetkazib berish haqida"
+        },
+        "acceptIt": {
+          "acceptIt": "4. Qabul qiling",
+          "info": "Yetkazib berish jo‘natilgan kundan boshlab 7 kun davom etadi. Shaxsiy kabinetda siz etkazib berish holatini kuzatishingiz mumkin."
+        }
+      },
+      "needHelpBuying": {
+        "needHelpBuying": "Sotib olishda yordam kerakmi?",
+        "infoOne": "Internet - do‘kondan sotib olish qiyinmi? Do‘kon sizning to‘lov kartangizni qabul qilmayaptimi? Biz sizga yordam beramiz!",
+        "infoTwo": "Sizga kerak bo‘lgan mahsulotlarga havolalar berib, xarid qilishda yordam xizmatiga buyurtma bering. Faqat 10% evaziga biz ularni sotib olamiz va yetkazib beramiz!",
+        "moreAboutTheService": "Xizmat haqida batafsilroq"
+      },
+      "news":"Yangiliklar",
+      "reviewsFromOurCustomers": {
+        "reviewsFromOurCustomers": "Mijozlarimiz sharhlari",
+        "allReviews": "Barcha sharhlar"
+      }
+    },
+    "navbar": {
+      "price": "Narxlar",
+      "services": "Xizmatlar",
+      "Shops": "Do'konlar",
+      "aboutUs": "Biz haqimizda",
+      "reviews": "Taqrizlar",
+      "contacts": "Aloqa",
+      "help": "Yordam",
+      "login": "Kirish",
+      "register": "A'zolik"
+    },
+    "price": {
+      "tariffs": "Tariflar",
+      "kg": "kg",
+      "free": "Bepul!",
+      "noCommission": "Komissiya yo'q",
+      "ourRates": {
+        "ourRates": "Bizning tariflarimiz",
+        "shipmentWeightOne": "Jo’natmaning vazni 1-3 kg",
+        "shipmentWeightTwo": "Jo’natmaning vazni 3-10 kg",
+        "shipmentWeightTree": "Jo’natmaning vazni 10-30 kg",
+        "minimumWeight": "Minimal og'irlik",
+        "receivingShipments": "Jo’natmalarni qabul qilish",
+        "consolidationCost": "Konsolidatsiya qiymati"
+      },
+      "localDeliveryRates": {
+        "localDeliveryRates": "Mahalliy yetkazib berish tariflari",
+        "localDeliveryRatesOne": "Toshkentdagi omborxonadan olib ketish",
+        "localDeliveryRatesTwo": "Toshkent shahri bo’ylab yetkazib berish",
+        "localDeliveryRatesThree": "O'zbekiston bo'ylab yetkazib berish"
+      },
+      "tariffsForStorage": {
+        "tariffsForStorage": "Ombor va qo'shimcha xizmatlar uchun tariflar",
+        "commissionWhenFillingTheAccount": "Hisobni to'ldirishda komissiya",
+        "receivingShipmentsToTheWarehouse":"Omborga jo’natmalarni qabul qilish",
+        "consolidationService":"Konsolidatsiya xizmati",
+        "deleteAccountInvoices":"Hisob fakturalarni o'chirish",
+        "unpackingShoes":"Oyoq kiyimlar qadoqlarini olib tashlash",
+        "storageOfIncomingShipments":"Kiruvchi jo’natmalarni saqlash",
+        "Photograph":"Fotosurat",
+        "registeringUnknownPerson":"Noma'lum shaxsdan kelgan jo’natmani ro'yxatdan o'tkazish",
+        "outboundPackageRepackaging":"Chiquvchi paketni qayta qadoqlash",
+        "openingTheIncomingShipmentPhoto":"Kiruvchi jo’natmani ochish + fotosurat",
+        "checkTheProductPhoto":"Hisob faktura + fotosurat orqali mahsulotni tekshirish",
+        "returningTheProductStore":"Mahsulotni do'konga qaytarish"
+      },
+      "": ""
+    },
+    "reviews": {
+      "reviews": "Sharhlar",
+      "info": ""
+    },
+    "services": {
+      "services": "Xizmatlar",
+      "helpWithPurchase": "Xaridda yordam"
     }
-  },
-  "faq": {
-    "title": "Siz bilmoqchi bo'lgan malumotlar",
-    "description": "Eng muhim savollarga foydali javoblar"
-  },
-  "footer": {
-    "security": "Barcha huquqlar himoyalangan."
   }
 }

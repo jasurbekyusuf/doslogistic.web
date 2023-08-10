@@ -2,7 +2,7 @@ import {AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, On
 import {TranslateService} from "@ngx-translate/core";
 import {Subject, takeUntil} from "rxjs";
 import {SessionStorageService} from "ngx-webstorage";
-import { LANGUAGES } from '../constants/language.constants';
+import { LANGUAGES } from '../constants/languega/language.constants';
 import { LanguageService } from '../local-services/language-service/language.service';
 
 
@@ -27,8 +27,6 @@ export class LanguageComponent implements AfterViewInit, OnDestroy, OnInit {
 
   ngOnInit(): void {
     this.sessionStorageLang = this.sessionStorageService.retrieve('locale');
-    console.log("aloooa");
-
   }
 
   ngAfterViewInit(): void {
