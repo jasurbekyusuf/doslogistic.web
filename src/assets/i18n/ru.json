@@ -2,7 +2,7 @@
   "doslogistic.web": {
     "aboutUs": {
       "aboutUs": "Biz haqimizda",
-      "info":"TuronExpress занимается доставкой посылок из американских интернет-магазинов в Узбекистан с 2017 года. Мы помогаем нашим гражданам выгодно покупать из США, так-как в 90% магазинов не доставляют заказы в Узбекистан."
+      "info": "TuronExpress занимается доставкой посылок из американских интернет-магазинов в Узбекистан с 2017 года. Мы помогаем нашим гражданам выгодно покупать из США, так-как в 90% магазинов не доставляют заказы в Узбекистан."
     },
     "contacts": {
       "contacts": "Bizning aloqalarimiz",
@@ -23,11 +23,11 @@
       }
     },
     "footer": {
-      "logo":{
-        "info":"Быстрая и надежная доставка посылок из Германия менее чем за 10 дней!",
-        "join":"Присоединяйтесь"
+      "logo": {
+        "info": "Быстрая и надежная доставка посылок из Германия менее чем за 10 дней!",
+        "join": "Присоединяйтесь"
       },
-      "aboutCompony":{
+      "aboutCompony": {
         "aboutCompony": "О компании",
         "aboutUs": "О сервисе",
         "price": "Тарифы и цены",
@@ -47,12 +47,12 @@
       },
       "useful": {
         "useful": "Полезное",
-        "deliveryOfParcels":"Доставка посылок",
-        "sendingParcels":"Отправка посылок",
-        "customsLimits":"Таможенные лимиты",
-        "shipmentInsurance":"Страхование посылок",
-        "tableOfMeasurements":"Таблица размеров",
-        "calculationOfCosts":"Расчет стоимости"
+        "deliveryOfParcels": "Доставка посылок",
+        "sendingParcels": "Отправка посылок",
+        "customsLimits": "Таможенные лимиты",
+        "shipmentInsurance": "Страхование посылок",
+        "tableOfMeasurements": "Таблица размеров",
+        "calculationOfCosts": "Расчет стоимости"
       },
       "contacts": {
         "haveQuestions": "Остались вопросы?",
@@ -102,7 +102,7 @@
       }
     },
     "home": {
-      "language":"Ru",
+      "language": "Русский",
       "header-info-one": {
         "header-info-one": "Быстрая и надежная доставка из Германия",
         "info": "Доставляем посылки и онлайн-покупки из Германия в Узбекистан всего за 7-10 дней от $10",
@@ -124,9 +124,9 @@
         "register": {
           "register": "1. Регистрируйтесь",
           "info": "Зарегистрируйтесь на сайте, чтобы получить персональный адрес в Германия. Это займет 1 минуту.",
-          "getAddress":"Получить личный адрес"
+          "getAddress": "Получить личный адрес"
         },
-        "shopOnline":{
+        "shopOnline": {
           "shopOnline": "2. Покупайте онлайн",
           "info": "Заказывайте товары из интернет-магазинов Германия и укажите полученный адрес при оформлении покупки.",
           "popularStores": "Популярные магазины"
@@ -147,10 +147,25 @@
         "infoTwo": "Оформите заказ услуги Помощь в покупке, указав ссылки на нужные вам товары. Всего за 10% мы произведем их покупку и прогарантируем, что вы получите именно то, что заказали!",
         "moreAboutTheService": "Подробнее об услуге"
       },
-      "news":"Новости",
+      "news": "Новости",
       "reviewsFromOurCustomers": {
         "reviewsFromOurCustomers": "Отзывы клиентов",
         "allReviews": "Все отзывы"
+      },
+      "delivery": {
+        "delivery": "Способы доставки и цена",
+        "express": "Экспресс",
+        "info": "Для всех экспресс-доставок нет минимальных плат, а стоимость доставки рассчитывается в зависимости от фактического веса Заказа, за исключением крупногабаритных посылок.",
+        "card": {
+          "country": "Страна",
+          "middle": "В среднем",
+          "price": "Цена доставки*",
+          "minPrice": "Мин. плата",
+          "max": "Крупногабаритные"
+        }
+      },
+      "whyChooseUs":{
+        "whyChooseUs":"Почему вы должны выбрать нас"
       }
     },
     "navbar": {
@@ -187,17 +202,17 @@
       "tariffsForStorage": {
         "tariffsForStorage": "Тарифы на складские и дополнительные услуги",
         "commissionWhenFillingTheAccount": "Комиссия при пополнении баланса",
-        "receivingShipmentsToTheWarehouse":"Прием посылок на склад",
-        "consolidationService":"Консолидация",
-        "deleteAccountInvoices":"Удаление инвойсов",
-        "unpackingShoes":"Удаление обувных упаковок",
-        "storageOfIncomingShipments":"Хранение входящих посылок",
-        "Photograph":"Фото посылки",
-        "registeringUnknownPerson":"Регистрация входящей посылки из неопознанных",
-        "outboundPackageRepackaging":"Переупаковка исходящей посылки",
-        "openingTheIncomingShipmentPhoto":"Разделение входящей посылки + фото",
-        "checkTheProductPhoto":"Сверка товаров по инвойсу + фото",
-        "returningTheProductStore":"Возврат товаров в магазин"
+        "receivingShipmentsToTheWarehouse": "Прием посылок на склад",
+        "consolidationService": "Консолидация",
+        "deleteAccountInvoices": "Удаление инвойсов",
+        "unpackingShoes": "Удаление обувных упаковок",
+        "storageOfIncomingShipments": "Хранение входящих посылок",
+        "Photograph": "Фото посылки",
+        "registeringUnknownPerson": "Регистрация входящей посылки из неопознанных",
+        "outboundPackageRepackaging": "Переупаковка исходящей посылки",
+        "openingTheIncomingShipmentPhoto": "Разделение входящей посылки + фото",
+        "checkTheProductPhoto": "Сверка товаров по инвойсу + фото",
+        "returningTheProductStore": "Возврат товаров в магазин"
       }
     },
     "reviews": {

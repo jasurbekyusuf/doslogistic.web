@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(){;
+  }
 }

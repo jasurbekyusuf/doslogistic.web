@@ -11,18 +11,20 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "src/app/app-routing.module";
 import { NgxWebstorageModule } from "ngx-webstorage";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
+
   imports: [
     AntModules,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    NzCarouselModule,
     NzLayoutModule,
     NzDropDownModule,
     NgxWebstorageModule.forRoot({prefix: 'app', separator: '-', caseSensitive: true}),
@@ -42,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NzLayoutModule,
     NzDropDownModule,
     NzButtonModule,
-    TranslateModule
+    TranslateModule,
+    NzCarouselModule
   ]
 })
 export class SharedModule {}

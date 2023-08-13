@@ -1,0 +1,22 @@
+.container{
+  width: 1000px !important;
+  margin: 0 auto;
+}
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+.store-items {
+  display: flex;
+  overflow: hidden;
+  width: 75%;  /* You can adjust as per your design */
+}
+
+.store-item {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: transform 0.3s ease;
+}

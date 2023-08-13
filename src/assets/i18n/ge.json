@@ -150,6 +150,21 @@
       "reviewsFromOurCustomers": {
         "reviewsFromOurCustomers": "Kundenbewertungen",
         "allReviews": "Alle Bewertungen"
+      },
+      "delivery": {
+        "delivery":"Versandarten und Preis",
+        "express": "Äußern",
+        "info": "Für alle Expresslieferungen gibt es keine Mindestgebühren und die Versandkosten werden basierend auf dem tatsächlichen Gewicht der Bestellung berechnet, mit Ausnahme von übergroßen Paketen.",
+        "card":{
+          "country": "Ein Land",
+          "middle": "Im mittleren",
+          "price": "Lieferpreis*",
+          "minPrice": "Mindest. zahlen",
+          "max": "übergroß"
+        }
+      },
+      "whyChooseUs":{
+        "whyChooseUs":"Warum sollten Sie sich für uns entscheiden?"
       }
     },
     "navbar": {
