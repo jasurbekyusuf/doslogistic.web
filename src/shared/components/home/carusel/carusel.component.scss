@@ -1,0 +1,45 @@
+.container{
+  position: relative;
+}
+
+[nz-carousel-content] {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+  height: 400px;
+}
+
+img{
+  width: 100% !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+span{
+  position: absolute;
+  top: 48%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.next{
+  right: 4%;
+}
+
+.prev{
+  left: 4%;
+}
+
+h3 {
+color: #fff;
+margin-bottom: 0;
+user-select: none;
+}
+
+

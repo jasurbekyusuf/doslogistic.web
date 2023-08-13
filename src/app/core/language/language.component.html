@@ -5,11 +5,11 @@
     nz-dropdown
     nzType="link"
     nzTrigger="click"
-    nzShape="circle"
     type="button"
     [nzDropdownMenu]="langMenu"
   >
-    <span class="lang {{langService.currentLang === undefined ? sessionStorageLang : langService.currentLang}}"></span>
+  <span class="lang {{langService.currentLang === undefined ? sessionStorageLang : langService.currentLang}}"></span>
+  <p class="lang-text">{{'doslogistic.web.home.language' | translate}}</p>
   </button>
   <nz-dropdown-menu #langMenu="nzDropdownMenu">
     <ul nz-menu>

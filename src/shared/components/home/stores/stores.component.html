@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="carousel-container" (mouseover)="stopAutoplay()" (mouseout)="startAutoplay()">
+    <button (click)="prevItems()" [disabled]="currentIndex === 0">Previous</button>
+    <div class="store-items">
+      <div *ngFor="let store of visibleItems" class="store-item">
+        {{ store }}
+      </div>
+    </div>
+    <button (click)="nextItems()" [disabled]="currentIndex === stores.length - visibleStores">Next</button>
+  </div>
+</div>
+

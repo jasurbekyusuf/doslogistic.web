@@ -1,0 +1,37 @@
+.info{
+  text-align: center;
+}
+
+h1{
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  width: 230px;
+  padding: 20px;
+  border: 1px solid grey;
+  height: auto;
+}
+
+h3{
+  text-align: center;
+  font-weight: 700;
+}
+
+p{
+  word-wrap: break-word;
+}
+.link{
+  color: #A9592C;
+  cursor: pointer;
+}
+
+
+
