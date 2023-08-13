@@ -44,18 +44,9 @@ body{
   height: 52px;
   margin: 18px 0;
 }
-form .input-box input{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  padding: 0 15px;
-  font-size: 17px;
-  font-weight: 400;
-  color: #333;
-  border: 1.5px solid #C7BEBE;
-  border-bottom-width: 2.5px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+form .form-floating input{
+  border-radius: 10px;
+  height: 50px;
 }
 .input-box input:focus,
 .input-box input:valid{
@@ -64,6 +55,7 @@ form .input-box input{
 form .policy{
   display: flex;
   align-items: center;
+  margin:5px 0;
 }
 form h3{
   color: #707070;
@@ -71,18 +63,6 @@ form h3{
   font-weight: 500;
   margin-left: 10px;
 }
-
-// .input-box.button input{
-//   color: #fff;
-//   letter-spacing: 1px;
-//   border: none;
-//   background: #4070f4;
-//   cursor: pointer;
-// }
-// .input-box.button input:hover{
-//   color: #fff;
-//   background: navy;
-// }
 
 button {
     font-family: 'Poppins', sans-serif;
@@ -109,9 +89,10 @@ form .text h3{
  width: 100%;
  text-align: center;
 }
-form .text h3 a{
+form .text a{
   color: #4070f4;
   text-decoration: none;
+  margin-top: 5px;
 }
 form .text h3 a:hover{
   text-decoration: underline;

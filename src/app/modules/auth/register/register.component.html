@@ -2,18 +2,16 @@
     <div class="wrapper">
       <h2>Registration</h2>
       <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name" required>
+        <!--  -->
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
         </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email" required>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
         </div>
-        <div class="input-box">
-          <input type="password" placeholder="Create password" required>
-        </div>
-        <div class="input-box">
-          <input type="password" placeholder="Confirm password" required>
-        </div>
+        <!--  -->
         <div class="policy">
           <input type="checkbox">
           <h3>I accept all terms & condition</h3>
@@ -22,7 +20,7 @@
           <button>Register Now</button>
         </div>
         <div class="text">
-          <h3>Already have an account? <a href="#">Login now</a></h3>
+          <h3>Already have an account? <a href="../login/">Login now</a></h3>
         </div>
       </form>
     </div>
