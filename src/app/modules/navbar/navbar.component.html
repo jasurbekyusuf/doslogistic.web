@@ -17,10 +17,19 @@
       <app-language></app-language>
     </div>
     <div class="auth">
+
       <!-- <button>{{'doslogistic.web.navbar.login' | translate}}</button> -->
       <button>{{'doslogistic.web.navbar.register' | translate}}</button>
     </div>
   </div>
 </div>
+
+
+      <button routerLink="login" routerLinkActive="active-link">{{'doslogistic.web.navbar.login' | translate}}</button>
+      <button routerLink="register" routerLinkActive="active-link">{{'doslogistic.web.navbar.register' | translate}}</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
 
 
