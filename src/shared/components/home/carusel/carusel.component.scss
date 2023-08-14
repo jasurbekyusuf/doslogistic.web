@@ -9,13 +9,16 @@
   background: #364d79;
   color: #fff;
   overflow: hidden;
-  height: 400px;
+  height: 600px;
 }
 
 img{
   width: 100% !important;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover !important;
+  object-position: center !important;
+  // background-repeat: no-repeat;
 }
 
 span{
