@@ -181,7 +181,7 @@
     "price": {
       "tariffs": "Tariflar",
       "kg": "kg",
-      "free": "Bepul!",
+      "free1": "Bepul!",
       "noCommission": "Komissiya yo'q",
       "ourRates": {
         "ourRates": "Bizning tariflarimiz",

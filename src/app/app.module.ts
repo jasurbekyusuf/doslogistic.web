@@ -22,6 +22,8 @@ import { ReviewsComponent } from '../shared/components/home/reviews/reviews.comp
 import { FaqComponent } from '../shared/components/home/faq/faq.component';
 import { AboutUsComponent } from './modules/layouts/about-us/about-us.component';
 import { ContactsComponent } from './modules/layouts/contacts/contacts.component';
+import { PriceComponent } from './modules/layouts/price/price.component';
+
 
 
 registerLocaleData(localeRu);
@@ -47,14 +49,15 @@ export function initializeApp(appInitService: AppInitService) {
     FindLanguageFromKeyPipe,
     CaruselComponent,
     HowIsItWorkComponent,
-    PricesComponent,
     StoresComponent,
     ChooseUsComponent,
     ReviewsComponent,
     FaqComponent,
     AboutUsComponent,
     PricesComponent,
-    ContactsComponent
+    PricesComponent,
+    ContactsComponent,
+    PriceComponent
   ],
   imports: [
     BrowserModule,
