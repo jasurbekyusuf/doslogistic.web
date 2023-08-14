@@ -1,4 +1,6 @@
-// .container{
-//   width: 1320px !important;
-//   margin: 0 auto !important;
-// }
+.container{
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
