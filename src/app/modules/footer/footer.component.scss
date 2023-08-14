@@ -8,20 +8,10 @@ footer{
   left: 0;
 }
 
-footer::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 100px;
-  height: 1px;
-  width: 100%;
-  background: #AFAFB6;
-}
-
 footer .content{
   max-width: 1250px;
   margin: auto;
-  padding: 28px 40px 40px 28px;
+  padding: 0px 18px 0px 18px;
 }
 
 footer .content .top{
@@ -95,7 +85,7 @@ footer .content .link-boxes{
   justify-content: space-between;
 }
 footer .content .link-boxes .box{
-  width: calc(100% / 5 - 10px);
+  width: calc(100% / 4 - 10px);
 }
 .content .link-boxes .box .link_name{
   color: #fff;
@@ -103,6 +93,19 @@ footer .content .link-boxes .box{
   font-weight: 400;
   margin-bottom: 10px;
   position: relative;
+}
+
+.content .link-boxes .box .link-name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.link-boxes .box .link-name h5{
+  color: #fff;
+  margin-top: 3px;
 }
 
 .link-boxes .box .link_name::before{
@@ -171,13 +174,14 @@ footer .content .link-boxes .box{
 .input-box input[type="button"]:hover{
   opacity: 1;
 }
-
+//
 .link-boxes .box .city{
   font-size: 18px;
-  color: #1DA1F2;
-  text-shadow: 2px 2px 2px black, 0 0 30px blue, 0 0 7px darkblue;
+  color: #fff;
+  text-shadow: .5px .5px #fff ;
   margin-bottom: 7px;
 }
+//
 .link-boxes .box .hours{
   color: #AFAFB6;
   margin-top: 0px;
@@ -204,7 +208,7 @@ footer .bottom-details{
 footer .bottom-details .bottom_text{
   max-width: 1350px;
   margin: auto;
-  padding: 20px 40px;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
 }
