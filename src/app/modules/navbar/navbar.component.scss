@@ -10,14 +10,28 @@
 
 .logo-details{
   font-size: 30px;
+  i{
+    color: #A9592C;
+  }
+
+  span{
+    color: #A9592C;
+  }
 }
 
 
 .content {
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0 10px !important;
+}
+
+button{
+  background-color: #A9592C !important;
+  color: #ffff !important;
 }
 
 .content p {
@@ -56,6 +70,7 @@
   position: relative;
   left: 25px;
   gap: 25px;
+  // color: #A9592C;
 }
 
 .logo {
