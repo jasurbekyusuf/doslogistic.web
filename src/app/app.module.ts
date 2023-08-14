@@ -21,6 +21,7 @@ import { ChooseUsComponent } from '../shared/components/home/choose-us/choose-us
 import { ReviewsComponent } from '../shared/components/home/reviews/reviews.component';
 import { FaqComponent } from '../shared/components/home/faq/faq.component';
 import { AboutUsComponent } from './modules/layouts/about-us/about-us.component';
+import { ContactsComponent } from './modules/layouts/contacts/contacts.component';
 
 
 registerLocaleData(localeRu);
@@ -51,7 +52,9 @@ export function initializeApp(appInitService: AppInitService) {
     ChooseUsComponent,
     ReviewsComponent,
     FaqComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PricesComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
