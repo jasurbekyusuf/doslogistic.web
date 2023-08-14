@@ -182,7 +182,7 @@
     "price": {
       "tariffs": "Тарифы",
       "kg": "кг",
-      "free": "Бесплатно!",
+      "free1": "Бесплатно!",
       "noCommission": "без комиссии",
       "ourRates": {
         "ourRates": "Наши тарифы",
