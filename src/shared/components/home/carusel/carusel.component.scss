@@ -23,6 +23,10 @@
   z-index: 1;
 }
 
+::ng-deep .slick-list{
+  max-height: 500px !important;
+}
+
 .icon-button{
   height: 100%;
   width: 15%;
