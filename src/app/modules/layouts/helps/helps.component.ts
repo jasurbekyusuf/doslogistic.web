@@ -17,4 +17,27 @@ export class HelpsComponent {
   isOpen7 = false;
   isOpen8 = false;
   isOpen9 = false;
+
+  toggleDropdown(dropdownNumber: number): void {
+    if (dropdownNumber === 1) {
+      this.isOpen1 = true;
+    } else if (dropdownNumber === 2) {
+      this.isOpen2 = true;
+    } else if (dropdownNumber === 3) {
+      this.isOpen5 = true;
+    } else if (dropdownNumber === 4) {
+      this.isOpen7 = true;
+    } else if (dropdownNumber === 5) {
+      this.isOpen8 = true;
+    }
+
+    this.scrollToDropdown(dropdownNumber);
+  }
+
+  scrollToDropdown(dropdownNumber: number): void {
+    const dropdownElement = document.getElementById(`dropdown${dropdownNumber}`);
+    if (dropdownElement) {
+      dropdownElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

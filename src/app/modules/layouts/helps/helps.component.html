@@ -1,168 +1,186 @@
-<div class="container">
-	<h2>Ko‘p so‘raladigan savollar</h2>
-	<div class="main-dropdown">
-		<h3>Ro'yxatdan o'tish</h3>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen1 = !isOpen1" [ngClass]="{'clicked': isOpen1}">
-				<span class="menu-text">Shaxsiy kabinetni qanday yaratish kerak?</span>
-				<i [ngClass]="isOpen1 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen1" [@dropDownMenu]>
-				<div class="menu-item">
-					<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
-						allowfullscreen></iframe>
-				</div>
-			</div>
+<div class="main-container">
+	<div>
+		<div class="dropdown-nav">
+			<p (click)="toggleDropdown(1)">{{ "doslogistic.web.help.login.login" | translate }}</p>
+			<p (click)="toggleDropdown(2)">{{ "doslogistic.web.help.purchases.purchases" | translate }}</p>
+			<p (click)="toggleDropdown(3)">{{ "doslogistic.web.help.delivery.delivery" | translate }}</p>
+			<p (click)="toggleDropdown(4)">{{ "doslogistic.web.help.acceptance.acceptance" | translate }}</p>
+			<p (click)="toggleDropdown(5)">{{ "doslogistic.web.help.services.services" | translate }}</p>
+		</div>
+		<div class="question-box">
+			<span class="thinking-emoji">🤔</span>
+			<h4>Hali ham savollaringiz bormi?</h4>
+			<p>Telegramdagi onlayn chat orqali qo‘llab -quvvatlash xizmatimizga murojaat qiling</p>
+			<button>Biz bilan bog'lanish</button>
 		</div>
 	</div>
-	<div class="main-dropdown">
-		<h3>Xaridlar</h3>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen2 = !isOpen2" [ngClass]="{'clicked': isOpen2}">
-				<span class="menu-text">Shtatlarda ombor soliqsiz bo'ladimi?</span>
-				<i [ngClass]="isOpen2 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen2" [@dropDownMenu]>
-				<div class="menu-item">
-					Biz buning ustida ishlayapmiz va tez orada omborimizni soliqsiz tarzda ishga tushiramiz. Shundan
-					so'ng, buyurtmalar sizga arzonroq tushadi:)
+	<div class="container">
+		<h2>{{ "doslogistic.web.help.frequentlyAskedQuestions" | translate }}</h2>
+		<div class="main-dropdown" id="dropdown1">
+			<h3>{{ "doslogistic.web.help.login.login" | translate }}</h3>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen1 = !isOpen1" [ngClass]="{'clicked': isOpen1}">
+					<span class="menu-text">{{ "doslogistic.web.help.login.howToCreatePersonalCabinet" | translate }}</span>
+					<i [ngClass]="isOpen1 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen1" [@dropDownMenu]>
+					<div class="menu-item">
+						<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
+							allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen3 = !isOpen3" [ngClass]="{'clicked': isOpen3}">
-				<span class="menu-text">Onlayn buyurtmani qanday ro'yxatdan o'tkazish kerak?</span>
-				<i [ngClass]="isOpen3 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen3" [@dropDownMenu]>
-				<div class="menu-item">
-					<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
-						allowfullscreen></iframe>
+		<div class="main-dropdown" id="dropdown2">
+			<h3>{{ "doslogistic.web.help.purchases.purchases" | translate }}</h3>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen2 = !isOpen2" [ngClass]="{'clicked': isOpen2}">
+					<span class="menu-text">{{ "doslogistic.web.help.purchases.isWarehouseStates" | translate }}</span>
+					<i [ngClass]="isOpen2 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen2" [@dropDownMenu]>
+					<div class="menu-item">
+						Biz buning ustida ishlayapmiz va tez orada omborimizni soliqsiz tarzda ishga tushiramiz. Shundan
+						so'ng, buyurtmalar sizga arzonroq tushadi:)
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen4 = !isOpen4" [ngClass]="{'clicked': isOpen4}">
-				<span class="menu-text">Qaytarib olish xizmati qanday ishlaydi?</span>
-				<i [ngClass]="isOpen4 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen3 = !isOpen3" [ngClass]="{'clicked': isOpen3}">
+					<span class="menu-text">Onlayn buyurtmani qanday ro'yxatdan o'tkazish kerak?</span>
+					<i [ngClass]="isOpen3 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen3" [@dropDownMenu]>
+					<div class="menu-item">
+						<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
+							allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
-			<div class="menu" *ngIf="isOpen4" [@dropDownMenu]>
-				<div class="menu-item">
-					<div class="menu-item-datas">
-						<div>
-							<ol>
-								<li>
-									<span class="name-place">
-										<p class="name-steps">Birinchi qadam</p>
-										Siz to'lovga buyurtma berasiz va unga barcha kerakli mahsulotlarni qo'shasiz
-									</span>
-								</li>
-								<li>
-									<span>
-										<p class="name-steps">Ikkinchi qadam</p>
-										Biz arizani qabul qilamiz, yetkazib berish va boshqa xizmatlarimizni o'z ichiga
-										olgan
-										hisob
-										-fakturani rasmiylashtiramiz
-									</span>
-								</li>
-								<li>
-									<span>
-										<p class="name-steps">Uchinchi qadam</p>
-										Siz hisobni to'laysiz va biz internet do'kondan buyurtmangizni sotib olamiz
-									</span>
-								</li>
-								<li>
-									<span>
-										<p class="name-steps">To'rtinchi qadam</p>
-										Siz buyurtmangizni qabul qilib olasiz
-									</span>
-								</li>
-							</ol>
-						</div>
-						<div class="other-data">
-							<h3>Bu xizmat sizga qachon kerak bo'ladi?</h3>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen4 = !isOpen4" [ngClass]="{'clicked': isOpen4}">
+					<span class="menu-text">Qaytarib olish xizmati qanday ishlaydi?</span>
+					<i [ngClass]="isOpen4 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen4" [@dropDownMenu]>
+					<div class="menu-item">
+						<div class="menu-item-datas">
 							<div>
-								<p>Internet do'kon faqat Amerika kartalarini qabul qilganda</p>
-								<p>Onlayn do'kon hisob -kitob va yetkazib berish manzillari mos kelishini talab
-									qilganda;
-								</p>
-								<p>Internet -do'kon faqat PayPal ni qabul qiladi, lekin u sizda yo'q bo’lganda;</p>
-								<p>Siz bir vaqtning o'zida ko'plab mahsulotlarni sotib olishingiz kerak, lekin buning
-									uchun
-									vaqtingiz yo’q bo’lganda</p>
+								<ol>
+									<li>
+										<span class="name-place">
+											<p class="name-steps">Birinchi qadam</p>
+											Siz to'lovga buyurtma berasiz va unga barcha kerakli mahsulotlarni qo'shasiz
+										</span>
+									</li>
+									<li>
+										<span>
+											<p class="name-steps">Ikkinchi qadam</p>
+											Biz arizani qabul qilamiz, yetkazib berish va boshqa xizmatlarimizni o'z
+											ichiga
+											olgan
+											hisob
+											-fakturani rasmiylashtiramiz
+										</span>
+									</li>
+									<li>
+										<span>
+											<p class="name-steps">Uchinchi qadam</p>
+											Siz hisobni to'laysiz va biz internet do'kondan buyurtmangizni sotib olamiz
+										</span>
+									</li>
+									<li>
+										<span>
+											<p class="name-steps">To'rtinchi qadam</p>
+											Siz buyurtmangizni qabul qilib olasiz
+										</span>
+									</li>
+								</ol>
+							</div>
+							<div class="other-data">
+								<h3>Bu xizmat sizga qachon kerak bo'ladi?</h3>
+								<div>
+									<p>Internet do'kon faqat Amerika kartalarini qabul qilganda</p>
+									<p>Onlayn do'kon hisob -kitob va yetkazib berish manzillari mos kelishini talab
+										qilganda;
+									</p>
+									<p>Internet -do'kon faqat PayPal ni qabul qiladi, lekin u sizda yo'q bo’lganda;</p>
+									<p>Siz bir vaqtning o'zida ko'plab mahsulotlarni sotib olishingiz kerak, lekin
+										buning
+										uchun
+										vaqtingiz yo’q bo’lganda</p>
+								</div>
 							</div>
 						</div>
+						<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
+							allowfullscreen></iframe>
 					</div>
-					<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
-						allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="main-dropdown">
-		<h3>Yetkazib berish</h3>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen5 = !isOpen5" [ngClass]="{'clicked': isOpen5}">
-				<span class="menu-text">Yetkazib berish muddati qancha?</span>
-				<i [ngClass]="isOpen5 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+		<div class="main-dropdown" id="dropdown4">
+			<h3>{{ "doslogistic.web.help.delivery.delivery" | translate }}</h3>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen5 = !isOpen5" [ngClass]="{'clicked': isOpen5}">
+					<span class="menu-text">{{ "doslogistic.web.help.delivery.whatIsTheDeliveryTime" | translate }}</span>
+					<i [ngClass]="isOpen5 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen5" [@dropDownMenu]>
+					<div class="menu-item">
+						{{ "doslogistic.web.help.delivery.whatIsTheDeliveryTimeAnswer" | translate }}
+					</div>
+				</div>
 			</div>
-			<div class="menu" *ngIf="isOpen5" [@dropDownMenu]>
-				<div class="menu-item">
-					Buyurtmangiz skladga kelib tushganidan keyin — 3-10 kun
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen6 = !isOpen6" [ngClass]="{'clicked': isOpen6}">
+					<span class="menu-text">Yetkazib berish tariflari qanaqa?</span>
+					<i [ngClass]="isOpen6 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen6" [@dropDownMenu]>
+					<div class="menu-item">
+						<p>	{{ "doslogistic.web.help.delivery.whatAreTheShippingRates.answerOne" | translate }}</p>
+						<p>{{ "doslogistic.web.help.delivery.whatAreTheShippingRates.answerTwo" | translate }}</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen6 = !isOpen6" [ngClass]="{'clicked': isOpen6}">
-				<span class="menu-text">Yetkazib berish tariflari qanaqa?</span>
-				<i [ngClass]="isOpen6 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen6" [@dropDownMenu]>
-				<div class="menu-item">
-					<p>3 kilogramgacha — $10/kg.</p>
-					<p>3 kilogramdan ko‘p bo‘lsa — $9/kg.</p>
+		<div class="main-dropdown" id="dropdown5">
+			<h3>{{ "doslogistic.web.help.acceptance.acceptance" | translate }}</h3>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen7 = !isOpen7" [ngClass]="{'clicked': isOpen7}">
+					<span class="menu-text">{{ "doslogistic.web.help.acceptance.orderDays.orderDays" | translate }}</span>
+					<i [ngClass]="isOpen7 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen7" [@dropDownMenu]>
+					<div class="menu-item">
+						{{ "doslogistic.web.help.acceptance.orderDays.aswer" | translate }}
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="main-dropdown">
-		<h3>Qabul qilish</h3>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen7 = !isOpen7" [ngClass]="{'clicked': isOpen7}">
-				<span class="menu-text">Qaysi kunlari buyurtmalar AQShdan O‘zbekistonga yuboriladi?</span>
-				<i [ngClass]="isOpen7 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen7" [@dropDownMenu]>
-				<div class="menu-item">
-					Bir haftada ikki marotaba — dushanba va payshanba kunlari
+		<div class="main-dropdown2" id="dropdown6">
+			<h3>{{ "doslogistic.web.help.services.services" | translate }}</h3>
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen8 = !isOpen8" [ngClass]="{'clicked': isOpen8}">
+					<span class="menu-text">{{ "doslogistic.web.help.services.questionOne" | translate }}</span>
+					<i [ngClass]="isOpen8 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
+				</div>
+				<div class="menu" *ngIf="isOpen8" [@dropDownMenu]>
+					<div class="menu-item">
+						{{ "doslogistic.web.help.services.asnwerOne" | translate }}
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="main-dropdown2">
-		<h3>Xizmatlar</h3>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen8 = !isOpen8" [ngClass]="{'clicked': isOpen8}">
-				<span class="menu-text">Men har xil internet-magazinlardan xarid qildim. Hammasini bitta qilib
-					yuborasizmi?</span>
-				<i [ngClass]="isOpen8 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen8" [@dropDownMenu]>
-				<div class="menu-item">
-					Ha, bizda bu xizmat bepul. Barcha buyurtmalarni bitta qilib yuboramiz.
+			<div class="content">
+				<div class="menu-trigger" (click)="isOpen9 = !isOpen9" [ngClass]="{'clicked': isOpen9}">
+					<span class="menu-text">{{ "doslogistic.web.help.services.questionTwo" | translate }}</span>
+					<i [ngClass]="isOpen9 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
 				</div>
-			</div>
-		</div>
-		<div class="content">
-			<div class="menu-trigger" (click)="isOpen9 = !isOpen9" [ngClass]="{'clicked': isOpen9}">
-				<span class="menu-text">AQShdan O'zbekistonga qanday qilib jo'natmani yuborish mumkin?</span>
-				<i [ngClass]="isOpen9 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
-			</div>
-			<div class="menu" *ngIf="isOpen9" [@dropDownMenu]>
-				<div class="menu-item">
-					<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
-						allowfullscreen></iframe>
+				<div class="menu" *ngIf="isOpen9" [@dropDownMenu]>
+					<div class="menu-item">
+						<iframe class="custom-iframe" src="https://www.youtube.com/embed/uhynik9xMdw" frameborder="0"
+							allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
