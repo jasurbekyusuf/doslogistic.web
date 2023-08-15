@@ -24,6 +24,7 @@ import { AboutUsComponent } from './modules/layouts/about-us/about-us.component'
 import { ContactsComponent } from './modules/layouts/contacts/contacts.component';
 import { PriceComponent } from './modules/layouts/price/price.component';
 import { ServicesComponent } from './modules/layouts/services/services.component';
+import { HelpsComponent } from './modules/layouts/helps/helps.component';
 
 
 
@@ -59,7 +60,8 @@ export function initializeApp(appInitService: AppInitService) {
     PricesComponent,
     ContactsComponent,
     PriceComponent,
-    ServicesComponent
+    ServicesComponent,
+    HelpsComponent
   ],
   imports: [
     BrowserModule,
