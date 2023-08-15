@@ -1,0 +1,163 @@
+:host {
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+
+  h2 {
+    padding-left: 25%;
+  }
+}
+
+.main-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  h3{
+    font-weight: 550;
+  }
+}
+
+.main-dropdown2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  h3{
+    font-weight: 550;
+  }
+}
+
+.content {
+  width: 50%;
+  color: black;
+  border: 1px solid #eaedf3;
+}
+
+.menu-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &.clicked {
+    color: #A9592C;
+  }
+}
+
+.custom-iframe {
+  justify-content: center;
+  display: flex;
+  width: 700px;
+  align-items: center;
+  height: 400px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.menu {
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.menu-item {
+    padding: 15px;
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+    cursor: pointer;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-datas{
+  display: flex;
+}
+
+.other-data{
+  p::before {
+    content: "●"; 
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px; 
+    color: black;
+  }
+
+  h3{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.name-steps{
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.gg-chevron-up {
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-up::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  bottom: 2px;
+  color: #A9592C;
+}
+
+.gg-chevron-down {
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-down::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px;
+}
