@@ -13,6 +13,19 @@ import { NZ_I18N, ru_RU } from 'ng-zorro-antd/i18n';
 import { AppInitService } from './core/local-services/appInitService/app-init-service.service';
 import { LanguageComponent } from './core/language/language.component';
 import { FindLanguageFromKeyPipe } from './core/language/find-language-from-key.pipe';
+import { CaruselComponent } from 'src/shared/components/home/carusel/carusel.component';
+import { HowIsItWorkComponent } from '../shared/components/home/how-is-it-work/how-is-it-work.component';
+import { PricesComponent } from '../shared/components/home/prices/prices.component';
+import { StoresComponent } from '../shared/components/home/stores/stores.component';
+import { ChooseUsComponent } from '../shared/components/home/choose-us/choose-us.component';
+import { ReviewsComponent } from '../shared/components/home/reviews/reviews.component';
+import { FaqComponent } from '../shared/components/home/faq/faq.component';
+import { AboutUsComponent } from './modules/layouts/about-us/about-us.component';
+import { ContactsComponent } from './modules/layouts/contacts/contacts.component';
+import { PriceComponent } from './modules/layouts/price/price.component';
+import { ServicesComponent } from './modules/layouts/services/services.component';
+
+
 
 registerLocaleData(localeRu);
 
@@ -35,6 +48,18 @@ export function initializeApp(appInitService: AppInitService) {
     HomeComponent,
     LanguageComponent,
     FindLanguageFromKeyPipe,
+    CaruselComponent,
+    HowIsItWorkComponent,
+    StoresComponent,
+    ChooseUsComponent,
+    ReviewsComponent,
+    FaqComponent,
+    AboutUsComponent,
+    PricesComponent,
+    PricesComponent,
+    ContactsComponent,
+    PriceComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

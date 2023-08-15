@@ -1,24 +1,35 @@
 <div class="container">
   <div class="content">
-    <div class="logo"><h1>DostLogistic</h1></div>
+    <h1 class="logo-details" routerLink="/">
+      <i class="fab fa-slack"></i>
+      <span class="logo_name">DostLogistic</span>
+    </h1>
     <div class="nav-pages">
       <p>{{'doslogistic.web.navbar.price' | translate}}</p>
       <p>{{'doslogistic.web.navbar.services' | translate}}</p>
       <p routerLink="shops"> {{'doslogistic.web.navbar.Shops' | translate}}</p>
       <p>{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
+      <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
+      <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
+      <p>{{'doslogistic.web.navbar.Shops' | translate}}</p>
+      <p routerLink="/aboutUs">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
       <p>{{'doslogistic.web.navbar.reviews' | translate}}</p>
-      <p>{{'doslogistic.web.navbar.contacts' | translate}}</p>
+      <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
       <p>{{'doslogistic.web.navbar.help' | translate}}</p>
     </div>
     <div class="langu">
       <app-language></app-language>
-      <p class="no-underline">{{'doslogistic.web.home.language' | translate}}</p>
     </div>
     <div class="auth">
-      <button>{{'doslogistic.web.navbar.login' | translate}}</button>
+
+      <!-- <button>{{'doslogistic.web.navbar.login' | translate}}</button> -->
       <button>{{'doslogistic.web.navbar.register' | translate}}</button>
     </div>
   </div>
 </div>
-<!-- <router-outlet></router-outlet> -->
+
+
+
+<router-outlet></router-outlet>
+
 

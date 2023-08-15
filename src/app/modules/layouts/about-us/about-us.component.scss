@@ -1,0 +1,191 @@
+.about-us {
+    width: 100%;
+
+    .header {
+        width: 100% !important;
+        position: relative;
+
+        img {
+            width: 100% !important;
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            position: absolute;
+            top: 0;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #000000;
+            opacity: 0.7;
+            z-index: 1;
+
+            h1 {
+                text-align: center;
+                z-index: 4;
+                color: #fff;
+                margin-top: 10%;
+            }
+        }
+    }
+}
+
+.content {
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 130px;
+
+    h2 {
+        margin-bottom: 0;
+        position: relative;
+        padding-left: 120px;
+        top: 25px;
+        font-weight: 600;
+    }
+}
+
+.about-info {
+    display: flex;
+
+    p {
+        padding-top: 55px;
+        text-align: left;
+        width: 30%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        position: relative;
+        left: 8%;
+    }
+
+    img {
+        width: 480px;
+        height: 420px;
+        position: absolute;
+        right: 0;
+        margin-right: 8%;
+    }
+}
+
+.about-overview {
+    display: flex;
+    background-color: #f9f9f9;
+    justify-content: space-evenly;
+    padding-left: 25px;
+    text-align: center;
+
+    .overview-datas {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    .overview-num {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0em;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+.about-mission {
+    display: flex;
+    padding-top: 100px;
+    gap: 180px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 480px;
+        height: 420px;
+        position: relative;
+        left: 125px;
+    }
+
+    .mission-datas {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .mission-text {
+        padding-left: 180px;
+
+        h2 {
+            font-weight: 700;
+        }
+
+        p {
+            width: 75%;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0em;
+        }
+    }
+}
+
+.about-delivery {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 90px;
+
+
+    h1 {
+        font-weight: 630;
+        padding-left: 135px;
+    }
+
+    .delivery-datas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .process {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        p {
+            font-weight: 650;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .custom-width-img {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 30px;
+        }
+    }
+}

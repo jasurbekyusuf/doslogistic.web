@@ -101,7 +101,7 @@
       }
     },
     "home": {
-      "language":"Uz",
+      "language":"O`zbekcha",
       "header-info-one": {
         "header-info-one": "Germaniya tez va ishonchli yetkazib berish",
         "info": "Germaniya posilkalar va onlayn xaridlarni atagi 10 dollardan 7-10 kun ichida O'zbekistonga yetkazib beramiz",
@@ -140,6 +140,18 @@
           "info": "Yetkazib berish jo‘natilgan kundan boshlab 7 kun davom etadi. Shaxsiy kabinetda siz etkazib berish holatini kuzatishingiz mumkin."
         }
       },
+      "delivery": {
+        "delivery":"Yetkazib berish usullari va narxi",
+        "express": "Ekspres",
+        "info": "Barcha ekspress-yetkazmalar uchun minimal to'lovlar yo'q, yetkazib berish qiymati esa Buyurtmaning haqiqiy og'irligiga qarab hisoblanadi, yirik gabaritli posilkalar bundan mustasno.",
+        "card":{
+          "country": "Mamlakat",
+          "middle": "O'rtacha",
+          "price": "Yetkazib berish narxi*",
+          "minPrice": "Min. to'lov",
+          "max": "Yirik gabaritli"
+        }
+      },
       "needHelpBuying": {
         "needHelpBuying": "Sotib olishda yordam kerakmi?",
         "infoOne": "Internet - do‘kondan sotib olish qiyinmi? Do‘kon sizning to‘lov kartangizni qabul qilmayaptimi? Biz sizga yordam beramiz!",
@@ -150,6 +162,9 @@
       "reviewsFromOurCustomers": {
         "reviewsFromOurCustomers": "Mijozlarimiz sharhlari",
         "allReviews": "Barcha sharhlar"
+      },
+      "whyChooseUs":{
+        "whyChooseUs":"Nima uchun bizni tanlashingiz kerak"
       }
     },
     "navbar": {
@@ -166,7 +181,7 @@
     "price": {
       "tariffs": "Tariflar",
       "kg": "kg",
-      "free": "Bepul!",
+      "free1": "Bepul!",
       "noCommission": "Komissiya yo'q",
       "ourRates": {
         "ourRates": "Bizning tariflarimiz",

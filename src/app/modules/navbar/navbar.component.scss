@@ -8,11 +8,31 @@
   padding: 0 0.75rem;
 }
 
+.logo-details{
+  font-size: 30px;
+  cursor: pointer;
+  i{
+    color: #A9592C;
+  }
+
+  span{
+    color: #A9592C;
+  }
+}
+
+
 .content {
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 17px;
+  padding: 10px 0 10px !important;
+}
+
+button{
+  background-color: #A9592C !important;
+  color: #ffff !important;
 }
 
 .content p {
@@ -51,6 +71,7 @@
   position: relative;
   left: 25px;
   gap: 25px;
+  // color: #A9592C;
 }
 
 .logo {
@@ -65,13 +86,13 @@
 
 .langu {
   display: flex;
-  gap: 10px;
-  padding: 0px 20px;
+  // gap: 10px;
+  // padding: 0px 20px;
   box-sizing: border-box;
   text-align: center;
   align-items: center;
   position: relative;
-  bottom: 6px;
+  // bottom: 2px;
 
   p {
     cursor: default;
@@ -137,7 +158,7 @@
 
 @media (max-width: 576px) {
   .nav-pages {
-    display: none; 
+    display: none;
   }
 
   .logo h1 {
@@ -149,7 +170,7 @@
   }
 
   .auth {
-    display: none; 
+    display: none;
   }
 
   .auth button {
