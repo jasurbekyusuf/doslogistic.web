@@ -7,11 +7,12 @@ import { AboutUsComponent } from './modules/layouts/about-us/about-us.component'
 import { PriceComponent } from './modules/layouts/price/price.component';
 import { ContactsComponent } from './modules/layouts/contacts/contacts.component';
 import { ServicesComponent } from './modules/layouts/services/services.component';
-
+  
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', component: HomeComponent },
+  {path: 'shops', loadChildren: () => import('./core/shops/shops.module').then(m => m.ShopsModule)},
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'tariffs', component: PriceComponent },
   { path: 'contacts', component: ContactsComponent },
