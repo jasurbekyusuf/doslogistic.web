@@ -142,7 +142,7 @@
       },
       "delivery": {
         "delivery":"Yetkazib berish usullari va narxi",
-        "express": "Ekspres",
+        "express": "ekspress",
         "info": "Barcha ekspress-yetkazmalar uchun minimal to'lovlar yo'q, yetkazib berish qiymati esa Buyurtmaning haqiqiy og'irligiga qarab hisoblanadi, yirik gabaritli posilkalar bundan mustasno.",
         "card":{
           "country": "Mamlakat",
@@ -163,6 +163,7 @@
         "reviewsFromOurCustomers": "Mijozlarimiz sharhlari",
         "allReviews": "Barcha sharhlar"
       },
+      "faqs":"Tez-tez so'raladigan savollar",
       "whyChooseUs":{
         "whyChooseUs":"Nima uchun bizni tanlashingiz kerak"
       }
