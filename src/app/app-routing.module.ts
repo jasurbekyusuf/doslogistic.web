@@ -6,6 +6,7 @@ import { HomeComponent } from './modules/layouts/home/home.component';
 import { AboutUsComponent } from './modules/layouts/about-us/about-us.component';
 import { PriceComponent } from './modules/layouts/price/price.component';
 import { ContactsComponent } from './modules/layouts/contacts/contacts.component';
+import { ServicesComponent } from './modules/layouts/services/services.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'tariffs', component: PriceComponent },
   { path: 'contacts', component: ContactsComponent },
+  { path: 'services', component: ServicesComponent },
   { path: 'login', component: LoginComponent },
 ];
 
