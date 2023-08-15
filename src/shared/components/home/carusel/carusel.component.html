@@ -1,9 +1,14 @@
 <div class="container">
-  <span class="prev" (click)="prevSlide()"><img src="../../../assets//images/carusel/back.png" alt=""></span>
+  <div class="left icon-button" (click)="prevSlide()">
+    <span class="prev" (click)="prevSlide()"><img src="../../../assets//images/carusel/back.png" alt=""></span>
+  </div>
   <nz-carousel nzAutoPlay>
     <div nz-carousel-content *ngFor="let imagePath of array">
-      <img [src]="imagePath" alt="Carousel Image">
+      <img  class="image" [src]="imagePath" alt="Carousel Image">
     </div>
   </nz-carousel>
-  <span class="next" (click)="nextSlide()"><img src="../../../assets/images/carusel/next (1).png" alt=""></span>
+ <div class="div"></div>
+ <div class="right icon-button" (click)="nextSlide()">
+   <span class="next" (click)="nextSlide()"><img src="../../../assets/images/carusel/next (1).png" alt=""></span>
+ </div>
 </div>
