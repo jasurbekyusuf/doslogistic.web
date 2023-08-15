@@ -28,7 +28,7 @@
         "join":"Verbinden"
       },
       "aboutCompony":{
-        "aboutCompony": "Über das Unternehmen",
+        "aboutCompony": "Unternehmen",
         "aboutUs": "Über den Service",
         "price": "Tarife und Preise",
         "news": "Nachricht",
@@ -55,8 +55,8 @@
         "calculationOfCosts":"Größentabelle"
       },
       "contacts": {
-        "haveQuestions": "Остались вопросы?",
-        "germeny": "Haben Sie irgendwelche Fragen?",
+        "haveQuestions": "Irgendwelche Fragen?",
+        "germeny": "Deutschland , Lübeck",
         "uzbekistan": "Usbekistan, Taschkent",
         "hours": "von 09:00 bis 20:00 Uhr"
       },
