@@ -1,5 +1,6 @@
-.container{
+.container {
   position: relative;
+  max-height: 500px;
 }
 
 [nz-carousel-content] {
@@ -9,40 +10,71 @@
   background: #364d79;
   color: #fff;
   overflow: hidden;
-  height: 600px;
+  height: 500px;
 }
 
-img{
+.div {
+  position: absolute;
+  top: 0;
   width: 100% !important;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover !important;
-  object-position: center !important;
-  // background-repeat: no-repeat;
+  height: 100% !important;
+  background-color: #000000;
+  opacity: 0.7;
+  z-index: 1;
 }
 
-span{
+.icon-button{
+  height: 100%;
+  width: 15%;
+  z-index: 7;
+  position: absolute;
+  top: 0;
+}
+
+.left{
+  left: 0;
+}
+
+.right{
+  right: 0;
+}
+
+.image {
+  width: 100% !important;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+span {
   position: absolute;
   top: 48%;
-  z-index: 1;
+  z-index: 6;
   border: none;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
+  display: none;
 }
 
-.next{
-  right: 4%;
+.next {
+  right: 60%;
 }
 
-.prev{
-  left: 4%;
+.prev {
+  left: 60%;
 }
 
 h3 {
-color: #fff;
-margin-bottom: 0;
-user-select: none;
+  color: #fff;
+  margin-bottom: 0;
+  user-select: none;
 }
 
-
+.icon-button:hover{
+  span{
+    display: block;
+  }
+}

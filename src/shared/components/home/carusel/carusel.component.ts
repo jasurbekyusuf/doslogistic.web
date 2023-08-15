@@ -10,9 +10,9 @@ export class CaruselComponent {
   @ViewChild(NzCarouselComponent) carousel!: NzCarouselComponent;
 
   array = [
-    '../../../../assets/images/carusel/Air-New-Zealand.jpg',
-    '../../../../assets/images/carusel/air1.jpg',
-    '../../../../assets/images/carusel/airplane-windows.jpg',
+    '../../../../assets/images/contacts/blog-page-img-3 1.png',
+    '../../../../assets/images/contacts/blog-page-img-3 1.png',
+    '../../../../assets/images/contacts/blog-page-img-3 1.png'
   ];
 
   prevSlide() {
