@@ -34,7 +34,7 @@ export function initializeApp(appInitService: AppInitService) {
     RegisterComponent,
     HomeComponent,
     LanguageComponent,
-    FindLanguageFromKeyPipe
+    FindLanguageFromKeyPipe,
   ],
   imports: [
     BrowserModule,

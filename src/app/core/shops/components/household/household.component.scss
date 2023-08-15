@@ -1,0 +1,13 @@
+.cards{
+    display: block;
+    justify-content: space-between;
+    margin-left: 30px;
+    .cards-position{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card-body h5{
+        padding-bottom: 50px;
+    }
+}
