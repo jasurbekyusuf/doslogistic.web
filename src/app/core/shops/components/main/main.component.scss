@@ -1,6 +1,9 @@
 .sidenav {
     display: flex;
-    margin-bottom: 100px;
+    padding: 100px 0;
+    padding-bottom: 300px;
+    max-width: 1300px;
+    margin: 0 auto;
     .sidebar {
         display: block;
         justify-content: flex-start;
@@ -30,11 +33,11 @@
                 background-color: #fff;
                 &:hover {
                     background-color: #d9e4f1;
-                    color: blue;
+                    color: #A9592C;
                 }
             }
             .active {
-                border-left: rgb(0, 0, 255) 3px solid;
+                border-left: #A9592C 3px solid;
                 background-color: #d9e4f1;
             }
 
