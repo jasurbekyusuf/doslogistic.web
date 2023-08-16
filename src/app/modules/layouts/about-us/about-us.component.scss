@@ -32,6 +32,11 @@
     }
 }
 
+.middle-container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
 .content {
     padding-top: 100px;
     position: relative;
@@ -47,6 +52,7 @@
 }
 
 .about-info {
+    max-width: 1320px;
     display: flex;
     gap: 70px;
     justify-content: center;
@@ -54,8 +60,8 @@
     p {
         padding-top: 55px;
         text-align: left;
-        width: 30%;
-        font-size: 16px;
+        width: 39%;
+        font-size: 18px;
         font-weight: 400;
         line-height: 30px;
         letter-spacing: 0em;
