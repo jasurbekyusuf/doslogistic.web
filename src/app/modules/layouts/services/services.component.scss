@@ -98,6 +98,7 @@ h3{
   height: 360px;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
   margin: 20px 5%;
+  
   h3{
   text-align: center;
   font-weight: 700;
@@ -118,6 +119,12 @@ h3{
   margin: 0 auto;
   display: flex;
   }
+}
+
+.service-container .service-content:hover{
+  border:2px solid #A9592C;
+  border-bottom: 15px solid #A9592C;
+  border-radius: 5px;
 }
 
 .background{
@@ -171,7 +178,7 @@ h3{
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-    margin: 20px 70px;
+    margin: 20px 79px;
   }
 }
 
