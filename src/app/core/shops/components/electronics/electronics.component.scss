@@ -2,32 +2,41 @@
     display: block;
     justify-content: space-between;
     margin-left: 30px;
+    
     .cards-position{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         .card{
             margin-right: 20px;
+            border: 1px solid #b3b2b2;
+            border-radius: 5%;
+            padding: 20px;
             img{
                 display: block;
                 justify-content: center;
                 align-items: center;
                 width: 250px;
-                padding: 20px 0 10px 25px;
+                padding: 20px 0 10px 0px;
                 margin: 0;
                 
             }
             .image{
-                margin-top: 35px;
+                margin-top: 40px;
                 padding-bottom: 30px;
             }
         }
     }
     .card-body{
         border-top: 1px solid #b3b2b2;
-        h5{
-            padding-bottom: 50px;
+        
+        .card-title{
+            padding: 20px 0 50px 0;
+            font-size: 16px;
         }
+    }
+    .isBorder{
+        margin-top: 3px;
     }
     
 }
