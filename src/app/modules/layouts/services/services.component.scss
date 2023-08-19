@@ -7,6 +7,7 @@
   width: 100%;
   background: rgb(58,179,180);
   background: linear-gradient(151deg, rgba(58,179,180,0.6755952380952381) 2%, rgba(255,255,255,0.6699929971988796) 49%, rgba(253,187,45,0.30584733893557425) 100%);
+ 
   .header{
     width: 100% !important;
     position: relative;
@@ -84,43 +85,6 @@
     }
 }
 
-// .content {
-//   padding-top: 100px;
-//   position: relative;
-//   padding-bottom: 100px;
-
-//   h2 {
-//       margin-bottom: 0;
-//       position: relative;
-//       padding-left: 255px;
-//       top: 30px;
-//       font-weight: 600;
-//   }
-// }
-
-// .service-info {
-//   max-width: 1320px;
-//   display: flex;
-//   gap: 70px;
-//   justify-content: center;
-
-//   p {
-//       padding-top: 55px;
-//       text-align: left;
-//       width: 39%;
-//       font-size: 18px;
-//       font-weight: 400;
-//       line-height: 30px;
-//       letter-spacing: 0em;
-//   }
-
-//   img {
-//       width: 480px;
-//       height: 430px;
-//       right: 0;
-//   }
-// }
-//
 .info{
   text-align: center;
   h1{
@@ -150,6 +114,8 @@ h3{
   height: 360px;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
   margin: 20px 5%;
+  background: #fff;
+  
   // border: .1px solid black;
   border-radius: 5px;
   h3{
@@ -222,7 +188,8 @@ h3{
 .contact-us{
   max-width: 1320px;
   text-align: center;
-  margin: 20px 0 0 30px;
+  padding: 20px 0 0 30px;
+  // background: #fff;
   .title{
   padding-top: 20px;
   padding-bottom: 10px;
@@ -239,6 +206,7 @@ h3{
     padding-bottom: 40px;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 0;
   }
 }
 
