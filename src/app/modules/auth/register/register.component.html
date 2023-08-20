@@ -22,7 +22,8 @@
           <i class="bx bx-hide eye-icon"></i>
         </div>
         <div class="field input-field">
-          <input type="number" placeholder="Phone Number" class="input" />
+          <input type="number" type="tel" placeholder="Номер телефона" 
+          (click)="onPhoneNumberClick($event)" maxlength="13" />
         </div>
         <div class="field button-field">
           <button>Зарегистрироваться</button>
