@@ -1,83 +1,18 @@
 <div class="collapce">
-  <h1>Markets</h1>
-<div class="row">
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="image" src="./assets/images/shops/amazon.png" alt="">
+  <h1>{{title}}</h1>
+  <div class="row">
+    <div *ngFor="let heros of data">
+      <div class="card">
+        <a href="/">
+          <div class="photo">
+            <img class="images" src="{{heros.img}}" alt="">
+          </div>
+          <div class="text">
+            {{heros.name}}
+            <div class="space"></div>
+          </div>
+        </a>
       </div>
-      <div class="text">
-        Amazon
-        <div class="space"></div>
-      </div>
-    </a>
+    </div>
   </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img src="./assets/images/shops/ebay.png" alt="">
-      </div>
-      <div class="text">
-        eBay
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="image" src="./assets/images/shops/walmart.png" alt="">
-      </div>
-      <div class="text">
-        Walmart
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="images" src="./assets/images/shops/b_h.png" alt="">
-      </div>
-      <div class="text">
-        B&H Photo Video
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="images" src="./assets/images/shops/rack.png" alt="">
-      </div>
-      <div class="text">
-        Nordstorm Rack
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img src="./assets/images/shops/nordstrom.jpg" alt="">
-      </div>
-      <div class="text">
-        Nordstorm
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-</div>
 </div>

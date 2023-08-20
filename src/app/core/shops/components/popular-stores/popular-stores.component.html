@@ -1,31 +1,18 @@
 <div class="collapce">
-    <h1>Popular Stores</h1>
+  <h1>{{title}}</h1>
   <div class="row">
-  <div class="col md-3">
-    <div class="card">
-      <a href="/">
-        <div class="photo">
-          <img src="./assets/images/shops/amazon.png" alt="">
-        </div>
-        <div class="text">
-          Amazon
-          <div class="space"></div>
-        </div>
-      </a>
+    <div *ngFor="let heros of data">
+      <div class="card">
+        <a href="/">
+          <div class="photo">
+            <img src="{{heros.img}}" alt="">
+          </div>
+          <div class="text">
+            {{heros.name}}
+            <div class="space"></div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="col md-3">
-    <div class="card">
-      <a href="/">
-        <div class="photo">
-          <img src="./assets/images/shops/ebay.png" alt="">
-        </div>
-        <div class="text">
-          eBay
-          <div class="space"></div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
 </div>

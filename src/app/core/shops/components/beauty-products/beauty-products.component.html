@@ -1,34 +1,18 @@
 <div class="collapce">
-  <h1>Beauty Products</h1>
-<div class="row">
-
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img  src="./assets/images/shops/sephora.jpg" alt="">
+  <h1>{{title}}</h1>
+  <div class="row">
+    <div *ngFor="let heros of data">
+      <div class="card">
+        <a href="/">
+          <div class="photo">
+            <img class="images" src="{{heros.img}}" alt="">
+          </div>
+          <div class="text">
+            {{heros.name}}
+            <div class="space"></div>
+          </div>
+        </a>
       </div>
-      <div class="text">
-        Sephora
-        <div class="space"></div>
-      </div>
-    </a>
+    </div>
   </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="images" src="./assets/images/shops/asos.jpg" alt="">
-      </div>
-      <div class="text">
-        Asos
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-
-
-</div>
 </div>
