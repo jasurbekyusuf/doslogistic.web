@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  isEditMode = false;
+  showPassword = false;
+
+
+  toggleShowPassword() {
+    this.showPassword = !this.showPassword;
+  }
 
   onPhoneNumberClick(event: MouseEvent) {
     const inputElement = event.target as HTMLInputElement;
@@ -16,5 +23,5 @@ export class RegisterComponent {
       inputElement.setSelectionRange(countryCode.length, countryCode.length);
     }
   }
-  
+
 }
