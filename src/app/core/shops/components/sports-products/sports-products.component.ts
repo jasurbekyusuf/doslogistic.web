@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./sports-products.component.scss']
 })
 export class SportsProductsComponent {
+  title = 'Sports Products'
+  data: any[] = []
+
+  ngOnInit() {
+    this.data = [
+      { name: 'Nike', img: './assets/images/shops/nike.jpg' },
+    ]
+  }
 
 }

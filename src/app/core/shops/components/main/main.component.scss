@@ -4,11 +4,13 @@
     padding-bottom: 300px;
     max-width: 1300px;
     margin: 0 auto;
+
     .sidebar {
         display: block;
         justify-content: flex-start;
         border: 1px solid #dee2e6;
         min-width: 300px;
+        max-height: 480px;
         padding: 8px 0px;
         border-radius: 5px;
 
@@ -31,11 +33,13 @@
                 width: 100%;
                 font-size: 18px;
                 background-color: #fff;
+
                 &:hover {
                     background-color: #d9e4f1;
                     color: #A9592C;
                 }
             }
+
             .active {
                 border-left: #A9592C 3px solid;
                 background-color: #d9e4f1;

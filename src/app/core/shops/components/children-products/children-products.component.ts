@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./children-products.component.scss']
 })
 export class ChildrenProductsComponent {
+  title = 'Children Products'
+  data: any[] = []
+
+  ngOnInit() {
+    this.data = [
+      { name: 'Carters', img: './assets/images/shops/carters.jpg' },
+    ]
+  }
 
 }

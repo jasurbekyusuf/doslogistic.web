@@ -1,109 +1,18 @@
 <div class="collapce">
-  <h1>Shoes</h1>
-<div class="row">
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img  src="./assets/images/shops/farfetch.png" alt="">
+  <h1>{{title}}</h1>
+  <div class="row">
+    <div *ngFor="let heros of data">
+      <div class="card">
+        <a href="/">
+          <div class="photo">
+            <img src="{{heros.img}}" alt="">
+          </div>
+          <div class="text">
+            {{heros.name}}
+            <div class="space"></div>
+          </div>
+        </a>
       </div>
-      <div class="text">
-        Ferfetch
-        <div class="space"></div>
-      </div>
-    </a>
+    </div>
   </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img src="./assets/images/shops/uniqlo.png" alt="">
-      </div>
-      <div class="text">
-        Uniqlo
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img  src="./assets/images/shops/mango.jpg" alt="">
-      </div>
-      <div class="text">
-        Mango
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="images" src="./assets/images/shops/asos.jpg" alt="">
-      </div>
-      <div class="text">
-        Asos
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="images" src="./assets/images/shops/h_m.jpg" alt="">
-      </div>
-      <div class="text">
-        H_M
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img class="images" src="./assets/images/shops/yoox.png" alt="">
-      </div>
-      <div class="text">
-        Yoox
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img src="./assets/images/shops/nike.jpg" alt="">
-      </div>
-      <div class="text">
-        Nike
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="col md-3">
-  <div class="card">
-    <a href="/">
-      <div class="photo">
-        <img src="./assets/images/shops/dolls-kill.jpeg" alt="">
-      </div>
-      <div class="text">
-        dolls-kill
-        <div class="space"></div>
-      </div>
-    </a>
-  </div>
-</div>
-</div>
 </div>
