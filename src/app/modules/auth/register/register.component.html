@@ -7,39 +7,57 @@
           <input type="email" placeholder="Ваш эл. адрес*" class="input" />
         </div>
         <div class="field input-field">
-          <input type="password" placeholder="Пароль*" class="password" />
+          <input [type]="isEditMode ? 'password' : (showPassword ? 'text' : 'password')"
+                placeholder="Пароль*"  [readonly]="isEditMode" />
+                <span *ngIf="!isEditMode" (click)="toggleShowPassword()" class="password-icon">
+                  <i class="{{ showPassword ? 'fas fa-eye-slash' : 'fas fa-eye' }}"></i>
+                </span>
         </div>
         <div class="field input-field">
-          <input type="password" placeholder="Повторите пароль*" class="password" />
-          <i class="fas fa-eye-slash"></i>
+          <input
+            type="password"
+            placeholder="Повторите пароль*"
+            class="password"
+          />
         </div>
         <div class="field input-field">
-          <input type="number" type="tel" placeholder="Номер телефона" (click)="onPhoneNumberClick($event)"
-            maxlength="13" />
+          <input type="number" type="tel" placeholder="Номер телефона" 
+          (click)="onPhoneNumberClick($event)" maxlength="13" />
         </div>
         <div class="field button-field">
           <button>Зарегистрироваться</button>
         </div>
       </form>
       <div class="form-link">
-        <span>У вас уже есть аккаунт?
-          <a href="#" class="link login-link">Авторизоваться</a></span>
+        <span
+          >У вас уже есть аккаунт? 
+          <a href="#" class="link login-link">Авторизоваться</a></span
+        >
       </div>
     </div>
     <div class="line"></div>
-    <div class="media-options">
-      <a href="https://www.facebook.com/login" class="field facebook">
-        <img src="../../../../assets/images/register/Facebook-logo (1).png" alt="" class="google-img" />
+    <!-- <div class="media-options">
+      <a href="">
+        <img
+          src="../../../../assets/images/register/Facebook-logo (1).png"
+          alt=""
+          class="google-img"
+        />
         <span>Login with Facebook</span>
       </a>
-    </div>
+    </div> -->
     <div class="media-options">
-      <a href="https://accounts.google.com/o/oauth2/auth" class="field google">
-        <img src="../../../../assets/images/register/google-logo.png" alt="" class="google-img" />
+      <a href="" class="field google">
+        <img
+          src="../../../../assets/images/register/google-logo.png"
+          alt=""
+          class="google-img"
+        />
         <span>Login with Google</span>
       </a>
     </div>
   </div>
+
 <ul class="register_container">
     <form action="#">
       <div class="register_item">
@@ -53,6 +71,7 @@
       <div class="register_item">
         <p>Забирайте посылки через 5-10 дней в Узбекистане</p>
       </div>
+
     </form>
 </ul>
 </section>

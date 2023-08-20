@@ -5,16 +5,18 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 17%;
+    justify-content: flex-start;
     background-color: #fff;
     column-gap: 30px;
 }
 
 .form{
-   
-    max-width: 430px;
+    position: absolute;
+    align-items: center;
+    max-width: 480px;
     width: 100%;
-    padding: 30px;
+    padding: 2px 30px 2px 30px;
     border-radius: 6px;
     background: #FFF;
 }
@@ -31,7 +33,7 @@ form{
 
 .form .field{
     position: relative;
-    height: 50px;
+    height: 44px;
     width: 100%;
     margin-top: 20px;
     border-radius: 6px;
@@ -58,15 +60,35 @@ form{
     border: 2px solid #ef9d60;
 }
 
-.fa-eye-slash{
+// .field .fa-eye-slash{
+//     position: absolute;
+//     top: 5%;
+//     right: 0px;
+//     transform: translateY(-50%);
+//     font-size: 16px;
+//     color: black;
+//     cursor: pointer;
+//     // padding: 5px 0 ;
+// }
+
+// .field .fa-eye-slash:before{
+//     position: absolute;
+//     top: 50%;
+//     right: -5%;
+//     transform: translateY(-100%);
+//     font-size: 16px;
+//     color: black;
+//     cursor: pointer;
+//     // padding: 5px;
+// }
+
+.password-icon {
     position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: black;
+    font-size: 16px;
+    top: 75%;
+    right: 6%;
+    transform: translateY(-100%);
     cursor: pointer;
-    padding: 5px;
 }
 
 .field button{
