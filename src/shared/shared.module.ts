@@ -12,6 +12,7 @@ import { AppRoutingModule } from "src/app/app-routing.module";
 import { NgxWebstorageModule } from "ngx-webstorage";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NzCarouselModule,
     NzLayoutModule,
     NzDropDownModule,
+    NzCheckboxModule,
     NgxWebstorageModule.forRoot({prefix: 'app', separator: '-', caseSensitive: true}),
     TranslateModule.forRoot({
       loader: {
@@ -43,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     NzLayoutModule,
     NzDropDownModule,
+    NzCheckboxModule,
     NzButtonModule,
     TranslateModule,
     NzCarouselModule

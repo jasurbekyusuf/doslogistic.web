@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
 
 @Component({
   selector: 'app-reviews',
@@ -6,49 +7,43 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./reviews.component.scss']
 })
 export class ReviewsComponent {
-  @ViewChild('container') containerRef!: ElementRef;
-  obj: number = 0;
-  autoplayInterval: any;
-  autoplaySpeed: number = 4000;
+  @ViewChild(NzCarouselComponent) carousel!: NzCarouselComponent;
+  itemsPerSlide = 3;
+  carouselSlides: any[] = [];
+  carouselItems = [
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+  ];
 
-  ngAfterViewInit() {
-    this.obj = 1365;
-    this.startAutoplay();
+  constructor() {
+    this.generateCarouselSlides();
   }
 
-  ngOnDestroy() {
-    this.stopAutoplay();
-  }
+  generateCarouselSlides() {
+    this.carouselSlides = [];
+    const totalItems = this.carouselItems.length;
 
-  startAutoplay() {
-    this.autoplayInterval = setInterval(() => {
-      this.goNext();
-    }, this.autoplaySpeed);
-  }
-
-  stopAutoplay() {
-    if (this.autoplayInterval) {
-      clearInterval(this.autoplayInterval);
+    for (let i = 0; i < totalItems; i += this.itemsPerSlide) {
+      const slide = this.carouselItems.slice(i, i + this.itemsPerSlide);
+      this.carouselSlides.push(slide);
     }
   }
 
-  goNext() {
-    this.containerRef.nativeElement.scrollLeft += this.obj;
-    if (this.containerRef.nativeElement.scrollLeft >= this.containerRef.nativeElement.scrollWidth - this.obj) {
-      this.containerRef.nativeElement.scrollLeft = 0;
-    }
+  prevSlide() {
+    this.carousel.pre();
   }
 
-  goPrevious() {
-    this.containerRef.nativeElement.scrollBy({
-      left: -this.obj
-    });
-    if (this.containerRef.nativeElement.scrollLeft <= 0) {
-      this.containerRef.nativeElement.scrollLeft = this.containerRef.nativeElement.scrollWidth - this.obj;
-    }
-  }
-
-  pauseAutoplay() {
-    this.stopAutoplay();
+  nextSlide() {
+    this.carousel.next();
   }
 }

@@ -8,14 +8,13 @@
 
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .content .image-section img {
-  max-width: 596px;
-  max-height: 507px;
-  margin-top: 15px;
+  max-width: 600px;
+  max-height: 575px;
 }
 
 .info .content-image img {
@@ -27,8 +26,6 @@
 .info {
   width: 700px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   h1 {
     font-size: 30px;
