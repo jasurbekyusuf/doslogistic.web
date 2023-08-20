@@ -1,5 +1,4 @@
 .container{
-  padding: 0 20px;
   margin-bottom: 50px;
   h1{
     text-align: center;
@@ -12,7 +11,7 @@
     justify-content: space-between;
 
     .card{
-      max-width: 800px !important;
+      width: 630px;
       div{
         display: flex;
         justify-content: space-between;

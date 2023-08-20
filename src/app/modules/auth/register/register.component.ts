@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare const intlTelInput: any;
 
 @Component({
   selector: 'app-register',
@@ -6,22 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  isEditMode = false;
-  showPassword = false;
+  showPassword: boolean = false;
+  showRepeatPassword: boolean = false;
+  checked = false;
 
-
-  toggleShowPassword() {
+  ngOnInit() {
+    const mobileCodeInput = document.getElementById('mobile_code') as HTMLInputElement;
+    if (mobileCodeInput) {
+      const iti = intlTelInput(mobileCodeInput, {
+        initialCountry: 'uz',
+        separateDialCode: true,
+      });
+      mobileCodeInput.addEventListener('input', () => {
+        mobileCodeInput.setCustomValidity('');
+      });
+    }
+  }
+  togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
 
-  onPhoneNumberClick(event: MouseEvent) {
-    const inputElement = event.target as HTMLInputElement;
-    const value = inputElement.value;
-    const countryCode = '+998';
-    if (value === '' || value.indexOf(countryCode) !== 0) {
-      inputElement.value = countryCode;
-      inputElement.setSelectionRange(countryCode.length, countryCode.length);
-    }
+  toggleRepeatPasswordVisibility() {
+    this.showRepeatPassword = !this.showRepeatPassword;
   }
-
 }

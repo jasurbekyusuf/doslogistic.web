@@ -1,82 +1,19 @@
-<div class="info">
+<div>
   <h1>Reviews</h1>
-  <div class="container" #container>
-    <div class="card" id="item1">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lo
-      </p>
-    </div>
-    <div class="card" id="item2">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item3">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item4">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item5">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item6">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item7">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item8">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item9">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item10">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item11">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <div class="card" id="item12">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis
-        corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam?
-        Lorem
-      </p>
-    </div>
-    <a class="prev" (click)="goPrevious(); pauseAutoplay()">❮</a>
-    <a class="next" (click)="goNext(); pauseAutoplay()">❯</a>    
+  <div class="info">
+    <a class="prev" (click)="prevSlide();">❮</a>
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let slide of carouselSlides">
+        <div class="container">
+          <div class="card" *ngFor="let carouselItem of slide">
+            <p>{{ carouselItem.text }}</p>
+          </div>
+        </div>
+      </div>
+    </nz-carousel>
+    <a class="next" (click)="nextSlide();">❯</a>
   </div>
-  <div class="all">
-    <button>{{'doslogistic.web.home.reviewsFromOurCustomers.allReviews' | translate}}</button>
-  </div>
+</div>
+<div class="all">
+  <button>{{ 'doslogistic.web.home.reviewsFromOurCustomers.allReviews' | translate }}</button>
 </div>

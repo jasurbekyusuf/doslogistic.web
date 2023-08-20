@@ -1,77 +1,51 @@
-<section class="container forms">
-  <div class="form signup">
-    <div class="form-content">
-      <header>Введите информацию</header>
-      <form action="#">
-        <div class="field input-field">
-          <input type="email" placeholder="Ваш эл. адрес*" class="input" />
-        </div>
-        <div class="field input-field">
-          <input [type]="isEditMode ? 'password' : (showPassword ? 'text' : 'password')"
-                placeholder="Пароль*"  [readonly]="isEditMode" />
-                <span *ngIf="!isEditMode" (click)="toggleShowPassword()" class="password-icon">
-                  <i class="{{ showPassword ? 'fas fa-eye-slash' : 'fas fa-eye' }}"></i>
-                </span>
-        </div>
-        <div class="field input-field">
-          <input
-            type="password"
-            placeholder="Повторите пароль*"
-            class="password"
-          />
-        </div>
-        <div class="field input-field">
-          <input type="number" type="tel" placeholder="Номер телефона" 
-          (click)="onPhoneNumberClick($event)" maxlength="13" />
-        </div>
-        <div class="field button-field">
-          <button>Зарегистрироваться</button>
-        </div>
-      </form>
-      <div class="form-link">
-        <span
-          >У вас уже есть аккаунт? 
-          <a href="#" class="link login-link">Авторизоваться</a></span
-        >
-      </div>
+<div class="main-container">
+  <div class="register">
+    <h3>Введите информацию</h3>
+    <div class="input-field">
+      <input type="email" placeholder="Ваш эл. адрес*" class="input-style" />
     </div>
-    <div class="line"></div>
-    <!-- <div class="media-options">
-      <a href="">
-        <img
-          src="../../../../assets/images/register/Facebook-logo (1).png"
-          alt=""
-          class="google-img"
-        />
-        <span>Login with Facebook</span>
-      </a>
-    </div> -->
-    <div class="media-options">
-      <a href="" class="field google">
-        <img
-          src="../../../../assets/images/register/google-logo.png"
-          alt=""
-          class="google-img"
-        />
-        <span>Login with Google</span>
-      </a>
+    <div class="input-field">
+      <input [type]="showPassword ? 'text' : 'password'" placeholder="Пароль" class="input-style" />
+      <span (click)="togglePasswordVisibility()" class="eye-icon">
+        <i class="fas" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+      </span>
+    </div>
+    <div class="input-field">
+      <input [type]="showRepeatPassword ? 'text' : 'password'" placeholder="Повторите пароль" class="input-style" />
+      <span (click)="toggleRepeatPasswordVisibility()" class="eye-icon">
+        <i class="fas" [ngClass]="showRepeatPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+      </span>
+    </div>
+    <div class="input-field">
+      <input type="tel" id="mobile_code" placeholder="Номер телефона" name="phone" class="input-style">
+    </div>
+    <div class="terms-of-use">
+      <label nz-checkbox [(ngModel)]="checked"></label>
+      <p>Я принимаю</p>
+      <a>Условия и Положения</a>
+    </div>
+    <div class="register-button">
+      <button>Зарегистрироваться</button>
+    </div>
+    <div class="line-or">
+      <span class="line-text">или</span>
+    </div>
+    <div class="register-google">
+      <button> <img src="../../../../assets/images/register/google-logo.png" alt="" />Google</button>
     </div>
   </div>
-
-<ul class="register_container">
-    <form action="#">
-      <div class="register_item">
-        <p>Зарегистрируйтесь и получите свои адреса в Германия</p>
-      </div>
-      <i class="fas fa-arrow-down"></i>
-      <div class="register_item">
-        <p>Покупайте онлайн в Германия используя свои адреса, как адреса доставки</p>
-      </div>
-      <i class="fas fa-arrow-down"></i>
-      <div class="register_item">
-        <p>Забирайте посылки через 5-10 дней в Узбекистане</p>
-      </div>
-
-    </form>
-</ul>
-</section>
+  <div class="register-steps">
+    <div class="register-nums">
+      <span>1</span>
+      <img src="../../../../assets/images/register/arrow-down.png" alt="" />
+      <span>2</span>
+      <img src="../../../../assets/images/register/arrow-down.png" alt="" />
+      <span>3</span>
+    </div>
+    <div class="register-text">
+      <p>Зарегистрируйтесь и получите свои адреса в Германия</p>
+      <p>Покупайте онлайн в Германия используя свои адреса, как адреса доставки</p>
+      <p>Забирайте посылки через 5-10 дней в Узбекистане</p>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 .info {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -7,8 +8,6 @@
   display: flex;
   scroll-behavior: smooth;
   gap: 45px;
-  width: 1320px;
-  height: 175px;
   max-width: 1320px;
   margin: 0 auto;
 }
@@ -21,10 +20,6 @@
   border: 1px solid rgba(67, 71, 85, 0.27);
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
   flex-shrink: 0;
-}
-
-.container::-webkit-scrollbar {
-  display: none;
 }
 
 h1 {
@@ -63,15 +58,12 @@ h1 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  margin-top: 50px;
+  margin-bottom: 14px;
 }
 
 .prev {
   left: 0;
   margin-left: 45px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
   border-radius: 3px 0 0 3px;
 }
 
@@ -79,12 +71,13 @@ h1 {
   right: 0;
   border-radius: 3px 0 0 3px;
   margin-right: 45px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
 }
 
 .prev:hover,
 .next:hover {
   background-color: #faf2ed;
+}
+
+::ng-deep .slick-list {
+  max-height: 180px !important;
 }
