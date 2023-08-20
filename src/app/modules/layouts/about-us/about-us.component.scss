@@ -1,32 +1,5 @@
 .about-us {
     width: 100%;
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 655px;
-        left: 0;
-        width: 750px;
-        height: 1000px;
-        border-radius: 700px;
-        background: linear-gradient(to bottom, #2CA993, transparent);
-        filter: blur(500px);
-        z-index: -2;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 830px;
-        right: 0;
-        width: 750px;
-        height: 950px;
-        border-radius: 700px;
-        background: linear-gradient(to right, #A9592C, transparent), #FFF;
-        filter: blur(500px);
-        z-index: -2;
-    }
 
     .header {
         width: 100% !important;
@@ -56,6 +29,36 @@
                 margin-top: 10%;
             }
         }
+    }
+}
+
+.gradient {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 655px;
+        left: 0;
+        width: 750px;
+        height: 1000px;
+        border-radius: 700px;
+        background: linear-gradient(to bottom, #2CA993, transparent);
+        filter: blur(500px);
+        z-index: -2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 830px;
+        right: 0;
+        width: 750px;
+        height: 950px;
+        border-radius: 700px;
+        background: linear-gradient(to right, #A9592C, transparent), #FFF;
+        filter: blur(500px);
+        z-index: -2;
     }
 }
 
@@ -215,7 +218,7 @@
     flex-direction: column;
     background-color: #f9f9f9;
     padding-bottom: 50px;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: center;
 
@@ -253,6 +256,47 @@
             height: 20px;
             position: relative;
             left: 30px;
+        }
+    }
+}
+
+.review-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.about-service {
+    display: flex;
+    flex-direction: column;
+    background-color: #CFCFCF;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    text-align: center;
+
+    .service-text {
+        padding-top: 20px;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0em;
+    }
+
+    .service-num {
+        color: #000000;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        padding-top: 15px;
+        padding-bottom: 25px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            border: 3px;
         }
     }
 }
