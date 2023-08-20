@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 .container{
     height: 100vh;
@@ -18,16 +18,6 @@
     border-radius: 6px;
     background: #FFF;
 }
-
-// .form.signup{
-//     opacity: 0;
-//     pointer-events: none;
-// }
-
-// .forms.show-signup .form.signup{
-//     opacity: 1;
-//     pointer-events: auto;
-// }
 
 header{
     font-size: 28px;
@@ -68,13 +58,13 @@ form{
     border: 2px solid #ef9d60;
 }
 
-.eye-icon{
+.fa-eye-slash{
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #8b8b8b;
+    color: black;
     cursor: pointer;
     padding: 5px;
 }
