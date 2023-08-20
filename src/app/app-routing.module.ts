@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'helps', component: HelpsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register' , component:RegisterComponent },
 ];
 
 @NgModule({
