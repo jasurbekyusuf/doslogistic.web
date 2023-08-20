@@ -12,6 +12,7 @@ import { ElectronicsComponent } from './components/electronics/electronics.compo
 import { SportsProductsComponent } from './components/sports-products/sports-products.component';
 import { HealthProductsComponent } from './components/health-products/health-products.component';
 import { OthersComponent } from './components/others/others.component';
+import { HouseholdComponent } from './components/household/household.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent, children: [
@@ -24,7 +25,7 @@ const routes: Routes = [
     {path: 'beauty-products', component: BeautyProductsComponent},
     {path: 'children-products', component: ChildrenProductsComponent},
     {path: 'electronics', component: ElectronicsComponent},
-    {path: 'household', component: ShoesComponent},
+    {path: 'household', component: HouseholdComponent},
     {path: 'sports-products', component: SportsProductsComponent},
     {path: 'health-products', component: HealthProductsComponent},
     {path: 'others', component: OthersComponent},
