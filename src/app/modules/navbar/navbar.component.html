@@ -1,9 +1,12 @@
 <div class="container">
   <div class="content">
-    <h1 class="logo-details" routerLink="/">
+    <div class="hamburger-menu" (click)="menuBtnFunction()" [ngClass]="{ 'active': isActive }">
+      <span></span>
+    </div>
+    <div class="logo-details" routerLink="/">
       <i class="fab fa-slack"></i>
       <span class="logo_name">DostLogistic</span>
-    </h1>
+    </div>
     <div class="nav-pages">
       <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
       <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
@@ -22,4 +25,19 @@
     </div>
   </div>
 </div>
-<router-outlet></router-outlet>
+<div class="nav-dropdown" *ngIf="isOpen1" [@dropDownMenu]>
+  <div class="menu-item">
+    <div class="menu-item-pages">
+      <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
+      <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
+      <p routerLink="/shops">{{'doslogistic.web.navbar.Shops' | translate}}</p>
+      <p routerLink="/aboutUs">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
+      <p>{{'doslogistic.web.navbar.reviews' | translate}}</p>
+      <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
+      <p routerLink="/helps">{{'doslogistic.web.navbar.help' | translate}}</p>
+      <div class="menu-item-language">
+        <app-language></app-language>
+      </div>
+    </div>
+  </div>
+</div>
