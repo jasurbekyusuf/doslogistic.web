@@ -1,6 +1,10 @@
 .info {
   display: flex;
   align-items: center;
+
+  ::ng-deep .slick-list {
+    max-height: 180px !important;
+  }
 }
 
 .container {
@@ -76,8 +80,4 @@ h1 {
 .prev:hover,
 .next:hover {
   background-color: #faf2ed;
-}
-
-::ng-deep .slick-list {
-  max-height: 180px !important;
 }
