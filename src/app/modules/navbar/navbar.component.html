@@ -1,6 +1,6 @@
 <div class="container">
   <div class="content">
-    <div class="hamburger-menu" (click)="menuBtnFunction()" [ngClass]="{ 'active': isActive }">
+    <div class="hamburger-menu" (click)="toggleMenu()" [ngClass]="{ 'active': isActive }">
       <span></span>
     </div>
     <div class="logo-details" routerLink="/">
@@ -21,13 +21,13 @@
     </div>
     <div class="auth">
       <!-- <button>{{'doslogistic.web.navbar.login' | translate}}</button> -->
-      <button routerLink="/register">{{'doslogistic.web.navbar.register' | translate}}</button>
+      <button routerLink="/register" (click)="closeMenu()">{{'doslogistic.web.navbar.register' | translate}}</button>
     </div>
   </div>
 </div>
-<div class="nav-dropdown" *ngIf="isOpen1" [@dropDownMenu]>
-  <div class="menu-item">
-    <div class="menu-item-pages">
+<div class="nav-dropdown" *ngIf="isOpen" [@dropDownMenu] >
+  <div class="menu-item" >
+    <div class="menu-item-pages" (click)="closeMenu()">
       <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
       <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
       <p routerLink="/shops">{{'doslogistic.web.navbar.Shops' | translate}}</p>
