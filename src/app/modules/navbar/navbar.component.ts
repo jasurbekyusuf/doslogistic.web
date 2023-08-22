@@ -8,13 +8,16 @@ import { DropDownAnimation } from './animation';
   animations: [DropDownAnimation]
 })
 export class NavbarComponent {
-  Navbar = NavbarComponent;
   isActive = false;
-  isOpen1 = false;
-  isOpen: boolean = false;
+  isOpen = false;
 
-  menuBtnFunction() {
-    this.isOpen1 = !this.isOpen1;
-    this.isActive = this.isOpen1;
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+    this.isActive = this.isOpen;
+  }
+
+  closeMenu() {
+    this.isOpen = false;
+    this.isActive = false;
   }
 }
