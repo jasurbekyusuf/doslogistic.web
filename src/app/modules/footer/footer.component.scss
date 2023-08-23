@@ -160,7 +160,7 @@ footer .bottom-details {
 footer .bottom-details .bottom_text {
   max-width: 1350px;
   margin: auto;
-  padding: 10px 40px;
+  padding: 10px 130px 10px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -284,23 +284,26 @@ footer .bottom-details .bottom_text {
   footer .bottom_text {
     font-size: 10px;
     padding: 4px 10px;
+    .policy_terms{
+      display: none;
+    }
   }
 
   footer .content .link-boxes .box .city{
     font-size: 12px;
   }
 }
-@media (max-width:414px){
+@media (max-width:416px){
   footer .content .link-boxes .box{
     flex-wrap: wrap;
     li{
-      margin: 5px 0;
+      margin: 10px 0;
     }
     a{
-      font-size: 10px;
+      font-size: 12px;
     }
     .city{
-      font-size: 10px;
+      font-size: 14px;
     }
     .link_name{
       font-size: 14px;
@@ -308,17 +311,65 @@ footer .bottom-details .bottom_text {
     i{
       font: 10px;
     }
+    h6{
+      font-size: 12px;
+      margin: 13px 0;
+    }
+  }
+  footer .content .link-boxes {
+    padding: 5px 15px;
+  }
+  footer .content .link-boxes .box .link_name{
+    font-size: 16.5px;
   }
   footer .content .link-boxes .box:last-child{
     margin-right: 5px;
   }
-
+  footer .content .link-boxes .box:nth-child(1){
+    display: flex;
+  }
+  footer .content .link-boxes .box:nth-child(2){
+    display: none;
+  }
+  footer .content .link-boxes .box:nth-child(3){
+    display: none;
+  }
+  footer .content .link-boxes .box:nth-child(4){
+    display: none;
+  }
+  footer .bottom-details .bottom_text .copyright_text{
+      padding: 2 0px;
+      font-size: 12px;
+  }
+}
+@media (max-width:393px){
+  footer .content .link-boxes .box{
+    flex-wrap: wrap;
+    li{
+      margin: 8px 0;
+    }
+    a{
+      font-size: 10px;
+    }
+    .city{
+      font-size: 12px;
+    }
+  }
+  footer .bottom-details .bottom_text .copyright_text{
+    padding: 2 0px;
+    font-size: 10px;
+  }
+}
+@media (max-width:393px){
+  footer .content .link-boxes .box .link-name .logo-name{
+    font-size: 19px;
+  }
 }
 
 
 
 
-// @media (max-width: 412  , 360 ,  390 , 392 , 414 , 375){
+// @media (max-width:  , 360 ){
 //   footer::before{
 //     top: 145px;
 //   }
