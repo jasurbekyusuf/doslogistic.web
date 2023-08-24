@@ -27,14 +27,16 @@
 </div>
 <div class="nav-dropdown" *ngIf="isOpen" [@dropDownMenu] >
   <div class="menu-item" >
-    <div class="menu-item-pages" (click)="closeMenu()">
-      <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
-      <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
-      <p routerLink="/shops">{{'doslogistic.web.navbar.Shops' | translate}}</p>
-      <p routerLink="/aboutUs">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
-      <p>{{'doslogistic.web.navbar.reviews' | translate}}</p>
-      <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
-      <p routerLink="/helps">{{'doslogistic.web.navbar.help' | translate}}</p>
+    <div class="menu-item-pages">
+      <div (click)="closeMenu()">
+        <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
+        <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
+        <p routerLink="/shops">{{'doslogistic.web.navbar.Shops' | translate}}</p>
+        <p routerLink="/aboutUs">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
+        <p>{{'doslogistic.web.navbar.reviews' | translate}}</p>
+        <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
+        <p routerLink="/helps">{{'doslogistic.web.navbar.help' | translate}}</p>
+      </div>
       <div class="menu-item-language">
         <app-language></app-language>
       </div>

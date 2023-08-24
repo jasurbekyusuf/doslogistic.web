@@ -2,49 +2,115 @@
     display: flex;
     padding: 100px 0;
     padding-bottom: 300px;
-    max-width: 1300px;
+    max-width: 1320px;
     margin: 0 auto;
+}
 
+.sidebar {
+    display: block;
+    justify-content: flex-start;
+    border: 1px solid #dee2e6;
+    min-width: 300px;
+    max-height: 480px;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: #000;
+    text-align: left;
+    padding: 5px 16px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #fff;
+
+    &:hover {
+        background-color: #d9e4f1;
+        color: #A9592C;
+    }
+}
+
+.sidebar .active {
+    border-left: #A9592C 3px solid;
+    background-color: #d9e4f1;
+}
+
+@media screen and (max-width: 1440px) {
+    .sidenav {
+        padding-left: 100px;
+    }
+
+    .small-screens {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .small-screens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sidenav {
+        padding-left: 100px;
+    }
+
+    .small-screens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
     .sidebar {
+        display: none;
+    }
+
+    .small-screens {
         display: block;
-        justify-content: flex-start;
-        border: 1px solid #dee2e6;
-        min-width: 300px;
-        max-height: 480px;
-        padding: 8px 0px;
-        border-radius: 5px;
+    }
 
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+    .large-screens {
+        display: none;
+    }
 
-            li {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-            }
+    .sidenav {
+        padding-left: 10px;
+        justify-content: center;
+    }
+}
 
-            a {
-                display: block;
-                color: #000;
-                text-align: left;
-                padding: 5px 16px;
-                width: 100%;
-                font-size: 18px;
-                background-color: #fff;
+@media screen and (max-width: 578px) {
+    .sidenav {
+        padding-left: 50px;
+        justify-content: center;
+    }
+}
 
-                &:hover {
-                    background-color: #d9e4f1;
-                    color: #A9592C;
-                }
-            }
 
-            .active {
-                border-left: #A9592C 3px solid;
-                background-color: #d9e4f1;
-            }
+@media screen and (max-width: 478px) {
+    .sidenav {
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+}
 
-        }
+@media screen and (max-width: 360px) {
+    .sidenav {
+        padding-left: 33px;
+        padding-top: 50px;
     }
 }
