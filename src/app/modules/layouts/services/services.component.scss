@@ -94,22 +94,22 @@
     display: flex;
     width: 100%;
     padding-bottom: 35px;
-    font-size: 18px;
+    font-size: 20px;
     color: #000000;
 
     h2 {
       font-weight: 700;
-      padding: 0 48px;
+      padding: 0px;
     }
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30.22px;
     letter-spacing: 0em;
     color: #000000;
-    padding: 0 48px;
+    padding: 0px;
   }
 }
 
@@ -138,7 +138,7 @@ h3 {
 }
 
 .service-container .service-content {
-  width: 260px;
+  width: 260px;//
   padding: 20px;
   height: 360px;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
@@ -244,3 +244,145 @@ h3 {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 1440px) {
+  .services .header div h1{
+    margin-top: 13%;
+  }
+
+  .content img {
+      max-width: 550px;
+      max-height: 450px;
+  }
+
+  .service-info .h2-text {
+      padding-bottom: 20px;
+      font-size: 18px;
+  }
+
+  .service-info {
+      align-items: flex-start;
+  }
+
+  .content {
+      gap: 80px;
+      justify-content: center;
+      display: flex;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
+  .service-info p {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .service-container .service-content{
+    width: 250px;
+    height: 340px;
+    margin: 20px 4%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .services .header img{
+    height: 380px;
+  }
+  .content {
+      justify-content: center;
+      align-items: center;
+  }
+
+  .content img {
+    max-width: 500px;
+    max-height: 440px;
+  }
+
+  .service-info p {
+    font-size: 16px;
+  }
+
+  .service-info .h2-text {
+    font-size: 17px;
+    padding-bottom: 18px;
+  }
+  .background .backgroun-header h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 6%;
+   }
+   .background .backgroun-header p{
+    font-size: 26px;
+    padding: 0px 200px;
+   }
+
+   .contact-us p{
+    font-size: 21px;
+   }
+}
+@media screen and (max-width: 1025px) {
+  .services .header img{
+    height: 380px;
+  }
+  .services .header div h1{
+    margin-top: 17%;
+  }
+  .content img {
+    max-width: 480px;
+    max-height: 440px;
+  }
+
+  .service-info p {
+    font-size: 14px;
+  }
+
+  .service-info .h2-text {
+    font-size: 16px;
+  }
+  .service-container .service-content{
+    width: 240px;
+    height: 330px;
+    margin: 18px 4%;
+    h3{
+      font-size: 23px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  .background img{
+    height:380px;
+  }
+  .background .backgroun-header h1{
+    font-size: 46px;
+    font-weight: 600;
+    margin-top: 7%;
+   }
+   .background .backgroun-header p{
+    font-size: 24px;
+    padding: 0px 170px;
+   }
+
+   .contact-us p{
+    font-size: 17px;
+   }
+}
+
+@media screen and (max-width: 930px){
+  .service-container {
+    padding: 70 40px;
+  }
+  .content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .service-info .h2-text {
+    font-size: 16px;
+    justify-content: center;
+  }
+}
+
+
+
+
