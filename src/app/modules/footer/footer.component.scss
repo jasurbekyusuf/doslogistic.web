@@ -354,35 +354,18 @@ footer .bottom-details .bottom_text {
     .city{
       font-size: 12px;
     }
+    .link_name{
+      font-size: 15px;
+    }
   }
   footer .bottom-details .bottom_text .copyright_text{
     padding: 2 0px;
     font-size: 10px;
   }
 }
-@media (max-width:393px){
+@media (max-width:390px){
   footer .content .link-boxes .box .link-name .logo-name{
     font-size: 19px;
   }
 }
 
-
-
-
-// @media (max-width:  , 360 ){
-//   footer::before{
-//     top: 145px;
-//   }
-//   footer .content .top{
-//     flex-direction: column;
-//   }
-//   .content .top .media-icons{
-//     margin-top: 16px;
-//   }
-//   footer .content .link-boxes .box{
-//     width: calc(100% / 2 - 10px);
-//   }
-//   footer .content .link-boxes .input-box{
-//     width: 100%;
-//   }
-// }
