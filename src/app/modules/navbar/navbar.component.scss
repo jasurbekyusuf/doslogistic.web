@@ -73,21 +73,36 @@
   }
 }
 
-.nav-calculator {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  left: 15px;
-  gap: 5px;
-
-  p {
-    margin-bottom: 0;
-    color: #A9592C;
-  }
+.nav-calculator{
+  font-size: 15px;
+  cursor: pointer;
   i {
     color: #A9592C;
+    margin: 0px 5px ;
+  }
+
+  span {
+    color: #A9592C;
+    font-weight: 500;
   }
 }
+
+// .nav-calculator {
+//   display: flex;
+//   position: relative;
+//   justify-content: center;
+//   left: 15px;
+//   gap: 5px;
+
+//   p {
+//     margin-bottom: 0;
+//     color: #A9592C;
+//   }
+//   i {
+//     bottom: 5px;
+//     color: #A9592C;
+//   }
+// }
 
 .logo {
   font-size: 13px;
