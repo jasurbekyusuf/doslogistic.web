@@ -38,14 +38,16 @@
     background-color: #fff;
 
     &:hover {
-        background-color: #d9e4f1;
+        background-color: #faf2ed;
         color: #A9592C;
+        border-radius: 5px;
     }
 }
 
 .sidebar .active {
     border-left: #A9592C 3px solid;
-    background-color: #d9e4f1;
+    background-color: #faf2ed;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -75,39 +77,54 @@
 }
 
 @media screen and (max-width: 992px) {
+    .sidebar ul {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .sidebar .active {
+        border-left: none
+    }
+
     .sidebar {
-        display: none;
+        border: none;
+        bottom: 30px;
+        position: relative;
+    }
+
+    .sidebar a {
+        white-space: nowrap;
+        background-color: #fff;
+        margin-bottom: 10px;
     }
 
     .small-screens {
         display: block;
     }
 
-    .large-screens {
-        display: none;
-    }
-
     .sidenav {
-        padding-left: 10px;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        padding: 40px 5px;
     }
 }
 
 @media screen and (max-width: 578px) {
     .sidenav {
-        justify-content: center;
+        padding: 40px 5px;
     }
 }
 
 
 @media screen and (max-width: 478px) {
     .sidenav {
-        padding-top: 50px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .sidenav {
-        padding-top: 50px;
+        padding: 40px 5px;
     }
 }
