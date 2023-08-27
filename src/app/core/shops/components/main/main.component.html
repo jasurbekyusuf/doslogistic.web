@@ -15,24 +15,9 @@
             <li><a routerLinkActive="active" [routerLink]="['others']">others</a></li>
         </ul>
     </div>
-    <div class="large-screens">
+    <div>
         <ng-container>
             <router-outlet></router-outlet>
-        </ng-container>
-    </div>
-    <div class="small-screens">
-        <ng-container>
-            <app-popular-stores></app-popular-stores>
-            <app-markets></app-markets>
-            <app-department-stores></app-department-stores>
-            <app-clothes></app-clothes>
-            <app-beauty-products></app-beauty-products>
-            <app-children-products></app-children-products>
-            <app-electronics></app-electronics>
-            <app-household></app-household>
-            <app-sports-products></app-sports-products>
-            <app-health-products></app-health-products>
-            <app-others></app-others>
         </ng-container>
     </div>
 </div>
