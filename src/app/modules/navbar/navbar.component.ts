@@ -9,7 +9,9 @@ import { DropDownAnimation } from './animation';
 })
 export class NavbarComponent {
   isActive = false;
-  isOpen = false;
+  isOpen = false;  
+  isModalOpen: boolean = false;
+  checked = false;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
@@ -19,5 +21,13 @@ export class NavbarComponent {
   closeMenu() {
     this.isOpen = false;
     this.isActive = false;
+  }
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
   }
 }

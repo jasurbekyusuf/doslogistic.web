@@ -19,10 +19,41 @@
     <div class="langu">
       <app-language></app-language>
     </div>
-    <div class="nav-calculator" routerLink="/calculator">
+    <!-- <div class="nav-calculator" routerLink="/calculator">
+      <i class="fa-solid fa-calculator"></i>
+      <span>Calculator</span>
+    </div> -->
+    <div (click)="openModal()" class="nav-calculator">
       <i class="fa-solid fa-calculator"></i>
       <span>Calculator</span>
     </div>
+    <div *ngIf="isModalOpen" class="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">Стоимость доставки</h2>
+          <button class="close-button" (click)="closeModal()">×</button>
+        </div>
+        <div class="modal-content">
+          <input type="number" placeholder="0" class="input-style" />
+          <input type="text" placeholder="кг" class="input-style" />
+          <input class="slider" type="range" min="0" max="100" value="0" >
+          <div class="terms-of-use">
+            <label nz-checkbox [(ngModel)]="checked"></label>
+            <h3 class="paragraph">Расчет стоимости доставки крупногабаритных посылок</h3>
+          </div>
+          <input type="number" placeholder="0" class="input"/>
+          <input type="number" placeholder="0" class="input"/>
+          <input type="number" placeholder="0" class="input"/>
+          <input type="text" placeholder="см" class="input"/>
+          <hr>
+          <div class="footer-paragraph">
+            <h3>5-10 раб. дней</h3>
+            <h1>0 $</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="auth">
       <!-- <button>{{'doslogistic.web.navbar.login' | translate}}</button> -->
       <button routerLink="/register" (click)="closeMenu()">{{'doslogistic.web.navbar.register' | translate}}</button>
