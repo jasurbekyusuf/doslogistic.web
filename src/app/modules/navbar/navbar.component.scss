@@ -68,18 +68,22 @@
   p {
     margin-bottom: 0;
   }
+
   i {
     color: #A9592C;
   }
 }
+
 /////
-.nav-calculator{
+.nav-calculator {
   font-size: 17px;
   cursor: pointer;
+
   i {
     color: #A9592C;
-    margin: 0px 5px ;
+    margin: 0px 5px;
   }
+
   span {
     color: #A9592C;
     font-weight: 500;
@@ -128,8 +132,9 @@
     }
 
     .modal-content {
-      padding:  20px 30px 10px 30px;
-      .input-style{
+      padding: 20px 30px 10px 30px;
+
+      .input-style {
         padding: 5px 5px 5px 9px;
         border: 2px solid #ccc;
         border-radius: 6px;
@@ -141,7 +146,7 @@
         margin: 0 30px 0 0px;
       }
 
-      .input{
+      .input {
         padding: 5px 5px 5px 9px;
         border: 2px solid #ccc;
         border-radius: 6px;
@@ -153,13 +158,13 @@
         margin: 0 25px 20px 0px;
       }
 
-      .input-style:focus ,
+      .input-style:focus,
       .input:focus {
         outline: none;
-        border-color:#e87722 ;
+        border-color: #e87722;
       }
     }
-    
+
     .modal-content .slider {
       -webkit-appearance: none;
       appearance: none;
@@ -172,11 +177,11 @@
       -webkit-transition: .2s;
       transition: opacity .2s;
     }
-    
+
     .modal-content .slider:hover {
       border: none;
     }
-    
+
     .modal-content .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
@@ -186,7 +191,7 @@
       background: #e87722;
       cursor: pointer;
     }
-    
+
     .modal-content .slider::-moz-range-thumb {
       width: 25px;
       height: 25px;
@@ -201,11 +206,12 @@
       justify-content: flex-start;
       gap: 6px;
       margin-bottom: 30px;
-      label{
+
+      label {
         margin-left: 0px;
       }
     }
-  
+
     .terms-of-use .paragraph {
       margin-bottom: 0;
       font-size: 18px;
@@ -213,23 +219,27 @@
       font-weight: 400;
       margin-left: 25px;
     }
+
     ::ng-deep.ant-checkbox-checked .ant-checkbox-inner {
       background-color: #e87722;
       border: 1px solid #e87722;
       margin-right: 0;
     }
+
     .footer-paragraph {
-    display: flex;
-    justify-content: space-between;
-    h3{
-      width: 150px;
-      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        width: 150px;
+        padding: 10px 0;
+      }
+
+      h1 {
+        font-size: 34px;
+        font-weight: 700;
+      }
     }
-    h1{
-      font-size: 34px;
-      font-weight: 700;
-    }
-  }
   }
 }
 
@@ -356,9 +366,10 @@
     letter-spacing: 1px;
     position: relative;
   }
-  i{
+
+  i {
     color: #A9592C;
-    margin: 10px 5px  10px 5px;
+    margin: 10px 5px 10px 5px;
   }
 
   span {
@@ -378,7 +389,14 @@
   }
 }
 
+.nav-calculator-position {
+  display: flex;
+  gap: 20px;
+  padding-left: 5px;
+}
+
 @media (width <=575.98px) {
+
   .nav-pages,
   .nav-calculator {
     display: none;
@@ -411,6 +429,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+
   .nav-pages,
   .nav-calculator {
     display: none;
@@ -448,7 +467,8 @@
   .nav-dropdown {
     display: none;
   }
-  .nav-calculator{
+
+  .nav-calculator {
     font-size: 13px;
   }
 
@@ -505,7 +525,7 @@
     gap: 20px;
   }
 
-  .nav-calculator{
+  .nav-calculator {
     font-size: 15px;
   }
 

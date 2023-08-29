@@ -49,7 +49,6 @@
         </div>
       </div>
     </div>
-    <!--  -->
     <div class="auth">
       <!-- <button>{{'doslogistic.web.navbar.login' | translate}}</button> -->
       <button routerLink="/register" (click)="closeMenu()">{{'doslogistic.web.navbar.register' | translate}}</button>
@@ -68,14 +67,14 @@
         <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
         <p routerLink="/helps">{{'doslogistic.web.navbar.help' | translate}}</p>
       </div>
-      <div class="menu-item-language">
-        <!-- <div (click)="openModal()" class="nav-calculator"> -->
-          <i class="fa-solid fa-calculator"></i>
-          <span (click)="openModal()">Calculator</span>
-        <!-- </div> -->
-      </div>
-      <div class="menu-item-language">
-        <app-language></app-language>
+      <div class="nav-calculator-position"> 
+        <div class="menu-item-language">
+          <app-language></app-language>
+        </div>
+        <div class="menu-item-language">
+            <i class="fa-solid fa-calculator"></i>
+            <span (click)="openModal()">Calculator</span>
+        </div>
       </div>
     </div>
   </div>
