@@ -12,17 +12,13 @@
       <p routerLink="/services">{{'doslogistic.web.navbar.services' | translate}}</p>
       <p routerLink="/shops">{{'doslogistic.web.navbar.Shops' | translate}}</p>
       <p routerLink="/aboutUs">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
-      <p>{{'doslogistic.web.navbar.reviews' | translate}}</p>
+      <p routerLink="/">{{'doslogistic.web.navbar.reviews' | translate}}</p>
       <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
       <p routerLink="/helps">{{'doslogistic.web.navbar.help' | translate}}</p>
     </div>
     <div class="langu">
       <app-language></app-language>
     </div>
-    <!-- <div class="nav-calculator" routerLink="/calculator">
-      <i class="fa-solid fa-calculator"></i>
-      <span>Calculator</span>
-    </div> -->
     <div (click)="openModal()" class="nav-calculator">
       <i class="fa-solid fa-calculator"></i>
       <span>Calculator</span>
@@ -71,6 +67,12 @@
         <p>{{'doslogistic.web.navbar.reviews' | translate}}</p>
         <p routerLink="/contacts">{{'doslogistic.web.navbar.contacts' | translate}}</p>
         <p routerLink="/helps">{{'doslogistic.web.navbar.help' | translate}}</p>
+      </div>
+      <div class="menu-item-language">
+        <!-- <div (click)="openModal()" class="nav-calculator"> -->
+          <i class="fa-solid fa-calculator"></i>
+          <span (click)="openModal()">Calculator</span>
+        <!-- </div> -->
       </div>
       <div class="menu-item-language">
         <app-language></app-language>

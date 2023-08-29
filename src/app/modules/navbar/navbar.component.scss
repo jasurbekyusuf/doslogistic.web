@@ -72,7 +72,7 @@
     color: #A9592C;
   }
 }
-//
+/////
 .nav-calculator{
   font-size: 17px;
   cursor: pointer;
@@ -356,6 +356,15 @@
     letter-spacing: 1px;
     position: relative;
   }
+  i{
+    color: #A9592C;
+    margin: 10px 5px  10px 5px;
+  }
+
+  span {
+    color: #A9592C;
+    font-weight: 500;
+  }
 
   p:after {
     content: '';
@@ -370,7 +379,8 @@
 }
 
 @media (width <=575.98px) {
-  .nav-pages {
+  .nav-pages,
+  .nav-calculator {
     display: none;
   }
 
@@ -401,7 +411,8 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .nav-pages {
+  .nav-pages,
+  .nav-calculator {
     display: none;
   }
 
@@ -436,6 +447,9 @@
 
   .nav-dropdown {
     display: none;
+  }
+  .nav-calculator{
+    font-size: 13px;
   }
 
   .logo-details {
@@ -489,6 +503,10 @@
   .nav-pages {
     left: 0ch;
     gap: 20px;
+  }
+
+  .nav-calculator{
+    font-size: 15px;
   }
 
   .auth button {
