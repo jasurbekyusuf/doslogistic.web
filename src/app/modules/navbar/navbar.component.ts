@@ -9,9 +9,12 @@ import { DropDownAnimation } from './animation';
 })
 export class NavbarComponent {
   isActive = false;
-  isOpen = false;  
+  isOpen = false;
   isModalOpen: boolean = false;
-  checked = false;
+  weightValue: number = 0;
+  selectedUnit: string = 'kg';
+  sliderValue: number = 0;
+  checked: boolean = false;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
@@ -29,5 +32,29 @@ export class NavbarComponent {
 
   closeModal() {
     this.isModalOpen = false;
+  }
+
+  getDeliveryCost(): number {
+    if (this.selectedUnit === 'kg') {
+      return this.weightValue * 12;
+    } else if (this.selectedUnit === 'funt') {
+      return this.weightValue * 6;
+    } else {
+      return 0;
+    }
+  }
+
+  onSliderChange(event: any): void {
+    this.sliderValue = parseFloat(event.target.value);
+    this.weightValue = this.sliderValue;
+  }
+
+  onWeightInputChange(): void {
+    this.sliderValue = parseFloat(this.weightValue.toString());
+  }
+
+  getFormattedDeliveryCost(): string {
+    const deliveryCost = this.getDeliveryCost();
+    return deliveryCost.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   }
 }
