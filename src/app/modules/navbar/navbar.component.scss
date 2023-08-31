@@ -214,10 +214,10 @@
 
     .terms-of-use .paragraph {
       margin-bottom: 0;
-      font-size: 18px;
+      font-size: 16px;
       color: #000;
       font-weight: 400;
-      margin-left: 25px;
+      margin-left: 10px;
     }
 
     ::ng-deep.ant-checkbox-checked .ant-checkbox-inner {
@@ -393,6 +393,59 @@
   display: flex;
   gap: 20px;
   padding-left: 5px;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.tooltip .top {
+  min-width: 320px;
+  top: -20px;
+  height: 210px;
+  right: -258px;
+  transform: translate(-50%, -100%);
+  padding: 10px 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-weight: normal;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+
+  p {
+    font-size: 12.5px;
+  }
+}
+
+.tooltip:hover .top {
+  display: block;
+}
+
+.tooltip .top i {
+  position: absolute;
+  top: 100%;
+  left: 67%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.tooltip .top i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (width <=575.98px) {
