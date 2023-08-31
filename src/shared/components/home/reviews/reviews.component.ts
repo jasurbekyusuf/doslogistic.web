@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
+import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-reviews',
@@ -7,43 +7,38 @@ import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
   styleUrls: ['./reviews.component.scss']
 })
 export class ReviewsComponent {
-  @ViewChild(NzCarouselComponent) carousel!: NzCarouselComponent;
-  itemsPerSlide = 3;
-  carouselSlides: any[] = [];
-  carouselItems = [
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
-    { text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem' },
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    navSpeed: 700,
+    items: 3,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+    },
+    nav: true
+  }
+
+  slides = [
+    { id: 1, text: "1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" },
+    { id: 2, text: "2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" },
+    { id: 3, text: "3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" },
+    { id: 4, text: "4Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" },
+    { id: 5, text: "5Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" },
+    { id: 6, text: "6Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" },
+    { id: 6, text: "7Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus exercitationem esse maiores culpa omnis corrupti ad, autem vero minus eligendi animi, recusandae officia laudantium ipsam soluta harum nostrum veniam? Lorem" }
   ];
-
-  constructor() {
-    this.generateCarouselSlides();
-  }
-
-  generateCarouselSlides() {
-    this.carouselSlides = [];
-    const totalItems = this.carouselItems.length;
-
-    for (let i = 0; i < totalItems; i += this.itemsPerSlide) {
-      const slide = this.carouselItems.slice(i, i + this.itemsPerSlide);
-      this.carouselSlides.push(slide);
-    }
-  }
-
-  prevSlide() {
-    this.carousel.pre();
-  }
-
-  nextSlide() {
-    this.carousel.next();
-  }
 }
