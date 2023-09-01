@@ -25,11 +25,9 @@ import { ContactsComponent } from './modules/layouts/contacts/contacts.component
 import { PriceComponent } from './modules/layouts/price/price.component';
 import { ServicesComponent } from './modules/layouts/services/services.component';
 import { HelpsComponent } from './modules/layouts/helps/helps.component';
-
-
+import { RestrictionsComponent } from 'src/shared/components/restrictions/restrictions.component';
 
 registerLocaleData(localeRu);
-
 export function initializeApp(appInitService: AppInitService) {
   return (): Promise<any> => {
     return new Promise((resolve, reject) => {
@@ -57,11 +55,11 @@ export function initializeApp(appInitService: AppInitService) {
     FaqComponent,
     AboutUsComponent,
     PricesComponent,
-    PricesComponent,
     ContactsComponent,
     PriceComponent,
     ServicesComponent,
-    HelpsComponent
+    HelpsComponent,
+    RestrictionsComponent,
   ],
   imports: [
     BrowserModule,

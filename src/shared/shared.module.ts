@@ -18,7 +18,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-
   imports: [
     AntModules,
     FormsModule,
