@@ -7,9 +7,38 @@
   margin: 0 auto;
 }
 
-.carusel{
-  max-height: 500px;
+// .carusel{
+//   max-height: 500px;
+// }
+
+.bg-color{
+  position: relative;
 }
 
+.bg-color::before {
+  content: "";
+  position: absolute;
+  bottom: 655px;
+  left: 0;
+  width: 750px;
+  height: 1000px;
+  border-radius: 700px;
+  background: linear-gradient(to bottom, #2CA993, transparent);
+  filter: blur(500px);
+  z-index: -2;
+}
+
+.bg-color::after {
+  content: "";
+  position: absolute;
+  bottom: 830px;
+  right: 0;
+  width: 750px;
+  height: 950px;
+  border-radius: 700px;
+  background: linear-gradient(to right, #A9592C, transparent), #FFF;
+  filter: blur(500px);
+  z-index: -2;
+}
 
 

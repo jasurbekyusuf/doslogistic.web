@@ -222,6 +222,21 @@
     "services": {
       "services": "Dienstleistungen",
       "helpWithPurchase": "Hilfe beim Kauf"
+    },
+    "restrictions": {
+      "restrictions": "Liste der verbotenen \n Gegenstände:",
+      "one": "Alkohol/Tabak und Alkohol/Tabakprodukte",
+      "two": "Fleisch und Fleischprodukte.",
+      "three": "Samen/Pflanzen  ",
+      "four": "Komprimierte und verflüssigte Gase, Feuerzeuge, Pyrotechnik, Cracker usw.",
+      "five": "Entflammbare Flüssigkeiten",
+      "six": "Giftige Substanzen",
+      "seven": "Aerosol (Haarspray, Deodorant, Spray, Trockenshampoo)",
+      "eight": "Währung (Geld)",
+      "nine": "Edelsteine/Metalle (Schmuck) • Religiöse Materialien",
+      "ten": "Tätowiermaschine und tätowierbezogene Komponenten",
+      "eleven": "Spielzeuge intimer Natur",
+      "tvelve": "Geräte mit Lithiumbatterien (möglich, aber sie erfordern spezielle Verfahren. Wir stellen nicht zur Verfügung Dokumentation zum Erhalt des IMEI-Codes)"
     }
   }
 }
