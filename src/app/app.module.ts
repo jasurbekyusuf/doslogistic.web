@@ -25,7 +25,11 @@ import { ContactsComponent } from './modules/layouts/contacts/contacts.component
 import { PriceComponent } from './modules/layouts/price/price.component';
 import { ServicesComponent } from './modules/layouts/services/services.component';
 import { HelpsComponent } from './modules/layouts/helps/helps.component';
+
 import { RestrictionsComponent } from 'src/shared/components/restrictions/restrictions.component';
+
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
@@ -67,6 +71,10 @@ export function initializeApp(appInitService: AppInitService) {
 
   ], schemas: [NO_ERRORS_SCHEMA],
   providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    },
     { provide: NZ_I18N, useValue: ru_RU },
     {
       provide: APP_INITIALIZER,

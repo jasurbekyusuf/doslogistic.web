@@ -75,6 +75,7 @@
     font-size: 13px;
     font-weight: 400;
     color: #A9592C;
+    cursor: default;
 }
 
 ::ng-deep.ant-checkbox-checked .ant-checkbox-inner {
@@ -108,6 +109,28 @@
 
 .register-button button:hover {
     background-color: #7a4020;
+}
+
+.dont-have-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.dont-have-account p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+
+.dont-have-account a {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A9592C;
 }
 
 .line-or {
@@ -196,7 +219,7 @@
 }
 
 .register-text p {
-    font-size: 1.01rem;
+    font-size: 1rem;
     color: #000000;
     font-weight: 500;
     margin-bottom: 0;
@@ -293,6 +316,14 @@
     .terms-of-use a {
         font-size: 13px;
     }
+
+    .dont-have-account p {
+        font-size: 12px;
+    }
+
+    .dont-have-account a {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 410px) {
@@ -319,6 +350,14 @@
     }
 
     .terms-of-use a {
+        font-size: 12px;
+    }
+
+    .dont-have-account p {
+        font-size: 11px;
+    }
+
+    .dont-have-account a {
         font-size: 12px;
     }
 
@@ -391,6 +430,14 @@
     }
 
     .terms-of-use a {
+        font-size: 11px;
+    }
+
+    .dont-have-account p {
+        font-size: 10px;
+    }
+
+    .dont-have-account a {
         font-size: 11px;
     }
 

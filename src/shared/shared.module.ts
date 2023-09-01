@@ -13,6 +13,7 @@ import { NgxWebstorageModule } from "ngx-webstorage";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NzCheckboxModule,
     NzButtonModule,
     TranslateModule,
-    NzCarouselModule
+    NzCarouselModule,
+    CarouselModule
   ]
 })
 export class SharedModule {}
