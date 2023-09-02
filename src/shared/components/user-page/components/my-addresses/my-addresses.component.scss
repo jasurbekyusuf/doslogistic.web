@@ -1,0 +1,42 @@
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.div{
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border: 1px solid #dad7d6;
+  width: 300px;
+  height: 75px;
+  cursor: pointer;
+
+  h4{
+    margin-top: 24px;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Tahoma-Bold', sans-serif;
+  }
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+
+  .right{
+    margin-left: 39px;
+    width: 100%;
+    background-color: beige;
+  }
+}
+
+.div.active {
+  border-right: #A9592C 4px solid;
+
+  h4{
+    font-weight: 600;
+  }
+}
+
+//

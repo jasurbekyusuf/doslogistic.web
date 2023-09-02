@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="content">
+    <div class="left">
+      <div class="div" routerLinkActive="active" [routerLink]="['address-ger']">
+        <h4>Germaniya</h4>
+      </div>
+      <div class="div" routerLinkActive="active" [routerLink]="['address-poland']">
+        <h4>Polsha</h4>
+      </div>
+    </div>
+
+    <div class="right">
+      <ng-container>
+        <router-outlet></router-outlet>
+      </ng-container>
+    </div>
+  </div>
+</div>

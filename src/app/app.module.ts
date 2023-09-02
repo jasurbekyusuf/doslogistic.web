@@ -30,7 +30,6 @@ import { RestrictionsComponent } from 'src/shared/components/restrictions/restri
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
   return (): Promise<any> => {

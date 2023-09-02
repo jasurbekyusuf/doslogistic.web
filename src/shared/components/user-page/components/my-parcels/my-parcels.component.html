@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="line">
+    <input type="text" placeholder="search">
+  </div>
+  <div class="content">
+    <div class="left">
+      <div class="div" routerLinkActive="active" [routerLink]="['order']">
+        <h4>Qo'shildi</h4>
+      </div>
+      <div class="div" routerLinkActive="active" [routerLink]="['warehouse']">
+        <h4>Omborda</h4>
+      </div>
+      <div class="div" routerLinkActive="active" [routerLink]="['onway']">
+        <h4>Yo'lda</h4>
+      </div>
+      <div class="div" routerLinkActive="active" [routerLink]="['incountry']">
+        <h4>Mamlakatda</h4>
+      </div>
+      <div class="div" routerLinkActive="active" [routerLink]="['recieved']">
+        <h4>Olindi</h4>
+      </div>
+    </div>
+
+    <div class="right">
+      <ng-container>
+        <router-outlet></router-outlet>
+      </ng-container>
+    </div>
+  </div>
+</div>

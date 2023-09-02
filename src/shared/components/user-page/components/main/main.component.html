@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="header-line">
+    <div class="line">
+      <div class="info">
+        <p>Oluvchining holati \Tasdiqlanmagan\". Posilka olish uchun ma’lumotlarni tasdiqlash zarur.",</p>
+        <button>Oluvchini tasdiqlamoq</button>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="header">
+      <div class="left">
+        <div  routerLinkActive="active" [routerLink]="['myParcels']" class="myParcels div">
+          <h4>Mening Posilkalarim</h4>
+        </div>
+        <div routerLinkActive="active" [routerLink]="['myAddress']" class="myAddresses div">
+          <h4>Mening manzillarim</h4>
+        </div>
+      </div>
+      <div routerLinkActive="active" [routerLink]="['addParcel']" class="addParcels div">
+        <h4>Posilka qo'shish</h4>
+      </div>
+    </div>
+    <div class="body">
+      <ng-container>
+        <router-outlet></router-outlet>
+      </ng-container>
+    </div>
+  </div>
+</div>
