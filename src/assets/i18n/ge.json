@@ -5,21 +5,21 @@
       "info":"Dost Logistic занимается доставкой посылок из американских интернет-магазинов в Узбекистан с 2017 года. Мы помогаем нашим гражданам выгодно покупать из США, так-как в 90% магазинов не доставляют заказы в Узбекистан."
     },
     "contacts": {
-      "contacts": "Bizning aloqalarimiz",
-      "addressUz": "O'zbekistondagi manzil",
-      "addressGer": "Germaniyadagi manzil",
-      "Toshkent": "Toshkent",
+      "contacts": "Unsere Verbindungen",
+      "addressUz": "Adresse in Usbekistan",
+      "addressGer": "Adresse in Deutschland",
+      "Toshkent": "Taschkent",
       "berlin": "Berlin",
       "form": {
-        "writeToUs": "Bizga yozing",
-        "fillForm": "Biz sizning savollaringizga javob berishdan xursand bo'lamiz, iltimos, quyidagi shaklni to'ldiring.",
-        "name": "Ism",
-        "phone": "Telefon raqami",
+        "writeToUs": "Schreib uns",
+        "fillForm": "Gerne beantworten wir Ihre Fragen, bitte füllen Sie das untenstehende Formular aus.",
+        "name": "Name",
+        "phone": "Telefonnummer",
         "email": "E-mail",
-        "message": "Xabar",
-        "sendMessage": "Xabar yubormoq",
-        "infoOne": "Savolingizga tezda javob olishni xohlaysizmi? Veb-saytning tez-tez so'raladigan savollar bo'limi bilan tanishing, u erda biz eng ko'p beriladigan savollarga javoblarni to'pladik.",
-        "infoTwo": "Agar sizning savolingiz kiruvchi posilka qachon tizimga kiritilishi bilan bog'liq bo'lsa, biz sizga yukni kiritish uchun 1-2 ish kuni kerakligini eslatib o'tamiz, kamdan-kam hollarda biroz ko'proq. Agar yuk 3 kundan ortiq olib kelmagan bo'lsa, ushbu masala bo'yicha yozishni maslahat beramiz."
+        "message": "Nachricht",
+        "sendMessage": "Eine Nachricht schicken",
+        "infoOne": "Möchten Sie eine schnelle Antwort auf Ihre Frage? Schauen Sie sich den FAQ-Bereich der Website an, in dem wir Antworten auf die am häufigsten gestellten Fragen zusammengestellt haben.",
+        "infoTwo": "Wenn sich Ihre Frage darauf bezieht, wann das eingehende Paket in das System eingegeben wird, möchten wir Sie daran erinnern, dass die Eingabe der Sendung 1-2 Werktage dauert, in seltenen Fällen auch etwas länger. Wenn die Sendung länger als 3 Tage nicht eingetroffen ist, empfehlen wir Ihnen, über dieses Problem zu schreiben."
       }
     },
     "footer": {
@@ -93,7 +93,7 @@
         },
         "fourthstep":{
         "fourthstep":"Der vierte Schritt",
-        "answer":""
+        "answer":"Sie erhalten Ihre Bestellung"
         }
       },
       "payment": "Zahlung",

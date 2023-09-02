@@ -2,7 +2,7 @@
   "doslogistic.web": {
     "aboutUs": {
       "aboutUs": "Biz haqimizda",
-      "info":"TuronExpress kompaniyasi AQShdan O‘zbekistonga internet-do‘konlardan xarid qilingan buyurtmalarni yuborish bilan 2017 yildan buyon shug‘ullanadi."
+      "info":"Dost Logistic kompaniyasi AQShdan O‘zbekistonga internet-do‘konlardan xarid qilingan buyurtmalarni yuborish bilan 2017 yildan buyon shug‘ullanadi."
     },
     "contacts": {
       "contacts": "Bizning aloqalarimiz",
@@ -94,7 +94,7 @@
         "fourthstep":{
         "fourthstep":"To'rtinchi qadam",
         "answer":"Siz buyurtmangizni qabul qilib olasiz"
-        }
+        } 
       },
       "payment": "To'lov",
       "delivery": {
