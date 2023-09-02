@@ -2,24 +2,25 @@
   "doslogistic.web": {
     "aboutUs": {
       "aboutUs": "о нас",
-      "info": "TuronExpress занимается доставкой посылок из американских интернет-магазинов в Узбекистан с 2017 года. Мы помогаем нашим гражданам выгодно покупать из США, так-как в 90% магазинов не доставляют заказы в Узбекистан."
+      "info": "Dost Logistic занимается доставкой посылок из американских интернет-магазинов в Узбекистан с 2017 года. Мы помогаем нашим гражданам выгодно покупать из США, так-как в 90% магазинов не доставляют заказы в Узбекистан."
     },
     "contacts": {
-      "contacts": "Bizning aloqalarimiz",
-      "addressUz": "O'zbekistondagi manzil",
-      "addressGer": "Germaniyadagi manzil",
-      "Toshkent": "Toshkent",
-      "berlin": "Berlin",
+      "contacts": "Наши связи",
+      "addressUz": "Адрес в Узбекистане",
+      "addressGer": "Адрес в Германии",
+      "Toshkent": "Ташкент",
+      "berlin": "Берлин",
       "form": {
-        "writeToUs": "Bizga yozing",
-        "fillForm": "Biz sizning savollaringizga javob berishdan xursand bo'lamiz, iltimos, quyidagi shaklni to'ldiring.",
-        "name": "Ism",
-        "phone": "Telefon raqami",
+        "writeToUs": "Напишите нам",
+        "fillForm": "Мы будем рады ответить на ваши вопросы, пожалуйста, заполните форму ниже.",
+        "name": "Имя",
+        "phone": "Номер телефона",
         "email": "E-mail",
-        "message": "Xabar",
-        "sendMessage": "Xabar yubormoq",
-        "infoOne": "Savolingizga tezda javob olishni xohlaysizmi? Veb-saytning tez-tez so'raladigan savollar bo'limi bilan tanishing, u erda biz eng ko'p beriladigan savollarga javoblarni to'pladik.",
-        "infoTwo": "Agar sizning savolingiz kiruvchi posilka qachon tizimga kiritilishi bilan bog'liq bo'lsa, biz sizga yukni kiritish uchun 1-2 ish kuni kerakligini eslatib o'tamiz, kamdan-kam hollarda biroz ko'proq. Agar yuk 3 kundan ortiq olib kelmagan bo'lsa, ushbu masala bo'yicha yozishni maslahat beramiz."
+        "message": "Сообщение",
+        "sendMessage": "Отправить сообщение",
+        "infoOne": "Хотите быстрый ответ на свой вопрос? Посетите раздел часто задаваемых вопросов на сайте, где мы собрали ответы на наиболее часто задаваемые вопросы.",
+        "infoTwo": "Если ваш вопрос связан с тем, когда поступившая посылка будет занесена в систему, напоминаем, что зачисление отправления занимает 1-2 рабочих дня, в редких случаях немного больше. Если посылка не пришла более 3-х дней, советуем написать об этом вопросе.",
+        "HaveAnyQuetions":"Остались вопросы?"
       }
     },
     "footer": {
@@ -70,11 +71,31 @@
       "questionsAndAnswers": "Вопросы и ответы",
       "login": {
         "login": "Регистрация",
+        "kirish":"Вход",
         "howToCreatePersonalCabinet": "Как создать личный кабинет?"
       },
       "purchases": {
         "purchases": "Покупки",
-        "isWarehouseStates": "Будет ли склад в безналоговом штате?"
+        "isWarehouseStates": "Будет ли склад в безналоговом штате?",
+        "tax":"Мы работаем над этим и в ближайшее время запустим систему беспошлинного складирования. После этого заказы будут стоить вам дешевле:)",
+        "OnlineOrder":"Как оформить онлайн-заказ?",
+        "takeback":"Как работает услуга возврата?",
+        "firststep":{
+        "firststep":"Первый шаг",
+        "answer":"Вы оформляете платежное поручение и добавляете в него все необходимые товары"
+        },
+        "secondstep":{
+        "secondstep":"Второй шаг",
+        "answer":"Мы принимаем заявку, выставляем счет, включающий доставку и другие наши услуги."
+        },
+        "thirdstep":{
+        "thirdstep":"Третий шаг",
+        "answer":"Вы оплачиваете счет и мы покупаем ваш заказ в интернет-магазине"
+        },
+        "fourthstep":{
+        "fourthstep":"Четвертый шаг",
+        "answer":"Вы получите свой заказ"
+        }
       },
       "payment": "Оплата",
       "delivery": {
@@ -82,6 +103,7 @@
         "whatIsTheDeliveryTime": "Какие сроки доставки?",
         "whatIsTheDeliveryTimeAnswer": "После получения складом вашего товара — 3-10 дней",
         "whatAreTheShippingRates": {
+          "shippingrates":"Каковы тарифы на доставку?",
           "question": "Какие тарифы на доставку?",
           "answerOne": "До 3 кг. — $10/кг",
           "answerTwo": "Свыше 3 кг. — $9/кг"

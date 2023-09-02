@@ -10,8 +10,8 @@
 		<div class="question-box">
 			<span class="thinking-emoji">🤔</span>
 			<h4>Hali ham savollaringiz bormi?</h4>
-			<p>Telegramdagi onlayn chat orqali qo‘llab -quvvatlash xizmatimizga murojaat qiling</p>
-			<button>Biz bilan bog'lanish</button>
+			<p>{{ "doslogistic.web.contacts.form.infoOne" | translate }}</p>
+			<button>{{ "doslogistic.web.contacts.contacts" | translate }}</button>
 		</div>
 	</div>
 	<div class="container">
@@ -41,14 +41,13 @@
 				</div>
 				<div class="menu" *ngIf="isOpen2" [@dropDownMenu]>
 					<div class="menu-item">
-						Biz buning ustida ishlayapmiz va tez orada omborimizni soliqsiz tarzda ishga tushiramiz. Shundan
-						so'ng, buyurtmalar sizga arzonroq tushadi:)
+						{{ "doslogistic.web.help.purchases.tax" | translate }}
 					</div>
 				</div>
 			</div>
 			<div class="content">
 				<div class="menu-trigger" (click)="isOpen3 = !isOpen3" [ngClass]="{'clicked': isOpen3}">
-					<span class="menu-text">Onlayn buyurtmani qanday ro'yxatdan o'tkazish kerak?</span>
+					<span class="menu-text">{{ "doslogistic.web.help.purchases.OnlineOrder" | translate }}</span>
 					<i [ngClass]="isOpen3 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
 				</div>
 				<div class="menu" *ngIf="isOpen3" [@dropDownMenu]>
@@ -60,7 +59,7 @@
 			</div>
 			<div class="content">
 				<div class="menu-trigger" (click)="isOpen4 = !isOpen4" [ngClass]="{'clicked': isOpen4}">
-					<span class="menu-text">Qaytarib olish xizmati qanday ishlaydi?</span>
+					<span class="menu-text">{{ "doslogistic.web.help.purchases.takeback" | translate }}</span>
 					<i [ngClass]="isOpen4 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
 				</div>
 				<div class="menu" *ngIf="isOpen4" [@dropDownMenu]>
@@ -70,30 +69,26 @@
 								<ol>
 									<li>
 										<span class="name-place">
-											<p class="name-steps">Birinchi qadam</p>
-											Siz to'lovga buyurtma berasiz va unga barcha kerakli mahsulotlarni qo'shasiz
+											<p class="name-steps">{{ "doslogistic.web.help.purchases.firststep.firststep" | translate }}</p>
+											{{ "doslogistic.web.help.purchases.firststep.answer" | translate }}
 										</span>
 									</li>
 									<li>
 										<span>
-											<p class="name-steps">Ikkinchi qadam</p>
-											Biz arizani qabul qilamiz, yetkazib berish va boshqa xizmatlarimizni o'z
-											ichiga
-											olgan
-											hisob
-											-fakturani rasmiylashtiramiz
+											<p class="name-steps">{{ "doslogistic.web.help.purchases.secondstep.secondstep" | translate }}</p>
+											{{ "doslogistic.web.help.purchases.secondstep.answer" | translate }}
 										</span>
 									</li>
 									<li>
 										<span>
-											<p class="name-steps">Uchinchi qadam</p>
-											Siz hisobni to'laysiz va biz internet do'kondan buyurtmangizni sotib olamiz
+											<p class="name-steps">{{ "doslogistic.web.help.purchases.thirdstep.thirdstep" | translate }}</p>
+											{{ "doslogistic.web.help.purchases.thirdstep.answer" | translate }}
 										</span>
 									</li>
 									<li>
 										<span>
-											<p class="name-steps">To'rtinchi qadam</p>
-											Siz buyurtmangizni qabul qilib olasiz
+											<p class="name-steps">{{ "doslogistic.web.help.purchases.fourthstep.fourthstep" | translate }}</p>
+											{{ "doslogistic.web.help.purchases.fourthstep.answer" | translate }}
 										</span>
 									</li>
 								</ol>
@@ -135,7 +130,7 @@
 			</div>
 			<div class="content">
 				<div class="menu-trigger" (click)="isOpen6 = !isOpen6" [ngClass]="{'clicked': isOpen6}">
-					<span class="menu-text">Yetkazib berish tariflari qanaqa?</span>
+					<span class="menu-text">{{ "doslogistic.web.help.delivery.whatAreTheShippingRates.shippingrates" | translate }}</span>
 					<i [ngClass]="isOpen6 ? 'gg-chevron-up' : 'gg-chevron-down'"></i>
 				</div>
 				<div class="menu" *ngIf="isOpen6" [@dropDownMenu]>
