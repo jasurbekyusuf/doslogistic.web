@@ -70,11 +70,31 @@
       "questionsAndAnswers": "Savolar va Javoblar",
       "login": {
         "login": "Ro'yxatdan o'tish",
+        "kirish":"Kirish",
         "howToCreatePersonalCabinet": "Shaxsiy kabinetni qanday yaratish kerak?"
       },
       "purchases": {
         "purchases": "Xaridlar",
-        "isWarehouseStates": "Shtatlarda ombor soliqsiz bo'ladimi?"
+        "isWarehouseStates": "Shtatlarda ombor soliqsiz bo'ladimi?",
+        "tax":"Biz buning ustida ishlayapmiz va tez orada omborimizni soliqsiz tarzda ishga tushiramiz. Shundan so'ng, buyurtmalar sizga arzonroq tushadi:)",
+        "OnlineOrder":"Onlayn buyurtmani qanday ro'yxatdan o'tkazish kerak?",
+        "takeback":"Qaytarib olish xizmati qanday ishlaydi?",
+        "firststep":{
+        "firststep":"Birinchi qadam",
+        "answer":"Siz to'lovga buyurtma berasiz va unga barcha kerakli mahsulotlarni qo'shasiz"
+        },
+        "secondstep":{
+        "secondstep":"Ikkinchi qadam",
+        "answer":"Biz arizani qabul qilamiz, yetkazib berish va boshqa xizmatlarimizni o'z ichiga olgan hisob-fakturani rasmiylashtiramiz"
+        },
+        "thirdstep":{
+        "thirdstep":"Uchinchi qadam",
+        "answer":"Siz hisobni to'laysiz va biz internet do'kondan buyurtmangizni sotib olamiz"
+        },
+        "fourthstep":{
+        "fourthstep":"To'rtinchi qadam",
+        "answer":"Siz buyurtmangizni qabul qilib olasiz"
+        }
       },
       "payment": "To'lov",
       "delivery": {
@@ -82,6 +102,7 @@
         "whatIsTheDeliveryTime": "Yetkazib berish muddati qancha?",
         "whatIsTheDeliveryTimeAnswer": "Buyurtmangiz skladga kelib tushganidan keyin — 3-10 kun",
         "whatAreTheShippingRates": {
+          "shippingrates":"Yetkazib berish tariflari qanaqa?",
           "answerOne": "3 kilogramgacha — $10/kg.",
           "answerTwo": "3 kilogramdan ko‘p bo‘lsa — $9/kg."
         }

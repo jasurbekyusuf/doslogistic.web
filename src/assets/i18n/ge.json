@@ -69,35 +69,56 @@
       "frequentlyAskedQuestions": "Ko‘p so‘raladigan savollar",
       "questionsAndAnswers": "Savolar va Javoblar",
       "login": {
-        "login": "Ro'yxatdan o'tish",
-        "howToCreatePersonalCabinet": "Shaxsiy kabinetni qanday yaratish kerak?"
+        "login": "Anmeldung",
+        "kirish":"Eingang",
+        "howToCreatePersonalCabinet": "Wie erstelle ich ein persönliches Kabinett?"
       },
       "purchases": {
-        "purchases": "Xaridlar",
-        "isWarehouseStates": "Shtatlarda ombor soliqsiz bo'ladimi?"
+        "purchases": "Einkäufe",
+        "isWarehouseStates": "Gibt es in den Staaten keine Lagersteuer?",
+        "tax":"Wir arbeiten daran und werden in Kürze ein zollfreies Lagersystem einführen. Danach kosten Sie Bestellungen weniger:)",
+        "OnlineOrder":"Wie registriere ich eine Online-Bestellung?",
+        "takeback":"Wie funktioniert der Rückholservice?",
+        "firststep":{
+        "firststep":"Der erste Schritt",
+        "answer":"Sie erstellen einen Zahlungsauftrag und fügen diesem alle benötigten Waren hinzu"
+        },
+        "secondstep":{
+        "secondstep":"Zweiter Schritt",
+        "answer":"Wir nehmen den Antrag an, stellen eine Rechnung unter Berücksichtigung der Lieferung und unserer sonstigen Leistungen aus."
+        },
+        "thirdstep":{
+        "thirdstep":"Der dritte Schritt",
+        "answer":"Sie bezahlen die Rechnung und wir kaufen Ihre Bestellung im Online-Shop"
+        },
+        "fourthstep":{
+        "fourthstep":"Der vierte Schritt",
+        "answer":""
+        }
       },
-      "payment": "To'lov",
+      "payment": "Zahlung",
       "delivery": {
-        "delivery": "Yetkazib berish",
-        "whatIsTheDeliveryTime": "Yetkazib berish muddati qancha?",
-        "whatIsTheDeliveryTimeAnswer": "Buyurtmangiz skladga kelib tushganidan keyin — 3-10 kun",
+        "delivery": "Lieferung",
+        "whatIsTheDeliveryTime": "Wie lange dauert die Lieferung?",
+        "whatIsTheDeliveryTimeAnswer": "3-10 Tage nachdem Ihre Bestellung auf Lager ist",
         "whatAreTheShippingRates": {
-          "answerOne": "3 kilogramgacha — $10/kg.",
-          "answerTwo": "3 kilogramdan ko‘p bo‘lsa — $9/kg."
+          "shippingrates":"Wie hoch sind die Versandkosten?",
+          "answerOne": "Bis 3 Kilogramm – 10 Dollar/kg.",
+          "answerTwo": "Bei mehr als 3 Kilogramm - 9 $/kg."
         }
       },
       "acceptance": {
-        "acceptance": "Qabul qilish",
+        "acceptance": "Annahme",
         "orderDays": {
-          "orderDays": "Qaysi kunlari buyurtmalar Germaniyadan O‘zbekistonga yuboriladi?",
-          "aswer": "Bir haftada ikki marotaba — dushanba va payshanba kunlari"
+          "orderDays": "An welchen Tagen werden Bestellungen von Deutschland nach Usbekistan verschickt?",
+          "aswer": "Zweimal pro Woche – Montag und Donnerstag"
         }
       },
       "services": {
-        "services": "Xizmatlar",
-        "questionOne": "Men har xil internet-magazinlardan xarid qildim. Hammasini bitta qilib yuborasizmi?",
-        "asnwerOne": "Ha, bizda bu xizmat bepul. Barcha buyurtmalarni bitta qilib yuboramiz.",
-        "questionTwo": "Germaniya O'zbekistonga qanday qilib jo'natmani yuborish mumkin?"
+        "services": "Dienstleistungen",
+        "questionOne": "Ich habe in verschiedenen Online-Shops eingekauft. Wirst du sie alle als eins schicken?",
+        "asnwerOne": "Ja, wir bieten diesen Service kostenlos an. Wir versenden alle Bestellungen als eine Einheit.",
+        "questionTwo": "Wie sende ich nach Deutschland und Usbekistan?"
       }
     },
     "home": {

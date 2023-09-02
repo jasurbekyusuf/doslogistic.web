@@ -70,11 +70,31 @@
       "questionsAndAnswers": "Вопросы и ответы",
       "login": {
         "login": "Регистрация",
+        "kirish":"Вход",
         "howToCreatePersonalCabinet": "Как создать личный кабинет?"
       },
       "purchases": {
         "purchases": "Покупки",
-        "isWarehouseStates": "Будет ли склад в безналоговом штате?"
+        "isWarehouseStates": "Будет ли склад в безналоговом штате?",
+        "tax":"Мы работаем над этим и в ближайшее время запустим систему беспошлинного складирования. После этого заказы будут стоить вам дешевле:)",
+        "OnlineOrder":"Как оформить онлайн-заказ?",
+        "takeback":"Как работает услуга возврата?",
+        "firststep":{
+        "firststep":"Первый шаг",
+        "answer":"Вы оформляете платежное поручение и добавляете в него все необходимые товары"
+        },
+        "secondstep":{
+        "secondstep":"Второй шаг",
+        "answer":"Мы принимаем заявку, выставляем счет, включающий доставку и другие наши услуги."
+        },
+        "thirdstep":{
+        "thirdstep":"Третий шаг",
+        "answer":"Вы оплачиваете счет и мы покупаем ваш заказ в интернет-магазине"
+        },
+        "fourthstep":{
+        "fourthstep":"Четвертый шаг",
+        "answer":"Sie erhalten Ihre Bestellung"
+        }
       },
       "payment": "Оплата",
       "delivery": {
@@ -82,6 +102,7 @@
         "whatIsTheDeliveryTime": "Какие сроки доставки?",
         "whatIsTheDeliveryTimeAnswer": "После получения складом вашего товара — 3-10 дней",
         "whatAreTheShippingRates": {
+          "shippingrates":"Каковы тарифы на доставку?",
           "question": "Какие тарифы на доставку?",
           "answerOne": "До 3 кг. — $10/кг",
           "answerTwo": "Свыше 3 кг. — $9/кг"
