@@ -13,6 +13,7 @@ import { RestrictionsComponent } from 'src/shared/components/restrictions/restri
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'shops', loadChildren: () => import('./core/shops/shops.module').then(m => m.ShopsModule)},
+  { path: 'cabinet', loadChildren: () => import('../shared/components/user-page/user.module').then(m => m.UserModule)},
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'tariffs', component: PriceComponent },
   { path: 'contacts', component: ContactsComponent },
@@ -20,7 +21,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register' , component:RegisterComponent },
-  { path: 'restrictions' , component: RestrictionsComponent },
+  { path: 'restrictions' , component: RestrictionsComponent }
 ];
 
 @NgModule({
