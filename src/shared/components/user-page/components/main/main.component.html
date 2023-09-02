@@ -1,24 +1,28 @@
-<div class="container">
-  <div class="header-line">
-    <div class="line">
-      <div class="info">
-        <p>Oluvchining holati \Tasdiqlanmagan\". Posilka olish uchun ma’lumotlarni tasdiqlash zarur.",</p>
-        <button>Oluvchini tasdiqlamoq</button>
+<div class="header-line">
+  <div class="info">
+    <div class="info-txt">
+      <div class="circle-icon">
+        <i class="fas fa-exclamation"></i>
       </div>
+      <p>Oluvchining holati "Tasdiqlanmagan". Posilka olish uchun ma’lumotlarni tasdiqlash zarur.</p>
     </div>
+    <button>Oluvchini tasdiqlamoq</button>
   </div>
+</div>
+<div class="container">
   <div class="content">
     <div class="header">
-      <div class="left">
-        <div  routerLinkActive="active" [routerLink]="['myParcels']" class="myParcels div">
-          <h4>Mening Posilkalarim</h4>
+      <div class="left-btn">
+        <div routerLinkActive="active-link" [routerLink]="['myParcels']" class="button-div">
+          <p>Mening Posilkalarim</p>
         </div>
-        <div routerLinkActive="active" [routerLink]="['myAddress']" class="myAddresses div">
-          <h4>Mening manzillarim</h4>
+        <div routerLinkActive="active-link" [routerLink]="['myAddress']" class="button-div">
+          <p>Mening manzillarim</p>
         </div>
       </div>
-      <div routerLinkActive="active" [routerLink]="['addParcel']" class="addParcels div">
-        <h4>Posilka qo'shish</h4>
+      <div routerLinkActive="active" [routerLink]="['addParcel']" class="addParcels">
+        <i class="fas fa-plus"></i>
+        <p>Posilka qo'shish</p>
       </div>
     </div>
     <div class="body">
