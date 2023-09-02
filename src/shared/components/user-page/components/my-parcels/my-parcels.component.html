@@ -1,24 +1,44 @@
-
 <div class="container">
   <div class="line">
-    <input type="text" placeholder="search">
+    <input type="text" placeholder="Search" class="input-style">
+    <i class="fas fa-search"></i> 
   </div>
   <div class="content">
     <div class="left">
-      <div class="div" routerLinkActive="active" [routerLink]="['order']">
-        <h4>Qo'shildi</h4>
+      <div class="div" routerLinkActive="active-link" [routerLink]="['order']">
+        <div class="div-icon">
+          <i class="fa-solid fa-clipboard"></i>
+          <p>Qo'shildi</p>
+        </div>
+        <p>0</p>
       </div>
-      <div class="div" routerLinkActive="active" [routerLink]="['warehouse']">
-        <h4>Omborda</h4>
+      <div class="div" routerLinkActive="active-link" [routerLink]="['warehouse']">
+        <div class="div-icon">
+          <i class="fa-solid fa-warehouse"></i>
+          <p>Omborda</p>
+        </div>
+        <p>0</p>
       </div>
-      <div class="div" routerLinkActive="active" [routerLink]="['onway']">
-        <h4>Yo'lda</h4>
+      <div class="div" routerLinkActive="active-link" [routerLink]="['onway']">
+        <div class="div-icon">
+          <i class="fa-solid fa-plane-up"></i>
+          <p>Yo'lda</p>
+        </div>
+        <p>0</p>
       </div>
-      <div class="div" routerLinkActive="active" [routerLink]="['incountry']">
-        <h4>Mamlakatda</h4>
+      <div class="div" routerLinkActive="active-link" [routerLink]="['incountry']">
+        <div class="div-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Mamlakatda</p>   
+        </div>
+        <p>0</p>
       </div>
-      <div class="div" routerLinkActive="active" [routerLink]="['recieved']">
-        <h4>Olindi</h4>
+      <div class="div" routerLinkActive="active-link" [routerLink]="['recieved']">
+        <div class="div-icon">
+          <i class="fa-solid fa-handshake"></i>
+          <p>Olindi</p>
+        </div>
+        <p>0</p>
       </div>
     </div>
 
