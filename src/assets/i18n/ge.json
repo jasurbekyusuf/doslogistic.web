@@ -19,7 +19,8 @@
         "message": "Nachricht",
         "sendMessage": "Eine Nachricht schicken",
         "infoOne": "Möchten Sie eine schnelle Antwort auf Ihre Frage? Schauen Sie sich den FAQ-Bereich der Website an, in dem wir Antworten auf die am häufigsten gestellten Fragen zusammengestellt haben.",
-        "infoTwo": "Wenn sich Ihre Frage darauf bezieht, wann das eingehende Paket in das System eingegeben wird, möchten wir Sie daran erinnern, dass die Eingabe der Sendung 1-2 Werktage dauert, in seltenen Fällen auch etwas länger. Wenn die Sendung länger als 3 Tage nicht eingetroffen ist, empfehlen wir Ihnen, über dieses Problem zu schreiben."
+        "infoTwo": "Wenn sich Ihre Frage darauf bezieht, wann das eingehende Paket in das System eingegeben wird, möchten wir Sie daran erinnern, dass die Eingabe der Sendung 1-2 Werktage dauert, in seltenen Fällen auch etwas länger. Wenn die Sendung länger als 3 Tage nicht eingetroffen ist, empfehlen wir Ihnen, über dieses Problem zu schreiben.",
+        "HaveAnyQuetions":"Sie haben noch Fragen?"
       }
     },
     "footer": {

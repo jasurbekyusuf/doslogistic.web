@@ -19,7 +19,8 @@
         "message": "Xabar",
         "sendMessage": "Xabar yubormoq",
         "infoOne": "Savolingizga tezda javob olishni xohlaysizmi? Veb-saytning tez-tez so'raladigan savollar bo'limi bilan tanishing, u erda biz eng ko'p beriladigan savollarga javoblarni to'pladik.",
-        "infoTwo": "Agar sizning savolingiz kiruvchi posilka qachon tizimga kiritilishi bilan bog'liq bo'lsa, biz sizga yukni kiritish uchun 1-2 ish kuni kerakligini eslatib o'tamiz, kamdan-kam hollarda biroz ko'proq. Agar yuk 3 kundan ortiq olib kelmagan bo'lsa, ushbu masala bo'yicha yozishni maslahat beramiz."
+        "infoTwo": "Agar sizning savolingiz kiruvchi posilka qachon tizimga kiritilishi bilan bog'liq bo'lsa, biz sizga yukni kiritish uchun 1-2 ish kuni kerakligini eslatib o'tamiz, kamdan-kam hollarda biroz ko'proq. Agar yuk 3 kundan ortiq olib kelmagan bo'lsa, ushbu masala bo'yicha yozishni maslahat beramiz.",
+        "HaveAnyQuetions":"Hali ham savollaringiz bormi?"
       }
     },
     "footer": {
