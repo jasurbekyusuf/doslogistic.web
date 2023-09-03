@@ -2,7 +2,8 @@
   "doslogistic.web": {
     "aboutUs": {
       "aboutUs": "Biz haqimizda",
-      "info":"Dost Logistic kompaniyasi AQShdan O‘zbekistonga internet-do‘konlardan xarid qilingan buyurtmalarni yuborish bilan 2017 yildan buyon shug‘ullanadi."
+      "info":"Dost Logistic kompaniyasi Germaniyadan O‘zbekistonga internet-do‘konlardan xarid qilingan buyurtmalarni yuborish bilan 2017 yildan buyon shug‘ullanadi.",
+      "info2":"Tez, Oson, Qulay va eng asosiysi Ishonchli!"
     },
     "contacts": {
       "contacts": "Bizning aloqalarimiz",
@@ -25,7 +26,7 @@
     },
     "footer": {
       "logo":{
-        "info":"10 kundan kamroq vaqt ichida Germaniya tezkor va ishonchli posilkalar yetkazib berish!",
+        "info":"10 kundan kamroq vaqt ichida Germaniya tezkor va ishonchli posilkalar yetkazib beramiz!",
         "join":"Ishtirok etish"
       },
       "aboutCompony":{
