@@ -3,7 +3,9 @@
     "aboutUs": {
       "aboutUs": "Biz haqimizda",
       "info":"Dost Logistic kompaniyasi Germaniyadan O‘zbekistonga internet-do‘konlardan xarid qilingan buyurtmalarni yuborish bilan 2017 yildan buyon shug‘ullanadi.",
-      "info2":"Tez, Oson, Qulay va eng asosiysi Ishonchli!"
+      "info2":"Tez, Oson, Qulay va eng asosiysi Ishonchli!",
+      "team":"Jamoamiz eng yaxshilardan tashkil topgan, bu umumiy g'oyalar va istaklar bilan birlashgan odamlardir. Bizning ambitsiyalarimiz birgalikda o'sishimizga va rivojlanishimizga hamda yangi cho'qqilarni zabt etishimizga yordam beradi. Biz butun dunyodan mutaxassislarni to'pladik, jamoaning har bir a'zosini birday qadrlaymiz, ularga biz bilan birga o'sish va rivojlanish imkoniyatini taqdim etamiz.",
+      "team-header":"Bizning Jamoamiz"
     },
     "contacts": {
       "contacts": "Bizning aloqalarimiz",
@@ -19,7 +21,7 @@
         "email": "Bizning E-mail manzilimiz",
         "message": "xabar yozing",
         "sendMessage": "Xabar yubormoq",
-        "infoOne": "Savolingizga tezda javob olishni xohlaysizmi? Veb-saytning tez-tez so'raladigan savollar bo'limi bilan tanishing, u erda biz eng ko'p beriladigan savollarga javoblarni to'pladik.",
+        "infoOne": "Savolingizga tezda javob olishni xohlaysizmi?Veb-saytning tez-tez so'raladigan savollar bo'limi bilan tanishing, u erda biz eng ko'p beriladigan savollarga javoblarni to'pladik.",
         "infoTwo": "Agar sizning savolingiz kiruvchi posilka qachon tizimga kiritilishi bilan bog'liq bo'lsa, biz sizga yukni kiritish uchun 1-2 ish kuni kerakligini eslatib o'tamiz, kamdan-kam hollarda biroz ko'proq. Agar yuk 3 kundan ortiq olib kelmagan bo'lsa, ushbu masala bo'yicha yozishni maslahat beramiz.",
         "HaveAnyQuetions":"Hali ham savollaringiz bormi?"
       }
@@ -36,7 +38,8 @@
         "news": "Yangiliklar",
         "services": "Xizmatlarimiz",
         "customers": "Mijozlarimiz",
-        "contacts": "Kontaktlar"
+        "contacts": "Kontaktlar",
+        "Summary":"Germaniyadagi onlayn-do‘konlarning 90 foizi to‘g‘ridan-to‘g‘ri O‘zbekistonga yetkazib bermaydi. Dost Logictic esa Germaniya internet-do‘konlarida xarid qilish va ularni butun O‘zbekiston bo‘ylab qabul qilish imkonini beradi. Bizning innovatsion va inqilobiy g'oyalarimiz va texnologiyalarimiz bilan biz sizga eng yaxshi xarid qilish tajribasi, erkinlik va barcha chegaralardan oshib ketishni ta'minlashga intilamiz. Biz Germaniyada vakilimiz. Hozir bizning jamoamizda  300 dan ortiq mutaxassislar bor - va bu chegara emas."
       },
       "forCustomers": {
         "forCustomers": "Xaridorlarga",
@@ -118,9 +121,11 @@
       },
       "services": {
         "services": "Xizmatlar",
+        "service-header":"Bizning Servis-markazlarimiz",
         "questionOne": "Men har xil internet-magazinlardan xarid qildim. Hammasini bitta qilib yuborasizmi?",
         "asnwerOne": "Ha, bizda bu xizmat bepul. Barcha buyurtmalarni bitta qilib yuboramiz.",
-        "questionTwo": "Germaniya O'zbekistonga qanday qilib jo'natmani yuborish mumkin?"
+        "questionTwo": "Germaniya O'zbekistonga qanday qilib jo'natmani yuborish mumkin?",
+        "info":"Dost Logistic har doim o'z printsiplari va g'oyalariga sodiq. Biz O'zbekistonda ochilganimiz bilan bir paytda endi asosiy vazifamiz o'zbekiistonliklarga Germaniyadan xaridlar qilish va yashash joyidan qat'i nazar ularni olish imkoniyatini taqdim etishdan iborat. Bizning o'ziga xos yagona servis-markazimiz qulay va zamonaviy terminallardan foydalanadi, ular posilkalarni 10 soniya ichida olish imkonini beradi. Biz shahrimiz markazida joylashganmiz, call-markazimiz har qanday murakkablikdagi vazifalarni hal etish uchun doim aloqada."
       }
     },
     "home": {
