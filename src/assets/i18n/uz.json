@@ -99,7 +99,14 @@
         "fourthstep":{
         "fourthstep":"To'rtinchi qadam",
         "answer":"Siz buyurtmangizni qabul qilib olasiz"
-        } 
+        },
+        "Service-important":{
+          "Service-important":"Bu xizmat sizga qachon kerak bo'ladi?",
+          "first":"Internet do'kon faqat Germaniya kartalarini qabul qilganda;",
+          "second":"Onlayn do'kon hisob -kitob va yetkazib berish manzillari mos kelishini talab qilganda;",
+          "third":"Internet-do'kon faqat PayPal ni qabul qiladi, lekin u sizda yo'q bo’lganda;",
+          "fourth":"Siz bir vaqtning o'zida ko'plab mahsulotlarni sotib olishingiz kerak, lekin buning uchun vaqtingiz yo’q bo’lganda;"
+        }
       },
       "payment": "To'lov",
       "delivery": {

@@ -99,6 +99,13 @@
         "fourthstep":{
         "fourthstep":"Der vierte Schritt",
         "answer":"Sie erhalten Ihre Bestellung"
+        },
+        "Service-important":{
+          "Service-important":"Wann benötigen Sie diesen Service?",
+          "first":"Wenn der Online-Shop nur deutsche Karten akzeptiert;",
+          "second":"Wenn ein Online-Shop die Übereinstimmung von Rechnungs- und Lieferadresse erfordert;",
+          "third":"Der Online-Shop akzeptiert nur PayPal, aber wenn Sie es nicht haben;",
+          "fourth":"Sie müssen viele Produkte auf einmal kaufen, haben aber keine Zeit dafür;"
         }
       },
       "payment": "Zahlung",
