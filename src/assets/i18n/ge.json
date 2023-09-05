@@ -76,7 +76,15 @@
       "login": {
         "login": "Anmeldung",
         "kirish":"Eingang",
-        "howToCreatePersonalCabinet": "Wie erstelle ich ein persönliches Kabinett?"
+        "howToCreatePersonalCabinet": "Wie erstelle ich ein persönliches Kabinett?",
+        "avtorization":"Anmeldung",
+        "registration":"Registrieren",
+        "or":"or",
+        "forgotpassword":"Passwort vergessen?",
+        "rememberMe":"Erinnere dich an mich",
+        "google":"Anmeldung mit Google",
+        "accept":"Ich akzeptiere",
+        "terms":"Geschäftsbedingungen"
       },
       "purchases": {
         "purchases": "Einkäufe",

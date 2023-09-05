@@ -5,10 +5,10 @@
       <a routerLink="/register" routerLinkActive="active-link">{{'doslogistic.web.help.login.login' | translate}}</a>
     </div>    
     <div class="input-field">
-      <input type="email" placeholder="Ваш эл. адрес*" class="input-style" />
+      <input type="email" placeholder="Email address" class="input-style" />
     </div>
     <div class="input-field">
-      <input [type]="showPassword ? 'text' : 'password'" placeholder="Пароль" class="input-style" />
+      <input [type]="showPassword ? 'text' : 'password'" placeholder="password" class="input-style" />
       <span (click)="togglePasswordVisibility()" class="eye-icon">
         <i class="fas" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
       </span>
@@ -19,18 +19,18 @@
     <div class="terms-of-use">
       <div class="terms-style">
         <label nz-checkbox [(ngModel)]="checked"></label>
-        <p>Запомнить меня</p>
+        <p>{{ "doslogistic.web.help.login.rememberMe" | translate }}</p>
       </div>
-      <a>Забыли пароль?</a>
+      <a>{{ "doslogistic.web.help.login.forgotpassword" | translate }}</a>
     </div>
     <div class="register-button">
-      <button routerLink="/cabinet">Aвторизоваться</button>
+      <button routerLink="/cabinet">{{ "doslogistic.web.help.login.avtorization" | translate }}</button>
     </div>
     <div class="line-or">
-      <span class="line-text">или</span>
+      <span class="line-text">{{ "doslogistic.web.help.login.or" | translate }}</span>
     </div>
     <div class="register-google">
-      <button> <img src="../../../../assets/images/register/google-logo.png" alt="" />Aвторизоваться с Google</button>
+      <button> <img src="../../../../assets/images/register/google-logo.png" alt="" />{{ "doslogistic.web.help.login.google" | translate }}</button>
     </div>
   </div>
 </div>
