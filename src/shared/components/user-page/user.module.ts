@@ -13,7 +13,11 @@ import { WarehouseComponent } from './components/parcel-pages/warehouse/warehous
 import { MyAddressesComponent } from './components/my-addresses/my-addresses.component';
 import { AddressGerComponent } from './components/address-pages/address-ger/address-ger.component';
 import { AddressPolComponent } from './components/address-pages/address-pol/address-pol.component';
-
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { ModalComponent } from './components/address-pages/modal/modal.component';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { RegisterModalComponent } from './components/register-modal/register-modal.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,11 +31,16 @@ import { AddressPolComponent } from './components/address-pages/address-pol/addr
     WarehouseComponent,
     MyAddressesComponent,
     AddressGerComponent,
-    AddressPolComponent
+    AddressPolComponent,
+    ModalComponent,
+    RegisterModalComponent
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    NzModalModule,
+    ClipboardModule,
+    FormsModule
   ]
 })
 export class UserModule { }

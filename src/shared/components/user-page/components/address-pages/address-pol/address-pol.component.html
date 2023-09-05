@@ -1,8 +1,9 @@
 <div class="container">
     <div class="header">
         <img src="../../../../../assets/images/countries/icons8-poland-48.png" alt="" />
-        <p>Sizning Germaniyadagi manzilingiz</p>
+        <p>Sizning Polshadagi manzilingiz</p>
     </div>
+    <app-modal [isOpen]="showModal" [copiedText]="copiedText"></app-modal>
     <h5>O'z manzilingizni yetkazib berish manzili sifatida foydalangan holda Germaniyadagi do'konlardan onlayn xarid
         qiling</h5>
     <div class="small-container">
@@ -29,23 +30,23 @@
                 <p>New Castle</p>
                 <p>DE</p>
                 <p>19720</p>
-                <p>USA</p>
+                <p>Poland</p>
                 <p>+1 302 4148567</p>
             </div>
             <div class="details-copy">
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
+                <p (click)="copyText('someone')">Copy</p>
+                <p (click)="copyText('11 Southgate Blvd, D10')">Copy</p>
+                <p (click)="copyText('ABC9662')">Copy</p>
+                <p (click)="copyText('ABC9662')">Copy</p>
+                <p (click)="copyText('ABC9662')">Copy</p>
+                <p (click)="copyText('ABC9662')">Copy</p>
+                <p (click)="copyText('ABC9662')">Copy</p>
+                <p (click)="copyText('ABC9662')">Copy</p>
             </div>
         </div>
         <hr>
         <div class="copy-all">
-            <p>Copy All</p>
+            <p (click)="copyAll()">Copy All</p>
         </div>
     </div>
     <div class="time">

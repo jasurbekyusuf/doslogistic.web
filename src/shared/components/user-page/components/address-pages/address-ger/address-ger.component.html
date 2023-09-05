@@ -2,14 +2,16 @@
     <div class="header">
         <img src="../../../../../assets/images/countries/icons8-germany-48.png" alt="" />
         <p>Sizning Germaniyadagi manzilingiz</p>
-    </div>
+      </div>
     <h5>O'z manzilingizni yetkazib berish manzili sifatida foydalangan holda Germaniyadagi do'konlardan onlayn xarid
         qiling</h5>
-    <div class="small-container">
-        <div class="delivery-date">
+      
+        <div class="small-container">
+          <br>
+          <div class="delivery-date">
             <img src="../../../../../assets/images/airplane.jpg" alt="" />
             <p>5-10 ish kuni davomida</p>
-        </div>
+          </div>
         <hr>
         <div class="user-datails">
             <div class="details">
@@ -33,20 +35,23 @@
                 <p>+1 302 4148567</p>
             </div>
             <div class="details-copy">
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
-                <p>Copy</p>
+              <p (click)="copyText('someone')">Copy</p>
+              <p (click)="copyText('11 Southgate Blvd, D10')">Copy</p>
+              <p (click)="copyText('ABC9662')">Copy</p>
+              <p (click)="copyText('ABC9662')">Copy</p>
+              <p (click)="copyText('ABC9662')">Copy</p>
+              <p (click)="copyText('ABC9662')">Copy</p>
+              <p (click)="copyText('ABC9662')">Copy</p>
+              <p (click)="copyText('ABC9662')">Copy</p>
             </div>
         </div>
         <hr>
         <div class="copy-all">
-            <p>Copy All</p>
+            <p (click)="copyAll()">Copy All</p>
         </div>
+        <!-- ... your existing HTML ... -->
+
+
     </div>
     <div class="time">
         <p>09:00 - 17:00 Dush - Juma Delaware soat vaqti bilan</p>
