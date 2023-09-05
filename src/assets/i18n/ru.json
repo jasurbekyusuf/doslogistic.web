@@ -76,7 +76,15 @@
       "login": {
         "login": "Регистрация",
         "kirish":"Вход",
-        "howToCreatePersonalCabinet": "Как создать личный кабинет?"
+        "howToCreatePersonalCabinet": "Как создать личный кабинет?",
+        "avtorization":"Aвторизоваться",
+        "registration":"Зарегистрироваться",
+        "or":"или",
+        "forgotpassword":"Забыли пароль?",
+        "rememberMe":"Запомнить меня",
+        "google":"Aвторизоваться с Google",
+        "accept":"Я принимаю",
+        "terms":"Условия и Положения"
       },
       "purchases": {
         "purchases": "Покупки",

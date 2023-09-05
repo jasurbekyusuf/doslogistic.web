@@ -5,36 +5,36 @@
       <a routerLink="/register" routerLinkActive="active-link">{{'doslogistic.web.help.login.login' | translate}}</a>
     </div>    
     <div class="input-field">
-      <input type="email" placeholder="Ваш эл. адрес*" class="input-style" />
+      <input type="email" placeholder="Email address" class="input-style" />
     </div>
     <div class="input-field">
-      <input [type]="showPassword ? 'text' : 'password'" placeholder="Пароль" class="input-style" />
+      <input [type]="showPassword ? 'text' : 'password'" placeholder="Password" class="input-style" />
       <span (click)="togglePasswordVisibility()" class="eye-icon">
         <i class="fas" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
       </span>
     </div>
     <div class="input-field">
-      <input [type]="showRepeatPassword ? 'text' : 'password'" placeholder="Повторите пароль" class="input-style" />
+      <input [type]="showRepeatPassword ? 'text' : 'password'" placeholder="Repeat password*" class="input-style" />
       <span (click)="toggleRepeatPasswordVisibility()" class="eye-icon">
         <i class="fas" [ngClass]="showRepeatPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
       </span>
     </div>
     <div class="input-field">
-      <input type="tel" id="mobile_code" placeholder="Номер телефона" name="phone" class="input-style">
+      <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style">
     </div>
     <div class="terms-of-use">
       <label nz-checkbox [(ngModel)]="checked"></label>
-      <p>Я принимаю</p>
+      <p>{{ "doslogistic.web.help.login.registration" | translate }}</p>
       <a>Условия и Положения</a>
     </div>
     <div class="register-button">
-      <button>Зарегистрироваться</button>
+      <button>{{ "doslogistic.web.help.login.accept" | translate }}</button>
     </div>
     <div class="line-or">
-      <span class="line-text">или</span>
+      <span class="line-text">{{ "doslogistic.web.help.login.or" | translate }}</span>
     </div>
     <div class="register-google">
-      <button> <img src="../../../../assets/images/register/google-logo.png" alt="" />Зарегистрироваться c Google</button>
+      <button> <img src="../../../../assets/images/register/google-logo.png" alt="" />{{ "doslogistic.web.help.login.google" | translate }}</button>
     </div>
   </div>
 </div>

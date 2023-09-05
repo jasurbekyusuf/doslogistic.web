@@ -76,7 +76,15 @@
       "login": {
         "login": "Ro'yxatdan o'tish",
         "kirish":"Kirish",
-        "howToCreatePersonalCabinet": "Shaxsiy kabinetni qanday yaratish kerak?"
+        "howToCreatePersonalCabinet": "Shaxsiy kabinetni qanday yaratish kerak?",
+        "avtorization":"Tizimga kirish",
+        "registration":"Ro'yxatdan o'tish",
+        "or":"yoki",
+        "forgotpassword":"Parolni unutdingizmi?",
+        "rememberMe":"Meni eslab qol",
+        "google":"Google orqali avtorizatsiya",
+        "accept":"Men qabul qilaman",
+        "terms":"Foydalanish shartlari"
       },
       "purchases": {
         "purchases": "Xaridlar",
