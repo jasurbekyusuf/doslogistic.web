@@ -20,7 +20,7 @@
           <p>Mening manzillarim</p>
         </div>
       </div>
-      <div routerLinkActive="active" [routerLink]="['addParcel']" class="addParcels">
+      <div routerLinkActive="active" (click)="openModal()" class="addParcels">
         <i class="fas fa-plus"></i>
         <p>Posilka qo'shish</p>
       </div>
@@ -30,5 +30,120 @@
         <router-outlet></router-outlet>
       </ng-container>
     </div>
+  </div>
+</div>
+
+
+<div [ngClass]="{'modal': true, 'fade-in': modalOpen}" class="modal">
+  <div class="modal-content">
+    <div class="modal-heder">
+      <span class="modal-header">Оформить посылку</span>
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <!-- Step 0 - Choose Country -->
+    <div *ngIf="currentStep === 0" class="modal-steps">
+      <div class="choose-country">Выберите филиал<span>*</span></div>
+      <div class="country-content">
+        <div class="country-boxes" (click)="selectCountry('Germany')">
+          <img src="../../../../../assets/images/countries/icons8-germany-48.png" alt="" />
+          <p>Germany</p>
+        </div>
+        <div class="country-boxes" (click)="selectCountry('Poland')">
+          <img src="../../../../../assets/images/countries/icons8-poland-48.png" alt="" />
+          <p>Poland</p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedCountry">
+      <!-- Germany -->
+      <!-- Step 1 for Germany -->
+      <div *ngIf="selectedCountry === 'Germany' && currentStep === 1">
+        <h3>Step 1: Address Information for Germany</h3>
+        <!-- Add your step 1 form fields for Germany here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 2 for Germany -->
+      <div *ngIf="selectedCountry === 'Germany' && currentStep === 2">
+        <h3>Step 2: Address Information for Germany</h3>
+        <!-- Add your step 2 form fields for Germany here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 3 for Germany -->
+      <div *ngIf="selectedCountry === 'Germany' && currentStep === 3">
+        <h3>Step 3: Address Information for Germany</h3>
+        <!-- Add your step 3 form fields for Germany here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 4 for Germany -->
+      <div *ngIf="selectedCountry === 'Germany' && currentStep === 4">
+        <h3>Step 4: Address Information for Germany</h3>
+        <!-- Add your step 4 form fields for Germany here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 5 for Germany -->
+      <div *ngIf="selectedCountry === 'Germany' && currentStep === 5">
+        <h3>Step 5: Address Information for Germany</h3>
+        <!-- Add your step 5 form fields for Germany here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+
+      <!-- /////////////////////// -->
+
+
+
+      <!-- Poland -->
+      <!-- Step 1 for Poland -->
+      <div *ngIf="selectedCountry === 'Poland' && currentStep === 1">
+        <h3>Step 1: Address Information for Poland</h3>
+        <!-- Add your step 1 form fields for Poland here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 2 for Poland -->
+      <div *ngIf="selectedCountry === 'Poland' && currentStep === 2">
+        <h3>Step 2: Address Information for Poland</h3>
+        <!-- Add your step 2 form fields for Poland here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 3 for Poland -->
+      <div *ngIf="selectedCountry === 'Poland' && currentStep === 3">
+        <h3>Step 3: Address Information for Poland</h3>
+        <!-- Add your step 2 form fields for Poland here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 4 for Poland -->
+      <div *ngIf="selectedCountry === 'Poland' && currentStep === 4">
+        <h3>Step 4: Address Information for Poland</h3>
+        <!-- Add your step 2 form fields for Poland here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+      <!-- Step 5 for Poland -->
+      <div *ngIf="selectedCountry === 'Poland' && currentStep === 5">
+        <h3>Step 5: Address Information for Poland</h3>
+        <!-- Add your step 2 form fields for Poland here -->
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+    </div>
+     <!-- Step Counter -->
+  <div class="step-counter">
+    <div class="step-counter-left">
+      Шаг {{ currentStep }} из {{ totalSteps }}
+    </div>
+    <div class="step-counter-right">
+      <div class="order-steps">
+        <div *ngFor="let step of orderSteps" class="order-step" [class.active]="step === currentStep"></div>
+      </div>
+    </div>
+    
+  </div>
   </div>
 </div>

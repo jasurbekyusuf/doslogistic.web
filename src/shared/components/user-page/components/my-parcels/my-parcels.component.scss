@@ -49,6 +49,7 @@
 
   i {
     font-size: 20px;
+    position: absolute;
   }
 
   p {
@@ -56,6 +57,7 @@
     font-size: 15px;
     font-family: 'Tahoma-Bold', sans-serif;
     margin-bottom: 0;
+    margin-left: 40px;
   }
 
   &::after {
