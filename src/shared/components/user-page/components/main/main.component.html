@@ -54,45 +54,109 @@
         </div>
       </div>
     </div>
+
     <div *ngIf="selectedCountry">
       <!-- Germany -->
       <!-- Step 1 for Germany -->
-      <div *ngIf="selectedCountry === 'Germany' && currentStep === 1">
-        <h3>Step 1: Address Information for Germany</h3>
-        <!-- Add your step 1 form fields for Germany here -->
+      <div *ngIf="selectedCountry === 'Germany' && currentStep === 1" class="modal-steps">
+        <div class="choose-country">
+          <p class="current-step">{{ currentStep }}</p>Выберите тип заказа<span>*</span>
+        </div>
+        <div class="country-content">
+          <div class="country-box" (click)="selectOption('sendPackage')"> 
+            <i class="fa-solid fa-truck"></i>
+            <p>Отправить посылку</p>
+          </div>
+          <div class="country-box" (click)="selectOption('internetOrder')"> 
+            <i class="fa-solid fa-cart-plus"></i>
+            <p>Интернет заказ</p>
+          </div>
+          <div class="country-box" (click)="selectOption('purchaseAssistance')"> 
+            <i class="fa-solid fa-shop"></i>
+            <p>Помощь в покупке</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- sendPackage -->
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 2"
+        class="modal-steps">
+        <div class="choose-count">
+          <div class="display-flex">
+            <span class="current-step">{{ currentStep }}</span>Заполните декларацию
+          </div>
+          <div class="text-about">
+            Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления
+            таможенной декларации.
+          </div>
+        </div>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 3"
+        class="modal-steps">
+        <h3>Step 3: Send Package for Germany</h3>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 4"
+        class="modal-steps">
+        <h3>Step 4: Send Package for Germany</h3>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 5"
+        class="modal-steps">
+        <h3>Step 5: Send Package for Germany</h3>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+
+      <!-- internetOrder -->
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'internetOrder' && currentStep === 2"
+        class="modal-steps">
+        <h3>Step 2: Internet Order for Germany</h3>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'internetOrder' && currentStep === 3"
+        class="modal-steps">
+        <h3>Step 3: Internet Order for Germany</h3>
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
-      <!-- Step 2 for Germany -->
-      <div *ngIf="selectedCountry === 'Germany' && currentStep === 2">
-        <h3>Step 2: Address Information for Germany</h3>
-        <!-- Add your step 2 form fields for Germany here -->
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 3 for Germany -->
-      <div *ngIf="selectedCountry === 'Germany' && currentStep === 3">
-        <h3>Step 3: Address Information for Germany</h3>
-        <!-- Add your step 3 form fields for Germany here -->
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 4 for Germany -->
-      <div *ngIf="selectedCountry === 'Germany' && currentStep === 4">
-        <h3>Step 4: Address Information for Germany</h3>
-        <!-- Add your step 4 form fields for Germany here -->
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 5 for Germany -->
-      <div *ngIf="selectedCountry === 'Germany' && currentStep === 5">
-        <h3>Step 5: Address Information for Germany</h3>
-        <!-- Add your step 5 form fields for Germany here -->
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'internetOrder' && currentStep === 4"
+        class="modal-steps">
+        <h3>Step 4: Internet Order for Germany</h3>
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
 
+      <!-- purchaseAssistance -->
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'purchaseAssistance' && currentStep === 2"
+        class="modal-steps">
+        <h3>Step 2: Purchase Assistance for Germany</h3>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+      <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'purchaseAssistance' && currentStep === 3"
+        class="modal-steps">
+        <h3>Step 3: Purchase Assistance for Germany</h3>
+        <button (click)="prevStep()">Previous</button>
+        <button (click)="nextStep()">Next</button>
+      </div>
+
+
       <!-- /////////////////////// -->
+
+
+
 
 
 
@@ -100,50 +164,48 @@
       <!-- Step 1 for Poland -->
       <div *ngIf="selectedCountry === 'Poland' && currentStep === 1">
         <h3>Step 1: Address Information for Poland</h3>
-        <!-- Add your step 1 form fields for Poland here -->
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
       <!-- Step 2 for Poland -->
       <div *ngIf="selectedCountry === 'Poland' && currentStep === 2">
         <h3>Step 2: Address Information for Poland</h3>
-        <!-- Add your step 2 form fields for Poland here -->
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
       <!-- Step 3 for Poland -->
       <div *ngIf="selectedCountry === 'Poland' && currentStep === 3">
         <h3>Step 3: Address Information for Poland</h3>
-        <!-- Add your step 2 form fields for Poland here -->
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
       <!-- Step 4 for Poland -->
       <div *ngIf="selectedCountry === 'Poland' && currentStep === 4">
         <h3>Step 4: Address Information for Poland</h3>
-        <!-- Add your step 2 form fields for Poland here -->
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
       <!-- Step 5 for Poland -->
       <div *ngIf="selectedCountry === 'Poland' && currentStep === 5">
         <h3>Step 5: Address Information for Poland</h3>
-        <!-- Add your step 2 form fields for Poland here -->
         <button (click)="prevStep()">Previous</button>
         <button (click)="nextStep()">Next</button>
       </div>
     </div>
-     <!-- Step Counter -->
-  <div class="step-counter">
-    <div class="step-counter-left">
-      Шаг {{ currentStep }} из {{ totalSteps }}
-    </div>
-    <div class="step-counter-right">
-      <div class="order-steps">
-        <div *ngFor="let step of orderSteps" class="order-step" [class.active]="step === currentStep"></div>
+
+
+
+
+    <!-- Step Counter -->
+    <div class="step-counter">
+      <div class="step-counter-left">
+        Шаг {{ currentStep }} из {{ totalSteps }}
+      </div>
+      <div class="step-counter-right">
+        <div class="order-steps">
+          <div *ngFor="let step of orderSteps" class="order-step" [class.active]="step <= currentStep"></div>
+        </div>
       </div>
     </div>
-    
-  </div>
   </div>
 </div>

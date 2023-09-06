@@ -230,6 +230,7 @@
   box-shadow: 0 2px 19px rgba(0, 0, 0, .0700667);
   border-radius: 10px;
   border-color: rgba(0, 0, 0, .1);
+  position: relative;
 }
 
 
@@ -282,6 +283,24 @@
   }
 }
 
+.choose-count {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-about {
+  font-size: 14px;
+  color: #73849a;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.display-flex {
+  display: flex;
+  gap: 10px;
+}
+
 .country-content {
   display: flex;
   justify-content: space-evenly;
@@ -308,6 +327,11 @@
     color: #212121;
     margin-bottom: 0;
   }
+
+  i {
+    font-size: 25px;
+    color: gray;
+  }
 }
 
 .country-boxes:hover {
@@ -316,3 +340,137 @@
   cursor: pointer;
 }
 
+.current-step {
+  border-radius: 50%;
+  border: 1px solid #A9592C;
+  color: #A9592C;
+  width: 30px;
+  margin-bottom: 0;
+}
+
+.country-box {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #eaedf3;
+  transition: all .2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease;
+
+  p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #212121;
+    margin-bottom: 0;
+    width: 100px;
+  }
+
+  i {
+    font-size: 25px;
+    color: gray;
+  }
+}
+
+.country-box:hover {
+  border-color: #A9592C;
+  cursor: pointer;
+
+  p {
+    color: #A9592C;
+  }
+
+  i {
+    color: #A9592C;
+  }
+}
+
+.country-box:active {
+  border-color: #A9592C;
+  color: #A9592C;
+  cursor: pointer;
+  background-color: rgb(169, 89, 4, 0.2);
+}
+
+
+.previous-btn {
+  position: absolute;
+  top: 0;
+
+  span {
+    color: #aaaaaa;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: #A9592C;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// order
+.step-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px 25px 20px;
+}
+
+.step-counter-left {
+  font-size: 16px;
+}
+
+.order-steps {
+  display: flex;
+  justify-content: end;
+}
+
+.order-step {
+  width: 25px;
+  height: 7px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.order-step.active {
+  background-color: #A9592C;
+  border-color: #7a4020;
+  color: #fff;
+}

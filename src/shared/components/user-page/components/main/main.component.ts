@@ -10,6 +10,7 @@ export class MainComponent {
   currentStep = 0;
   totalSteps = 5;
   selectedCountry: string | null = null;
+  selectedOption: string | null = null; 
 
   selectCountry(country: string) {
     this.selectedCountry = country;
@@ -39,5 +40,10 @@ export class MainComponent {
 
   get orderSteps(): number[] {
     return Array(this.totalSteps).fill(0).map((_, index) => index + 1);
+  }
+
+  selectOption(option: string) {
+    this.selectedOption = option;
+    this.currentStep = 2; 
   }
 }
