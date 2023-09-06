@@ -102,3 +102,14 @@ hr {
     padding-top: 20px;
     color: #000;
 }
+
+::ng-deep  .custom-modal .ant-modal {
+  border-radius: 7px;
+  height: 10px !important;
+}
+
+::ng-deep  .custom-modal .ant-modal-body {
+  height: 10px !important;
+  display: flex;
+  align-items: center;  // To vertically center the content
+}

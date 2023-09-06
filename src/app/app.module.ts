@@ -25,9 +25,7 @@ import { ContactsComponent } from './modules/layouts/contacts/contacts.component
 import { PriceComponent } from './modules/layouts/price/price.component';
 import { ServicesComponent } from './modules/layouts/services/services.component';
 import { HelpsComponent } from './modules/layouts/helps/helps.component';
-
 import { RestrictionsComponent } from 'src/shared/components/restrictions/restrictions.component';
-
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 registerLocaleData(localeRu);
