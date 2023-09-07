@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -10,7 +11,12 @@ export class MainComponent {
   currentStep = 0;
   totalSteps = 5;
   selectedCountry: string | null = null;
-  selectedOption: string | null = null; 
+  selectedOption: string | null = null;
+  orderItems: any[] = [];
+
+  ngOnInit() {
+    this.addOrderItem();
+  }
 
   selectCountry(country: string) {
     this.selectedCountry = country;
@@ -33,7 +39,7 @@ export class MainComponent {
   }
 
   prevStep() {
-    if (this.currentStep > 1) {
+    if (this.currentStep > 0) {
       this.currentStep--;
     }
   }
@@ -44,6 +50,19 @@ export class MainComponent {
 
   selectOption(option: string) {
     this.selectedOption = option;
-    this.currentStep = 2; 
+    this.currentStep = 2;
+  }
+
+  addOrderItem() {
+    const newItem = {
+      itemName: '',
+      quantity: null,
+      price: null
+    };
+    this.orderItems.push(newItem);
+  }
+
+  deleteOrderItem(index: number) {
+    this.orderItems.splice(index, 1);
   }
 }

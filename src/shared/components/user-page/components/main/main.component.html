@@ -34,13 +34,16 @@
 </div>
 
 
+
 <div [ngClass]="{'modal': true, 'fade-in': modalOpen}" class="modal">
   <div class="modal-content">
     <div class="modal-heder">
+      <div *ngIf="selectedCountry && currentStep > 0" class="previous-btn">
+        <span (click)="prevStep()">← </span>
+      </div>
       <span class="modal-header">Оформить посылку</span>
       <span class="close" (click)="closeModal()">&times;</span>
     </div>
-    <!-- Step 0 - Choose Country -->
     <div *ngIf="currentStep === 0" class="modal-steps">
       <div class="choose-country">Выберите филиал<span>*</span></div>
       <div class="country-content">
@@ -63,15 +66,15 @@
           <p class="current-step">{{ currentStep }}</p>Выберите тип заказа<span>*</span>
         </div>
         <div class="country-content">
-          <div class="country-box" (click)="selectOption('sendPackage')"> 
+          <div class="country-box" (click)="selectOption('sendPackage')">
             <i class="fa-solid fa-truck"></i>
             <p>Отправить посылку</p>
           </div>
-          <div class="country-box" (click)="selectOption('internetOrder')"> 
+          <div class="country-box" (click)="selectOption('internetOrder')">
             <i class="fa-solid fa-cart-plus"></i>
             <p>Интернет заказ</p>
           </div>
-          <div class="country-box" (click)="selectOption('purchaseAssistance')"> 
+          <div class="country-box" (click)="selectOption('purchaseAssistance')">
             <i class="fa-solid fa-shop"></i>
             <p>Помощь в покупке</p>
           </div>
@@ -89,23 +92,100 @@
             Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления
             таможенной декларации.
           </div>
-        </div>
-        <div class="previous-btn">
-          <span (click)="prevStep()">← </span>
+          <div class="add-order-box">
+            <div class="add-order-header" *ngFor="let item of orderItems; let i = index">
+              <div class="divs-sty">
+                <p>№</p>
+                <p>{{ i + 1 }}</p>
+              </div>
+              <div class="name-order">
+                <p>Название товара <span>*</span></p>
+                <input type="text" [(ngModel)]="item.itemName" placeholder="Item name">
+              </div>
+              <div class="quantity">
+                <p>Количество <span>*</span></p>
+                <div class="input-sty">
+                  <input type="number" [(ngModel)]="item.quantity" placeholder="кол-во">
+                  <div class="input-sht">шт</div>
+                </div>
+              </div>
+              <div class="quantity">
+                <p>Стоимость <span>*</span></p>
+                <div class="input-sty">
+                  <input type="number" [(ngModel)]="item.price" placeholder="цена">
+                  <div class="input-sht">$</div>
+                </div>
+              </div>
+              <div class="delete-btn" *ngIf="orderItems.length > 1">
+                <div (click)="deleteOrderItem(i)" class="delete-button">
+                  <i class="fas fa-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="add-btn">
+              <button (click)="addOrderItem()"> <i class="fa-solid fa-circle-plus"></i> Добавить еще</button>
+            </div>
+          </div>
+          <div class="order-weight">
+            <p>Общий вес товаров</p>
+            <div class="input-sty">
+              <input type="number" placeholder="если знаете">
+              <div class="input-sht">кг</div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 3"
         class="modal-steps">
-        <h3>Step 3: Send Package for Germany</h3>
-        <div class="previous-btn">
-          <span (click)="prevStep()">← </span>
+        <div class="choose-count">
+          <div class="display-flex">
+            <span class="current-step">{{ currentStep }}</span>Выбор отправителя
+          </div>
+          <div class="text-about">
+            Вы можете выбрать адрес отправителя из сохранившехся адресов, либо добавить новый адрес.
+          </div>
+          <div class="user-address">
+            <div class="user-details">
+              <i class="fa fa-user"></i>
+              <p>Bill Jacob</p>
+            </div>
+            <div class="user-details"> 
+              <i class="fa fa-home"></i> 
+              <p>США, Нью-Йорк, araasdfdfdd, дом araasdfdfdd</p>
+            </div>
+            <div class="user-details">
+              <i class="fa fa-phone"></i> 
+              <p>+1 225 254 25 23</p>
+            </div>
+          </div>
         </div>
       </div>
+
+
       <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 4"
         class="modal-steps">
-        <h3>Step 4: Send Package for Germany</h3>
-        <div class="previous-btn">
-          <span (click)="prevStep()">← </span>
+        <div class="choose-count">
+          <div class="display-flex">
+            <span class="current-step">{{ currentStep }}</span>Выбор получателя
+          </div>
+          <div class="text-about">
+            Вы можете выбрать адрес отправителя из сохранившехся адресов, либо добавить новый адрес.
+          </div>
+          <div class="user-address">
+            <div class="user-details">
+              <i class="fa fa-user"></i>
+              <p>Bill Jacob</p>
+            </div>
+            <div class="user-details"> 
+              <i class="fa fa-home"></i> 
+              <p>США, Нью-Йорк, araasdfdfdd, дом araasdfdfdd</p>
+            </div>
+            <div class="user-details">
+              <i class="fa fa-phone"></i> 
+              <p>+1 225 254 25 23</p>
+            </div>
+          </div>
         </div>
       </div>
       <div *ngIf="selectedCountry === 'Germany' && selectedOption === 'sendPackage' && currentStep === 5"
@@ -153,50 +233,9 @@
       </div>
 
 
-      <!-- /////////////////////// -->
 
-
-
-
-
-
-      <!-- Poland -->
-      <!-- Step 1 for Poland -->
-      <div *ngIf="selectedCountry === 'Poland' && currentStep === 1">
-        <h3>Step 1: Address Information for Poland</h3>
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 2 for Poland -->
-      <div *ngIf="selectedCountry === 'Poland' && currentStep === 2">
-        <h3>Step 2: Address Information for Poland</h3>
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 3 for Poland -->
-      <div *ngIf="selectedCountry === 'Poland' && currentStep === 3">
-        <h3>Step 3: Address Information for Poland</h3>
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 4 for Poland -->
-      <div *ngIf="selectedCountry === 'Poland' && currentStep === 4">
-        <h3>Step 4: Address Information for Poland</h3>
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
-      <!-- Step 5 for Poland -->
-      <div *ngIf="selectedCountry === 'Poland' && currentStep === 5">
-        <h3>Step 5: Address Information for Poland</h3>
-        <button (click)="prevStep()">Previous</button>
-        <button (click)="nextStep()">Next</button>
-      </div>
+      <!-- Step Counter -->
     </div>
-
-
-
-
-    <!-- Step Counter -->
     <div class="step-counter">
       <div class="step-counter-left">
         Шаг {{ currentStep }} из {{ totalSteps }}
@@ -206,6 +245,56 @@
           <div *ngFor="let step of orderSteps" class="order-step" [class.active]="step <= currentStep"></div>
         </div>
       </div>
+      <div *ngIf="(selectedCountry === 'Germany' || selectedCountry === 'Poland') && currentStep > 1"
+        class="continue-btn" (click)="nextStep()">
+        <button>Continue <i class="fas fa-chevron-right"></i></button>
+      </div>
     </div>
   </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Poland
+  Step 1 for Poland
+  <div *ngIf="selectedCountry === 'Poland' && currentStep === 1">
+    <h3>Step 1: Address Information for Poland</h3>
+    <button (click)="prevStep()">Previous</button>
+    <button (click)="nextStep()">Next</button>
+  </div>
+  Step 2 for Poland
+  <div *ngIf="selectedCountry === 'Poland' && currentStep === 2">
+    <h3>Step 2: Address Information for Poland</h3>
+    <button (click)="prevStep()">Previous</button>
+    <button (click)="nextStep()">Next</button>
+  </div>
+  Step 3 for Poland
+  <div *ngIf="selectedCountry === 'Poland' && currentStep === 3">
+    <h3>Step 3: Address Information for Poland</h3>
+    <button (click)="prevStep()">Previous</button>
+    <button (click)="nextStep()">Next</button>
+  </div>
+  Step 4 for Poland
+  <div *ngIf="selectedCountry === 'Poland' && currentStep === 4">
+    <h3>Step 4: Address Information for Poland</h3>
+    <button (click)="prevStep()">Previous</button>
+    <button (click)="nextStep()">Next</button>
+  </div>
+  Step 5 for Poland
+  <div *ngIf="selectedCountry === 'Poland' && currentStep === 5">
+    <h3>Step 5: Address Information for Poland</h3>
+    <button (click)="prevStep()">Previous</button>
+    <button (click)="nextStep()">Next</button>
+  </div>
+</div> -->
