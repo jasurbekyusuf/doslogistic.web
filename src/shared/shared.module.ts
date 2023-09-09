@@ -15,6 +15,7 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SettingsComponent } from './components/settings/settings.component';
+import { NoticeComponent } from './components/settings/notice/notice.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -53,7 +54,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CarouselModule
   ],
   declarations: [
-    SettingsComponent
+    SettingsComponent,
+    NoticeComponent
   ]
 })
 export class SharedModule {}
