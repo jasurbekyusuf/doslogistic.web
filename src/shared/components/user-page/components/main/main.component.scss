@@ -184,20 +184,6 @@
   margin: 50px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* The modal */
 .modal {
   position: fixed;
@@ -623,16 +609,6 @@ input::placeholder {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 // order
 .step-counter {
   display: flex;
@@ -688,4 +664,47 @@ input::placeholder {
   i {
     font-weight: 600;
   }
+}
+// bottom link
+.bottom-link{
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  // margin-bottom: 20px;
+}
+.bottom-link .bottom-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // margin: 10px 0;
+}
+.bottom-link .bottom-btn .bottom-div{
+  background-color: #efefef;
+  display: flex;
+  padding: 20px 10px 21px;
+  height: 90px;
+  width: 33.3%;
+  // border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  i {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    
+  }
+}
+.bottom-link .bottom-btn .bottom-div:hover{
+  background-color: #e3e3e3;
+  border: 2px solid #efefef;
 }
