@@ -232,6 +232,143 @@
         <button (click)="nextStep()">Next</button>
       </div>
 
+      <!-- Poland -->
+      <!-- Step 1 for Poland -->
+      <div *ngIf="selectedCountry === 'Poland' && currentStep === 1" class="modal-steps">
+        <div class="choose-country">
+          <p class="current-step">{{ currentStep }}</p>Выберите тип заказа<span>*</span>
+        </div>
+        <div class="country-content">
+          <div class="country-box" (click)="selectOption('sendPackage')">
+            <i class="fa-solid fa-truck"></i>
+            <p>Отправить посылку</p>
+          </div>
+          <div class="country-box" (click)="selectOption('internetOrder')">
+            <i class="fa-solid fa-cart-plus"></i>
+            <p>Интернет заказ</p>
+          </div>
+          <div class="country-box" (click)="selectOption('purchaseAssistance')">
+            <i class="fa-solid fa-shop"></i>
+            <p>Помощь в покупке</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- sendPackage -->
+      <div *ngIf="selectedCountry === 'Poland' && selectedOption === 'sendPackage' && currentStep === 2"
+        class="modal-steps">
+        <div class="choose-count">
+          <div class="display-flex">
+            <span class="current-step">{{ currentStep }}</span>Заполните декларацию
+          </div>
+          <div class="text-about">
+            Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления
+            таможенной декларации.
+          </div>
+          <div class="add-order-box">
+            <div class="add-order-header" *ngFor="let item of orderItems; let i = index">
+              <div class="divs-sty">
+                <p>№</p>
+                <p>{{ i + 1 }}</p>
+              </div>
+              <div class="name-order">
+                <p>Название товара <span>*</span></p>
+                <input type="text" [(ngModel)]="item.itemName" placeholder="Item name">
+              </div>
+              <div class="quantity">
+                <p>Количество <span>*</span></p>
+                <div class="input-sty">
+                  <input type="number" [(ngModel)]="item.quantity" placeholder="кол-во">
+                  <div class="input-sht">шт</div>
+                </div>
+              </div>
+              <div class="quantity">
+                <p>Стоимость <span>*</span></p>
+                <div class="input-sty">
+                  <input type="number" [(ngModel)]="item.price" placeholder="цена">
+                  <div class="input-sht">$</div>
+                </div>
+              </div>
+              <div class="delete-btn" *ngIf="orderItems.length > 1">
+                <div (click)="deleteOrderItem(i)" class="delete-button">
+                  <i class="fas fa-trash"></i>
+                </div>
+              </div>
+            </div>
+            <div class="add-btn">
+              <button (click)="addOrderItem()"> <i class="fa-solid fa-circle-plus"></i> Добавить еще</button>
+            </div>
+          </div>
+          <div class="order-weight">
+            <p>Общий вес товаров</p>
+            <div class="input-sty">
+              <input type="number" placeholder="если знаете">
+              <div class="input-sht">кг</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="selectedCountry === 'Poland' && selectedOption === 'sendPackage' && currentStep === 3"
+        class="modal-steps">
+        <div class="choose-count">
+          <div class="display-flex">
+            <span class="current-step">{{ currentStep }}</span>Выбор отправителя
+          </div>
+          <div class="text-about">
+            Вы можете выбрать адрес отправителя из сохранившехся адресов, либо добавить новый адрес.
+          </div>
+          <div class="user-address">
+            <div class="user-details">
+              <i class="fa fa-user"></i>
+              <p>Bill Jacob</p>
+            </div>
+            <div class="user-details"> 
+              <i class="fa fa-home"></i> 
+              <p>США, Нью-Йорк, araasdfdfdd, дом araasdfdfdd</p>
+            </div>
+            <div class="user-details">
+              <i class="fa fa-phone"></i> 
+              <p>+1 225 254 25 23</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div *ngIf="selectedCountry === 'Poland' && selectedOption === 'sendPackage' && currentStep === 4"
+        class="modal-steps">
+        <div class="choose-count">
+          <div class="display-flex">
+            <span class="current-step">{{ currentStep }}</span>Выбор получателя
+          </div>
+          <div class="text-about">
+            Вы можете выбрать адрес отправителя из сохранившехся адресов, либо добавить новый адрес.
+          </div>
+          <div class="user-address">
+            <div class="user-details">
+              <i class="fa fa-user"></i>
+              <p>Bill Jacob</p>
+            </div>
+            <div class="user-details"> 
+              <i class="fa fa-home"></i> 
+              <p>США, Нью-Йорк, araasdfdfdd, дом araasdfdfdd</p>
+            </div>
+            <div class="user-details">
+              <i class="fa fa-phone"></i> 
+              <p>+1 225 254 25 23</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="selectedCountry === 'Poland' && selectedOption === 'sendPackage' && currentStep === 5"
+        class="modal-steps">
+        <h3>Step 5: Send Package for Poland</h3>
+        <div class="previous-btn">
+          <span (click)="prevStep()">← </span>
+        </div>
+      </div>
+
 
 
       <!-- Step Counter -->
@@ -251,6 +388,7 @@
       </div>
     </div>
   </div>
+</div>
 
 
 
