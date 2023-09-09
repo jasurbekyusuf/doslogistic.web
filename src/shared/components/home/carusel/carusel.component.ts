@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
+import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-carusel',
@@ -7,19 +7,31 @@ import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
   styleUrls: ['./carusel.component.scss']
 })
 export class CaruselComponent {
-  @ViewChild(NzCarouselComponent) carousel!: NzCarouselComponent;
-
-  array = [
-    '../../../../assets/images/contacts/blog-page-img-3 1.png',
-    '../../../../assets/images/contacts/blog-page-img-3 1.png',
-    '../../../../assets/images/contacts/blog-page-img-3 1.png'
-  ];
-
-  prevSlide() {
-    this.carousel.pre();
-  }
-
-  nextSlide() {
-    this.carousel.next();
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    dots: false,
+    navSpeed: 600,
+    items: 4,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1 
+      },
+      400: {
+        items: 2
+      },
+      760: {
+        items: 3
+      },
+      1000: {
+        items: 4
+      }
+    },
+    nav: true
   }
 }
