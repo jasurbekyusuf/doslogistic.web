@@ -679,22 +679,53 @@ input::placeholder {
   margin: 10px 0;
 }
 .bottom-link .bottom-btn .bottom-div{
+  background-color: #e17b2f;
+  display: flex;
+  padding: 20px 10px 21px;
+  height: 70px;
   width: 30%;
-  align-items: center;
+  border-radius: 16px;
   justify-content: center;
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px 30px;
-  p{
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  i {
     font-size: 20px;
     font-weight: 500;
-    margin: 0;
   }
-  i{
-    font-size: 22px;
-    margin-right: 10px;
+  img{
+    font-size: 4px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    
   }
 }
 .bottom-link .bottom-btn .bottom-div:hover{
-  background-color: #eaedf3;
+  background-color: #e87722;
+  border: 2px solid #A9592C;
+  border-radius: 20px;
 }
+
+
+  // width: 30%;
+  // align-items: center;
+  // justify-content: center;
+  // border: 2px solid black;
+  // border-radius: 20px;
+  // padding: 10px 30px;
+  // p{
+  //   font-size: 20px;
+  //   font-weight: 500;
+  //   margin: 0;
+  // }
+  // i{
+  //   font-size: 22px;
+  //   margin-right: 10px;
+  // }
