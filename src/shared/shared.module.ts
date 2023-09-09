@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SettingsComponent } from './components/settings/settings.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -50,6 +51,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule,
     NzCarouselModule,
     CarouselModule
+  ],
+  declarations: [
+    SettingsComponent
   ]
 })
 export class SharedModule {}

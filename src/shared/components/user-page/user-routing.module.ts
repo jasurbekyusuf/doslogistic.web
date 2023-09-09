@@ -11,6 +11,7 @@ import { ReceivedComponent } from './components/parcel-pages/received/received.c
 import { InCountryComponent } from './components/parcel-pages/in-country/in-country.component';
 import { AddressGerComponent } from './components/address-pages/address-ger/address-ger.component';
 import { AddressPolComponent } from './components/address-pages/address-pol/address-pol.component';
+import { SettingsComponent } from '../settings/settings.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent, children: [
@@ -29,7 +30,8 @@ const routes: Routes = [
       {path: 'address-poland', component: AddressPolComponent}
     ]},
   ]},
-  {path: 'addParcel', component: AddParcelComponent}
+  {path: 'addParcel', component: AddParcelComponent},
+  {path: 'settings' , component:SettingsComponent}
 ];
 
 @NgModule({
