@@ -541,13 +541,15 @@ h3 {
     padding: 10px 30px;
   }
 
-  &::before {
-    width: 400px;
+  .services {
+    &::before {
+      width: 400px;
 
-  }
+    }
 
-  &::after {
-    width: 400px;
+    &::after {
+      width: 400px;
+    }
   }
 }
 
@@ -624,12 +626,14 @@ h3 {
     }
   }
 
-  &::before {
-    width: 350px;
+  .services {
+    &::before {
+      width: 350px;
 
-  }
+    }
 
-  &::after {
-    width: 350px;
+    &::after {
+      width: 350px;
+    }
   }
 }
