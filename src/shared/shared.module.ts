@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SettingsComponent } from './components/Setting/settings/settings.component';
 import { NoticeComponent } from './components/Setting/notice/notice.component';
 import { RecipientComponent } from './components/Setting/recipient/recipient.component';
+import { FileComponent } from './components/Setting/file/file.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -58,6 +59,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     NzCarouselModule,
     CarouselModule,
   ],
-  declarations: [SettingsComponent, NoticeComponent, RecipientComponent],
+  declarations: [SettingsComponent, NoticeComponent, RecipientComponent, FileComponent],
 })
 export class SharedModule {}

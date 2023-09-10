@@ -14,6 +14,7 @@ import { AddressPolComponent } from './components/address-pages/address-pol/addr
 import { SettingsComponent } from '../Setting/settings/settings.component';
 import { NoticeComponent } from '../Setting/notice/notice.component';
 import { RecipientComponent } from '../Setting/recipient/recipient.component';
+import { FileComponent } from '../Setting/file/file.component';
 
 const routes: Routes = [
   {
@@ -49,10 +50,11 @@ const routes: Routes = [
     path: 'settings',
     component: SettingsComponent,
     children:[
-      // { path: '', redirectTo: 'settings', pathMatch: 'full' },
+      { path: '', redirectTo: 'settings', pathMatch: 'full' },
       { path: 'settings', component: SettingsComponent},
       { path: 'notice', component: NoticeComponent },
       { path: 'recipient', component: RecipientComponent},
+      { path: 'file', component: FileComponent},
     ],
   },
 ];
