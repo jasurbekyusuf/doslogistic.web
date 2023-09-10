@@ -5,16 +5,18 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { AntModules } from "./ant-imports";
-import { FormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
-import { AppRoutingModule } from "src/app/app-routing.module";
-import { NgxWebstorageModule } from "ngx-webstorage";
+import { AntModules } from './ant-imports';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { SettingsComponent } from './components/settings/settings.component';
+import { SettingsComponent } from './components/Setting/settings/settings.component';
+import { NoticeComponent } from './components/Setting/notice/notice.component';
+import { RecipientComponent } from './components/Setting/recipient/recipient.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -30,14 +32,18 @@ export function HttpLoaderFactory(http: HttpClient) {
     NzLayoutModule,
     NzDropDownModule,
     NzCheckboxModule,
-    NgxWebstorageModule.forRoot({prefix: 'app', separator: '-', caseSensitive: true}),
+    NgxWebstorageModule.forRoot({
+      prefix: 'app',
+      separator: '-',
+      caseSensitive: true,
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
+        deps: [HttpClient],
+      },
+    }),
   ],
   exports: [
     AntModules,
@@ -50,10 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NzButtonModule,
     TranslateModule,
     NzCarouselModule,
-    CarouselModule
+    CarouselModule,
   ],
-  declarations: [
-    SettingsComponent,
-  ]
+  declarations: [SettingsComponent, NoticeComponent, RecipientComponent],
 })
 export class SharedModule {}
