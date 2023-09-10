@@ -540,6 +540,15 @@ h3 {
     font-size: 13px;
     padding: 10px 30px;
   }
+
+  &::before {
+    width: 400px;
+
+  }
+
+  &::after {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width:415px) {
@@ -613,5 +622,14 @@ h3 {
       font-size: 24px;
       padding-bottom: 20px;
     }
+  }
+
+  &::before {
+    width: 350px;
+
+  }
+
+  &::after {
+    width: 350px;
   }
 }

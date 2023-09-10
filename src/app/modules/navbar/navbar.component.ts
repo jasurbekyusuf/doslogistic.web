@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { DropDownAnimation } from './animation';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -15,6 +16,17 @@ export class NavbarComponent {
   selectedUnit: string = 'kg';
   sliderValue: number = 0;
   checked: boolean = false;
+  isHomePage: boolean = false;
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.isHomePage = event.urlAfterRedirects === '/';
+      }
+    });
+  }
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
