@@ -603,6 +603,11 @@
     .about-service .service-num {
         font-size: 20px;
     }
+
+    .gradient::before,
+    .gradient::after {
+        width: 450px;
+    }
 }
 
 @media screen and (max-width: 478px) {
@@ -645,5 +650,10 @@
 
     .about-service .service-num {
         font-size: 18px;
+    }
+
+    .gradient::before,
+    .gradient::after {
+        width: 400px;
     }
 }
