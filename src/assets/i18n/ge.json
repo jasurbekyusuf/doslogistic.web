@@ -208,7 +208,13 @@
         }
       },
       "whyChooseUs":{
-        "whyChooseUs":"Warum sollten Sie sich für uns entscheiden?"
+        "whyChooseUs":"Warum sollten Sie sich für uns entscheiden?",
+        "pricing":"Wettbewerbsfähige Preisanpassung",
+        "pricing-paragraph":"Wir erwähnen eine wettbewerbsfähige Preisstruktur und kostengünstige Logistiklösungen ohne Kompromisse bei Qualität und Zuverlässigkeit.",
+        "Safety":"Sicherheit",
+        "Safety-paragraph":"Wir legen Wert darauf, dass sich unser Unternehmen strikt an Sicherheitsvorschriften und Industriestandards hält. Verfügt über alle Zertifizierungen und Auszeichnungen, die es für Sicherheit und Compliance erhalten hat.",
+        "time":"Effizienz und Zeitersparnis",
+        "time-paragraph":"Kunden, die sich für unser Unternehmen entscheiden, erfahren, wie sie wertvolle Zeit und Ressourcen sparen, schnellere Lieferzeiten, minimale Transportverzögerungen und eine höhere Effizienz der Lieferkette erreichen."
       }
     },
     "navbar": {
