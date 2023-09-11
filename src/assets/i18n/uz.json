@@ -208,7 +208,13 @@
       },
       "faqs":"Tez-tez so'raladigan savollar",
       "whyChooseUs":{
-        "whyChooseUs":"Nima uchun bizni tanlashingiz kerak"
+        "whyChooseUs":"Nima uchun bizni tanlashingiz kerak",
+        "pricing":"Raqobatbardosh narxlash",
+        "pricing-paragraph":"Sifat va ishonchlilikka putur etkazmasdan raqobatbardosh narxlar tuzilmasi va iqtisodiy jihatdan samarali logistika yechimlarini eslatib o'tamiz.",
+        "Safety":"Xavfsizlik",
+        "Safety-paragraph":"Kompaniyamiz xavfsizlik qoidalari va sanoat standartlariga qat'iy rioya qilishini ta'kidlab o'tamiz. Xavfsizlik va muvofiqlik uchun olgan har qanday sertifikat va mukofotlariga ega.",
+        "time":"Samaradorlik va vaqtni tejash",
+        "time-paragraph":"Bizning kompaniyani tanlagan  mijozlarga qimmatli vaqt va resurslarni qanday tejash va qisqa vaqt ichida etkazib berish muddatlari, minimal tranzit kechikishlari va ta'minot zanjiri samaradorligi ortadi."
       }
     },
     "navbar": {

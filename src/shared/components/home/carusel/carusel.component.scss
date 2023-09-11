@@ -17,15 +17,15 @@
   .image-section {
     width: 721px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .image {
     width: 660px;
     height: 560px;
-    text-align: end;
+    text-align: right;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   img {
