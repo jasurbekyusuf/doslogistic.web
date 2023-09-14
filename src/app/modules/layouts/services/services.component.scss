@@ -1,3 +1,8 @@
+:root{
+  --bg-color:#ccffe3;
+  --main-color:#058c42;
+}
+
 .middle-container {
   max-width: 1320px;
   margin: 0 auto;
@@ -28,7 +33,7 @@
     width: 750px;
     height: 700px;
     border-radius: 700px;
-    background: linear-gradient(to right, #A9592C, transparent), #FFF;
+    background: linear-gradient(to right, #058c42, transparent), #FFF;
     filter: blur(500px);
     z-index: -2;
   }
@@ -157,7 +162,7 @@ h3 {
   }
 
   .link {
-    color: #A9592C;
+    color: #058c42;
     cursor: pointer;
     font-weight: 500;
   }
@@ -171,7 +176,7 @@ h3 {
 }
 
 .service-container .service-content:hover {
-  border-bottom: 15px solid #A9592C;
+  border-bottom: 15px solid #058c42;
   border-radius: 5px;
 }
 

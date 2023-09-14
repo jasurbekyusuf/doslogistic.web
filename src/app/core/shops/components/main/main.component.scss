@@ -38,15 +38,15 @@
     background-color: #fff;
 
     &:hover {
-        background-color: #faf2ed;
-        color: #A9592C;
+        background-color: #ccffe3;
+        color: #058c42;
         border-radius: 5px;
     }
 }
 
 .sidebar .active {
-    border-left: #A9592C 3px solid;
-    background-color: #faf2ed;
+    border-left: #058c42 3px solid;
+    background-color: #ccffe3;
     border-radius: 5px;
 }
 

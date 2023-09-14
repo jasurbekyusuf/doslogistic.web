@@ -1,3 +1,8 @@
+:root {
+  --bg-color: #bff1c4;
+  --main-color: #058c42;
+}
+
 .main-container {
   display: flex;
   padding-top: 40px;
@@ -23,8 +28,8 @@
   }
 
   p:hover {
-    color: #A9592C;
-    background-color: #faf2ed;
+    color: #058c42;
+    background-color: #bff1c4;
   }
 }
 
@@ -37,7 +42,7 @@
   padding: 18px;
   justify-content: center;
   align-items: center;
-  background-color: #faf2ed;
+  background-color: #bff1c4;
   border-radius: 0.5rem;
 
   h4 {
@@ -57,7 +62,7 @@
   button {
     border-radius: 0.25rem;
     color: white;
-    background-color: #A9592C;
+    background-color: #058c42;
     border: none;
     outline: none;
     font-size: 1rem;
@@ -66,7 +71,7 @@
   }
 
   button:hover {
-    background-color: #7a4020;
+    background-color:#15b342;
   }
 
   .thinking-emoji {
@@ -124,8 +129,8 @@
   transition: box-shadow 0.3s ease-in-out;
 
   &.clicked {
-    color: #A9592C;
-    background-color: #faf2ed;
+    color: #058c42;
+    background-color: #bff1c4;
   }
 }
 
@@ -212,7 +217,7 @@
   transform: rotate(-45deg);
   left: 4px;
   bottom: 2px;
-  color: #A9592C;
+  color: #058c42;
 }
 
 .gg-chevron-down {
@@ -258,7 +263,6 @@
   .main-dropdown-nav {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -286,7 +290,6 @@
   .container h2 {
     font-size: 1.1rem;
   }
-
 
   .main-dropdown h3,
   .main-dropdown2 h3,
