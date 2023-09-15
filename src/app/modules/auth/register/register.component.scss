@@ -47,15 +47,15 @@
     display: flex;
     position: relative;
     flex-direction: column;
-  }
-  
-  .eye-icon {
+}
+
+.eye-icon {
     cursor: pointer;
     color: #999;
     position: absolute;
     left: 92%;
     top: 10px;
-  }
+}
 
 .eye-icon:hover {
     color: #e87722;
@@ -88,6 +88,7 @@
     justify-content: flex-start;
     gap: 13px;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .terms-of-use p {
@@ -191,14 +192,21 @@
 
 .input-style.is-invalid,
 .was-validated .form-control:invalid {
-  border-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .invalid-feedback {
-  font-size: 90%;
-  color: #dc3545;
-  position: absolute;
-  top: 45px;
+    font-size: 90%;
+    color: #dc3545;
+    position: absolute;
+    top: 45px;
+}
+
+.invalid-feedback2 {
+    font-size: 90%;
+    color: #dc3545;
+    position: absolute;
+    top: 25px;
 }
 
 @media screen and (max-width: 1200px) {

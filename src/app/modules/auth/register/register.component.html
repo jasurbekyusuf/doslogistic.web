@@ -60,9 +60,8 @@
           [ngClass]="{ 'is-invalid': submitted && f['acceptTerms'].errors }"></label>
         <p>{{ "doslogistic.web.help.login.accept" | translate }}</p>
         <a>{{ "doslogistic.web.help.login.terms" | translate }}</a>
-
         <div *ngIf="submitted && f['acceptTerms'].hasError('required') && !f['acceptTerms'].hasError('requiredTrue')"
-          class="invalid-feedback">
+          class="invalid-feedback2">
           Accept Terms is required
         </div>
         <div *ngIf="submitted && f['acceptTerms'].hasError('requiredTrue')" class="invalid-feedback">
