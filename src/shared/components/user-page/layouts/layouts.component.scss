@@ -1,0 +1,54 @@
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  height: 100vh !important;
+}
+
+.content{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.left{
+  max-width: 20%;
+  background-color: aqua;
+  // position: fixed;
+  height: auto;
+  padding: 0 50px;
+  .logo{
+    display: flex;
+    justify-content: center;
+
+    img{
+      width: 100px;
+      margin-top: 40px;
+    }
+  }
+
+  .userName{
+    text-align: center;
+    h1{
+      margin: 0;
+    }
+  }
+
+  .sideNav-links{
+    margin-top: 70px;
+    h1{
+      cursor: pointer;
+      z-index: 222;
+    }
+  }
+}
+
+
+.right{
+  width: 75%;
+  background-color: aqua;
+}
+
+
+
+//
