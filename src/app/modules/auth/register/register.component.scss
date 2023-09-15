@@ -43,19 +43,18 @@
 }
 
 .input-field {
-    margin-bottom: 25px;
-    
+    margin-bottom: 30px;
     display: flex;
-    align-items: center;
     position: relative;
+    flex-direction: column;
 }
-
 
 .eye-icon {
     cursor: pointer;
     color: #999;
     position: absolute;
     left: 92%;
+    top: 10px;
 }
 
 .eye-icon:hover {
@@ -76,7 +75,7 @@
 .input-style:focus {
     outline: none;
     border-color: #A9592C;
-    box-shadow: 0 0 0 2.5px rgba(232,119,34, .5);
+    box-shadow: 0 0 0 2px rgba(232, 119, 34, .5);
 }
 
 ::ng-deep .iti__country-list {
@@ -89,6 +88,7 @@
     justify-content: flex-start;
     gap: 13px;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .terms-of-use p {
@@ -188,6 +188,25 @@
     width: 20px;
     margin-right: 10px;
     margin-top: 2px;
+}
+
+.input-style.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    font-size: 90%;
+    color: #dc3545;
+    position: absolute;
+    top: 45px;
+}
+
+.invalid-feedback2 {
+    font-size: 90%;
+    color: #dc3545;
+    position: absolute;
+    top: 25px;
 }
 
 @media screen and (max-width: 1200px) {

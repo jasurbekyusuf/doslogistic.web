@@ -27,6 +27,7 @@ import { ServicesComponent } from './modules/layouts/services/services.component
 import { HelpsComponent } from './modules/layouts/helps/helps.component';
 import { RestrictionsComponent } from 'src/shared/components/restrictions/restrictions.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
@@ -65,6 +66,8 @@ export function initializeApp(appInitService: AppInitService) {
   imports: [
     BrowserModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule, 
 
   ], schemas: [NO_ERRORS_SCHEMA],
   providers: [
