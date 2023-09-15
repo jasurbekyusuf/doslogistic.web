@@ -67,7 +67,7 @@ export function initializeApp(appInitService: AppInitService) {
     BrowserModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule, 
+    ReactiveFormsModule,
 
   ], schemas: [NO_ERRORS_SCHEMA],
   providers: [

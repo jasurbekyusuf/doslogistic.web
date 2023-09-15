@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 declare const intlTelInput: any;
 
 @Component({
@@ -17,7 +18,9 @@ export class LoginComponent {
     password: new FormControl(''),
   });
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router) { }
 
   ngOnInit() {
     const mobileCodeInput = document.getElementById('mobile_code') as HTMLInputElement;
@@ -49,6 +52,7 @@ export class LoginComponent {
     if (this.form.invalid) {
       return;
     }
+    this.router.navigate(['/cabinet'])
 
     console.log(JSON.stringify(this.form.value, null, 2));
   }
