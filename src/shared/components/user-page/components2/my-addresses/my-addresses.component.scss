@@ -246,7 +246,14 @@
       // width: 950px;
       padding: 15px 15px;
 
+      .footer-button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
       button {
+        display: flex;
+        justify-content: flex-end;
         background-color: #058c42;
         padding: 10px 10px;
         color: #fff;
