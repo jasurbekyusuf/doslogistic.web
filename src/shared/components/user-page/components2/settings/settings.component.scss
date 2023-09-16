@@ -11,36 +11,77 @@
 
 .page-routing {
     display: flex;
-    height: 64px;
+    border-bottom: 0.5px solid #8c8b8b;
+    margin-bottom: 20px;
+    gap: 20px;
+    position: relative;
 
-    button {
-        background: #F5F5F5;
-        border: 0.3px solid #058C42;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        padding: 10px 10px;
+    p {
         color: #000000;
         text-align: center;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        transition: background-color .2s linear, color .2s linear;
+        cursor: pointer;
+        margin-bottom: 13px;
     }
 
-    button:hover {
-        background-color: #ddd;
+    p:hover {
+        color: #058C42;
+    }
+}
+
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    background: #058C42;
+    width: 17%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .5s ease-out;
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+
+.btn2::before {
+    content: "";
+    position: absolute;
+    background: #058C42;
+    width: 17%;
+    height: 2px;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .5s ease-out;
+}
+
+.btn2:hover::before {
+    transform: scaleX(1);
+}
+
+.active-link {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #A9592C;
+        bottom: -1px;
+        left: 0;
+        transform-origin: center;
+        transform: scaleX(1);
+        transition: transform 0.2s linear;
     }
 
-    button:nth-child(1) {
-        border-radius: 32px 0px 0px 0px;
-    }
-
-    button:nth-child(2) {
-        border-radius: 0px 32px 0px 0px;
+    &:hover {
+        cursor: default;
+        background-color: transparent;
     }
 }
 

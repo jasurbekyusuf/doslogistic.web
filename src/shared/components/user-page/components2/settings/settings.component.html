@@ -1,8 +1,8 @@
 <div class="container">
     <h2>Mening sozlamalarim</h2>
     <div class="page-routing">
-        <button routerLink="settings">Shaxsiy ma'lumotlar</button>
-        <button routerLink="change-password">Parolni oʻzgartirish</button>
+        <p class="btn1" routerLinkActive="active-link" [routerLink]="['settings']">Shaxsiy ma'lumotlar</p>
+        <p class="btn2" routerLinkActive="active-link">Parolni oʻzgartirish</p>
     </div>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="content">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="data-flex">
                         <label for="input">E-mail</label>
-                        <input type="email" formControlName="email"
+                        <input type="email" formControlName="email" placeholder="bill@gmail.com"
                             [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" autocomplete="this-email">
                         <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
                             <div *ngIf="f['email'].errors['required']">Email is required</div>
