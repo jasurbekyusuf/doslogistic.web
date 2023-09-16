@@ -28,6 +28,7 @@ import { HelpsComponent } from './modules/layouts/helps/helps.component';
 import { RestrictionsComponent } from 'src/shared/components/restrictions/restrictions.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChangePasswordComponent } from '../shared/components/user-page/components2/change-password/change-password.component';
 
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
@@ -62,6 +63,7 @@ export function initializeApp(appInitService: AppInitService) {
     ServicesComponent,
     HelpsComponent,
     RestrictionsComponent,
+    ChangePasswordComponent,
   ],
   imports: [
     BrowserModule,

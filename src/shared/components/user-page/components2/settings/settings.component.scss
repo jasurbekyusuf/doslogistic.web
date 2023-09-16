@@ -1,0 +1,309 @@
+.container {
+    h2 {
+        color: #000;
+        font-family: Inter;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.page-routing {
+    display: flex;
+    height: 64px;
+
+    button {
+        background: #F5F5F5;
+        border: 0.3px solid #058C42;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        padding: 10px 10px;
+        color: #000000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: background-color .2s linear, color .2s linear;
+    }
+
+    button:hover {
+        background-color: #ddd;
+    }
+
+    button:nth-child(1) {
+        border-radius: 32px 0px 0px 0px;
+    }
+
+    button:nth-child(2) {
+        border-radius: 0px 32px 0px 0px;
+    }
+}
+
+.content {
+    width: 990px;
+    border-radius: 0px 32px 32px 32px;
+    border: 0.5px solid #058C42;
+    background: #F5F5F5;
+    box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
+    display: flex;
+    padding: 30px 30px;
+    gap: 30px;
+}
+
+.user-details {
+    width: 450px;
+    padding: 15px 15px;
+
+    button {
+        background-color: #058C42;
+        padding: 10px 10px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border-radius: 8px;
+        border: 1px solid #058C42;
+        cursor: pointer;
+    }
+}
+
+.user-names {
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    span {
+        color: red;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: #5F5F5F;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    input {
+        border-radius: 5px;
+        border: 0.3px solid #058C42;
+        background: #F5F5F5;
+        padding: 5px 5px;
+        font-family: Inter;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+.other-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-flex {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: red;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: #5F5F5F;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    input {
+        border-radius: 5px;
+        border: 0.3px solid #058C42;
+        background: #F5F5F5;
+        padding: 5px 5px;
+        font-family: Inter;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: auto;
+        margin-bottom: 30px;
+    }
+}
+
+.user-gender {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: #5F5F5F;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.checkbox-flex {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    position: relative;
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: #5F5F5F;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+}
+
+.other-data {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border-radius: 5px;
+        border: 0.3px solid #058C42;
+        background: #F5F5F5;
+        padding: 5px 5px;
+        font-family: Inter;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    input.input-style[type="tel"] {
+        border-radius: 5px;
+        border: 0.3px solid #058C42;
+        background: #F5F5F5;
+        padding: 5px 5px;
+        font-family: Inter;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 418.2px;
+        margin-bottom: 30px !important;
+    }
+
+    ::ng-deep .iti__selected-flag {
+        height: 52%;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: #5F5F5F;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+
+.data-flex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.user-passport {
+    width: 450px;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.info {
+    border: 1px solid #058C42;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    p {
+        color: #000000;
+        font-family: Inter;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    span {
+        color: red;
+    }
+}
+
+.passort-image {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    justify-content: center;
+    color: #000;
+    font-weight: 500;
+
+    img {
+        width: 415px;
+        height: 450px;
+    }
+}
+
+.content .is-invalid,
+.was-validated .form-control:invalid,
+.input-style.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    font-size: 90%;
+    color: #dc3545;
+    position: absolute;
+    top: 60px;
+}
+
+.invalid-feedback2 {
+    font-size: 90%;
+    color: #dc3545;
+    position: absolute;
+    top: 20px;
+}

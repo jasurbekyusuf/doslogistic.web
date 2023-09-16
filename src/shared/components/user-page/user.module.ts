@@ -9,6 +9,7 @@ import { MyParcelsComponent } from './components2/my-parcels/my-parcels.componen
 import { MyAddressesComponent } from './components2/my-addresses/my-addresses.component';
 import { MyShipmentsComponent } from './components2/my-shipments/my-shipments.component';
 import { SettingsComponent } from './components2/settings/settings.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SettingsComponent } from './components2/settings/settings.component';
     UserRoutingModule,
     NzModalModule,
     ClipboardModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }
