@@ -24,17 +24,6 @@ export class MyAddressesComponent {
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    // const mobileCodeInput = document.getElementById('mobile_code') as HTMLInputElement;
-    // if (mobileCodeInput) {
-    //   const iti = intlTelInput(mobileCodeInput, {
-    //     initialCountry: 'uz',
-    //     separateDialCode: true,
-    //   });
-    //   mobileCodeInput.addEventListener('input', () => {
-    //     mobileCodeInput.setCustomValidity('');
-    //   });
-    // }
-
     this.form = this.formBuilder.group(
       {
         name: ['', Validators.required],
@@ -42,6 +31,8 @@ export class MyAddressesComponent {
         birthDate: ['', Validators.required],
         email: ['', [Validators.required, Validators.email]],
         acceptTerms: [false, [Validators.required, Validators.requiredTrue]],
+        city: ['', [Validators.required, Validators.minLength(9)]],
+        home: ['', [Validators.required, Validators.minLength(6)]],
         phoneNumber: ['', [Validators.required, Validators.minLength(9)]],
         passportNum: ['', Validators.required, Validators.minLength(9)],
         passportData: ['', Validators.required, Validators.minLength(14)],

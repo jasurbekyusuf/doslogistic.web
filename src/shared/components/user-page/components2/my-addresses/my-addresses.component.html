@@ -39,15 +39,6 @@
                       <div>
                           <label for="input">Familiya<span>*</span></label>
                           <input type="text" placeholder="Familiya kiriting"
-                              [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" formControlName="name">
-                          <div *ngIf="submitted && f['name'].hasError('required') && !f['name'].hasError('requiredTrue')"
-                              class="invalid-feedback">
-                              Majburiy maydon
-                          </div>
-                      </div>
-                      <div>
-                          <label for="input">Ism <span>*</span></label>
-                          <input type="text" placeholder="Ism kiriting"
                               [ngClass]="{ 'is-invalid': submitted && f['surname'].errors }" formControlName="surname">
                           <div *ngIf="submitted && f['surname'].hasError('required') && !f['surname'].hasError('requiredTrue')"
                               class="invalid-feedback">
@@ -55,128 +46,128 @@
                           </div>
                       </div>
                       <div>
-                        <label for="input">Otasining Ismi <span>*</span></label>
-                        <input type="text" placeholder="Otasining Ismi "
-                            [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" formControlName="name">
-                        <div *ngIf="submitted && f['name'].hasError('required') && !f['name'].hasError('requiredTrue')"
+                          <label for="input">Ism <span>*</span></label>
+                          <input type="text" placeholder="Ism kiriting"
+                              [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" formControlName="name">
+                          <div *ngIf="submitted && f['name'].hasError('required') && !f['name'].hasError('requiredTrue')"
+                              class="invalid-feedback">
+                              Majburiy maydon
+                          </div>
+                      </div>
+                      <div>
+                        <label for="input">Otasining Ismi</label>
+                        <input type="text" placeholder="Otasining Ismini kiriting">
+                    </div>
+                  </div>
+                  <div class="user-names">
+                    <div>
+                      <label for="input">Seriya va pasport raqami <span>*</span></label>
+                      <input type="text" placeholder="AA1234567"
+                          [ngClass]="{ 'is-invalid': submitted && f['passportNum'].errors }"
+                          formControlName="passportNum">
+                      <div *ngIf="submitted && f['passportNum'].hasError('required') && !f['passportNum'].hasError('requiredTrue')"
+                          class="invalid-feedback">
+                          Majburiy maydon
+                      </div>
+                    </div>
+                    <div>
+                      <label for="input">JSHIR <span>*</span></label>
+                        <input type="number" placeholder="1234567890111213141516"
+                            [ngClass]="{ 'is-invalid': submitted && f['passportData'].errors }"
+                            formControlName="passportData">
+                        <div *ngIf="submitted && f['passportData'].hasError('required') && !f['passportData'].hasError('requiredTrue')"
                             class="invalid-feedback">
                             Majburiy maydon
                         </div>
                     </div>
-                  </div>
-                  <div class="other-data">
-                      <div class="data-flex">
-                          <label for="input">Seriya va pasport raqami <span>*</span></label>
-                          <input type="text" placeholder="AA1234567"
-                              [ngClass]="{ 'is-invalid': submitted && f['passportNum'].errors }"
-                              formControlName="passportNum">
-                          <div *ngIf="submitted && f['passportNum'].hasError('required') && !f['passportNum'].hasError('requiredTrue')"
-                              class="invalid-feedback">
-                              Majburiy maydon
-                          </div>
-                      </div>
-                      <div class="data-flex">
-                          <label for="input">JSHIR <span>*</span></label>
-                          <input type="number" placeholder="1234567890111213141516"
-                              [ngClass]="{ 'is-invalid': submitted && f['passportData'].errors }"
-                              formControlName="passportData">
-                          <div *ngIf="submitted && f['passportData'].hasError('required') && !f['passportData'].hasError('requiredTrue')"
-                              class="invalid-feedback">
-                              Majburiy maydon
-                          </div>
+                    <div>
+                      <label for="input">Telefon raqami<span>*</span></label>
+                      <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
+                          formControlName="phoneNumber"
+                          [ngClass]="{ 'is-invalid': submitted && f['phoneNumber'].errors }"
+                          autocomplete="this-phoneNumber">
+                      <div *ngIf="submitted && f['phoneNumber'].errors" class="invalid-feedback">
+                          <div *ngIf="f['phoneNumber'].errors['required']">Phone number is required</div>
+                          <div *ngIf="f['phoneNumber'].hasError('minlength')">Phone number is invalid</div>
                       </div>
                   </div>
-                  <!-- <div class="user-gender">
-                      <label for="checkbox">Jinsi</label>
-                      <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['acceptTerms'].errors }">
-                          <div>
-                              <input type="checkbox" id="male" formControlName="acceptTerms">
-                              <label for="male" class="circle-label">Erkak</label>
-                          </div>
-                          <div>
-                              <input type="checkbox" id="female" formControlName="acceptTerms">
-                              <label for="female" class="circle-label">Ayol</label>
-                          </div>
-                          <div *ngIf="submitted && f['acceptTerms'].hasError('required') && !f['acceptTerms'].hasError('requiredTrue')"
-                              class="invalid-feedback2">
-                              Majburiy maydon
-                          </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                  <!--  -->
+                  <div class="user-names">
+                    <div>
+                      <label for="input">Davlat<span>*</span></label>
+                      <input type="text" placeholder="AA1234567"
+                          [ngClass]="{ 'is-invalid': submitted && f['passportNum'].errors }"
+                          formControlName="passportNum">
+                      <div *ngIf="submitted && f['passportNum'].hasError('required') && !f['passportNum'].hasError('requiredTrue')"
+                          class="invalid-feedback">
+                          Majburiy maydon
                       </div>
-                  </div> -->
-                  <div class="other-data">
-                      <div class="data-flex">
-                          <label for="input">Tugʻilgan kun</label>
-                          <input type="text" placeholder="Tugulgan kun" formControlName="birthDate"
-                              [ngClass]="{ 'is-invalid': submitted && f['birthDate'].errors }"
-                              autocomplete="this-birthDate">
-                          <div *ngIf="submitted && f['birthDate'].errors" class="invalid-feedback">
-                              <div *ngIf="f['birthDate'].errors['required']">Tugulgan kun is required</div>
-                          </div>
+                    </div>
+                    <div>
+                      <label for="input">Tuman<span>*</span></label>
+                      <input type="text" placeholder="Tumanni kiriting"
+                          [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                          formControlName="name">
+                      <div *ngIf="submitted && f['name'].hasError('required') && !f['name'].hasError('requiredTrue')"
+                          class="invalid-feedback">
+                          Majburiy maydon
                       </div>
-                      <div class="data-flex">
-                          <label for="input">Telefon raqami</label>
-                          <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
-                              formControlName="phoneNumber"
-                              [ngClass]="{ 'is-invalid': submitted && f['phoneNumber'].errors }"
-                              autocomplete="this-phoneNumber">
-                          <div *ngIf="submitted && f['phoneNumber'].errors" class="invalid-feedback">
-                              <div *ngIf="f['phoneNumber'].errors['required']">Phone number is required</div>
-                              <div *ngIf="f['phoneNumber'].hasError('minlength')">Phone number is invalid</div>
-                          </div>
-                      </div>
-                      <div class="data-flex">
-                          <label for="input">E-mail</label>
-                          <input type="email" formControlName="email" placeholder="bill@gmail.com"
-                              [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" autocomplete="this-email">
-                          <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
-                              <div *ngIf="f['email'].errors['required']">Email is required</div>
-                              <div *ngIf="f['email'].errors['email']">Email is invalid</div>
-                          </div>
-                      </div>
+                    </div>
+                    <div>
+                      <label for="input">Shahar/Tuman<span>*</span></label>
+                      <input type="text" placeholder="Shaharni tanglang"
+                            [ngClass]="{ 'is-invalid': submitted && f['city'].errors }" formControlName="name">
+                        <div *ngIf="submitted && f['city'].hasError('required') && !f['city'].hasError('requiredTrue')"
+                            class="invalid-feedback">
+                            Majburiy maydon
+                        </div>
                   </div>
-                  <button>O'zgartitishlarni saqlash</button>
+                </div>
+                <!--  -->
+                <div class="user-names">
+                  <div>
+                    <label for="input">Ko'cha<span>*</span></label>
+                    <input class="street" type="text" placeholder="Ko'cha manzilini kiriting"
+                        [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                        formControlName="name">
+                    <div *ngIf="submitted && f['name'].hasError('required') && !f['name'].hasError('requiredTrue')"
+                        class="invalid-feedback">
+                        Majburiy maydon
+                    </div>
+                  </div>
+                  <div>
+                    <label for="input">Uy<span>*</span></label>
+                    <input type="text" placeholder="Uy Raqami"
+                          [ngClass]="{ 'is-invalid': submitted && f['city'].errors }" formControlName="home">
+                      <div *ngIf="submitted && f['home'].hasError('required') && !f['home'].hasError('requiredTrue')"
+                          class="invalid-feedback">
+                          Majburiy maydon
+                      </div>
+                </div>
+                <!--  -->
               </div>
-              <!-- <div class="user-passport">
-                  <div class="info">
-                      <img src="../../../../../assets/images/user-cabinet/icons8-lightbulb.svg" />
-                      <div>
-                          <p>Buyurtma berish bilan bogʻliq muammolarni oldini olish uchun haqiqiy maʼlumotlarni
-                              koʻrsating.
-                          </p>
-                          <p>bilan maydonlar <span>*</span> yulduzcha belgilari talab qilinadi.</p>
-                      </div>
-                  </div>
-                  <div class="passort-image">
-                      <img src="../../assets/images/user-cabinet/passport.jpeg" alt="">
-                  </div>
-              </div> -->
-          <!-- </div> -->
+              <div class="user-names">
+                <div>
+                    <label for="input">Xonadon/ofis</label>
+                    <input type="text" placeholder="Xonadonni kiriting">
+                </div>
+                <div>
+                    <label for="input">Podyez</label>
+                    <input type="text" placeholder="Podyezni kiriting">
+                </div>
+                <div>
+                  <label for="input">Uy kirish eshigi kodi</label>
+                  <input type="text" placeholder="Eshik kodi">
+              </div>
+            </div>
+                  <button>O'zgartitishlarni saqlash</button>
+            </div>
       </form>
       </div>
     </div>
   </div>
   
-
-
-  <!-- <div class="modal-content">
-    <select [(ngModel)]="selectedUnit" class="input-style">
-      <option value="kg">кг</option>
-      <option value="funt">фунт</option>
-    </select>
-
-    <div  class="input-container">
-      <input type="number" placeholder="0" class="input" />
-      <input type="number" placeholder="0" class="input" />
-      <input type="number" placeholder="0" class="input" />
-      <select [(ngModel)]="selectedUnit" class="input-style">
-        <option value="sm">sm</option>
-        <option value="m">metr</option>
-        <option value="dyum">dyum</option>
-      </select>
-    </div>
-    <hr>
-    <div class="footer-paragraph">
-      <h3>5-10 раб. дней</h3>
-      
-    </div>
-  </div> -->
