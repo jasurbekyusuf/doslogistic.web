@@ -61,7 +61,7 @@
                   </div>
                   <div class="user-names">
                     <div>
-                      <label for="input">Seriya va pasport raqami <span>*</span></label>
+                      <label for="input">Pasport raqami<span>*</span></label>
                       <input type="text" placeholder="AA1234567"
                           [ngClass]="{ 'is-invalid': submitted && f['passportNum'].errors }"
                           formControlName="passportNum">
@@ -69,7 +69,7 @@
                           class="invalid-feedback">
                           Majburiy maydon
                       </div>
-                    </div>
+                  </div>
                     <div>
                       <label for="input">JSHIR <span>*</span></label>
                         <input type="number" placeholder="1234567890111213141516"
@@ -95,7 +95,6 @@
                 <br>
                 <hr>
                 <br>
-                  <!--  -->
                   <div class="user-names">
                     <div>
                       <label for="input">Davlat<span>*</span></label>
@@ -165,11 +164,11 @@
               </div>
             </div>
               <div class="footer-buttom">
-                  <h5>bekor qilish</h5>
+                  <h5 class="cansel">Bekor qilish</h5>
                   <button>O'zgarishlarni saqlash</button>
               </div>
-            </div>
-      </form>
+          </div>
+        </form>
       </div>
     </div>
   </div>

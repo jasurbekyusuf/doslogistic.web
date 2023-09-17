@@ -200,17 +200,18 @@
 
   .modal {
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    max-width: 880px;
+    max-width: 760px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 0px;
 
     .modal-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 35px;
+      // padding: 10px 35px;
+      padding:0px 25px;
       color: #fff;
 
       .modal-title {
@@ -228,7 +229,8 @@
     }
 
     .modal-content {
-      padding: 20px 30px 10px 30px;
+      // padding: 20px 30px 10px 30px;
+      padding: 20px 10px 10px 10px;
       overflow: auto;
     }
     .content-form {
@@ -245,20 +247,32 @@
 
     .user-details {
       // width: 950px;
-      padding: 15px 15px;
-
-      .footer-button{
+      // padding: 15px 15px;
+      padding: 0px 15px;
+      
+      // .footer-button{
+      //   display: flex;
+      //   justify-content: flex-end;
+      //   align-items: flex-end;
+      //   .cansel{
+      //     display: flex;
+      //     justify-content: flex-end;
+      //     align-items: flex-end;
+      //     width: 120px;
+      //     font-family: 'Inter';
+      //     font-size: 16px;
+      //     font-style: normal;
+      //     font-weight: 300;
+      //     line-height: normal;
+      //   }
+        button {
         display: flex;
-        align-items: center;
         justify-content: flex-end;
-      }
-      button {
-        display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
         background-color: #058c42;
-        padding: 10px 10px;
+        padding: 7px 14px;
         color: #fff;
-        font-family: Inter;
+        font-family: 'Inter';
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
@@ -266,6 +280,7 @@
         border-radius: 8px;
         border: 1px solid #058c42;
         cursor: pointer;
+        transform: translate(550px,0);
       }
     }
 
@@ -285,21 +300,22 @@
         font-family: Inter;
         font-size: 16px;
         font-style: normal;
+        width: 230px;
         font-weight: 500;
         line-height: normal;
       }
 
       input {
         border-radius: 5px;
-        border: 0.3px solid #058c42;
+        border: 0.3px solid grey;
         background: #f5f5f5;
         padding: 6px 5px;
-        font-family: Inter;
+        font-family: 'Inter';
         font-size: 17px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        width: 250px;
+        width: 220px;
         margin-bottom: 30px;
       }
       .street {
@@ -312,7 +328,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        width: 510px;
+        width: 480px;
         margin-bottom: 30px;
       }
     }
