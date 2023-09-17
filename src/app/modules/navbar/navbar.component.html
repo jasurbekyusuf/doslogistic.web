@@ -19,10 +19,12 @@
     <div class="langu">
       <app-language></app-language>
     </div>
+
     <div (click)="openModal()" class="nav-calculator">
       <i class="fa-solid fa-calculator"></i>
       <span>Calculator</span>
     </div>
+    
     <div *ngIf="isModalOpen" class="modal-overlay">
       <div class="modal">
         <div class="modal-header">
