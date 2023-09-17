@@ -4,8 +4,7 @@
       <span></span>
     </div>
     <div class="logo-details" routerLink="/">
-      <i class="fab fa-slack"></i>
-      <span class="logo_name">DostLogistic</span>
+      <a href="#" class="header_logo"><img src="../../../assets/images/logo.svg" alt=""></a>
     </div>
     <div class="nav-pages">
       <p routerLink="/tariffs">{{'doslogistic.web.navbar.price' | translate}}</p>
@@ -20,11 +19,11 @@
       <app-language></app-language>
     </div>
 
-    <div (click)="openModal()" class="nav-calculator">
+    <!-- <div (click)="openModal()" class="nav-calculator">
       <i class="fa-solid fa-calculator"></i>
       <span>Calculator</span>
-    </div>
-    
+    </div> -->
+
     <div *ngIf="isModalOpen" class="modal-overlay">
       <div class="modal">
         <div class="modal-header">
