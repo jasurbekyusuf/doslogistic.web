@@ -1,57 +1,66 @@
-.container{
-  width: 900px;
+.container1{
+  width: 1320px;
   margin: 0 auto;
   padding-top: 40px;
 }
 
-.info{
-  text-align: center;
-  h1{
-    padding-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
-  }
+.block_title {
+	color: var(--Primary, #058C42);
+	text-align: center;
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 64px;
 }
 
-
-.image{
-  text-align: center;
+.pricing {
+	padding-bottom: 120px;
+}
+.pricing_block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.pricing .pricing_item {
+	padding: 64px 0;
+	text-align: center;
+	width: 100%;
+	border-radius: 32px;
+	margin-right: 64px;
+	border: 1px solid var(--Primary, #058C42);
+	background: var(--White, #FFF);
+	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
+}
+.pricing .pricing_item:last-child {
+	margin-right: 0;
+}
+.pricing .pricing_item .pricing_top {
+	position: relative;
+	margin-bottom: 64px;
+}
+.pricing .pricing_item .pricing_top span{
+	font-size: 20px;
+	font-weight: 300;
+	position: absolute;
+	bottom: -12px;
+	right: 0;
+	left: 0;
 }
 
-.image img{
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
+.pricing .pricing_item .pricing_top .price {
+	font-size: 64px;
+	font-weight: 800;
 }
 
-.content{
-  text-align: center;
+.pricing_body .body_item {
+	margin-bottom: 16px;
 }
 
-table {
-  width: 100%;
-  margin: 20px 0;
-  font-size: 16px;
-  text-align: left;
-  border: 1px solid #e3e3e3;
+.pricing_item.green {
+	color: #fff !important;
+	background: var(--Primary, #058C42);
 }
 
-thead {
-  border-bottom: 1px solid #e3e3e3;
+.pricing_item.green .main_button a {
+	color: #058C42;
+	background-color: #fff;
 }
-
-thead th {
-  padding: 10px 15px;
-  text-align: center;
-}
-
-.left{
-  text-align: start !important;
-  padding-left: 10px;
-}
-
-tbody td {
-  text-align: center;
-  padding: 10px 15px;
-}
-
