@@ -5,17 +5,14 @@
 }
 
 .logo-details {
-  font-size: 30px;
+  // font-size: 30px;
   cursor: pointer;
-  padding-bottom: 5px;
 
-  i {
-    color: #A9592C;
-  }
-
-  span {
-    color: #A9592C;
-    font-weight: 500;
+  a{
+    font-size: 30px;
+    img{
+      height: 40px;
+    }
   }
 }
 
@@ -37,7 +34,7 @@
   cursor: pointer;
 
   &:hover {
-    color: #A9592C;
+    color: var(--Primary, #058C42);
     text-decoration: none;
   }
 
@@ -48,7 +45,7 @@
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: #A9592C;
+    background-color: var(--Primary, #058C42);
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -276,7 +273,7 @@
 }
 
 .auth button {
-  background-color: #A9592C;
+  background-color: var(--Primary, #058C42);
   color: white;
   border: none;
   border-radius: 4px;
@@ -291,7 +288,7 @@
 }
 
 .auth button:hover {
-  background-color: #c56302;
+  background-color: var(--Primary, #058C42);
 }
 
 .hamburger-menu {
@@ -304,7 +301,7 @@
 .hamburger-menu span,
 .hamburger-menu span::before,
 .hamburger-menu span::after {
-  background-color: #A9592C;
+  background-color: var(--Primary, #058C42);
   border-radius: 2px;
   content: '';
   position: absolute;

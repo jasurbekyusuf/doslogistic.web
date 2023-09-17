@@ -14,7 +14,7 @@
 }
 
 .reviews_block .review_item {
-	padding: 27px 27px 34px 27px;
+	padding: 27px;
 	border-radius: 24px;
 	border: 1px solid var(--Primary, #058C42);
 	background: var(--White, #FFF);
@@ -34,6 +34,7 @@
 .reviews_block .review_item .author {
 	display: flex;
 	align-items: center;
+  padding-top: 20px;
 }
 
 .reviews_block .review_item .author .name {
@@ -42,3 +43,4 @@
 	margin-left: 13px;
 	font-weight: 600;
 }
+

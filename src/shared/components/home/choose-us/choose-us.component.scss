@@ -8,7 +8,21 @@
 	text-align: center;
 	font-size: 48px;
 	font-weight: 600;
-	margin-bottom: 64px;
+	margin-bottom: 0 !important;
+
+}
+
+.content{
+  position: relative;
+  height: 160px;
+  img{
+    padding-left: 40px;
+    padding-bottom: 0 !important;
+    position: absolute;
+    bottom: -10;
+    align-items: center;
+    left: 20%;
+  }
 }
 
 .chooseus_block {

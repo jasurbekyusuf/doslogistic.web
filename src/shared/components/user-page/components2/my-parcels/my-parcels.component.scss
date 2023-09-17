@@ -25,11 +25,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-radius: 32px;
     border: 0.5px solid var(--Primary, #058C42);
-    background: var(--grey, #F5F5F5);
-    box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.2), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
-}
+    border-radius: 25px;
+    border: 0.5px solid #058C42;
+    background: #ffffff;
+    box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
+  }
 
 .income-txt {
     h3 {
@@ -59,9 +60,9 @@
 .statistics {
     width: 893px;
     padding: 20px;
-    border-radius: 32px;
+    border-radius: 25px;
     border: 0.5px solid #058C42;
-    background-color: #F5F5F5;
+    background: #ffffff;
     box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
     margin-bottom: 32px;
 }
@@ -100,11 +101,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    border-radius: 32px;
+    border-radius: 25px;
     border: 0.5px solid #058C42;
-    background-color: #F5F5F5;
+    background: #ffffff;
     box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
-}
+
+  }
 
 .box-txt {
     display: flex;
