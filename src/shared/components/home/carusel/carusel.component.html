@@ -1,79 +1,24 @@
 <div class="container">
   <div class="content">
-    <div class="text-info">
-      <h1 class="text-show">We can move you <br> evrywhere.<span> Fast<br>and Easily</span></h1>
-      <h1 class="text-hidden">We can move you <br> evrywhere.<span> Fast and Easily</span></h1>
-      <p>
-        {{'doslogistic.web.aboutUs.info' | translate}}
-        {{'doslogistic.web.footer.logo.info' | translate}}
-      </p>
-      <h2 class="text-bottom">{{'doslogistic.web.aboutUs.info2' | translate}}</h2>
-      <div class="button">
-        <button>Book now</button>
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let index of array">
+        <img src="{{index}}" alt="">
       </div>
-    </div>
-    <div class="image-section">
-      <div class="image">
-        <img src="../../../../assets/images/carusel/user-image.svg" alt="img">
-      </div>
-    </div>
+    </nz-carousel>
   </div>
-  <div class="card">
-    <div class="our-clients">Our clients</div>
-    <div class="carausel">
-      <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-amazon.svg" alt="img 1" />
-            <p>amazon</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-apple.svg" alt="img 2" />
-            <p>apple</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-ebay.svg" alt="img 3" />
-            <p>ebay</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-iherb.svg" alt="img 4" />
-            <p>iherb</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-microsoft.svg" alt="img 5" />
-            <p>microsoft</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-nike.svg" alt="img 6" />
-            <p>nike</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-uniqlo.svg" alt="img 7" />
-            <p>uniqlo</p>
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-            <img src="../../../../assets/images/carausel-shops/icons8-walmart.svg" alt="img 8" />
-            <p>walmart</p>
-          </div>
-        </ng-template>
-      </owl-carousel-o>
+  <div class="service_info">
+    <div class="title">
+      Har qanday joyga <br>
+      Yetqazib beramiz. <br>
+      Tez va oson!
     </div>
-    <div class="all">
-      <button routerLink="/shops">Barchasini Korish</button>
+    <div class="desc">
+      10 kundan kamroq vaqt ichida Germaniya tezkor <br>
+      va ishonchli posilkalar yetkazib beramiz!
+    </div>
+    <div class="main_button">
+      <a href="#">Buyurtma bering!</a>
     </div>
   </div>
 </div>
+<!--  -->
