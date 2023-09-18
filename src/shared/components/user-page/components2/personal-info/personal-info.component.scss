@@ -1,12 +1,45 @@
 .content {
-  width: 990px;
-  border-radius: 0px 17px 17px 0px;
+  width: 1000px;
+  border-radius: 17px;
   border: 0.5px solid #058c42;
   background: #ffffff;
-  // box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
   display: flex;
   padding: 30px 30px;
   gap: 30px;
+
+  input:focus {
+    border: 1px solid #058c42;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(5, 140, 66, 0.5);
+  }
+
+  input {
+    border-radius: 5px;
+    border: 0.3px solid #5F5F5F;
+    background: #f5f5f5;
+    padding: 5px 5px;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #5f5f5f;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  span {
+    color: red;
+  }
 }
 
 .user-details {
@@ -33,33 +66,8 @@
   gap: 20px;
   position: relative;
 
-  span {
-    color: red;
-  }
-
-  label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #5f5f5f;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
   input {
-    border-radius: 5px;
-    border: 0.3px solid #058c42;
-    background: #f5f5f5;
-    padding: 5px 5px;
-    font-family: Inter;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     width: 200px;
-    margin-bottom: 30px;
   }
 }
 
@@ -71,52 +79,12 @@
 .data-flex {
   display: flex;
   flex-direction: column;
-
-  span {
-    color: red;
-  }
-
-  label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #5f5f5f;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  input {
-    border-radius: 5px;
-    border: 0.3px solid #058c42;
-    background: #f5f5f5;
-    padding: 5px 5px;
-    font-family: Inter;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: auto;
-    margin-bottom: 30px;
-  }
 }
 
 .user-gender {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-
-  label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #5f5f5f;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
 }
 
 .checkbox-flex {
@@ -124,17 +92,6 @@
   gap: 25px;
   align-items: center;
   position: relative;
-
-  label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #5f5f5f;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
 
   input[type="checkbox"] {
     margin-right: 5px;
@@ -144,20 +101,6 @@
 .other-data {
   display: flex;
   flex-direction: column;
-
-  input {
-    border-radius: 5px;
-    border: 0.3px solid #058c42;
-    background: #f5f5f5;
-    padding: 5px 5px;
-    font-family: Inter;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: auto;
-    margin-bottom: 30px;
-  }
 
   input.input-style[type="tel"] {
     border-radius: 5px;
@@ -175,17 +118,6 @@
 
   ::ng-deep .iti__selected-flag {
     height: 52%;
-  }
-
-  label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #5f5f5f;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
   }
 }
 
@@ -220,10 +152,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
-  }
-
-  span {
-    color: red;
   }
 }
 

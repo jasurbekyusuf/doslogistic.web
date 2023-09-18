@@ -63,5 +63,4 @@ export class PersonalInfoComponent {
 
     console.log(JSON.stringify(this.form.value, null, 2));
   }
-
 }
