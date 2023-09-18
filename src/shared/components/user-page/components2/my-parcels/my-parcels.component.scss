@@ -1,5 +1,5 @@
 .container {
-    width: 990px;
+    width: 1000px;
 
     h2 {
         color: #000;
@@ -20,7 +20,7 @@
 
 .income {
     display: flex;
-    width: 430.5px;
+    width: 100%;
     padding: 32px;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
     border: 0.5px solid var(--Primary, #058C42);
     border-radius: 17px;
     background: #ffffff;
-  }
+}
 
 .income-txt {
     h3 {
@@ -56,12 +56,12 @@
 }
 
 .statistics {
-    width: 893px;
+    width: 100%;
     padding: 20px;
     border-radius: 17px;
     border: 0.5px solid #058C42;
     background: #ffffff;
-   margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .statistics-txt {
@@ -78,7 +78,7 @@
 
 
 .chart-container {
-    width: 850px;
+    width: 950px;
     height: 400px;
     margin-left: 20px;
     margin-bottom: -20px;
@@ -93,7 +93,7 @@
 
 .location-box {
     display: flex;
-    width: 430.5px;
+    width: 100%;
     padding: 32px;
     flex-direction: column;
     align-items: flex-start;
@@ -101,7 +101,7 @@
     border-radius: 25px;
     border: 0.5px solid #058C42;
     background: #ffffff;
-  }
+}
 
 .box-txt {
     display: flex;
@@ -198,7 +198,7 @@
     border: 1px solid #058C42;
     background: #F5F5F5;
     margin-bottom: 32px;
-  }
+}
 
 .status-data-header {
     display: flex;
@@ -209,6 +209,7 @@
     width: 776px;
     height: 55.6px;
     justify-content: space-between;
+
     p {
         margin-bottom: 0;
         color: #000;
@@ -240,6 +241,7 @@
     align-items: center;
     border-radius: 8px;
     background: #FFF;
+
     p {
         margin-bottom: 0;
         color: #000;
@@ -269,7 +271,8 @@
 
 .cards {
     display: flex;
-    width: 892px;
+    max-width: 1000px;
+    margin: 0 auto;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
@@ -280,7 +283,7 @@
 
 .card-sty {
     display: flex;
-    width: 276px;
+    width: 31%;
     height: 300px;
     padding: 32px 0px;
     flex-direction: column;

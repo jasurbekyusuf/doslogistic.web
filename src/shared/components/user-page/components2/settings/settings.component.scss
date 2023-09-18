@@ -3,9 +3,7 @@
         color: #000;
         font-family: Inter;
         font-size: 45px;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
     }
 }
 
@@ -14,74 +12,39 @@
     border-bottom: 0.5px solid #8c8b8b;
     margin-bottom: 20px;
     gap: 20px;
-    position: relative;
 
     p {
         color: #000000;
         text-align: center;
         font-family: Inter;
         font-size: 20px;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
         cursor: pointer;
         margin-bottom: 13px;
+        position: relative;
+
+        &.active-link {
+            color: #058C42;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #058C42;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::before,
+        &.active-link::before {
+            width: 100%;
+        }
     }
 
     p:hover {
         color: #058C42;
     }
 }
-
-
-.btn1::before {
-    content: "";
-    position: absolute;
-    background: #058C42;
-    width: 17%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: .5s ease-out;
-}
-
-.btn1:hover::before {
-    transform: scaleX(1);
-}
-
-.btn2::before {
-    content: "";
-    position: absolute;
-    background: #058C42;
-    width: 17%;
-    height: 2px;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: .5s ease-out;
-}
-
-.btn2:hover::before {
-    transform: scaleX(1);
-}
-
-.active-link {
-    &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #A9592C;
-        bottom: -1px;
-        left: 0;
-        transform-origin: center;
-        transform: scaleX(1);
-        transition: transform 0.2s linear;
-    }
-
-    &:hover {
-        cursor: default;
-        background-color: transparent;
-    }
-}
-
