@@ -29,6 +29,7 @@ import { RestrictionsComponent } from 'src/shared/components/restrictions/restri
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from '../shared/components/home/map/map.component';
+import { PersonalInfoComponent } from '../shared/components/user-page/components2/personal-info/personal-info.component';
 
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {

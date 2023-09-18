@@ -5,6 +5,8 @@ import { LayoutsComponent } from 'src/shared/components/user-page/layouts/layout
 import { MyShipmentsComponent } from './components2/my-shipments/my-shipments.component';
 import { SettingsComponent } from './components2/settings/settings.component';
 import { MyAddressesComponent } from './components2/my-addresses/my-addresses.component';
+import { PersonalInfoComponent } from './components2/personal-info/personal-info.component';
+import { PasswordComponent } from './components2/password/password.component';
 
 const routes: Routes = [
   {
@@ -27,9 +29,11 @@ const routes: Routes = [
       {
         path: 'settings',
         component: SettingsComponent,
-        // children: [
-        //   { path: '', redirectTo: 'order', pathMatch: 'full' },
-        // ],
+        children: [
+          { path: '', redirectTo: 'personal-info', pathMatch: 'full' },
+          { path: 'personal-info', component: PersonalInfoComponent},
+          { path: 'password', component: PasswordComponent},
+        ],
       },
   //     {
   //       path: 'myAddress',

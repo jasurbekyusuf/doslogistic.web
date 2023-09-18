@@ -10,6 +10,8 @@ import { MyAddressesComponent } from './components2/my-addresses/my-addresses.co
 import { MyShipmentsComponent } from './components2/my-shipments/my-shipments.component';
 import { SettingsComponent } from './components2/settings/settings.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PasswordComponent } from './components2/password/password.component';
+import { PersonalInfoComponent } from './components2/personal-info/personal-info.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MyParcelsComponent,
     MyAddressesComponent,
     MyShipmentsComponent,
-    SettingsComponent
+    SettingsComponent,
+    PasswordComponent,
+    PersonalInfoComponent
   ],
   imports: [
     CommonModule,
