@@ -27,7 +27,6 @@
     line-height: normal;
     cursor: pointer;
     margin-top: 13px;
-    // margin: 0;
   }
 
   p:hover {
@@ -230,41 +229,15 @@
 
     .modal-content {
       // padding: 20px 30px 10px 30px;
-      padding: 20px 10px 10px 10px;
+      padding: 20px 10px;
       overflow: auto;
-    }
-    .content-form {
-      width: 990px;
-      border-radius: 0px 32px 32px 32px;
-      border: 0.5px solid #058c42;
-      background: #f5f5f5;
-      box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.2),
-        0px 2px 12px 0px rgba(167, 201, 87, 0.12);
-      display: flex;
-      padding: 30px 30px;
-      gap: 30px;
     }
 
     .user-details {
       // width: 950px;
       // padding: 15px 15px;
       padding: 0px 15px;
-      
-      // .footer-button{
-      //   display: flex;
-      //   justify-content: flex-end;
-      //   align-items: flex-end;
-      //   .cansel{
-      //     display: flex;
-      //     justify-content: flex-end;
-      //     align-items: flex-end;
-      //     width: 120px;
-      //     font-family: 'Inter';
-      //     font-size: 16px;
-      //     font-style: normal;
-      //     font-weight: 300;
-      //     line-height: normal;
-      //   }
+
         button {
         display: flex;
         justify-content: flex-end;
