@@ -7,6 +7,11 @@ import { SettingsComponent } from './components2/settings/settings.component';
 import { MyAddressesComponent } from './components2/my-addresses/my-addresses.component';
 import { PersonalInfoComponent } from './components2/personal-info/personal-info.component';
 import { PasswordComponent } from './components2/password/password.component';
+import { AddComponent } from './components2/shipmenta-pages/add/add.component';
+import { WarehouseComponent } from './components2/shipmenta-pages/warehouse/warehouse.component';
+import { OnWayComponent } from './components2/shipmenta-pages/on-way/on-way.component';
+import { InCountryComponent } from './components2/shipmenta-pages/in-country/in-country.component';
+import { RecivedComponent } from './components2/shipmenta-pages/recived/recived.component';
 
 const routes: Routes = [
   {
@@ -22,9 +27,15 @@ const routes: Routes = [
       {
         path: 'shipments',
         component: MyShipmentsComponent,
-        // children: [
-        //   { path: '', redirectTo: 'order', pathMatch: 'full' },
-        // ],
+        children: [
+          { path: '', redirectTo: 'order', pathMatch: 'full' },
+          { path: 'order', component: AddComponent},
+          { path: 'in-warehouse', component: WarehouseComponent},
+          { path: 'onway', component: OnWayComponent},
+          { path: 'in-country', component: InCountryComponent},
+          { path: 'recived', component: RecivedComponent},
+
+        ],
       },
       {
         path: 'settings',
