@@ -1,16 +1,16 @@
 <div class="content">
     <h2>Mening Posilkalarim</h2>
     <div class="page-routing">
-        <p class="btn1" routerLinkActive="active-link">Qo’shildi</p>
-        <p class="btn2" routerLinkActive="active-link">Omborxonada</p>
-        <p class="btn2" routerLinkActive="active-link">Yo’lda</p>
-        <p class="btn2" routerLinkActive="active-link">Mamlakatda</p>
-        <p class="btn1" routerLinkActive="active-link">Olindi</p> 
+        <p class="btn1" routerLinkActive="active-link" [routerLink]="['order']">Qo’shildi</p>
+        <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-warehouse']">Omborxonada</p>
+        <p class="btn2" routerLinkActive="active-link" [routerLink]="['onway']">Yo’lda</p>
+        <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-country']">Mamlakatda</p>
+        <p class="btn1" routerLinkActive="active-link" [routerLink]="['recived']">Olindi</p>
     </div>
 </div>
 
 <div class="container">
-    <div class="box">
+    <!-- <div class="box">
       <div class="icon">
         <i class="fa-solid fa-cart-plus"></i>
       </div>
@@ -22,5 +22,8 @@
     <div routerLinkActive="active"  class="addParcels">
       <i class="fas fa-plus"></i>
       <p>Добавить новый заказ</p>
-    </div>
+    </div> -->
+    <ng-container>
+      <router-outlet></router-outlet>
+    </ng-container>
   </div>
