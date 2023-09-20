@@ -212,7 +212,7 @@
       justify-content: space-between;
       align-items: center;
       // padding: 10px 35px;
-      padding:0px 25px;
+      padding:0px 15px;
       color: #fff;
 
       .modal-title {
@@ -230,15 +230,15 @@
     }
 
     .modal-content {
-      // padding: 20px 30px 10px 30px;
-      padding: 20px 0px;
+      padding: 0px 0px 20px  0px;
+      // padding: 20px 0px;
       overflow: auto;
     }
 
     .user-details {
       // width: 950px;
       // padding: 15px 15px;
-      padding: 20px 15px;
+      padding: 0px 15px 20px 15px;
 
         button {
         display: flex;
