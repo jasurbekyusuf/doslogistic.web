@@ -121,6 +121,23 @@
         "delivery": "Yetkazib berish",
         "whatIsTheDeliveryTime": "Yetkazib berish muddati qancha?",
         "whatIsTheDeliveryTimeAnswer": "Buyurtmangiz skladga kelib tushganidan keyin — 3-10 kun",
+        "dangerous":"Yetkazib berish taqiqlangan tovarlar",
+        "liftOfGoods":"Taqiqlangan mahsulotlar ro'yxati:",
+        "firststep":{
+          "first":"• Spirtli ichimliklar/tamaki va alkogol/tamaki mahsulotlari",
+          "second":"• Go'sht va go'sht mahsulotlari.",
+          "third":"• Urug'lar/O'simliklar",
+          "four":"• siqilgan va suyultirilgan gazlar, zajigalkalar, pirotexnika vositalari,krakerlar va boshqalar.",
+          "five":"• Yonuvchan suyuqliklar",
+          "six":"• Zaharli moddalar",
+          "seven":"• Aerozol (soch uchun lak, dezodorant, buzadigan amallar, quruq shampun)",
+          "eight":"• Valyuta (pul)",
+          "nine":"• Qimmatbaho toshlar/metalllar (zargarlik buyumlari)",
+          "ten":"• Diniy materiallar",
+          "eleven":"• Tatuirovka mashinasi va tatuirovka bilan bog'liq komponentlar",
+          "twelve":"• Intim xarakterdagi o'yinchoqlar",
+          "thirteen":"• Lityum batareyali qurilmalar (mumkin, lekin ular maxsus tartiblarni talab qiladi. Biz ta'minlamaymiz IMEI kodini olish uchun hujjatlar)"
+          },
         "whatAreTheShippingRates": {
           "shippingrates":"Yetkazib berish tariflari qanaqa?",
           "answerOne": "3 kilogramgacha — $10/kg.",

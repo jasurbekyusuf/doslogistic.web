@@ -121,6 +121,23 @@
         "delivery": "Lieferung",
         "whatIsTheDeliveryTime": "Wie lange dauert die Lieferung?",
         "whatIsTheDeliveryTimeAnswer": "3-10 Tage nachdem Ihre Bestellung auf Lager ist",
+        "dangerous":"Artikel, deren Lieferung verboten ist",
+        "liftOfGoods":"Liste der verbotenen Gegenstände:",
+        "firststep":{
+          "first":"• Alkohol/Tabak und Alkohol/Tabakprodukte",
+          "second":"• Fleisch und Fleischprodukte.",
+          "third":"• Samen/Pflanzen",
+          "four":"• Komprimierte und verflüssigte Gase, Feuerzeuge, Pyrotechnik,Cracker usw.",
+          "five":"• Entflammbare Flüssigkeiten",
+          "six":"• Giftige Substanzen",
+          "seven":"• Aerosol (Haarspray, Deodorant,Spray, Trockenshampoo)",
+          "eight":"• Währung (Geld)",
+          "nine":"• Edelsteine/Metalle (Schmuck)",
+          "ten":"• Religiöse Materialien",
+          "eleven":"• • Tätowiermaschine und tätowierbezogene Komponenten",
+          "twelve":"• Spielzeuge intimer Natur",
+          "thirteen":"• Geräte mit Lithiumbatterien (möglich, aber sie erfordern spezielle Verfahren. Wir stellen nicht zur Verfügung Dokumentation zum Erhalt des IMEI-Codes)"
+          },
         "whatAreTheShippingRates": {
           "shippingrates":"Wie hoch sind die Versandkosten?",
           "answerOne": "Bis 3 Kilogramm – 10 Dollar/kg.",
