@@ -17,6 +17,8 @@ export class HelpsComponent {
   isOpen7 = false;
   isOpen8 = false;
   isOpen9 = false;
+  isOpen10 = false;
+  isOpen11 = false;
 
   toggleDropdown(dropdownNumber: number): void {
     if (dropdownNumber === 1) {

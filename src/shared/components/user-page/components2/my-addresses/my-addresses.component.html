@@ -34,6 +34,8 @@
       <div class="modal-content">
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
               <div class="user-details">
+                  <h6>Toʻliq ism lotin harflari bilan toʻldirilishi kerak.</h6>
+                  <h6>yulduzcha <span>*</span> belgilarini to'ldirish talab qilinadi.</h6>
                   <div class="user-names">
                       <div>
                           <label for="input">Familiya<span>*</span></label>
@@ -90,6 +92,11 @@
                           <div *ngIf="f['phoneNumber'].hasError('minlength')">Phone number is invalid</div>
                       </div>
                   </div>
+                </div>
+                <div class="extra-phone">
+                  <label for="input">Qo'shimcha Telefon raqami</label>
+                  <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
+                      formControlName="phoneNumber">
                 </div>
                 <br>
                 <hr>
@@ -162,10 +169,7 @@
                   <input type="text" placeholder="Eshik kodi">
               </div>
             </div>
-              <!-- <div class="footer-buttom"> -->
-                  <!-- <h5 class="close-button">Bekor qilish</h5> -->
                   <button>O'zgarishlarni saqlash</button>
-              <!-- </div> -->
           </div>
         </form>
       </div>
