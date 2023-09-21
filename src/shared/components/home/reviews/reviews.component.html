@@ -5,7 +5,12 @@
       <ng-container *ngFor="let slide of slides">
         <ng-template carouselSlide [id]="slide.id.toString()">
           <div class="card">{{ slide.text }}
-            
+            <div class="author">
+              <div class="img">
+                <img src="../../../../assets/images/review/author_ava.png" alt="" />
+              </div>
+              <div class="name">James Clear</div>
+            </div>
           </div>
         </ng-template>
       </ng-container>
