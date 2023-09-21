@@ -26,7 +26,7 @@
 	width: 100%;
 	border-radius: 32px;
 	margin-right: 64px;
-	border: 1px solid var(--Primary, #058C42);
+	border: 2px solid var(--Primary, #058C42);
 	background: var(--White, #FFF);
 	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
 }
@@ -59,6 +59,14 @@
 	color: #058C42;
 	font-size: 16px;
 	font-weight: 500;
+}
+.pricing_body .body_item img{
+	width:25px;
+	height: 25px;
+}
+.pricing_body2 .body_item2 img{
+	width:30px;
+	height: 20px;
 }
 
 .pricing_item.green {
