@@ -26,10 +26,11 @@
 	width: 100%;
 	border-radius: 32px;
 	margin-right: 64px;
-	border: 1px solid var(--Primary, #058C42);
+	border: 2px solid var(--Primary, #058C42);
 	background: var(--White, #FFF);
 	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
 }
+
 .pricing .pricing_item:last-child {
 	margin-right: 0;
 }
@@ -39,20 +40,33 @@
 }
 .pricing .pricing_item .pricing_top span{
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 500;
 	position: absolute;
 	bottom: -12px;
 	right: 0;
 	left: 0;
+	color: #058C42;
 }
 
 .pricing .pricing_item .pricing_top .price {
 	font-size: 64px;
 	font-weight: 800;
+	color: #058C42;
 }
 
 .pricing_body .body_item {
 	margin-bottom: 16px;
+	color: #058C42;
+	font-size: 16px;
+	font-weight: 500;
+}
+.pricing_body .body_item img{
+	width:25px;
+	height: 25px;
+}
+.pricing_body2 .body_item2 img{
+	width:30px;
+	height: 20px;
 }
 
 .pricing_item.green {
@@ -60,7 +74,88 @@
 	background: var(--Primary, #058C42);
 }
 
-.pricing_item.green .main_button a {
+
+.pricing_item.green .main_button{
+	display: flex;
+    justify-content: center;
+   a{
+	display: flex;
+    justify-content: center;
+	border: 2px solid #058C42;
+	border-radius: 15px;
+	font-size: 16px;
+	font-weight: 500;
+	padding:5px;
+	width: 200px;
+	color: #fff;
+	background-color: #058C42;
+    }
+}
+
+.pricing .pricing_item2:last-child {
+	margin-right: 0;
+}
+
+.pricing_item2 {
+	color: #058C42 !important;
+	background: var(--Primary, #fff);
+}
+
+.pricing .pricing_item2 {
+	padding: 64px 0;
+	text-align: center;
+	width: 100%;
+	border-radius: 32px;
+	margin-right: 64px;
+	border: 1px solid var(--Primary, #058C42);
+	background: var(--White, #058C42);
+	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
+}
+
+.pricing .pricing_item2:last-child {
+	margin-right: 0;
+}
+.pricing .pricing_item2 .pricing_top2 {
+	position: relative;
+	margin-bottom: 64px;
+}
+
+.pricing .pricing_item2 .pricing_top2 span{
+	font-size: 20px;
+	font-weight: 500;
+	position: absolute;
+	bottom: -12px;
+	right: 0;
+	left: 0;
+	color: #fff;
+}
+
+.pricing .pricing_item2 .pricing_top2 .price {
+	font-size: 64px;
+	font-weight: 800;
+	color: #fff;
+}
+
+.pricing_body2 .body_item2 {
+	margin-bottom: 16px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.pricing_item2 .main_button{
+	display: flex;
+    justify-content: center;
+   a{
+	display: flex;
+    justify-content: center;
+	border: 2px solid #058C42;
+	border-radius: 15px;
+	font-size: 16px;
+	font-weight: 500;
+	padding:5px;
+	width: 200px;
 	color: #058C42;
 	background-color: #fff;
+    }
 }
