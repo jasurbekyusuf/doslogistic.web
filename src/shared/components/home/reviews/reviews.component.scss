@@ -1,46 +1,79 @@
+// .container{
+//   max-width: 1320px;
+//   margin: 0 auto;
+// }
+
+// .reviews {
+// 	margin-bottom: 134px;
+// }
+
+// .reviews_block {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+// }
+
+// .reviews_block .review_item {
+// 	padding: 27px;
+// 	border-radius: 24px;
+// 	border: 1px solid var(--Primary, #058C42);
+// 	background: var(--White, #FFF);
+// 	margin-right: 32px;
+// }
+
+// .reviews_block .review_item:last-child {
+// 	margin-right: 0;
+
+// }
+
+// .reviews_block .review_item .desc {
+// 	font-size: 16px;
+// 	color: var(--Border-Color, #5F5F5F);
+// 	border-radius: 5px;
+// 	border: 1px solid rgba(67, 71, 85, 0.27);
+// 	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
+// }
+
+// .reviews_block .review_item .author {
+// 	display: flex;
+// 	align-items: center;
+//   padding-top: 20px;
+// }
+
+// .reviews_block .review_item .author .name {
+// 	color: #000;
+// 	font-size: 24px;
+// 	margin-left: 13px;
+// 	font-weight: 600;
+// }
+
 .container{
-  max-width: 1320px;
-  margin: 0 auto;
-}
+	max-width: 1320px;
+	margin: 0 auto;
+  }
+  
+  .card {
+	height: 200px;
+	margin: 0 15px;
+	padding: 20px;
+	border-radius: 18px;
+	border: 2px solid #058C42;
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
+	margin-bottom: 20px;
+  }
+  
+  h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+  }
+  
 
-.reviews {
-	margin-bottom: 134px;
-}
-
-.reviews_block {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.reviews_block .review_item {
-	padding: 27px;
-	border-radius: 24px;
-	border: 1px solid var(--Primary, #058C42);
-	background: var(--White, #FFF);
-	margin-right: 32px;
-}
-
-.reviews_block .review_item:last-child {
-	margin-right: 0;
-
-}
-
-.reviews_block .review_item .desc {
-	font-size: 16px;
-	color: var(--Border-Color, #5F5F5F);
-}
-
-.reviews_block .review_item .author {
-	display: flex;
-	align-items: center;
-  padding-top: 20px;
-}
-
-.reviews_block .review_item .author .name {
-	color: #000;
-	font-size: 24px;
-	margin-left: 13px;
-	font-weight: 600;
-}
+  
+  @media screen and (max-width: 768px) {
+	h1 {
+	  font-size: 25px;
+	  font-weight: 500;
+	}
+  }
 
