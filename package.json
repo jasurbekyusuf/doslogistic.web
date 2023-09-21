@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev": "ng serve --configuration development"
+    "dev": "ng serve --configuration development",
+    "build:sass": "sass styles/styles.scss assets/styles.css",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "postbuild:schematics": "copyfiles schematics/collection.json ../../../dist/aboudard/ng-lib/"
   },
   "private": true,
   "dependencies": {
