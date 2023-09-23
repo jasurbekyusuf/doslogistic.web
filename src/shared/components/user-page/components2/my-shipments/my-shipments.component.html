@@ -6,11 +6,11 @@
     <p class="btn2" routerLinkActive="active-link" [routerLink]="['onway']">Yo’lda</p>
     <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-country']">Mamlakatda</p>
     <p class="btn1" routerLinkActive="active-link" [routerLink]="['recived']">Olindi</p>
-    <button routerLinkActive="active" (click)="openModal()">Posilka qo'shish</button>
   </div>
 </div>
 
 <div class="container">
+  <button class="add-button" routerLinkActive="active" (click)="openModal()">Posilka qo'shish</button>
   <ng-container>
     <router-outlet></router-outlet>
   </ng-container>
