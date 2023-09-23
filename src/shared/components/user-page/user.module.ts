@@ -14,6 +14,7 @@ import { PasswordComponent } from './components2/password/password.component';
 import { PersonalInfoComponent } from './components2/personal-info/personal-info.component';
 import { MySendersComponent } from './components2/my-senders/my-senders.component';
 import { MyAcceptancesComponent } from './components2/my-acceptances/my-acceptances.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MyAcceptancesComponent } from './components2/my-acceptances/my-acceptan
     NzModalModule,
     ClipboardModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule
   ]
 })
 export class UserModule { }
