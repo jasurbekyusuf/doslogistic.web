@@ -12,6 +12,8 @@ import { SettingsComponent } from './components2/settings/settings.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PasswordComponent } from './components2/password/password.component';
 import { PersonalInfoComponent } from './components2/personal-info/personal-info.component';
+import { MySendersComponent } from './components2/my-senders/my-senders.component';
+import { MyAcceptancesComponent } from './components2/my-acceptances/my-acceptances.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PersonalInfoComponent } from './components2/personal-info/personal-info
     MyShipmentsComponent,
     SettingsComponent,
     PasswordComponent,
-    PersonalInfoComponent
+    PersonalInfoComponent,
+    MySendersComponent,
+    MyAcceptancesComponent
   ],
   imports: [
     CommonModule,

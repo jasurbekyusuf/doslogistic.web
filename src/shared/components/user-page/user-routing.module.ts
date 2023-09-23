@@ -12,6 +12,8 @@ import { WarehouseComponent } from './components2/shipmenta-pages/warehouse/ware
 import { OnWayComponent } from './components2/shipmenta-pages/on-way/on-way.component';
 import { InCountryComponent } from './components2/shipmenta-pages/in-country/in-country.component';
 import { RecivedComponent } from './components2/shipmenta-pages/recived/recived.component';
+import { MyAcceptancesComponent } from './components2/my-acceptances/my-acceptances.component';
+import { MySendersComponent } from './components2/my-senders/my-senders.component';
 
 const routes: Routes = [
   {
@@ -22,7 +24,12 @@ const routes: Routes = [
       { path: 'parcels', component: MyParcelsComponent},
       {
         path: 'myAddress',
-        component: MyAddressesComponent
+        component: MyAddressesComponent,
+        children: [
+          { path: '', redirectTo: 'myAcceptance', pathMatch: 'full' },
+          { path: 'myAcceptance', component: MyAcceptancesComponent},
+          { path: 'mySenders', component: MySendersComponent},
+        ],
       },
       {
         path: 'shipments',

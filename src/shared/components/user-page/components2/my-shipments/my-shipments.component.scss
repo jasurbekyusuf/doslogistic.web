@@ -12,10 +12,7 @@
 
 .page-routing {
   display: flex;
-  // border-bottom: 0.5px solid #8c8b8b;
-  // margin-bottom: 20px;
   height: 60px;
-  // gap: 20px;
   position: relative;
 
   p {
@@ -28,10 +25,8 @@
     line-height: normal;
     background-color: #f5f5f5;
     cursor: pointer;
-    //   margin-top: 13px;
     border: 2px solid #058c42;
     padding: 17px 20px;
-    //   border-radius: 15px 0 0 0;
     margin: 0;
   }
 
@@ -178,12 +173,6 @@
   background-color: #10ab55;
 }
 
-
-
-
-
-
-
 /* The modal */
 .modal {
   position: fixed;
@@ -241,7 +230,7 @@
 }
 
 .close:hover {
-  color: #A9592C;
+  color: #058C42;
 }
 
 .modal-header {
@@ -320,15 +309,15 @@
 }
 
 .country-boxes:hover {
-  border-color: #A9592C;
-  color: #A9592C;
+  border-color: #058C42;
+  color: #058C42;
   cursor: pointer;
 }
 
 .current-step {
   border-radius: 50%;
-  border: 1px solid #A9592C;
-  color: #A9592C;
+  border: 1px solid #058C42;
+  color: #058C42;
   width: 30px;
   margin-bottom: 0;
 }
@@ -360,21 +349,21 @@
 }
 
 .country-box:hover {
-  border-color: #A9592C;
+  border-color: #058C42;
   cursor: pointer;
 
   p {
-    color: #A9592C;
+    color: #058C42;
   }
 
   i {
-    color: #A9592C;
+    color: #058C42;
   }
 }
 
 .country-box:active {
-  border-color: #A9592C;
-  color: #A9592C;
+  border-color: #058C42;
+  color: #058C42;
   cursor: pointer;
   background-color: rgb(169, 89, 4, 0.2);
 }
@@ -392,7 +381,7 @@
   }
 
   span:hover {
-    color: #A9592C;
+    color: #058C42;
   }
 }
 
@@ -493,7 +482,7 @@ input::placeholder {
   align-items: center;
   border: 1px solid #dad7d6;
   width: 28px;
-  color: #7a4020;
+  color: #058c42;
   font-size: 15px;
   border-radius: 5px;
   height: 31.88px;
@@ -601,7 +590,7 @@ input::placeholder {
   padding-bottom: 18px;
 
   i {
-    color: #A9592C;
+    color: #058C42;
     margin-right: 10px;
   }
 
@@ -701,7 +690,7 @@ input::placeholder {
     margin-bottom: 0;
     font-size: 18px;
     font-weight: 600;
-    
+
   }
 }
 .bottom-link .bottom-btn .bottom-div:hover{

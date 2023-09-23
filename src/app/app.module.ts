@@ -30,6 +30,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from '../shared/components/home/map/map.component';
 
+
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
   return (): Promise<any> => {
