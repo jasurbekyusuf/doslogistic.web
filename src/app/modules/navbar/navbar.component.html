@@ -9,10 +9,8 @@
 
       <div class="nav-pages">
         <p routerLink="/tariffs" routerLinkActive="active-link">{{'doslogistic.web.navbar.price' | translate}}</p>
-        <p routerLink="/services" routerLinkActive="active-link">{{'doslogistic.web.navbar.services' | translate}}</p>
         <p routerLink="/shops" routerLinkActive="active-link">{{'doslogistic.web.navbar.Shops' | translate}}</p>
         <p routerLink="/aboutUs" routerLinkActive="active-link">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
-        <p routerLink="/404" routerLinkActive="active-link"> {{'doslogistic.web.navbar.reviews' | translate}}</p>
         <p routerLink="/contacts" routerLinkActive="active-link">{{'doslogistic.web.navbar.contacts' | translate}}</p>
         <p routerLink="/helps" routerLinkActive="active-link">{{'doslogistic.web.navbar.help' | translate}}</p>
       </div>
@@ -30,10 +28,10 @@
 
       </div>
 
-    </div>
+      <div class="auth">
+        <button routerLink="/register" (click)="closeMenu()">{{'doslogistic.web.navbar.register' | translate}}</button>
+      </div>
 
-    <div class="auth">
-      <button routerLink="/register" (click)="closeMenu()">{{'doslogistic.web.navbar.register' | translate}}</button>
     </div>
 
     <button (click)="toggleSidebar()" class="toggle-button">
@@ -59,10 +57,8 @@
 
   <div class="nav-pages2">
     <p routerLink="/tariffs" routerLinkActive="active-link">{{'doslogistic.web.navbar.price' | translate}}</p>
-    <p routerLink="/services" routerLinkActive="active-link">{{'doslogistic.web.navbar.services' | translate}}</p>
     <p routerLink="/shops" routerLinkActive="active-link">{{'doslogistic.web.navbar.Shops' | translate}}</p>
     <p routerLink="/aboutUs" routerLinkActive="active-link">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
-    <p routerLink="/404" routerLinkActive="active-link"> {{'doslogistic.web.navbar.reviews' | translate}}</p>
     <p routerLink="/contacts" routerLinkActive="active-link">{{'doslogistic.web.navbar.contacts' | translate}}</p>
     <p routerLink="/helps" routerLinkActive="active-link">{{'doslogistic.web.navbar.help' | translate}}</p>
 

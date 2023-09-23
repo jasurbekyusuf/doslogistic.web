@@ -34,16 +34,15 @@
 }
 
 .question-box {
-  border: 1px solid #eaedf3;
+  border: 1px solid #058c42;
   width: 260px;
-  height: 260px;
   display: flex;
   flex-direction: column;
   padding: 18px;
   justify-content: center;
   align-items: center;
-  background-color: #bff1c4;
-  border-radius: 0.5rem;
+  border: 1px solid #15b342;
+  border-radius: 10px;
 
   h4 {
     font-size: 1.2rem;
@@ -71,7 +70,7 @@
   }
 
   button:hover {
-    background-color:#15b342;
+    background-color: #15b342;
   }
 
   .thinking-emoji {
