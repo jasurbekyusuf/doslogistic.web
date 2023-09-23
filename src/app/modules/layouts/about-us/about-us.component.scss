@@ -232,6 +232,7 @@
 }
 
 .work-card-sty {
+    position: relative;
     border-radius: 24px;
     border: 1px solid #058C42;
     background: #FFF;
@@ -282,6 +283,28 @@
         width: 40px;
         height: 40px;
     }
+}
+
+.card-image {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.3s ease-in-out;
+    width: 100% !important;
+    height: 100% !important;
+
+    img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.work-card-sty.hovered .card-image {
+    bottom: 0;
 }
 
 .our-vision {
@@ -351,4 +374,403 @@
 .content2 {
     padding-top: 150px;
     padding-bottom: 150px;
+}
+
+
+
+@media (max-width: 1380px) {
+
+    .welcome-content,
+    .service-txt {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .work-cards {
+        gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    }
+
+    .work-card-sty {
+        width: auto;
+    }
+
+    .small-plane,
+    .plane2 {
+        display: none;
+    }
+
+    .width-600 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .us-txt h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 24px;
+    }
+
+    .card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .welcome-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: flex-start;
+    }
+
+    .wel-img {
+        img {
+            width: 450px;
+            height: 400px;
+        }
+    }
+
+    .user-image {
+        width: 450px;
+        height: 400px;
+    }
+
+    .our-vision {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wel-img {
+        img {
+            width: 400px;
+            height: 380px;
+        }
+    }
+
+    .user-image {
+        width: 400px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .small-plane,
+    .content svg,
+    .plane2 img {
+        display: none;
+    }
+
+    .welcome-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    .wel-img img {
+        width: 680px;
+        height: 380px;
+    }
+
+    .wel-txt h2 {
+        font-size: 46px;
+        width: 100%;
+    }
+
+    .wel-txt p {
+        font-size: 17px;
+        width: 680px;
+        height: auto;
+    }
+
+    .service-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            width: 680px;
+            height: 380px;
+        }
+    }
+
+    .our-service {
+        padding-top: 100px;
+    }
+
+    .our-vision {
+        display: flex;
+        flex-direction: column;
+        gap: 74px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    .user-image {
+        width: 680px;
+        height: 380px;
+    }
+
+    .vision-txt {
+        width: 680px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .us-txt h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .card img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 730px) {
+    .service-txt {
+        gap: 20px;
+
+        img {
+            width: 550px;
+            height: 380px;
+        }
+    }
+
+    .wel-img img {
+        width: 550px;
+        height: 380px;
+    }
+
+    .image img {
+        height: 420px;
+    }
+
+    .wel-txt p {
+        width: 550px;
+    }
+
+    .user-image {
+        width: 550px;
+        height: 380px;
+    }
+
+    .vision-txt {
+        width: 550px;
+    }
+
+    .us-txt2 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wel-img img {
+        width: 480px;
+        height: 360px;
+    }
+
+    .wel-txt p {
+        width: 480px;
+    }
+
+    .wel-txt h2 {
+        font-size: 42px;
+    }
+
+    .service-txt img {
+        width: 480px;
+        height: 360px;
+    }
+
+    .wel-txt h2 {
+        font-size: 39px;
+    }
+
+    .vektor {
+        display: none;
+    }
+
+    .why-us {
+        position: relative;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 710px;
+            object-fit: cover;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        gap: 5px;
+        background-color: #FFF;
+        border: 0.5px solid #058C42;
+        border-radius: 16px;
+        width: 340px;
+        padding: 10px;
+
+        h2 {
+            color: #000;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #5F5F5F;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .width-600 {
+        display: block;
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    .user-image {
+        width: 480px;
+        height: 360px;
+    }
+
+    .vision-txt {
+        width: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image img {
+        height: 320px;
+    }
+
+    .image-text h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .image-text p {
+        font-size: 17px;
+    }
+
+    .wel-img img {
+        width: 358px;
+        height: 241.484px;
+    }
+
+    .wel-txt p {
+        width: 358px;
+    }
+
+    .wel-txt h2 {
+        width: 50%;
+        font-size: 26px;
+    }
+
+    .service-txt img {
+        width: 358px;
+        height: 241.484px;
+    }
+
+    .our-service {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .us-txt h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .why-us img {
+        height: 775px;
+    }
+
+    .us-txt h2 {
+        margin-top: 10px;
+    }
+
+    .our-work {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .our-work h2 {
+        font-size: 26px;
+    }
+
+    .work-card-sty {
+        width: 358px;
+    }
+
+    .work-card-sty p {
+        font-size: 12px;
+        width: 320px;
+    }
+
+    .user-image {
+        width: 358px;
+        height: 241.484px;
+    }
+
+    .vision-txt {
+        width: 358px;
+    }
+
+    .us-image {
+        width: 100% !important;
+        height: 400px !important;
+        flex-shrink: 0 !important;
+        object-fit: cover;
+    }
+
+    .welcome-content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .work-cards {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .work-cards {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
 }
