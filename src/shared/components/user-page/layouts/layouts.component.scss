@@ -4,10 +4,10 @@
 }
 
 .content {
-  margin-top: 25px;
+  margin-top: 45px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 200px;
 }
 
 .left {
@@ -75,13 +75,17 @@
       color: #058C42;
     }
   }
-
-  .right {
-    width: 75%;
-  }
+}
+.right {
+  width: 75%;
 }
 
 .sidenav-text .active {
   color: #058c42;
   font-weight: 800 !important;
+
+  img{
+    background-color: #058C42;
+    color: #058C42;
+  }
 }
