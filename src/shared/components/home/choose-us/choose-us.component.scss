@@ -1,6 +1,6 @@
 .container{
   max-width: 1320px;
-  margin: 0 auto;
+  margin:110px;
 }
 
 .block_title {
@@ -78,4 +78,150 @@
 	margin: 0 auto;
 	margin-bottom: 24px;
 }
+@media screen and (max-width: 1320px) {
+	.content .block_title{
+	   font-size: 44px;
+	   font-weight: 600;
+	}
+	// .container{
+	// 	padding: 0 40px;
+	// }
+}
+@media screen and (max-width: 1270px){
+	.chooseus_block .right{
+		padding: 30px 108px 30px 64px;
+	}
+	.container{
+		margin:0 40px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.chooseus_block .right{
+		padding: 30px 60px;
+	}
 
+	.chooseus_item .title{
+		img{
+			width:40px;
+			height:40px;
+		}
+		span{
+			font-size: 30px;
+			margin-left: 16px;
+			font-weight: 400;
+		}
+		.chooseus_item .desc{
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+}
+@media screen and (max-width: 1100px){
+	.chooseus_block .right{
+		padding: 19px 40px;
+	}
+	.chooseus_block .left img{
+		width: 510px;
+	}
+	.content img{
+		padding:0 40px 0 0;
+		width: 800px;
+		height: 85px;
+	}
+
+	.chooseus_item .title{
+		img{
+			width:36px;
+			height:36px;
+		}
+		span{
+			font-size: 28px;
+			margin-left: 14px;
+			font-weight: 400;
+		}
+		.chooseus_item .desc{
+			font-size: 15px;
+			font-weight: 300;
+		}
+	}
+}
+
+@media screen and (max-width: 1030px){
+	.chooseus_block .right{
+		padding: 19px 20px 19px 40px;
+	}	
+	.chooseus_item{
+		margin-bottom: 24px;
+	    .title{
+		margin-bottom: 15px;
+		}
+	}
+	
+	.chooseus_item .title{
+	img{
+		width:34px;
+		height:34px;
+	}
+	span{
+		font-size: 26px;
+		margin-left: 12px;
+		font-weight: 400;
+	}
+  }
+}
+
+@media screen and (max-width: 1000px){
+	.chooseus_block .right{
+		padding: 15px 10px 15px 30px;
+	}	
+	.chooseus_item{
+		margin-bottom: 24px;
+	}
+	    .title{
+		margin-bottom: 15px;
+		}
+	}
+	
+	.chooseus_item .title{
+	img{
+		width:32px;
+		height:32px;
+	}
+	span{
+		font-size: 26px;
+		margin-left: 12px;
+		font-weight: 400;
+	}
+	.chooseus_item .desc{
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+@media screen and (max-width: 820px){
+	.chooseus_block .right{
+		padding: 15px 10px 15px 30px;
+	}	
+	.chooseus_item{
+		margin-bottom: 24px;
+	}
+	    .title{
+		margin-bottom: 15px;
+		}
+	}
+	
+	.chooseus_item .title{
+	img{
+		width:32px;
+		height:32px;
+	}
+	span{
+		font-size: 26px;
+		margin-left: 12px;
+		font-weight: 400;
+	}
+	.chooseus_item .desc{
+		font-size: 14px;
+		font-weight: 300;
+	}
+}

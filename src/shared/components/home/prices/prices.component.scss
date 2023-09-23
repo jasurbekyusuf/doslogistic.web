@@ -69,13 +69,13 @@
 	height: 20px;
 }
 
-.pricing_item.green {
+.pricing_item {
 	color: #fff !important;
 	background: var(--Primary, #058C42);
 }
 
 
-.pricing_item.green .main_button{
+.pricing_item .main_button{
 	display: flex;
     justify-content: center;
    a{
@@ -90,10 +90,6 @@
 	color: #fff;
 	background-color: #058C42;
     }
-}
-
-.pricing .pricing_item2:last-child {
-	margin-right: 0;
 }
 
 .pricing_item2 {
@@ -112,7 +108,7 @@
 	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
 }
 
-.pricing .pricing_item2:last-child {
+.pricing .pricing_item2{
 	margin-right: 0;
 }
 .pricing .pricing_item2 .pricing_top2 {
@@ -158,4 +154,25 @@
 	color: #058C42;
 	background-color: #fff;
     }
+}
+@media screen and (max-width: 1320px) {
+	.container .block_title{
+	  font-size: 46px;
+	  font-weight: 600;
+	  margin-bottom: 60px;
+	}
+	.pricing_block .pricing_item {
+		padding: 64px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 0px 40px;
+	}
+	
+	.pricing .pricing_item2 {
+		padding: 64px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 0px 40px;
+	}
+
 }
