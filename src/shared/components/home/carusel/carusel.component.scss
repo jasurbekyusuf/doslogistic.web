@@ -67,6 +67,13 @@ h3 {
 	border-radius: 16px;
 	background: var(--Primary, #058C42);
 }
+@media screen and (max-width: 1320px) {
+  .service_info {
+    top: 140px;
+    left: 150px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .service_info {
     padding: 30px 35px 35px 35px;
