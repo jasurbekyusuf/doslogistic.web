@@ -192,38 +192,17 @@
         </div>
     </div> -->
 
-    <div class="cards">
+    <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let card of cards">
+            <ng-template carouselSlide [id]="card.id.toString()">
+                <div class="card-sty">
+                    <img [src]="card.image" alt="">
+                    <p>{{ card.title }}</p>
+                    <span>{{ card.subtitle }}</span>
+                    <button (click)="redirectToDetails(card)">Batafsil ma’lumot</button>
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
 
-        <div class="card-sty">
-            <img src="../../../../../assets/images/user-cabinet/llimit.png" alt="">
-            <p>O’zbekiston bojxona limiti</p>
-            <span>$1000 / 20 kg </span>
-            <button>Batafsil ma’lumot</button>
-        </div>
-
-        <div class="card-sty">
-            <img src="../../../../../assets/images/user-cabinet/boxx.png" alt="">
-            <p>Yetkazib berish manzilini qanday aniqlash mumkin?</p>
-            <button>Batafsil ma’lumot</button>
-        </div>
-
-        <div class="card-sty">
-            <img src="../../../../../assets/images/user-cabinet/not-allowed.png" alt="">
-            <p>Yetkazib berish taqiqlangan tovarlar</p>
-            <button routerLink="/helps">Batafsil ma’lumot</button>
-        </div>
-
-        <div class="card-sty">
-            <img src="../../../../../assets/images/user-cabinet/store.png" alt="">
-            <p>Tovarlarni qayerdan sotib olish mumkin?</p>
-            <button>Batafsil ma’lumot</button>
-        </div>
-
-        <div class="card-sty">
-            <img src="../../../../../assets/images/user-cabinet/dispetcher.png" alt="">
-            <p>Sotib olishda yordam kerakmi?</p>
-            <button>Batafsil ma’lumot</button>
-        </div>
-
-    </div>
 </div>

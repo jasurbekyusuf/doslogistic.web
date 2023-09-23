@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import * as echarts from 'echarts';
 
 @Component({
@@ -31,5 +32,66 @@ export class MyParcelsComponent {
     };
 
     option && myChart.setOption(option);
+  }
+  cards = [
+    {
+      id: 1,
+      image: '../../../../../assets/images/user-cabinet/llimit.png',
+      title: 'O’zbekiston bojxona limiti',
+      subtitle: '$1000 / 20 kg',
+      link: '',
+    },
+    {
+      id: 2,
+      image: '../../../../../assets/images/user-cabinet/boxx.png',
+      title: 'Yetkazib berish manzilini qanday aniqlash mumkin?',
+      subtitle: '',
+      link: '',
+    },
+    {
+      id: 3,
+      image: '../../../../../assets/images/user-cabinet/not-allowed.png',
+      title: 'Yetkazib berish taqiqlangan tovarlar',
+      subtitle: '',
+      link: '',
+    },
+    {
+      id: 4,
+      image: '../../../../../assets/images/user-cabinet/store.png',
+      title: 'Tovarlarni qayerdan sotib olish mumkin?',
+      subtitle: '',
+      link: '',
+    },
+    {
+      id: 5,
+      image: '../../../../../assets/images/user-cabinet/dispetcher.png',
+      title: 'Sotib olishda yordam kerakmi?',
+      subtitle: '',
+      link: '',
+    },
+  ];
+
+
+  customOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    navSpeed: 700,
+    items: 3,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1 },
+      400: { items: 2 },
+      740: { items: 3 },
+    },
+    nav: true,
+  };
+
+  redirectToDetails(card: any) {
+    console.log('Redirect to details:', card.title);
   }
 }
