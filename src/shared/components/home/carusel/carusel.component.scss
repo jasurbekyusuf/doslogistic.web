@@ -2,6 +2,10 @@
   height: 560px;
 }
 
+::ng-deep .slick-list{
+  height: 560px !important;
+}
+
 [nz-carousel-content] {
   text-align: center;
   height: 560px;
