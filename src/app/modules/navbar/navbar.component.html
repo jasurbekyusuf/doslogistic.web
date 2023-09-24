@@ -15,8 +15,6 @@
         <p routerLink="/helps" routerLinkActive="active-link">{{'doslogistic.web.navbar.help' | translate}}</p>
       </div>
 
-      <div class="cal-langu">
-
         <div class="calculator" (click)="openModal()">
           <i class="fa-solid fa-calculator"></i>
           <span>Calculator</span>
@@ -25,8 +23,6 @@
         <div class="langu">
           <app-language></app-language>
         </div>
-
-      </div>
 
       <div class="auth">
         <button routerLink="/register" (click)="closeMenu()">{{'doslogistic.web.navbar.register' | translate}}</button>
@@ -56,9 +52,9 @@
   </div>
 
   <div class="nav-pages2">
-    <p routerLink="/tariffs" routerLinkActive="active-link">{{'doslogistic.web.navbar.price' | translate}}</p>
-    <p routerLink="/shops" routerLinkActive="active-link">{{'doslogistic.web.navbar.Shops' | translate}}</p>
     <p routerLink="/aboutUs" routerLinkActive="active-link">{{'doslogistic.web.navbar.aboutUs' | translate}}</p>
+    <p routerLink="/shops" routerLinkActive="active-link">{{'doslogistic.web.navbar.Shops' | translate}}</p>
+    <p routerLink="/tariffs" routerLinkActive="active-link">{{'doslogistic.web.navbar.price' | translate}}</p>
     <p routerLink="/contacts" routerLinkActive="active-link">{{'doslogistic.web.navbar.contacts' | translate}}</p>
     <p routerLink="/helps" routerLinkActive="active-link">{{'doslogistic.web.navbar.help' | translate}}</p>
 

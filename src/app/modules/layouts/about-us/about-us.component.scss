@@ -260,7 +260,8 @@
         color: #5F5F5F;
         font-size: 16px;
         font-weight: 300;
-        width: 340px;
+        word-wrap: break-word;
+        max-width: 340px;
     }
 
     button {
@@ -376,7 +377,11 @@
     padding-bottom: 150px;
 }
 
-
+@media (max-width: 10000000px) {
+    .width-600 {
+        display: none;
+    }
+}
 
 @media (max-width: 1380px) {
 
@@ -399,10 +404,6 @@
 
     .small-plane,
     .plane2 {
-        display: none;
-    }
-
-    .width-600 {
         display: none;
     }
 }
@@ -587,6 +588,12 @@
 }
 
 @media (max-width: 600px) {
+
+    .content {
+        max-width: none;
+        margin: 0;
+    }
+
     .wel-img img {
         width: 480px;
         height: 360px;
@@ -674,6 +681,12 @@
 }
 
 @media (max-width: 480px) {
+
+    .content {
+        max-width: none;
+        margin: 0;
+    }
+
     .image img {
         height: 320px;
     }
@@ -735,11 +748,11 @@
 
     .work-card-sty {
         width: 358px;
+        padding: 18px;
     }
 
     .work-card-sty p {
         font-size: 12px;
-        width: 320px;
     }
 
     .user-image {
@@ -772,5 +785,13 @@
         display: flex;
         align-content: center;
         flex-direction: column;
+    }
+
+    .us-txt2 h2 {
+        font-size: 20px;
+    }
+
+    .us-txt2 p {
+        font-size: 22px;
     }
 }
