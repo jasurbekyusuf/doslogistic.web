@@ -13,6 +13,8 @@
       "addressGer": "Germaniyadagi manzil",
       "Toshkent": "Toshkent",
       "berlin": "Berlin",
+      "Poland":"Polsha",
+      "Germany":"Germaniya",
       "form": {
         "writeToUs": "Bizga yozing",
         "fillForm": "Biz sizning savollaringizga javob berishdan xursand bo'lamiz, iltimos, quyidagi shaklni to'ldiring.",
@@ -186,6 +188,7 @@
           "getAddress":"Shaxsiy manzilni oling"
         },
         "shopOnline":{
+          "order":"buyurtma bering",
           "shopOnline": "2. Onlayn xaridlar qiling",
           "info": "Germaniya onlayn-do‘konlaridan mahsulotlarga buyurtma bering va to‘lov paytida Turondan olgan manzilingizni kiriting.",
           "popularStores": "Ommabop do‘konlar"
@@ -205,11 +208,11 @@
         "express": "ekspress",
         "info": "Barcha ekspress-yetkazmalar uchun minimal to'lovlar yo'q, yetkazib berish qiymati esa Buyurtmaning haqiqiy og'irligiga qarab hisoblanadi, yirik gabaritli posilkalar bundan mustasno.",
         "card":{
-          "country": "Mamlakat",
-          "middle": "O'rtacha",
+          "country": "Mamlakat:",
+          "middle": "O’rtacha: 5-12 ish kunida",
           "price": "Yetkazib berish narxi*",
-          "minPrice": "Min. to'lov",
-          "max": "Yirik gabaritli"
+          "minPrice": "Minimal to'lov:",
+          "max": "Yirik gabaritli:"
         }
       },
       "needHelpBuying": {
@@ -220,7 +223,7 @@
       },
       "news":"Yangiliklar",
       "reviewsFromOurCustomers": {
-        "reviewsFromOurCustomers": "Mijozlarimiz sharhlari",
+        "reviewsFromOurCustomers": "",
         "allReviews": "Barcha sharhlar"
       },
       "faqs":"Tez-tez so'raladigan savollar",
@@ -230,7 +233,7 @@
         "pricing-paragraph":"Sifat va ishonchlilikka putur etkazmasdan raqobatbardosh narxlar tuzilmasi va iqtisodiy jihatdan samarali logistika yechimlarini eslatib o'tamiz.",
         "Safety":"Xavfsizlik",
         "Safety-paragraph":"Kompaniyamiz xavfsizlik qoidalari va sanoat standartlariga qat'iy rioya qilishini ta'kidlab o'tamiz. Xavfsizlik va muvofiqlik uchun olgan har qanday sertifikat va mukofotlariga ega.",
-        "time":"Samaradorlik va vaqtni tejash",
+        "time":"Samaradorlik va tezlik",
         "time-paragraph":"Bizning kompaniyani tanlagan  mijozlarga qimmatli vaqt va resurslarni qanday tejash va qisqa vaqt ichida etkazib berish muddatlari, minimal tranzit kechikishlari va ta'minot zanjiri samaradorligi ortadi."
       }
     },

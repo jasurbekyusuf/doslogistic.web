@@ -13,6 +13,8 @@
       "addressGer": "Adresse in Deutschland",
       "Toshkent": "Taschkent",
       "berlin": "Berlin",
+      "Poland":"Polen",
+      "Germany":"Deutschland",
       "form": {
         "writeToUs": "Schreib uns",
         "fillForm": "Gerne beantworten wir Ihre Fragen, bitte füllen Sie das untenstehende Formular aus.",
@@ -186,6 +188,7 @@
           "getAddress":"Erhalten Sie eine persönliche Adresse"
         },
         "shopOnline":{
+          "order":"Befehl",
           "shopOnline": "2. Online kaufen",
           "info": "Bestellen Sie Waren in Online-Shops in Deutschland und geben Sie beim Kauf die Empfangsadresse an.",
           "popularStores": "Beliebte Geschäfte"
@@ -208,7 +211,7 @@
       },
       "news":"Nachricht",
       "reviewsFromOurCustomers": {
-        "reviewsFromOurCustomers": "Kundenbewertungen",
+        "reviewsFromOurCustomers": "Was sagen unsere Kunden über uns?",
         "allReviews": "Alle Bewertungen"
       },
       "faqs":"Faqs",
@@ -217,11 +220,11 @@
         "express": "Äußern",
         "info": "Für alle Expresslieferungen gibt es keine Mindestgebühren und die Versandkosten werden basierend auf dem tatsächlichen Gewicht der Bestellung berechnet, mit Ausnahme von übergroßen Paketen.",
         "card":{
-          "country": "Ein Land",
-          "middle": "Im mittleren",
+          "country": "Ein Land:",
+          "middle": "Durchschnittlich: 5-12 Werktage",
           "price": "Lieferpreis*",
-          "minPrice": "Mindest. zahlen",
-          "max": "übergroß"
+          "minPrice": "Minimum zahlen:",
+          "max": "übergroß:"
         }
       },
       "whyChooseUs":{

@@ -1,6 +1,6 @@
 .container1{
-  width: 1320px;
-  margin: 0 auto;
+  max-width: 1320px;
+  margin: 0 110px;
   padding-top: 40px;
 }
 
@@ -69,13 +69,13 @@
 	height: 20px;
 }
 
-.pricing_item.green {
+.pricing_item {
 	color: #fff !important;
 	background: var(--Primary, #058C42);
 }
 
 
-.pricing_item.green .main_button{
+.pricing_item .main_button{
 	display: flex;
     justify-content: center;
    a{
@@ -90,10 +90,6 @@
 	color: #fff;
 	background-color: #058C42;
     }
-}
-
-.pricing .pricing_item2:last-child {
-	margin-right: 0;
 }
 
 .pricing_item2 {
@@ -112,7 +108,7 @@
 	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
 }
 
-.pricing .pricing_item2:last-child {
+.pricing .pricing_item2{
 	margin-right: 0;
 }
 .pricing .pricing_item2 .pricing_top2 {
@@ -158,4 +154,230 @@
 	color: #058C42;
 	background-color: #fff;
     }
+}
+
+@media screen and (max-width: 1320px) {
+	.container .block_title{
+	  font-size: 46px;
+	  font-weight: 600;
+	  margin-bottom: 60px;
+	}
+	.pricing_block .pricing_item {
+		padding: 64px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 0px 40px;
+	}
+	
+	.pricing .pricing_item2 {
+		padding: 64px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 0px 40px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.container1{
+		margin: 0 40px;
+	}
+	.pricing .pricing_item .pricing_top .price{
+		font-size: 60px;
+	}
+	.pricing .pricing_item2 .pricing_top2 .price{
+		font-size: 60px;
+	}
+	.pricing .pricing_item .pricing_top span{
+		font-size: 16px;
+	}
+	.pricing .pricing_item2 .pricing_top2 span{
+		font-size: 16px;
+	}
+	.pricing_block .pricing_item {
+		padding: 40px 0;
+		margin: 0px 40px;
+	}
+	.pricing_block .pricing_item2 {
+		padding: 40px 0;
+		margin: 0px 40px;
+	}
+	.pricing_body .body_item {
+		margin-bottom: 12px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.pricing_body2 .body_item2 {
+		margin-bottom: 12px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.pricing .pricing_item .pricing_top{
+		margin-bottom: 45px;
+	}
+	.pricing .pricing_item2 .pricing_top2{
+		margin-bottom: 45px;
+	}
+	.pricing .pricing_item .pricing_top .price{
+		font-size: 55px;
+	}
+	.pricing .pricing_item2 .pricing_top2 .price{
+		font-size: 55px;
+	}
+	.pricing_item .main_button a{
+		padding:3px;
+		font-size: 15px;
+	}
+	.pricing_item2 .main_button a{
+		padding:3px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.pricing .pricing_item .pricing_top{
+		margin-bottom: 35px;
+	}
+	.pricing .pricing_item2 .pricing_top2{
+		margin-bottom: 35px;
+	}
+	.pricing_block .pricing_item {
+		padding: 20px 0;
+		margin: 0px 30px;
+	}
+	.pricing_block .pricing_item2 {
+		padding: 20px 0;
+		margin: 0px 30px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.container .block_title{
+		font-size: 38px;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+	.pricing_item .main_button{
+		margin:0 12px;
+	}
+	.pricing_item2 .main_button{
+		margin:0 12px;
+	}
+	.pricing_item .main_button a{
+		padding:2px;
+		font-size: 12px;
+		width: 120px;
+		margin:0 12px;
+	}
+	.pricing{
+		padding-bottom: 0px;
+	}
+	.pricing_item2 .main_button a{
+		padding:2px;
+		font-size: 12px;
+		width: 120px;
+		margin:0 12px;
+	}
+	.pricing .pricing_item .pricing_top .price{
+		font-size: 35px;
+	}
+	.pricing .pricing_item2 .pricing_top2 .price{
+		font-size: 35px;
+	}
+	.pricing_body .body_item {
+		margin-bottom: 5px;
+		font-size: 8px;
+		font-weight: 500;
+	}
+	.pricing_body2 .body_item2 {
+		margin-bottom: 5px;
+		font-size: 8px;
+		font-weight: 500;
+	}
+	.pricing_body .body_item img {
+		width: 14px;
+    	height: 14px;
+	}
+	.pricing_body2 .body_item2 img{
+		width: 16px;
+    	height: 12px;
+	}
+	.pricing_block .pricing_item {
+		padding: 10px 0;
+		margin: 0px 20px;
+	}
+	.pricing_block .pricing_item2 {
+		padding: 10px 0;
+		margin: 0px 20px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.pricing_block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.pricing_block .pricing_item {
+		padding: 40px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
+	
+	.pricing .pricing_item2 {
+		padding: 40px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
+	.pricing .pricing_item .pricing_top .price{
+		font-size: 40px;
+	}
+	.pricing .pricing_item2 .pricing_top2 .price{
+		font-size: 40px;
+	}
+	.pricing_body .body_item {
+		margin-bottom: 10px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.pricing_body2 .body_item2 {
+		margin-bottom: 10px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.pricing_item .main_button a{
+		padding:4px;
+		font-size: 15px;
+		width: 160px;
+		margin:0 12px;
+	}
+
+	.pricing_item2 .main_button a{
+		padding:4px;
+		font-size: 15px;
+		width: 160px;
+		margin:0 12px;
+	}
+}
+@media screen and (max-width: 376px) {
+	.container .block_title{
+		font-size: 34px;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+	.pricing_block .pricing_item {
+		padding: 20px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
+	
+	.pricing .pricing_item2 {
+		padding: 20px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
 }
