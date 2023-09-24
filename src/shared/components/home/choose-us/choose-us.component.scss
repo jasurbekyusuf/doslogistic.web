@@ -143,12 +143,12 @@
 	}
 }
 
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1024px){
 	.chooseus_block .right{
 		padding: 19px 20px 19px 40px;
 	}	
-	.chooseus_item{
-		margin-bottom: 24px;
+	.right .chooseus_item{
+		margin-bottom: 15px;
 	    .title{
 		margin-bottom: 15px;
 		}
@@ -156,20 +156,24 @@
 	
 	.chooseus_item .title{
 	img{
-		width:34px;
-		height:34px;
+		width:32px;
+		height:32px;
 	}
 	span{
-		font-size: 26px;
-		margin-left: 12px;
+		font-size: 20px;
+		margin-left: 11px;
 		font-weight: 400;
+	}
+	.chooseus_item .desc{
+		font-size: 12px;
+		font-weight: 300;
 	}
   }
 }
 
 @media screen and (max-width: 1000px){
 	.chooseus_block .right{
-		padding: 15px 10px 15px 30px;
+		padding: 15px 30px 15px 30px;
 	}	
 	.chooseus_item{
 		margin-bottom: 24px;
@@ -210,16 +214,20 @@
 		font-weight: 600;
 	 }
 	.chooseus_block .right{
-		padding: 15px 10px 15px 20px;
+		padding: 15px 30px 15px 20px;
 	}
 	.chooseus_block .left img{
 		width: 410px;
+		height: 410px;
 	}	
 	.chooseus_item{
 		margin-bottom: 10px;
 	}
 	.title{
-		margin-bottom: 12px;
+		margin-bottom: 11px;
+	}
+	.right .chooseus_item{
+		margin-bottom: 16px;
 	}
 	
 	.chooseus_item .title{
@@ -234,7 +242,7 @@
 	}
 	}
 	.chooseus_item .desc{
-		font-size: 10px;
+		font-size: 15px;
 	}
 	.block_line {
 		width: 600px;

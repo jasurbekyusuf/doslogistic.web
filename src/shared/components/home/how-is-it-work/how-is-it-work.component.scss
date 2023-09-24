@@ -20,6 +20,13 @@
 	align-items: center;
 	justify-content: space-between;
 }
+.steps .step_item {
+	width:310px;
+	// border: 2px solid #058C42;
+	// border-radius: 32px;
+	padding: 10px;
+	// height:265px;
+}
 
 .steps .step_item .step_top {
 	display: flex;
