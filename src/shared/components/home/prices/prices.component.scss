@@ -251,11 +251,14 @@
 }
 @media screen and (max-width: 540px) {
 	.container .block_title{
-		font-size: 30px;
+		font-size: 38px;
 		font-weight: 500;
 		margin-bottom: 30px;
 	}
 	.pricing_item .main_button{
+		margin:0 12px;
+	}
+	.pricing_item2 .main_button{
 		margin:0 12px;
 	}
 	.pricing_item .main_button a{
@@ -304,5 +307,75 @@
 	.pricing_block .pricing_item2 {
 		padding: 10px 0;
 		margin: 0px 20px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.pricing_block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.pricing_block .pricing_item {
+		padding: 40px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
+	
+	.pricing .pricing_item2 {
+		padding: 40px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
+	.pricing .pricing_item .pricing_top .price{
+		font-size: 40px;
+	}
+	.pricing .pricing_item2 .pricing_top2 .price{
+		font-size: 40px;
+	}
+	.pricing_body .body_item {
+		margin-bottom: 10px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.pricing_body2 .body_item2 {
+		margin-bottom: 10px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.pricing_item .main_button a{
+		padding:4px;
+		font-size: 15px;
+		width: 160px;
+		margin:0 12px;
+	}
+
+	.pricing_item2 .main_button a{
+		padding:4px;
+		font-size: 15px;
+		width: 160px;
+		margin:0 12px;
+	}
+}
+@media screen and (max-width: 376px) {
+	.container .block_title{
+		font-size: 34px;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+	.pricing_block .pricing_item {
+		padding: 20px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
+	}
+	
+	.pricing .pricing_item2 {
+		padding: 20px 0;
+		width: 100%;
+		border-radius: 32px;
+		margin: 20px 20px;
 	}
 }

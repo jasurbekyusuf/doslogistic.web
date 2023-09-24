@@ -4,10 +4,9 @@
 
 [nz-carousel-content] {
   text-align: center;
-  height: 430px;
-  // height: 460px;
+  height: 560px;
   line-height: 160px;
-  // background: #364d79;
+  background: #364d79;
   color: #fff;
   overflow: hidden;
 }
@@ -67,6 +66,7 @@ h3 {
 	border-radius: 16px;
 	background: var(--Primary, #058C42);
 }
+
 @media screen and (max-width: 1320px) {
   .service_info {
     top: 140px;
