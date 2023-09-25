@@ -1,4 +1,4 @@
-<div class="content">
+ <!-- <div class="content">
   <h2>Mening manzillarim</h2>
   <div class="page-routing">
     <p class="btn1" routerLinkActive="active-link" [routerLink]="['myAcceptance']">
@@ -12,8 +12,7 @@
       Mening Jo'natuvchilarim
     </p>
     <div routerLinkActive="active" class="add-button">
-      <i class="fas fa-plus"></i>
-      <h6 (click)="openModal()">Добавить новый заказ</h6>
+      <h6 (click)="openModal()">Posilka qo'shish</h6>
     </div>
   </div>
 </div>
@@ -22,7 +21,7 @@
     <router-outlet></router-outlet>
   </ng-container>
 
-  <!-- <div class="box">
+   <div class="box">
     <div class="icon">
       <i class="fa-solid fa-cart-plus"></i>
     </div>
@@ -34,7 +33,21 @@
   <div routerLinkActive="active" class="addParcels">
     <i class="fas fa-plus"></i>
     <p (click)="openModal()">Добавить новый заказ</p>
-  </div> -->
+  </div> 
+</div>-->
+<div class="content">
+  <h2>Mening manzillarim</h2>
+  <div class="page-routing">
+    <p class="btn1" routerLinkActive="active-link" [routerLink]="['myAcceptance']">Mening Qabul qiluvchilarim</p>
+    <p class="btn2" routerLinkActive="active-link" [routerLink]="['mySenders']">Mening Jo'natuvchilarim</p>
+  </div>
+</div>
+
+<div class="container">
+  <button class="add-button" routerLinkActive="active" (click)="openModal()">Posilka qo'shish</button>
+  <ng-container>
+    <router-outlet></router-outlet>
+  </ng-container>
 </div>
 
 <div *ngIf="isModalOpen" class="modal-overlay">
@@ -239,7 +252,7 @@
               </div>
             </div>
           </div>
-          <!--  -->
+          
           <div class="user-names">
             <div>
               <label for="input">Ko'cha<span>*</span></label>
@@ -280,7 +293,7 @@
                 Majburiy maydon
               </div>
             </div>
-            <!--  -->
+            
           </div>
           <div class="user-names">
             <div>
@@ -301,5 +314,9 @@
       </form>
     </div>
   </div>
-</div>
+</div> 
+
+
+
+
 
