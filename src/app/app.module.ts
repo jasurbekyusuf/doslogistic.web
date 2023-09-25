@@ -29,6 +29,7 @@ import { RestrictionsComponent } from 'src/shared/components/restrictions/restri
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from '../shared/components/home/map/map.component';
+import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 
 
 registerLocaleData(localeRu);
@@ -71,6 +72,7 @@ export function initializeApp(appInitService: AppInitService) {
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
+    AngularYandexMapsModule
 
   ], schemas: [NO_ERRORS_SCHEMA],
   providers: [
