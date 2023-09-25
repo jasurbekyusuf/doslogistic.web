@@ -26,6 +26,7 @@
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
     "@syncfusion/ej2-angular-maps": "^22.2.8",
+    "angular8-yandex-maps": "^16.1.0",
     "echarts": "^5.4.3",
     "jquery": "^3.7.1",
     "ng-zorro-antd": "^16.1.0",
