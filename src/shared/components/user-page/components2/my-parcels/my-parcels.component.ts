@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Clipboard } from '@angular/cdk/clipboard';
 import * as echarts from 'echarts';
 
 @Component({
@@ -8,6 +9,9 @@ import * as echarts from 'echarts';
   styleUrls: ['./my-parcels.component.scss']
 })
 export class MyParcelsComponent {
+
+  constructor(private clipboard: Clipboard) { }
+
   ngOnInit(): void {
     const chartDom = document.getElementById('main')!;
     const myChart = echarts.init(chartDom);
@@ -94,4 +98,20 @@ export class MyParcelsComponent {
   redirectToDetails(card: any) {
     console.log('Redirect to details:', card.title);
   }
+
+  copyAddressToClipboard(addressText: string) {
+    this.clipboard.copy(addressText);
+  }
+
+  countries = [
+    {
+      name: 'Polsha',
+      address: 'Xumoyunmirzo\nYakubjonov BHGEJ\n10254, Avenue1, Poland\n10254, Avenue 12, Poland\n+1 (953) 566 56 56\n+1 (953) 493 56 68\n120560',
+    },
+    {
+      name: 'Germaniya',
+      address: 'Xumoyunmirzo\nYakubjonov BHGEJ\n10254, Avenue1, Germany\n10254, Avenue 12, Germany\n+1 (953) 566 56 56\n+1 (953) 493 56 68\n120560',
+    },
+  ];
+
 }
