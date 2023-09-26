@@ -128,7 +128,9 @@
 }
 
 .user-passport {
-  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   img {
     width: 30px;
@@ -138,20 +140,20 @@
 
 .info {
   border: 1px solid #058c42;
+  padding: 10px;
   border-radius: 5px;
-  padding: 15px 15px;
-  margin-bottom: 30px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  width: 380px;
 
   p {
     color: #000000;
     font-family: Inter;
-    font-size: 17px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 19px;
   }
 }
 
