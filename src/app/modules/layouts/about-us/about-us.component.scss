@@ -42,17 +42,20 @@
 .content {
     max-width: 1320px;
     margin: 0 auto;
-
-    svg {
-        width: 90%;
-    }
 }
 
-.small-plane {
+.content-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+        margin-right: 100px;
+        margin-bottom: -10px;
+    }
+
     img {
-        position: absolute;
-        bottom: -64px;
-        left: 316px;
+        margin-right: 812px;
     }
 }
 
@@ -61,6 +64,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 237px;
+    margin-top: -25px;
 }
 
 .wel-txt {
@@ -96,7 +100,7 @@
         position: absolute;
         z-index: 1;
         bottom: 125px;
-        left: 165px;
+        left: 483px;
     }
 }
 
