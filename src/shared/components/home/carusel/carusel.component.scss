@@ -270,23 +270,79 @@ h3 {
   .main_button a {
     padding: 6px 11px;
   }
+}
 
-  // .service_info {
-  //   padding: 18px;
-  //   top: 80px;
-  //   left: 70px;
-  // }
-  // .service_info .title {
-  //   font-size: 18px;
-  //   font-weight: 700;
-  //   margin-bottom: 10px;
-  // }
-  // .service_info .desc {
-  //   font-size: 13px;
-  //   margin-bottom: 10px;
-  // }
+@media screen and (max-width: 425px) {
+  [nz-carousel-content] {
+    height: 330px;
+  }
+  ::ng-deep .slick-list{
+    height: 330px !important;
+  }
+  img{
+    height: 330px;
+  }
+  ::ng-deep .slick-dots{
+    bottom: 0% !important;
+    right: 21% !important;
+  }
+  .service_info {
+    padding: 18px;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    background: none;
+    border: none;
+    box-shadow:none;
+  }
+  .service_info .title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .service_info .desc {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #FFF;
+  }
   
-  // .main_button a {
-  //   padding: 6px 11px;
-  // }
+  .main_button a {
+    padding: 4px 11px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  [nz-carousel-content] {
+    height: 300px;
+  }
+  ::ng-deep .slick-list{
+    height: 300px !important;
+  }
+  img{
+    height: 300px;
+  }
+  .service_info {
+    padding: 13px 15px;
+    top: 0px;
+    left: 0px;
+    width: 270px;
+  }
+  .service_info .title {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .service_info .desc {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #FFF;
+  }
+  
+  .main_button a {
+    padding: 4px 11px;
+  }
 }
