@@ -9,9 +9,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class CaruselComponent {
 
   array= [
-    "../../../../assets/images/carusel/Rectangle 10.svg",
-    "../../../../assets/images/carusel/Rectangle 10.svg",
-    "../../../../assets/images/carusel/Rectangle 10.svg",
-    "../../../../assets/images/carusel/Rectangle 10.svg",
+    "../../../../assets/images/carusel/banner.png",
+    "../../../../assets/images/carusel/cargo3.jpg",
+    "../../../../assets/images/carusel/cargo1.jpg",
+    "../../../../assets/images/carusel/banner8.webp",
+    "../../../../assets/images/carusel/cargo2.jpg",
   ]
 }
