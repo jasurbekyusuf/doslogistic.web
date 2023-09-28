@@ -4,12 +4,12 @@
 	align-items: center;
 
 	svg {
-		margin-left: 267px;
+		margin-left:0px;
 	}
 
 	img {
-		margin-left: 153px;
-		margin-top: -11px;
+		margin-left: -123px;
+		margin-top: 0px;
 	}
 }
 
@@ -86,6 +86,20 @@
 }
 
 @media screen and (max-width:1000px) {
+	.icons {	
+		svg {
+			// width=280;
+			// height=187px;
+			margin-left:50px;
+			width: 250px;
+			height: 157px;
+		}
+	
+		img {
+			margin-left: -56px;
+			margin-top: 0px;
+		}
+	}
 	.steps .step_item .step_top .line {
 		width: 140px;
 	}
@@ -119,6 +133,28 @@
 }
 
 @media screen and (max-width:541px) {
+	.icons {	
+		// svg {
+		// 	// width=280;
+		// 	// height=187px;
+		// 	margin-left:50px;
+		// 	width: 280px;
+		// 	height: 187px;
+		// }
+	
+		// img {
+		// 	margin-left: -56px;
+		// 	margin-top: 0px;
+		// }
+
+		svg {
+			display: none;
+		}
+	
+		img {
+			display: none;
+		}
+	}
 	.steps {
 		display: flex;
 		flex-direction: column;
