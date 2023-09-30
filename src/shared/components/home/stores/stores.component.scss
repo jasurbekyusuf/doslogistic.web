@@ -1,22 +1,61 @@
-.container{
-  width: 1000px !important;
-  margin: 0 auto;
-}
-.carousel-container {
-  display: flex;
-  align-items: center;
+.store {
+	max-width: 1320px;
+	margin:20px 0;
 }
 
-.store-items {
-  display: flex;
-  overflow: hidden;
-  width: 75%;  /* You can adjust as per your design */
+.store .block_title {
+	color: var(--Primary, #058C42);
+	text-align: center;
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom:40px;
 }
-
-.store-item {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #eee;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
+@keyframes slide {
+	from {
+	  transform: translateX(20%);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  .logos {
+	overflow: hidden;
+	padding: 40px 0;
+	background: white;
+	white-space: nowrap;
+	position: relative;
+	border: 2px solid #058C42;
+	border-radius: 32px;
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
+  }
+  
+  .logos:before,
+  .logos:after {
+	position: absolute;
+	top: 0;
+	width: 200px;
+	height: 100%;
+	content: "";
+	z-index: 2;
+  }
+  
+  .logos:before {
+	left: 0;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+	right: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos-slide {
+	display: inline-block;
+	animation: 30s slide infinite linear;
+  }
+  
+  .logos-slide img {
+	height: 70px;
+	margin: 0 40px;
+  }
