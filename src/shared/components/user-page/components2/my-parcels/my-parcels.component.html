@@ -27,11 +27,11 @@
     </div>
 
     <div class="location">
-        <div class="location-box" *ngFor="let country of countries">
+        <div class="location-box">
 
             <div class="box-txt">
-                <p (click)="copyAddressToClipboard(country.address)">{{ country.name }} Manzil</p>
-                <span><i class="fa-solid fa-location-dot"></i> {{ country.name }}</span>
+                <p>Polshadagi Manzil</p>
+                <span><i class="fa-solid fa-location-dot"></i> Polsha</span>
             </div>
 
             <div class="location-details">
@@ -68,14 +68,71 @@
                 </div>
 
                 <div class="location-data">
-                    <p>Xumoyunmirzo</p>
-                    <p>Yakubjonov BHGEJ</p>
-                    <p>10254, Avenue1, Germany</p>
-                    <p>10254, Avenue 12, Germany</p>
-                    <p>+1 (953) 566 56 56</p>
-                    <p>+1 (953) 493 56 68</p>
-                    <p>120560</p>
+                    <div class="tooltip" (click)="copyToClipboard('Xumoyunmirzo')">Xumoyunmirzo</div>
+                    <div class="tooltip" (click)="copyToClipboard('Yakubjonov BHGEJ')">Yakubjonov BHGEJ</div>
+                    <div class="tooltip" (click)="copyToClipboard('10254, Avenue1, Germany')">10254, Avenue1, Poland
+                    </div>
+                    <div class="tooltip" (click)="copyToClipboard('10254, Avenue 12, Germany')">10254, Avenue 12, Poland
+                    </div>
+                    <div class="tooltip" (click)="copyToClipboard('+1 (953) 566 56 56')">+1 (953) 566 56 56</div>
+                    <div class="tooltip" (click)="copyToClipboard('+1 (953) 493 56 68')">+1 (953) 493 56 68</div>
+                    <div class="tooltip" (click)="copyToClipboard('120560')">120560</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="location-box">
+
+            <div class="box-txt">
+                <p>Germaniyadagi Manzil</p>
+                <span><i class="fa-solid fa-location-dot"></i> Germaniya</span>
+            </div>
+
+            <div class="location-details">
+                <div class="location-data">
+
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/user.svg" alt="">
+                        <p>Ism</p>
+                    </div>
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/user.svg" alt="">
+                        <p>Familiya</p>
+                    </div>
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/map.svg" alt="">
+                        <p>Adress Line 1</p>
+                    </div>
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/map.svg" alt="">
+                        <p>Adress Line 2</p>
+                    </div>
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/call.svg" alt="">
+                        <p>Telephone</p>
+                    </div>
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/call.svg" alt="">
+                        <p>Cell</p>
+                    </div>
+                    <div class="location-sty">
+                        <img src="../../../../../assets/images/user-cabinet/address-images/truck.svg" alt="">
+                        <p>Zip Code</p>
+                    </div>
+                </div>
+
+                <div class="location-data">
+                    <div class="tooltip" (click)="copyToClipboard('Xumoyunmirzo')">Xumoyunmirzo</div>
+                    <div class="tooltip" (click)="copyToClipboard('Yakubjonov BHGEJ')">Yakubjonov BHGEJ</div>
+                    <div class="tooltip" (click)="copyToClipboard('10254, Avenue1, Germany')">10254, Avenue1, Germany
+                    </div>
+                    <div class="tooltip" (click)="copyToClipboard('10254, Avenue 12, Germany')">10254, Avenue 12,
+                        Germany</div>
+                    <div class="tooltip" (click)="copyToClipboard('+1 (953) 566 56 56')">+1 (953) 566 56 56</div>
+                    <div class="tooltip" (click)="copyToClipboard('+1 (953) 493 56 68')">+1 (953) 493 56 68</div>
+                    <div class="tooltip" (click)="copyToClipboard('120560')">120560</div>
+                </div>
+
             </div>
         </div>
     </div>
