@@ -1,22 +1,28 @@
-.container{
-  width: 1000px !important;
+.store {
+  max-width: 1320px;
   margin: 0 auto;
-}
-.carousel-container {
-  display: flex;
-  align-items: center;
+  margin-top: 50px;
 }
 
-.store-items {
-  display: flex;
-  overflow: hidden;
-  width: 75%;  /* You can adjust as per your design */
-}
-
-.store-item {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #eee;
+.store .block_title {
+  color: #058c42;
   text-align: center;
-  transition: transform 0.3s ease;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.logos {
+  padding: 40px 40px;
+  padding-left: 100px;
+  border: 2px solid #058c42;
+  border-radius: 32px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 1px 1px;
+}
+
+.card-sty {
+  img {
+    width: 70px;
+    height: 70px;
+  }
 }
