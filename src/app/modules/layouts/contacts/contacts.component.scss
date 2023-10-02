@@ -46,7 +46,7 @@
     width: 30px;
     height: 30px;
     flex-shrink: 0;
-    margin-left: 707px;
+    margin-left: 694px;
     margin-top: -11px;
   }
 }
@@ -241,6 +241,7 @@
 .map-content {
   margin-top: 10px;
   margin-bottom: 80px;
+  border: 1px solid #058C42;
 }
 
 .map-container {
@@ -248,13 +249,28 @@
   height: 450px;
 }
 
+.inputs-sty {
+  position: relative;
+}
+
+.inputs-sty .input-style.is-invalid {
+  border-color: #dc3545 !important;
+}
 
 
+.form-invalid {
+  font-size: 85%;
+  color: #dc3545;
+  position: absolute;
+  top: 48px;
+}
 
-
-
-
-
+.form-invalid2 {
+  font-size: 85%;
+  color: #dc3545;
+  position: absolute;
+  bottom: -17px;
+}
 
 @media (max-width: 1024px) {
   .map-container {
