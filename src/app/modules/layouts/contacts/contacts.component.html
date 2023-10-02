@@ -202,26 +202,63 @@
 
       <p>Get in Touch <span>With Us</span></p>
 
-      <div class="inputs">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-        <input type=" text" placeholder="Name">
+        <div class="inputs">
 
-        <input type="email" placeholder="Email">
+          <div class="inputs-sty">
 
-        <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Name" formControlName="name" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" autocomplete="this-name" />
+            <div *ngIf="submitted && f['name'].errors" class="form-invalid">
+              <div *ngIf="f['name'].errors['required']">Name is required</div>
+            </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
 
-        <button>Send Message <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
-            fill="none">
-            <path
-              d="M1.20339 16.6505L4.63121 10.7536C4.90213 10.2875 4.90212 9.71194 4.63119 9.24589L1.20341 3.34955C1.07031 3.1206 0.993597 2.85976 1.01553 2.59585C1.0742 1.88991 1.31461 1.38677 1.96127 1.26742C2.16916 1.22905 2.38054 1.28492 2.57347 1.37137L19.2658 8.85077C19.4846 8.94883 19.6696 9.10818 19.7064 9.34514C19.7647 9.71969 19.7645 10.2875 19.7059 10.66C19.6691 10.8937 19.4863 11.0504 19.2704 11.1472L2.57324 18.6287C2.38046 18.7151 2.16925 18.7709 1.9615 18.7327C1.31465 18.6135 1.0742 18.1102 1.01553 17.4041C0.993598 17.1402 1.0703 16.8794 1.20339 16.6505Z"
-              stroke="white" stroke-linecap="round" />
-            <path d="M19.5 10L5.37281 9.99982" stroke="white" stroke-linecap="round" />
-          </svg>
-        </button>
+          <div class="inputs-sty">
 
-      </div>
+            <input type="email" placeholder="Email" class="input-style" formControlName="email"
+              [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" autocomplete="this-email" />
+            <div *ngIf="submitted && f['email'].errors" class="form-invalid">
+              <div *ngIf="f['email'].errors['required']">Email is required</div>
+              <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+            </div>
+
+          </div>
+
+          <div class="inputs-sty">
+
+            <input type="text" placeholder="Subject" formControlName="subject" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['subject'].errors }" autocomplete="this-subject" />
+            <div *ngIf="submitted && f['subject'].errors" class="form-invalid">
+              <div *ngIf="f['subject'].errors['required']">Subject is required</div>
+            </div>
+
+          </div>
+
+          <div class="inputs-sty">
+
+            <textarea type="text" placeholder="Message" formControlName="message" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['message'].errors }" autocomplete="this-message"></textarea>
+            <div *ngIf="submitted && f['message'].errors" class="form-invalid2">
+              <div *ngIf="f['message'].errors['required']">Message is required</div>
+            </div>
+
+          </div>
+
+          <button>Send Message <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+              fill="none">
+              <path
+                d="M1.20339 16.6505L4.63121 10.7536C4.90213 10.2875 4.90212 9.71194 4.63119 9.24589L1.20341 3.34955C1.07031 3.1206 0.993597 2.85976 1.01553 2.59585C1.0742 1.88991 1.31461 1.38677 1.96127 1.26742C2.16916 1.22905 2.38054 1.28492 2.57347 1.37137L19.2658 8.85077C19.4846 8.94883 19.6696 9.10818 19.7064 9.34514C19.7647 9.71969 19.7645 10.2875 19.7059 10.66C19.6691 10.8937 19.4863 11.0504 19.2704 11.1472L2.57324 18.6287C2.38046 18.7151 2.16925 18.7709 1.9615 18.7327C1.31465 18.6135 1.0742 18.1102 1.01553 17.4041C0.993598 17.1402 1.0703 16.8794 1.20339 16.6505Z"
+                stroke="white" stroke-linecap="round" />
+              <path d="M19.5 10L5.37281 9.99982" stroke="white" stroke-linecap="round" />
+            </svg>
+          </button>
+
+        </div>
+
+      </form>
 
     </div>
 
@@ -258,7 +295,7 @@
     <div class="map-container">
 
       <ya-map [center]="[52.5200, 13.4050]" [zoom]="12">
-        <ya-placemark [geometry]="[52.5300, 13.4150]" [properties]="{ balloonContent: 'Another Location' }"
+        <ya-placemark [geometry]="[52.5300, 13.4150]" [properties]="{ balloonContent: 'Germany Location' }"
           [options]="{ iconColor: '#058C42' }"></ya-placemark>
       </ya-map>
 

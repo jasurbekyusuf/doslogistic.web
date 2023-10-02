@@ -1,60 +1,62 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
-
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-stores',
   templateUrl: './stores.component.html',
   styleUrls: ['./stores.component.scss']
 })
-export class StoresComponent implements OnInit, OnDestroy {
-  stores: string[] = [
-    'Store 1',
-    'Store 2',
-    'Store 3',
-    'Store 4',
-    'Store 5',
-    'Store 6',
-    // ... add as many as you have
+export class StoresComponent {
+  customOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    navSpeed: 700,
+    items: 6,
+    responsive: {
+      0: { items: 1 },
+      400: { items: 2 },
+      740: { items: 3 },
+      800: { items: 4 },
+      830: { items: 5 },
+      850: { items: 6 },
+    },
+  };
+
+  cards = [
+    {
+      id: 1,
+      image: '../../../../assets/images/carausel-shops/icons8-amazon.svg'
+    },
+    {
+      id: 2,
+      image: '../../../../assets/images/carausel-shops/icons8-apple.svg'
+    },
+    {
+      id: 3,
+      image: '../../../../assets/images/carausel-shops/icons8-ebay.svg'
+    },
+    {
+      id: 4,
+      image: '../../../../assets/images/carausel-shops/icons8-iherb.svg'
+    },
+    {
+      id: 5,
+      image: '../../../../assets/images/carausel-shops/icons8-microsoft.svg'
+    },
+    {
+      id: 6,
+      image: '../../../../assets/images/carausel-shops/icons8-uniqlo.svg'
+    },
+    {
+      id: 7,
+      image: '../../../../assets/images/carausel-shops/icons8-nike.svg'
+    },
+    {
+      id: 8,
+      image: '../../../../assets/images/carausel-shops/icons8-walmart.svg'
+    },
   ];
-  currentIndex = 0;
-  visibleStores = 3;
-  autoplayInterval: any;
-
-  get visibleItems(): string[] {
-    return this.stores.slice(this.currentIndex, this.currentIndex + this.visibleStores);
-  }
-
-  ngOnInit() {
-    this.startAutoplay();
-  }
-
-  ngOnDestroy() {
-    this.stopAutoplay();
-  }
-
-  startAutoplay() {
-    this.autoplayInterval = setInterval(() => {
-      this.nextItems();
-    }, 3000); // change 3000 (3 seconds) to whatever time you want for each slide transition
-  }
-
-  stopAutoplay() {
-    if (this.autoplayInterval) {
-      clearInterval(this.autoplayInterval);
-    }
-  }
-
-  nextItems() {
-    if (this.currentIndex < (this.stores.length - this.visibleStores)) {
-      this.currentIndex++;
-    } else {
-      this.currentIndex = 0; // reset back to the start when it reaches the end
-    }
-  }
-
-  prevItems() {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-    }
-  }
 }

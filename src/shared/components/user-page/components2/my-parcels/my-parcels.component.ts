@@ -99,19 +99,19 @@ export class MyParcelsComponent {
     console.log('Redirect to details:', card.title);
   }
 
-  copyAddressToClipboard(addressText: string) {
-    this.clipboard.copy(addressText);
-  }
-
-  countries = [
-    {
-      name: 'Polsha',
-      address: 'Xumoyunmirzo\nYakubjonov BHGEJ\n10254, Avenue1, Poland\n10254, Avenue 12, Poland\n+1 (953) 566 56 56\n+1 (953) 493 56 68\n120560',
-    },
-    {
-      name: 'Germaniya',
-      address: 'Xumoyunmirzo\nYakubjonov BHGEJ\n10254, Avenue1, Germany\n10254, Avenue 12, Germany\n+1 (953) 566 56 56\n+1 (953) 493 56 68\n120560',
-    },
-  ];
-
+  copyToClipboard(text: string) {
+    const el = document.createElement('textarea');
+    el.value = text;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  
+    const tooltip = event?.target as HTMLElement;
+    tooltip.classList.add('copied');
+  
+    setTimeout(() => {
+      tooltip.classList.remove('copied');
+    }, 1500);
+  }  
 }

@@ -1,6 +1,6 @@
 .container {
 	max-width: 1320px;
-	margin: 110px;
+	margin: 0 auto;
 }
 
 .block_title {
@@ -79,6 +79,9 @@
 	.content .block_title {
 		font-size: 44px;
 		font-weight: 600;
+	}
+	.chooseus_block .right {
+		padding: 35px 108px 35px 64px
 	}
 }
 
