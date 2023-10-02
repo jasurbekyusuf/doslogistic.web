@@ -252,6 +252,7 @@
     gap: 10px;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 
     h2 {
         color: #000;
@@ -292,15 +293,12 @@
 
 .card-image {
     position: absolute;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: bottom 0.3s ease-in-out;
     width: 100% !important;
     height: 100% !important;
+    transform: translateY(100%);
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
 
     img {
         width: 100% !important;
@@ -309,7 +307,7 @@
 }
 
 .work-card-sty.hovered .card-image {
-    bottom: 0;
+    transform: translateY(0);
 }
 
 .our-vision {
