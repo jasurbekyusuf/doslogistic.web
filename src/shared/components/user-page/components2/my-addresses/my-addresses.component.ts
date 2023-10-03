@@ -42,10 +42,12 @@ export class MyAddressesComponent {
 
   openModal() {
     this.isModalOpen = true;
+    document.body.style.overflow = 'hidden';
   }
 
   closeModal() {
     this.isModalOpen = false;
+    document.body.style.overflow = 'auto';
   }
 
   get f(): { [key: string]: AbstractControl } {
