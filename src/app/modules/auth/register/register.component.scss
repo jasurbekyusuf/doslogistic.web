@@ -75,7 +75,7 @@
 .input-style:focus {
     outline: none;
     border-color: #15b342;
-    box-shadow: 0 0 0 2px rgba(5, 140, 66, 0.5); 
+    box-shadow: 0 0 0 2px rgba(5, 140, 66, 0.5);
 }
 
 ::ng-deep .iti__country-list {
@@ -286,6 +286,10 @@
 
     .terms-of-use a {
         font-size: 13px;
+    }
+
+    .eye-icon {
+        top: 5px;
     }
 }
 
