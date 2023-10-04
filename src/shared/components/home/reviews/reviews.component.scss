@@ -36,6 +36,11 @@
 	margin-left: 13px;
 	font-weight: 600;
 }
+.card .author img{
+	width: 41px;
+	height: 41px;
+	border-radius: 50%;
+}
 @media screen and (max-width: 1280px) {
 	.card h2 {
 		font-size: 15px;
