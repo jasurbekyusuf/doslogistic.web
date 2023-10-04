@@ -15,7 +15,12 @@ import { PersonalInfoComponent } from './components2/personal-info/personal-info
 import { MySendersComponent } from './components2/my-senders/my-senders.component';
 import { MyAcceptancesComponent } from './components2/my-acceptances/my-acceptances.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 @NgModule({
   declarations: [
     LayoutsComponent,
@@ -35,7 +40,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ClipboardModule,
     FormsModule,
     ReactiveFormsModule,
-    CarouselModule
+    CarouselModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ]
 })
 export class UserModule { }
