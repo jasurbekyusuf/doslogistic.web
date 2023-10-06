@@ -306,6 +306,16 @@
       "ten": "Tätowiermaschine und tätowierbezogene Komponenten",
       "eleven": "Spielzeuge intimer Natur",
       "tvelve": "Geräte mit Lithiumbatterien (möglich, aber sie erfordern spezielle Verfahren. Wir stellen nicht zur Verfügung Dokumentation zum Erhalt des IMEI-Codes)"
+    },
+    "admin":{
+      "layout":{
+        "dashboard":"Dashboard",
+        "parcels":"Pakete",
+        "address":"Adressen",
+        "settings":"Einstellungen",
+        "logout":"Abmelden",
+        "incoming":"Eingehende Pakete"
+      }
     }
   }
 }

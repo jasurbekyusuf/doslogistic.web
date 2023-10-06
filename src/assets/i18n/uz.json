@@ -292,6 +292,16 @@
     "services": {
       "services": "Xizmatlar",
       "helpWithPurchase": "Xaridda yordam"
+    },
+    "admin":{
+      "layout":{
+        "dashboard":"Boshqaruv paneli",
+        "parcels":"Posilkalarim",
+        "address":"Manzillarim",
+        "settings":"Sozlamalarim",
+        "logout":"Chiqish",
+        "incoming":"Kiruvchi Posilkalar"
+      }
     }
   }
 }
