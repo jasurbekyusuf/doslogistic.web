@@ -5,7 +5,10 @@
       "info":"Seit 2017 liefert „Dost Logistic“ über seine Online-Shops Pakete von Deutschland nach Usbekistan. Wir helfen unseren Bürgern, gewinnbringend in Deutschland einzukaufen, denn 90 % der Geschäfte liefern keine Bestellungen nach Usbekistan.",
       "info2":"Schnell, Einfach, Bequem und vor allem zuverlässig!",
       "team":"Unser Team besteht aus den besten Menschen, die durch gemeinsame Ideen und Wünsche vereint sind. Unsere Ambitionen helfen uns, gemeinsam zu wachsen, uns weiterzuentwickeln und neue Höhen zu erreichen. Wir haben Experten aus der ganzen Welt versammelt, wir schätzen jedes Teammitglied gleichermaßen und bieten ihnen die Möglichkeit, gemeinsam mit uns zu wachsen und sich weiterzuentwickeln.",
-      "team-header":"Unser Team"
+      "team-header":"Unser Team",
+      "address":"Unsere Adressen",
+      "clients":"Zufriedene Kunden",
+      "transport":"Fahrzeuge"
     },
     "contacts": {
       "contacts": "Unsere Verbindungen",
@@ -289,7 +292,7 @@
       "info": "Kundenbewertungen"
     },
     "services": {
-      "services": "Dienstleistungen",
+      "services": "Unsere Dienstleistungen",
       "helpWithPurchase": "Hilfe beim Kauf"
     },
     "restrictions": {
