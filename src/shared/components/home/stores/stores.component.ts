@@ -16,7 +16,7 @@ export class StoresComponent {
     navSpeed: 700,
     items: 6,
     responsive: {
-      0: { items: 1 },
+      50: { items: 3 },
       400: { items: 2 },
       740: { items: 3 },
       800: { items: 4 },
