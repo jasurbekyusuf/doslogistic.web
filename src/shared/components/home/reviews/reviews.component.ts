@@ -22,7 +22,7 @@ export class ReviewsComponent {
       0: {
         items: 1
       },
-      400: {
+      424: {
         items: 2
       },
       740: {
