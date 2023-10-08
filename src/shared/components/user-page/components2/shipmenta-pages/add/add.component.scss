@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    font-family: "Poppins", "sans-serif";
+    margin-bottom: -10px;
+    max-width: 1320px;
+}
+
+.header-search {
+    display: flex;
+    font-family: "Poppins", "sans-serif";
+    
+}
+
+.fa-search {
+    color: #444444;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+    top: 18px;
+    font-weight: bold;
+}
+.fa-plus{
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+    top: 18px;
+    font-weight: bold;
+}
+input[type="text"] {
+    color: #444444;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 12px 15px;
+    border-radius: 12px;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 35px;
+    margin-top: 5px;
+    outline-color: rgba(50, 168, 82, 1);
+}
+
+input[type="text"]:hover {
+    border: 0.5px solid rgba(50, 168, 82, 1);
+}
+
+
+.add-students {
+    color: white;
+    background-color: #058c42;
+    border-radius: 12px;
+    font-size: 14px;
+    height: 40px;
+    width: 160px;
+    border-color: #058c42;
+    margin-right: 15px;
+    margin-top: 5px;
+    border: none;
+}
