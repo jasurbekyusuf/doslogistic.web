@@ -3,7 +3,7 @@
   padding-top: 25px;
   justify-content: space-between;
   font-family: "Poppins", "sans-serif";
-  margin-bottom: -10px;
+  margin-bottom:20px;
   max-width: 1320px;
 }
 
@@ -68,23 +68,34 @@ input[type="text"]:hover {
 .table-wrapper {
   display: flex;
   justify-content: flex-start;
+  margin-left: 30px;
 }
 
 .table-header {
   color: #000;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  padding: 0 20px;
+  padding: 12px 20px;
+  border-radius: 15px;
 }
 
 .table-header p {
   width:150px;
+  font-size: 18px;
   text-align: start;
   font-weight: bold;
   margin: 0;
 }
 .table-header .wrapper {
   width:170px;
+  font-size: 18px;
+  text-align: start;
+  font-weight: bold;
+  margin: 0;
+}
+.table-header .price {
+  width:120px;
+  font-size: 18px;
   text-align: start;
   font-weight: bold;
   margin: 0;
@@ -96,6 +107,12 @@ input[type="text"]:hover {
 
 .milestone-table {
   width: 100%;
+}
+
+.milestone-table .nohover{
+  border: 2px solid #058C42;
+  margin: 20px 0;
+  height: 40px;
 }
 
 .milestone-table tr,
@@ -110,6 +127,7 @@ input[type="text"]:hover {
 }
 .milestone-table tbody .button{
   margin: 14px 0;
+  border-radius: 15px;
 }
 
 .milestone-table tbody tr {
@@ -150,26 +168,6 @@ input[type="text"]:hover {
   border-radius: 0px 0px 15px 0px;
   color: red;
 }
-
-
-// .action-icons .fa-trash,
-// .action-icons .fa-pen-to-square {
-//   font-size: 15px;
-// }
-
-// .action-icons .fa-pen-to-square {
-//   font-size: 15px;
-// }
-
-// .milestone-table tr:hover .action-icons .fa-trash {
-//   background: rgba(224, 14, 14, 0.85);
-//   color: white;
-// }
-
-// .milestone-table tr:hover .action-icons .fa-pen-to-square {
-//   background: rgba(22, 58, 218, 0.85);
-//   color: white;
-// }
 
 .pagination {
   display: flex;
