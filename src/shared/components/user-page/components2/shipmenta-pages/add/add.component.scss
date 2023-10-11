@@ -1,63 +1,179 @@
 .header {
-    display: flex;
-    padding-top: 25px;
-    justify-content: space-between;
-    font-family: "Poppins", "sans-serif";
-    margin-bottom: -10px;
-    max-width: 1320px;
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-between;
+  font-family: "Poppins", "sans-serif";
+  margin-bottom: -10px;
+  max-width: 1320px;
 }
 
 .header-search {
-    display: flex;
-    font-family: "Poppins", "sans-serif";
-    
+  display: flex;
+  font-family: "Poppins", "sans-serif";
 }
 
 .fa-search {
-    color: #444444;
-    font-size: 15px;
-    position: relative;
-    left: 30px;
-    top: 18px;
-    font-weight: bold;
+  color: #444444;
+  font-size: 15px;
+  position: relative;
+  left: 30px;
+  top: 18px;
+  font-weight: bold;
 }
-.fa-plus{
-    color: #fff;
-    font-size: 15px;
-    position: relative;
-    left: 30px;
-    top: 18px;
-    font-weight: bold;
+.fa-plus {
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  left: 30px;
+  top: 18px;
+  font-weight: bold;
 }
 input[type="text"] {
-    color: #444444;
-    background-color: white;
-    border: 1px solid gray;
-    padding: 12px 15px;
-    border-radius: 12px;
-    width: 220px;
-    height: 40px;
-    text-align: center;
-    font-size: 15px;
-    margin-right: 35px;
-    margin-top: 5px;
-    outline-color: rgba(50, 168, 82, 1);
+  color: #444444;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 12px 15px;
+  border-radius: 12px;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 35px;
+  margin-top: 5px;
+  outline-color: rgba(50, 168, 82, 1);
 }
 
 input[type="text"]:hover {
-    border: 0.5px solid rgba(50, 168, 82, 1);
+  border: 0.5px solid rgba(50, 168, 82, 1);
+}
+
+.add-students {
+  color: white;
+  background-color: #058c42;
+  border-radius: 12px;
+  font-size: 14px;
+  height: 40px;
+  width: 160px;
+  border-color: #058c42;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.table-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.table-header {
+  color: #aaaaaa;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 0 17px;
+}
+
+.table-header p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.table-container {
+  width: 100%;
+}
+
+.milestone-table {
+  width: 100%;
+}
+
+.milestone-table tr,
+.milestone-table td {
+  padding: 17px;
+  height: 60px;
+}
+
+.milestone-table > tbody > tr {
+  border-radius: 15px;
+}
+
+.milestone-table tr:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.action-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+}
+.fa-eye{
+  color: #058c42;
+}
+
+.fa-pen-to-square {
+  padding: 8px 7px;
+  border-radius: 0px 15px 0px 0px;
+  color: #4348e6;
+}
+
+.fa-trash {
+  padding: 8px 8px;
+  border-radius: 0px 0px 15px 0px;
+  color: red;
 }
 
 
-.add-students {
-    color: white;
-    background-color: #058c42;
-    border-radius: 12px;
-    font-size: 14px;
-    height: 40px;
-    width: 160px;
-    border-color: #058c42;
-    margin-right: 15px;
-    margin-top: 5px;
-    border: none;
+// .action-icons .fa-trash,
+// .action-icons .fa-pen-to-square {
+//   font-size: 15px;
+// }
+
+// .action-icons .fa-pen-to-square {
+//   font-size: 15px;
+// }
+
+// .milestone-table tr:hover .action-icons .fa-trash {
+//   background: rgba(224, 14, 14, 0.85);
+//   color: white;
+// }
+
+// .milestone-table tr:hover .action-icons .fa-pen-to-square {
+//   background: rgba(22, 58, 218, 0.85);
+//   color: white;
+// }
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-top: -7px;
+}
+
+.prev-btn,
+.next-btn,
+.pagination button {
+  background-color: transparent;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.pagination button:hover {
+  background-color: #e2e2e2;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled,
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

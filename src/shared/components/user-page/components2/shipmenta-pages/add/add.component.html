@@ -6,3 +6,94 @@
         <input type="text" placeholder="Search"/>
     </div>
 </div>
+
+<div class="table-wrapper">
+  <div class="table-content">
+        <div class="table-container">
+    <table class="milestone-table">
+      <thead>
+        <tr class="nohover" style="padding: 0; box-shadow: none !important; transform: translateY(0); cursor: default;">
+          <th colspan="" class="table-header" > 
+            <p>TITLE</p>
+          </th>
+          <th colspan="" class="table-header">
+            <p>FINISH DATE</p>
+          </th>
+          <th colspan="" class="table-header">
+            <p>DESCRIPTION</p>
+          </th>
+          <th colspan="" class="table-header">
+            <p>CREATED DATE</p>
+          </th>
+          <th colspan="" class="table-header">
+            <p>LAST UPDATED</p>
+          </th>
+          <th colspan="" class="table-header">
+            <p>ASSIGNEE</p>
+          </th>
+        </tr>
+
+      </thead>
+      <tbody>     
+        <tr (click)="goToTask()">
+          <td>ASGJ-NSHG-VCH5</td>
+          <td><i class="fa-regular fa-copy"></i></td>
+          <td>Amazondan yangi kitoblar</td>
+          <td>2 april,2023</td>
+          <td>
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+          </td>
+          <!-- <td><i class="fa-solid fa-pen-to-square"></i></td>
+          <td><i class="fa-solid fa-trash"></i></td> -->
+          <!-- <div class="action-icons">
+            <i class="fa-solid fa-pen-to-square" (click)="editClient($event)"></i>
+            <i class="fa-solid fa-trash" (click)="deleteClient($event)"></i>
+          </div> -->
+        </tr>        
+        <tr (click)="goToTask()">
+          <td>Company</td>
+          <td>2 april,2023</td>
+          <td>Sample description</td>
+          <td>2 april,2023</td>
+          <td>2 march,2023</td>
+          <td>John Doe</td>
+          <div class="action-icons">
+            <i class="fa-regular fa-pen-to-square" (click)="editClient($event)"></i>
+            <i class="fa-solid fa-trash" (click)="deleteClient($event)"></i>
+          </div>
+        </tr>        
+        <tr (click)="goToTask()">
+          <td>Company</td>
+          <td>2 april,2023</td>
+          <td>Sample description</td>
+          <td>
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-trash"></i>
+          </td>
+          <!-- <div class="action-icons">
+            <i class="fa-regular fa-pen-to-square" (click)="editClient($event)"></i>
+            <i class="fa-solid fa-trash" (click)="deleteClient($event)"></i>
+          </div> -->
+        </tr>        
+        
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+</div>
+
+
+
+  <div class="pagination">
+    <button class="prev-btn" disabled>&lt;</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button class="next-btn">&gt;</button>
+  </div>
