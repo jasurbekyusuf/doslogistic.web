@@ -60,7 +60,7 @@ input[type="text"]:hover {
 }
 
 .table-content {
-  width: 90%;
+  width: 96%;
   display: flex;
   flex-direction: column;
 }
@@ -71,13 +71,14 @@ input[type="text"]:hover {
 }
 
 .table-header {
-  color: #aaaaaa;
+  color: #000;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  padding: 0 17px;
+  padding: 0 20px;
 }
 
 .table-header p {
+
   font-weight: bold;
   margin: 0;
 }
@@ -92,26 +93,27 @@ input[type="text"]:hover {
 
 .milestone-table tr,
 .milestone-table td {
-  padding: 17px;
-  height: 60px;
+  padding: 17px 5px;
+  height: 40px;
+  
 }
 
 .milestone-table > tbody > tr {
   border-radius: 15px;
 }
 
-.milestone-table tr:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
-}
+// .milestone-table tr:hover {
+//   cursor: pointer;
+//   transform: translateY(-5px);
+//   box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+// }
 
-.action-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: white;
-}
+// .action-icons {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+//   color: white;
+// }
 .fa-eye{
   color: #058c42;
 }
