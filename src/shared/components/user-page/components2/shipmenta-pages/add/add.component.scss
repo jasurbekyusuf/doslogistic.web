@@ -60,14 +60,14 @@ input[type="text"]:hover {
 }
 
 .table-content {
-  width: 96%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
 
 .table-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .table-header {
@@ -78,7 +78,14 @@ input[type="text"]:hover {
 }
 
 .table-header p {
-
+  width:150px;
+  text-align: start;
+  font-weight: bold;
+  margin: 0;
+}
+.table-header .wrapper {
+  width:170px;
+  text-align: start;
   font-weight: bold;
   margin: 0;
 }
@@ -93,16 +100,26 @@ input[type="text"]:hover {
 
 .milestone-table tr,
 .milestone-table td {
-  padding: 17px 5px;
+  padding: 15px 0px;
   height: 40px;
-  
+  text-align: start;
+  margin-left: 15px;
+  width: 180px;
+  padding-left: 22px;
+
+}
+.milestone-table tbody .button{
+  margin: 14px 0;
 }
 
-.milestone-table > tbody > tr {
+.milestone-table tbody tr {
   border-radius: 15px;
+  border: 1px solid var(--Primary, #058C42);
+	background: var(--White, #FFF);
+	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
 }
 
-// .milestone-table tr:hover {
+// .milestone-table tbody tr:hover {
 //   cursor: pointer;
 //   transform: translateY(-5px);
 //   box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -114,8 +131,12 @@ input[type="text"]:hover {
 //   align-items: flex-end;
 //   color: white;
 // }
+.fa-copy{
+  padding-left:12px;
+}
 .fa-eye{
   color: #058c42;
+  padding: 8px 7px;
 }
 
 .fa-pen-to-square {

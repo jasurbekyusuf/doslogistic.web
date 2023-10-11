@@ -14,74 +14,67 @@
         <thead>
           <tr class="nohover">
             <th colspan="" class="table-header">
-              <p>TITLE</p>
+              <p class="wrapper">Kuzatib borish kodi</p>
             </th>
             <th colspan="" class="table-header">
-              <p>FINISH DATE</p>
+              <p>Nomi</p>
             </th>
             <th colspan="" class="table-header">
-              <p>DESCRIPTION</p>
+              <p>Qiymati</p>
             </th>
-            <!-- <th colspan="" class="table-header">
-              <p>CREATED DATE</p>
-            </th> -->
-              <!-- <th colspan="" class="table-header">
-                <p>LAST UPDATED</p>
-              </th> -->
             <th colspan="" class="table-header">
-              <p>ASSIGNEE</p>
+              <p>Qo'shilganlar</p>
+            </th>
+            <th colspan="" class="table-header">
+              <p>Actions</p>
             </th>
           </tr>
+          
         </thead>
         <tbody>
+          <tr class="button" (click)="goToTask()">
+            <td>
+              ASGJ-NSHG-VCH5
+              <i class="fa-regular fa-copy"></i>
+            </td>
+            <td>Amazondan yangi kitoblar</td>
+            <td>360.00$</td>
+            <td>2 april,2023</td>
+            <td>
+              <i class="fa-solid fa-eye"></i>
+              <i class="fa-solid fa-pen-to-square"></i>
+              <i class="fa-solid fa-trash"></i>
+            </td>
+          </tr> 
+
           <tr (click)="goToTask()">
             <td>
               ASGJ-NSHG-VCH5
               <i class="fa-regular fa-copy"></i>
             </td>
-            <!-- <td><i class="fa-regular fa-copy"></i></td> -->
             <td>Amazondan yangi kitoblar</td>
+            <td>360.00$</td>
             <td>2 april,2023</td>
             <td>
               <i class="fa-solid fa-eye"></i>
               <i class="fa-solid fa-pen-to-square"></i>
               <i class="fa-solid fa-trash"></i>
             </td>
-            <!-- <td><i class="fa-solid fa-pen-to-square"></i></td>
-          <td><i class="fa-solid fa-trash"></i></td> -->
-            <!-- <div class="action-icons">
-            <i class="fa-solid fa-pen-to-square" (click)="editClient($event)"></i>
-            <i class="fa-solid fa-trash" (click)="deleteClient($event)"></i>
-          </div> -->
           </tr>
+
           <tr (click)="goToTask()">
-            <td>Company</td>
+            <td>
+              ASGJ-NSHG-VCH5
+              <i class="fa-regular fa-copy"></i>
+            </td>
+            <td>Amazondan yangi kitoblar</td>
+            <td>360.00$</td>
             <td>2 april,2023</td>
-            <td>Sample description</td>
-            <td>2 april,2023</td>
-            <td>2 march,2023</td>
-            <td>John Doe</td>
-            <div class="action-icons">
-              <i
-                class="fa-regular fa-pen-to-square"
-                (click)="editClient($event)"
-              ></i>
-              <i class="fa-solid fa-trash" (click)="deleteClient($event)"></i>
-            </div>
-          </tr>
-          <tr (click)="goToTask()">
-            <td>Company</td>
-            <td>2 april,2023</td>
-            <td>Sample description</td>
             <td>
               <i class="fa-solid fa-eye"></i>
               <i class="fa-solid fa-pen-to-square"></i>
               <i class="fa-solid fa-trash"></i>
             </td>
-            <!-- <div class="action-icons">
-            <i class="fa-regular fa-pen-to-square" (click)="editClient($event)"></i>
-            <i class="fa-solid fa-trash" (click)="deleteClient($event)"></i>
-          </div> -->
           </tr>
         </tbody>
       </table>
