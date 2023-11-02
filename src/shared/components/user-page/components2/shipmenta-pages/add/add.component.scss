@@ -1,0 +1,200 @@
+.header {
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-between;
+  font-family: "Poppins", "sans-serif";
+  margin-bottom:20px;
+  max-width: 1320px;
+}
+
+.header-search {
+  display: flex;
+  font-family: "Poppins", "sans-serif";
+}
+
+.fa-search {
+  color: #444444;
+  font-size: 15px;
+  position: relative;
+  left: 30px;
+  top: 18px;
+  font-weight: bold;
+}
+.fa-plus {
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  left: 30px;
+  top: 18px;
+  font-weight: bold;
+}
+input[type="text"] {
+  color: #444444;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 12px 15px;
+  border-radius: 12px;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 35px;
+  margin-top: 5px;
+  outline-color: rgba(50, 168, 82, 1);
+}
+
+input[type="text"]:hover {
+  border: 0.5px solid rgba(50, 168, 82, 1);
+}
+
+.add-students {
+  color: white;
+  background-color: #058c42;
+  border-radius: 12px;
+  font-size: 14px;
+  height: 40px;
+  width: 160px;
+  border-color: #058c42;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.table-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.table-header {
+  color: #000;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 20px;
+  border-radius: 15px;
+}
+
+.table-header p {
+  width:150px;
+  font-size: 18px;
+  text-align: start;
+  font-weight: bold;
+  margin: 0;
+}
+.table-header .wrapper {
+  width:170px;
+  font-size: 18px;
+  text-align: start;
+  font-weight: bold;
+  margin: 0;
+}
+.table-header .price {
+  width:120px;
+  font-size: 18px;
+  text-align: start;
+  font-weight: bold;
+  margin: 0;
+}
+
+.table-container {
+  width: 100%;
+}
+
+.milestone-table {
+  width: 100%;
+}
+
+.milestone-table .nohover{
+  border: 2px solid #058C42;
+  margin: 20px 0;
+  height: 40px;
+}
+
+.milestone-table tr,
+.milestone-table td {
+  padding: 15px 0px;
+  height: 40px;
+  text-align: start;
+  margin-left: 15px;
+  width: 180px;
+  padding-left: 22px;
+
+}
+.milestone-table tbody .button{
+  margin: 14px 0;
+  border-radius: 15px;
+}
+
+.milestone-table tbody tr {
+  border-radius: 15px;
+  border: 1px solid var(--Primary, #058C42);
+	background: var(--White, #FFF);
+	box-shadow: 0px 10px 32px 0px rgba(167, 201, 87, 0.20), 0px 2px 12px 0px rgba(167, 201, 87, 0.12);
+}
+
+// .milestone-table tbody tr:hover {
+//   cursor: pointer;
+//   transform: translateY(-5px);
+//   box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+// }
+
+// .action-icons {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+//   color: white;
+// }
+.fa-copy{
+  padding-left:12px;
+}
+.fa-eye{
+  color: #058c42;
+  padding: 8px 7px;
+}
+
+.fa-pen-to-square {
+  padding: 8px 7px;
+  border-radius: 0px 15px 0px 0px;
+  color: #4348e6;
+}
+
+.fa-trash {
+  padding: 8px 8px;
+  border-radius: 0px 0px 15px 0px;
+  color: red;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-top: -7px;
+}
+
+.prev-btn,
+.next-btn,
+.pagination button {
+  background-color: transparent;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.pagination button:hover {
+  background-color: #e2e2e2;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled,
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
