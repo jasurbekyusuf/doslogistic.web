@@ -7,3 +7,8 @@
 	margin-bottom: 64px;
 }
 
+@media screen and (max-width: 434px) {
+  .header-title{
+    font-size: 30px !important;
+  }
+}

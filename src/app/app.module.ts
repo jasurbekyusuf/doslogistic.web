@@ -31,7 +31,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from '../shared/components/home/map/map.component';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 
-
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
   return (): Promise<any> => {

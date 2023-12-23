@@ -13,6 +13,7 @@ import { RestrictionsComponent } from 'src/shared/components/restrictions/restri
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'shops', loadChildren: () => import('./core/shops/shops.module').then(m => m.ShopsModule)},
+  { path: 'admin', loadChildren: () => import('./core/adminPanel/admin.module').then(m => m.AdminModule)},
   { path: 'cabinet', loadChildren: () => import('../shared/components/user-page/user.module').then(m => m.UserModule)},
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'tariffs', component: PriceComponent },
