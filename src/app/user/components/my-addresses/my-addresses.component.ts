@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Renderer2, ElementRef, OnDestroy } from '@angular/core';
+
 @Component({
   selector: 'app-my-addresses',
   templateUrl: './my-addresses.component.html',
@@ -21,7 +23,8 @@ export class MyAddressesComponent {
     birthDate: new FormControl('')
   });
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,
+    private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group(
@@ -40,14 +43,27 @@ export class MyAddressesComponent {
     );
   }
 
+  private disableScroll() {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    this.renderer.setStyle(document.body, 'position', 'fixed');
+    this.renderer.setStyle(document.body, 'width', `calc(100% - ${scrollbarWidth}px)`);
+  }
+
+  private enableScroll() {
+    this.renderer.removeStyle(document.body, 'top');
+    this.renderer.removeStyle(document.body, 'position');
+    this.renderer.removeStyle(document.body, 'width');
+  }
+
   openModal() {
     this.isModalOpen = true;
-    document.body.style.overflow = 'hidden';
+    this.disableScroll();
   }
 
   closeModal() {
     this.isModalOpen = false;
-    document.body.style.overflow = 'auto';
+    this.enableScroll();
   }
 
   get f(): { [key: string]: AbstractControl } {

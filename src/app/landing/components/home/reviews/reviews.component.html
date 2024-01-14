@@ -8,9 +8,9 @@
             <h2>{{ slide.text }}</h2>
             <div class="author">
               <div class="img">
-                <img src="../../../../assets/images/review/author_ava.png" alt="" />
+                <img [src]="slide.image" alt="" />
               </div>
-              <div class="name">James Clear</div>
+              <div class="name">{{ slide.title }}</div><!--James Clear -->
             </div>
           </div>
         </ng-template>
