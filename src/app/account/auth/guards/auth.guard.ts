@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
-import {AuthService} from "../../../local-services/auth/auth.service";
+import {AuthService} from "../../../landing/local-services/auth/auth.service";
+
 
 @Injectable({
   providedIn: 'root',

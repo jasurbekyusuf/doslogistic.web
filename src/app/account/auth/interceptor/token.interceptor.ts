@@ -9,7 +9,8 @@ import {
 import { Observable, catchError, throwError } from 'rxjs';
 import { NgToastService } from 'ng-angular-popup';
 import { Router } from '@angular/router';
-import { AuthService } from 'src/app/core/local-services/auth/auth.service';
+import {AuthService} from "../../../landing/local-services/auth/auth.service";
+
 
 
 @Injectable()

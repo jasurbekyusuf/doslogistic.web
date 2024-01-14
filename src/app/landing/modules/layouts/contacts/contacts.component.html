@@ -207,44 +207,52 @@
         <div class="inputs">
 
           <div class="inputs-sty">
-
-            <input type="text" placeholder="Name" formControlName="name" class="input-style"
-              [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" autocomplete="this-name" />
-            <div *ngIf="submitted && f['name'].errors" class="form-invalid">
-              <div *ngIf="f['name'].errors['required']">Name is required</div>
+            <input type="text" placeholder="Full Name" formControlName="fullName" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['fullName'].errors }" autocomplete="this-name" />
+            <div *ngIf="submitted && f['fullName'].errors" class="form-invalid">
+              <div *ngIf="f['fullName'].errors['required']">Name is required</div>
             </div>
-
           </div>
 
           <div class="inputs-sty">
-
             <input type="email" placeholder="Email" class="input-style" formControlName="email"
               [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" autocomplete="this-email" />
             <div *ngIf="submitted && f['email'].errors" class="form-invalid">
               <div *ngIf="f['email'].errors['required']">Email is required</div>
               <div *ngIf="f['email'].errors['email']">Email is invalid</div>
             </div>
-
           </div>
 
           <div class="inputs-sty">
-
             <input type="text" placeholder="Subject" formControlName="subject" class="input-style"
               [ngClass]="{ 'is-invalid': submitted && f['subject'].errors }" autocomplete="this-subject" />
             <div *ngIf="submitted && f['subject'].errors" class="form-invalid">
               <div *ngIf="f['subject'].errors['required']">Subject is required</div>
             </div>
-
           </div>
 
           <div class="inputs-sty">
-
-            <textarea type="text" placeholder="Message" formControlName="message" class="input-style"
-              [ngClass]="{ 'is-invalid': submitted && f['message'].errors }" autocomplete="this-message"></textarea>
-            <div *ngIf="submitted && f['message'].errors" class="form-invalid2">
-              <div *ngIf="f['message'].errors['required']">Message is required</div>
+            <input type="text" placeholder="City" formControlName="city" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['city'].errors }" autocomplete="this-subject" />
+            <div *ngIf="submitted && f['city'].errors" class="form-invalid">
+              <div *ngIf="f['city'].errors['required']">Phone is required</div>
             </div>
+          </div>
 
+          <div class="inputs-sty">
+            <input type="text" placeholder="phone" formControlName="phone" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['phone'].errors }" autocomplete="this-subject" />
+            <div *ngIf="submitted && f['phone'].errors" class="form-invalid">
+              <div *ngIf="f['phone'].errors['required']">Phone is required</div>
+            </div>
+          </div>
+
+          <div class="inputs-sty">
+            <textarea type="text" placeholder="Message" formControlName="text" class="input-style"
+              [ngClass]="{ 'is-invalid': submitted && f['text'].errors }" autocomplete="this-message"></textarea>
+            <div *ngIf="submitted && f['text'].errors" class="form-invalid2">
+              <div *ngIf="f['text'].errors['required']">Message is required</div>
+            </div>
           </div>
 
           <button>Send Message <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"

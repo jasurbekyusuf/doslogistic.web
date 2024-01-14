@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
-import {ResetPasswordService} from "../../../local-services/reset-password/reset-password.service";
-import {AuthService} from "../../../local-services/auth/auth.service";
+import {ResetPasswordService} from "../../../landing/local-services/reset-password/reset-password.service";
+import { AuthService } from '../service/register.service';
 
 declare const intlTelInput: any;
 
@@ -57,52 +57,54 @@ export class LoginComponent {
     return this.form.controls;
   }
 
-  onSubmit(): void {
-    // this.submitted = true;
+  // onSubmit(): void {
+  //   this.submitted = true;
 
-    // if (this.form.invalid) {
-    //   return;
-    // }
-    this.router.navigate(['/cabinet'])
+  //   if (this.form.invalid) {
+  //     return;
+  //   }
+  //   this.router.navigate(['/cabinet'])
 
-    console.log(JSON.stringify(this.form.value, null, 2));
-  }
-
-  // onSubmit() {
-  //       if (this.form.valid) {
-  //         console.log(this.form.value);
-  //         this.authService.login(this.form.value).subscribe({
-  //           next: (res) => {
-  //             this.form.reset();
-  //             this.authService.storeToken(res.token);
-  //             this.toast.success({
-  //               detail: 'SUCCESS',
-  //               summary: res.message,
-  //               duration: 5000,
-  //             });
-  //             console.log(res);
-
-  //             this.router.navigate(['dashboard']);
-  //           },
-  //           error: (err) => {
-  //             this.toast.error({
-  //               summary: err,
-  //               duration: 7000,
-  //               detail: ''
-  //             });
-  //           },
-  //         });
-  //       } else {
-  //         ValidateForm.validateAllFormFilds(this.form);
-  //       }
-  //     }
-
-    //  checkValidEmail(event: string) {
-    // const value = event;
-    // const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,3}$/;
-    // this.isValidEmail = pattern.test(value);
-  //   return this.isValidEmail;
+  //   console.log(JSON.stringify(this.form.value, null, 2));
   // }
+
+  onSubmit() {
+        if (this.form.valid) {
+          console.log(this.form.value);
+          this.authService.login(this.form.value).subscribe({
+            next: (res) => {
+              this.form.reset();
+              this.authService.storeToken(res.token);
+              this.toast.success({
+                detail: 'SUCCESS',
+                summary: res.message,
+                duration: 5000,
+              });
+              console.log(res);
+
+              
+
+              this.router.navigate(['/cabinet']);
+            },
+            error: (err) => {
+              this.toast.error({
+                summary: err,
+                duration: 7000,
+                detail: ''
+              });
+            },
+          });
+        } else {
+          // ValidateForm.validateAllFormFilds(this.form);
+        }
+      }
+
+    checkValidEmail(event: string) {
+    const value = event;
+    const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,3}$/;
+    this.isValidEmail = pattern.test(value);
+    return this.isValidEmail;
+  }
 
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
