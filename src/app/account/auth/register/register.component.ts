@@ -93,7 +93,7 @@ export class RegisterComponent {
     this.authService.registerUser(userObj).subscribe({
       next: (res) => {
         this.form.reset();
-        this.router.navigate(['/signin']);
+        this.router.navigate(['/login']);
       },
       error: (err) => {
         // this.toast.error({

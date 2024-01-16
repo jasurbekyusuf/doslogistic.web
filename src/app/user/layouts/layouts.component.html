@@ -39,8 +39,8 @@
             <h2  routerLinkActive="active" [routerLink]="['settings']">Sozlamalarim</h2>
           </div>
           <div class="text log-out">
-            <span routerLinkActive="active" nz-icon nzType="logout" nzTheme="outline"></span>
-            <h2>Chiqish</h2>
+            <span (click)="logOut()" routerLinkActive="active" nz-icon nzType="logout" nzTheme="outline"></span>
+            <h2 (click)="logOut()">Chiqish</h2>
           </div>
         </div>
       </div>

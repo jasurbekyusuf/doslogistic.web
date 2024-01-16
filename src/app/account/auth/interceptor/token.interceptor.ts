@@ -9,9 +9,7 @@ import {
 import { Observable, catchError, throwError } from 'rxjs';
 import { NgToastService } from 'ng-angular-popup';
 import { Router } from '@angular/router';
-import {AuthService} from "../../../landing/local-services/auth/auth.service";
-
-
+import {AuthService} from "../service/register.service";
 
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {

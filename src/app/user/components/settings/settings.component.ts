@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 declare const intlTelInput: any;
 
@@ -7,7 +7,7 @@ declare const intlTelInput: any;
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.scss']
 })
-export class SettingsComponent {
+export class SettingsComponent implements OnInit{
   submitted = false;
 
   form: FormGroup = new FormGroup({
@@ -21,7 +21,8 @@ export class SettingsComponent {
     birthDate: new FormControl('')
   });
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(
+    private formBuilder: FormBuilder) { }
 
   ngOnInit() {
     const mobileCodeInput = document.getElementById('mobile_code') as HTMLInputElement;

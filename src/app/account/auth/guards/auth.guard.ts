@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
-import {AuthService} from "../../../landing/local-services/auth/auth.service";
+import {AuthService} from "../service/register.service";
 
 
 @Injectable({
@@ -19,7 +19,7 @@ export class AuthGuard  {
       return true;
     } else {
       // this.toast.error({ detail: 'Error', summary: 'Please Login First' });
-      this.router.navigate(['signin']);
+      this.router.navigate(['login']);
       return false;
     }
   }

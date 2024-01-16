@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {AuthService} from "../../account/auth/service/register.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-layouts',
@@ -8,7 +10,10 @@ import { Component } from '@angular/core';
 export class LayoutsComponent {
   isVisible = false;
 
-  constructor() {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+  ) {}
 
   showModal(): void {
     this.isVisible = true;
@@ -22,5 +27,10 @@ export class LayoutsComponent {
   handleCancel(): void {
     console.log('Button cancel clicked!');
     this.isVisible = false;
+  }
+
+  logOut(){
+    this.authService.signOut();
+    this.router.navigate(['/login']);
   }
 }

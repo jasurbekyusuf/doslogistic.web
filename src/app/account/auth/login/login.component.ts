@@ -57,17 +57,6 @@ export class LoginComponent {
     return this.form.controls;
   }
 
-  // onSubmit(): void {
-  //   this.submitted = true;
-
-  //   if (this.form.invalid) {
-  //     return;
-  //   }
-  //   this.router.navigate(['/cabinet'])
-
-  //   console.log(JSON.stringify(this.form.value, null, 2));
-  // }
-
   onSubmit() {
         if (this.form.valid) {
           console.log(this.form.value);
@@ -80,9 +69,13 @@ export class LoginComponent {
                 summary: res.message,
                 duration: 5000,
               });
-              console.log(res);
+              this.authService.getUserRole()
+              const userRole = this.authService.getUserRole();
+              const userId = this.authService.getUserId();
 
-              
+              console.log('User Role:', userRole);
+              console.log('User ID:', userId);
+
 
               this.router.navigate(['/cabinet']);
             },
@@ -104,6 +97,10 @@ export class LoginComponent {
     const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,3}$/;
     this.isValidEmail = pattern.test(value);
     return this.isValidEmail;
+  }
+
+  signOut(){
+    this.authService.signOut();
   }
 
   togglePasswordVisibility() {

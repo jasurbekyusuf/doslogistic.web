@@ -33,6 +33,8 @@ import {FileComponent} from "./landing/components/Setting/file/file.component";
 import {NoticeComponent} from "./landing/components/Setting/notice/notice.component";
 import {LoginComponent} from "./account/auth/login/login.component";
 import {RegisterComponent} from "./account/auth/register/register.component";
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {TokenInterceptor} from "./account/auth/interceptor/token.interceptor";
 
 registerLocaleData(localeRu);
 export function initializeApp(appInitService: AppInitService) {
@@ -91,6 +93,11 @@ export function initializeApp(appInitService: AppInitService) {
       deps: [AppInitService],
       multi: true,
     },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

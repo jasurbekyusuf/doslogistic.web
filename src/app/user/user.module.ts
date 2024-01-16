@@ -9,7 +9,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
-import { SharedModule } from 'src/shared/shared.module';
 import {PasswordComponent} from "./components/password/password.component";
 import {LayoutsComponent} from "./layouts/layouts.component";
 import {MyParcelsComponent} from "./components/my-parcels/my-parcels.component";
