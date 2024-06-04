@@ -43,24 +43,25 @@
                     </div>
                 </div>
             </div>
-            <div class="user-gender user-gender1">
-                <label for="checkbox">Jinsi</label>
-                <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['gender'].errors }">
-                    <div>
-                        <input type="checkbox" id="male" formControlName="gender">
-                        <label for="male" class="circle-label">Erkak</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="female" formControlName="gender">
-                        <label for="female" class="circle-label">Ayol</label>
-                    </div>
-                    <div *ngIf="submitted && f['gender'].hasError('required') && !f['gender'].hasError('requiredTrue')"
-                        class="invalid-feedback2">
-                        Majburiy maydon
-                    </div>
-                </div>
+          <div class="user-gender user-gender1">
+            <label for="checkbox">Jinsi</label>
+            <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['gender'].errors }">
+              <div>
+                <input type="checkbox" id="male" formControlName="gender" value="Man">
+                <label for="male" class="circle-label">Erkak</label>
+              </div>
+              <div>
+                <input type="checkbox" id="female" formControlName="gender" value="Women">
+                <label for="female" class="circle-label">Ayol</label>
+              </div>
+              <div *ngIf="submitted && f['gender'].hasError('required') && !f['gender'].hasError('requiredTrue')"
+                   class="invalid-feedback2">
+                Majburiy maydon
+              </div>
             </div>
-            <div class="other-data">
+          </div>
+
+          <div class="other-data">
                 <div class="data-flex">
                     <label for="input">Tugʻilgan kun</label>
                     <input type="text" placeholder="Tugulgan kun" formControlName="birthDate"
@@ -89,23 +90,23 @@
                     </div>
                 </div>
             </div>
-            <div class="user-gender user-gender2">
-              <label for="checkbox">Jinsi</label>
-              <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['gender'].errors }">
-                  <div>
-                      <input type="checkbox" id="male" formControlName="gender">
-                      <label for="male" class="circle-label">Erkak</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="female" formControlName="gender">
-                      <label for="female" class="circle-label">Ayol</label>
-                  </div>
-                  <div *ngIf="submitted && f['gender'].hasError('required') && !f['gender'].hasError('requiredTrue')"
-                      class="invalid-feedback2">
-                      Majburiy maydon
-                  </div>
-              </div>
-          </div>
+<!--            <div class="user-gender user-gender2">-->
+<!--              <label for="checkbox">Jinsi</label>-->
+<!--              <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['gender'].errors }">-->
+<!--                  <div>-->
+<!--                      <input type="checkbox" id="male" formControlName="gender">-->
+<!--                      <label for="male" class="circle-label">Erkak</label>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                      <input type="checkbox" id="female" formControlName="gender">-->
+<!--                      <label for="female" class="circle-label">Ayol</label>-->
+<!--                  </div>-->
+<!--                  <div *ngIf="submitted && f['gender'].hasError('required') && !f['gender'].hasError('requiredTrue')"-->
+<!--                      class="invalid-feedback2">-->
+<!--                      Majburiy maydon-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
             <button>O'zgartitishlarni saqlash</button>
         </div>
         <div class="user-passport">

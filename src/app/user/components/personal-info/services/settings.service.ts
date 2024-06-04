@@ -22,5 +22,9 @@ export class SettingsService{
     return this.httpClient.get<any>(`${this.userUrl}/${id}`)
   }
 
-  
+  updateUserData(data: any){
+    return this.httpClient.put<any>(this.userUrl, data)
+  }
+
+
 }

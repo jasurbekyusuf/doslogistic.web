@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {SettingsService} from "./services/settings.service";
-import {UserModel} from "../../models/user-model";
+import {Gender, UserModel} from "../../models/user-model";
 declare const intlTelInput: any;
 
 @Component({
@@ -80,7 +80,6 @@ export class PersonalInfoComponent {
     })
   }
 
-
   get f(): { [key: string]: AbstractControl } {
     return this.form.controls;
   }
@@ -92,6 +91,15 @@ export class PersonalInfoComponent {
       return;
     }
 
+    this.updateData(this.form.value);
     console.log(JSON.stringify(this.form.value, null, 2));
+  }
+
+  updateData(data: any){
+    data.gender = data.gender === 'Man' ? Gender.Man : Gender.Women;
+
+    this.settingService.updateUserData(data).subscribe(data=>{
+      console.log(data)
+    })
   }
 }

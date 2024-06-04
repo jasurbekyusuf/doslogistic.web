@@ -144,24 +144,24 @@
           </div>
         </div>
       </div>
-<!--      <div class="input-field">-->
-<!--        <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"-->
-<!--          formControlName="phoneNumber" [ngClass]="{ 'is-invalid': submitted && f['phoneNumber'].errors }"-->
-<!--          autocomplete="this-phoneNumber">-->
-<!--        <div *ngIf="submitted && f['phoneNumber'].errors" class="invalid-feedback">-->
-<!--          <div *ngIf="f['phoneNumber'].errors['required']">Phone number is required</div>-->
-<!--          <div *ngIf="f['phoneNumber'].hasError('minlength')">Phone number is invalid</div>-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="input-field">
+        <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
+          formControlName="phoneNumber" [ngClass]="{ 'is-invalid': submitted && f['phoneNumber'].errors }"
+          autocomplete="this-phoneNumber">
+        <div *ngIf="submitted && f['phoneNumber'].errors" class="invalid-feedback">
+          <div *ngIf="f['phoneNumber'].errors['required']">Phone number is required</div>
+          <div *ngIf="f['phoneNumber'].hasError('minlength')">Phone number is invalid</div>
+        </div>
+      </div>
 
-<!--      <div class="input-field">-->
-<!--        &lt;!&ndash; New Birthdate Field &ndash;&gt;-->
-<!--        <input type="date" placeholder="BirthDate" class="input-style" formControlName="birthDate"-->
-<!--          [ngClass]="{ 'is-invalid': submitted && f['birthDate'].errors }" />-->
-<!--        <div *ngIf="submitted && f['birthDate'].errors" class="invalid-feedback">-->
-<!--          <div *ngIf="f['birthDate'].errors['required']">Birthdate is required</div>-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="input-field">
+        <!-- New Birthdate Field -->
+        <input type="date" placeholder="BirthDate" class="input-style" formControlName="birthDate"
+          [ngClass]="{ 'is-invalid': submitted && f['birthDate'].errors }" />
+        <div *ngIf="submitted && f['birthDate'].errors" class="invalid-feedback">
+          <div *ngIf="f['birthDate'].errors['required']">Birthdate is required</div>
+        </div>
+      </div>
       <div class="terms-of-use">
         <label nz-checkbox formControlName="acceptTerms"
           [ngClass]="{ 'is-invalid': submitted && f['acceptTerms'].errors }"></label>
