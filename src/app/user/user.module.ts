@@ -19,6 +19,8 @@ import {PersonalInfoComponent} from "./components/personal-info/personal-info.co
 import {MyAcceptancesComponent} from "./components/my-acceptances/my-acceptances.component";
 import {SettingsComponent} from "./components/settings/settings.component";
 import {AntModules} from "../../shared/ant-imports";
+import {NzInputModule} from "ng-zorro-antd/input";
+import {NzCheckboxModule} from "ng-zorro-antd/checkbox";
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -54,6 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    NzInputModule,
+    NzCheckboxModule,
   ]
 })
 export class UserModule { }

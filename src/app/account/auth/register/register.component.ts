@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Validation from './validation';
 import { AuthService } from '../service/register.service';
-import { v4 as uuidv4 } from 'uuid'; // Import the uuid library for generating UUIDs
-import { DatePipe, formatDate } from '@angular/common';
 import { Router } from '@angular/router';
 
 declare const intlTelInput: any;

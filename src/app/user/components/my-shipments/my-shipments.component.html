@@ -2,11 +2,14 @@
   <div class="content">
     <h2 class="header-title">Mening Posilkalarim</h2>
     <div class="page-routing">
-      <p class="btn1" routerLinkActive="active-link" [routerLink]="['order']">Qo’shildi</p>
-      <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-warehouse']">Omborxonada</p>
-      <p class="btn2" routerLinkActive="active-link" [routerLink]="['onway']">Yo’lda</p>
-      <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-country']">Mamlakatda</p>
-      <p class="btn1" routerLinkActive="active-link" [routerLink]="['recived']">Olindi</p>
+      <div>
+        <p class="btn1" routerLinkActive="active-link" [routerLink]="['order']">Qo’shildi</p>
+        <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-warehouse']">Omborxonada</p>
+        <p class="btn2" routerLinkActive="active-link" [routerLink]="['onway']">Yo’lda</p>
+        <p class="btn2" routerLinkActive="active-link" [routerLink]="['in-country']">Mamlakatda</p>
+        <p class="btn1" routerLinkActive="active-link" [routerLink]="['recived']">Olindi</p>
+      </div>
+      <button class="add-button" routerLinkActive="active" (click)="openModal()">Posilka qo'shish</button>
     </div>
     <div class="mobile">
       <p class="" routerLinkActive="active-link" [routerLink]="['order']">Qo’shildi</p>
@@ -20,7 +23,6 @@
 
 
   <div class="container">
-    <button class="add-button" routerLinkActive="active" (click)="openModal()">Posilka qo'shish</button>
     <ng-container>
       <router-outlet></router-outlet>
     </ng-container>

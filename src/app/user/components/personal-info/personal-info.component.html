@@ -4,7 +4,7 @@
             <div class="user-names">
                 <div>
                     <label for="input">Ism <span>*</span></label>
-                    <input type="text" placeholder="First Name" [ngClass]="{ 'is-invalid': submitted && f['firstName'].errors }"
+                    <input nz-input type="text" placeholder="First Name" [ngClass]="{ 'is-invalid': submitted && f['firstName'].errors }"
                         formControlName="firstName">
                     <div *ngIf="submitted && f['firstName'].hasError('required') && !f['firstName'].hasError('requiredTrue')"
                         class="invalid-feedback">
@@ -13,7 +13,7 @@
                 </div>
                 <div>
                     <label for="input">Familiya <span>*</span></label>
-                    <input type="text" placeholder="Last Name"
+                    <input nz-input type="text" placeholder="Last Name"
                         [ngClass]="{ 'is-invalid': submitted && f['lastName'].errors }" formControlName="lastName">
                     <div *ngIf="submitted && f['lastName'].hasError('lastName') && !f['lastName'].hasError('requiredTrue')"
                         class="invalid-feedback">
@@ -24,7 +24,7 @@
             <div class="other-data">
                 <div class="data-flex">
                     <label for="input">Seriya va pasport raqami <span>*</span></label>
-                    <input type="text" placeholder="AA1234567"
+                    <input nz-input type="text" placeholder="AA1234567"
                         [ngClass]="{ 'is-invalid': submitted && f['passportSeriesAndNumber'].errors }"
                         formControlName="passportSeriesAndNumber">
                     <div *ngIf="submitted && f['passportSeriesAndNumber'].hasError('required') && !f['passportSeriesAndNumber'].hasError('requiredTrue')"
@@ -34,7 +34,7 @@
                 </div>
                 <div class="data-flex">
                     <label for="input">JSHIR <span>*</span></label>
-                    <input type="number" placeholder="1234567890111213141516"
+                    <input nz-input type="number" placeholder="1234567890111213141516"
                         [ngClass]="{ 'is-invalid': submitted && f['passportJshshir'].errors }"
                         formControlName="passportJshshir">
                     <div *ngIf="submitted && f['passportJshshir'].hasError('required') && !f['passportJshshir'].hasError('passportJshshir')"
@@ -47,11 +47,11 @@
                 <label for="checkbox">Jinsi</label>
                 <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['gender'].errors }">
                     <div>
-                        <input type="checkbox" id="male" formControlName="gender">
+                        <input nz-input type="checkbox" id="male" formControlName="gender">
                         <label for="male" class="circle-label">Erkak</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="female" formControlName="gender">
+                        <input nz-input type="checkbox" id="female" formControlName="gender">
                         <label for="female" class="circle-label">Ayol</label>
                     </div>
                     <div *ngIf="submitted && f['gender'].hasError('required') && !f['gender'].hasError('requiredTrue')"
@@ -63,7 +63,7 @@
             <div class="other-data">
                 <div class="data-flex">
                     <label for="input">Tugʻilgan kun</label>
-                    <input type="text" placeholder="Tugulgan kun" formControlName="birthDate"
+                    <input nz-input type="text" placeholder="Tugulgan kun" formControlName="birthDate"
                         [ngClass]="{ 'is-invalid': submitted && f['birthDate'].errors }" autocomplete="this-birthDate">
                     <div *ngIf="submitted && f['birthDate'].errors" class="invalid-feedback">
                         <div *ngIf="f['birthDate'].errors['required']">Tugulgan kun is required</div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="data-flex">
                     <label for="input">Telefon raqami</label>
-                    <input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
+                    <input nz-input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
                         formControlName="phoneNumber" [ngClass]="{ 'is-invalid': submitted && f['phoneNumber'].errors }"
                         autocomplete="this-phoneNumber">
                     <div *ngIf="submitted && f['phoneNumber'].errors" class="invalid-feedback">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="data-flex">
                     <label for="input">E-mail</label>
-                    <input type="email" formControlName="email" placeholder="bill@gmail.com"
+                    <input nz-input type="email" formControlName="email" placeholder="bill@gmail.com"
                         [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" autocomplete="this-email">
                     <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
                         <div *ngIf="f['email'].errors['required']">Email is required</div>
@@ -91,15 +91,16 @@
             </div>
             <div class="user-gender user-gender2">
               <label for="checkbox">Jinsi</label>
+                    <label nz-checkbox >Erkak</label>
+                    <label nz-checkbox >Ayol</label>
               <div class="checkbox-flex" [ngClass]="{ 'is-invalid': submitted && f['gender'].errors }">
-                  <div>
-                      <input type="checkbox" id="male" formControlName="gender">
-                      <label for="male" class="circle-label">Erkak</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="female" formControlName="gender">
-                      <label for="female" class="circle-label">Ayol</label>
-                  </div>
+<!--                  <div>-->
+<!--&lt;!&ndash;                      <input nz-input type="checkbox" id="male" formControlName="gender">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <label for="male" class="circle-label">Erkak</label>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--&lt;!&ndash;                      <label for="female" class="circle-label">Ayol</label>&ndash;&gt;-->
+<!--                  </div>-->
                   <div *ngIf="submitted && f['gender'].hasError('required') && !f['gender'].hasError('requiredTrue')"
                       class="invalid-feedback2">
                       Majburiy maydon
