@@ -19,6 +19,10 @@
   font-size: 16px;
   width: 100%;
   cursor: pointer;
+
+  &:hover {
+    background-color: #10ab55;
+  }
 }
 
 .left {
@@ -64,15 +68,15 @@
     .text {
       display: flex;
       width: 175px;
-    }
 
-    .text:hover {
-      color: #058C42;
-      h2{
+      &:hover {
         color: #058C42;
-      }
-      span{
-        color: #058C42;
+        h2{
+          color: #058C42;
+        }
+        span{
+          color: #058C42;
+        }
       }
     }
 
@@ -100,7 +104,7 @@
   width: 75%;
 }
 
-text span .active{
+.text span .active{
   color: #058C42 !important;
 }
 
@@ -119,49 +123,11 @@ text span .active{
   display: none;
 }
 
-/* layouts.component.css */
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  justify-content: center;
-  align-items: center;
-  border-color: rgba(0, 0, 0, .1);
-}
-
-.show {
-  display: flex;
-}
-
-.modal-content {
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  background: #fff;
-  box-shadow: 0 2px 19px rgba(0, 0, 0, .0700667);
-  position: relative;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .log-out{
   border: 1px solid;
   width: 100%;
   margin: 40px 0 !important;
 }
-
-
 
 @media screen and (max-width: 434px) {
 
