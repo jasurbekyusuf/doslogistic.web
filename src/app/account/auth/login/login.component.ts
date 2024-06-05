@@ -58,6 +58,7 @@ export class LoginComponent {
   }
 
   onSubmit() {
+              this.router.navigate(['/cabinet'])
         if (this.form.valid) {
           console.log(this.form.value);
           this.authService.login(this.form.value).subscribe({
@@ -77,7 +78,7 @@ export class LoginComponent {
               console.log('User ID:', userId);
 
 
-              this.router.navigate(['/cabinet']);
+
             },
             error: (err) => {
               this.toast.error({

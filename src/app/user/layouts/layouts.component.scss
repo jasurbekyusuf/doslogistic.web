@@ -4,11 +4,9 @@
 }
 
 .content {
-  margin-top: 45px !important;
+  margin: 45px 0px 200px 0px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 200px !important;
-  margin: 0;
 }
 
 .search-button {
@@ -34,7 +32,7 @@
   border: 0.5px solid #058C42;
   background: #ffffff;
   width: 275px;
-  height: 626px;
+  height: 590px;
 
   .logo {
     display: flex;
@@ -82,7 +80,7 @@
       width: 20px;
       height: 20px;
       font-size: 20px;
-      margin-top: 3px;
+      margin-top: 4px;
       margin-right: 15px;
     }
 
@@ -108,11 +106,12 @@ text span .active{
 
 .sidenav-text .active {
   color: #058c42;
-  font-weight: 800 !important;
+  font-weight: 550 !important;
 
   span {
     background-color: #058C42;
     color: #058C42;
+    font-weight: 800 !important;
   }
 }
 
@@ -157,7 +156,9 @@ text span .active{
 }
 
 .log-out{
-  margin: 20px 0;
+  border: 1px solid;
+  width: 100%;
+  margin: 40px 0 !important;
 }
 
 
@@ -200,7 +201,6 @@ text span .active{
       width: 100%;
     }
   }
-
 
   .div {
     width: 100%;

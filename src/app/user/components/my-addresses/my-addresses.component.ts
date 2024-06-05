@@ -43,6 +43,8 @@ export class MyAddressesComponent {
     );
   }
 
+
+
   private disableScroll() {
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
