@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {API_BASE_URL} from "../../../../../api.config";
+import {API_BASE_URL} from "../../../../../../api.config";
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 
@@ -22,5 +22,5 @@ export class SettingsService{
     return this.httpClient.get<any>(`${this.userUrl}/${id}`)
   }
 
-  
+
 }

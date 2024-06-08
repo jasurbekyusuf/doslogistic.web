@@ -16,7 +16,6 @@
     </ng-container>
   </div>
 
-
 <!-- <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button> -->
     <nz-modal [(nzVisible)]="isVisible" nzTitle="Qabul qiluvchilarni qo'shing" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
       <ng-container *nzModalContent>
@@ -32,7 +31,7 @@
                     <div class="user-names">
                       <div>
                         <label for="input">Familiya<span>*</span></label>
-                        <input nz-input type="text" placeholder="Familiya kiriting"
+                        <input class="user-input" nz-input type="text" placeholder="Familiya kiriting"
                           [ngClass]="{ 'is-invalid': submitted && f['surname'].errors }" formControlName="surname" />
                         <div *ngIf="
                             submitted &&
@@ -44,7 +43,7 @@
                       </div>
                       <div>
                         <label for="input">Ism <span>*</span></label>
-                        <input nz-input type="text" placeholder="Ism kiriting" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                        <input class="user-input" nz-input type="text" placeholder="Ism kiriting" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
                           formControlName="name" />
                         <div *ngIf="
                             submitted &&
@@ -56,13 +55,13 @@
                       </div>
                       <div>
                         <label for="input">Otasining Ismi</label>
-                        <input nz-input type="text" placeholder="Otasining Ismini kiriting" />
+                        <input class="user-input" nz-input type="text" placeholder="Otasining Ismini kiriting" />
                       </div>
                     </div>
                     <div class="user-names">
                       <div>
                         <label for="input">Pasport raqami<span>*</span></label>
-                        <input nz-input type="text" placeholder="AA1234567" [ngClass]="{
+                        <input class="user-input" nz-input type="text" placeholder="AA1234567" [ngClass]="{
                             'is-invalid': submitted && f['passportNum'].errors
                           }" formControlName="passportNum" />
                         <div *ngIf="
@@ -75,7 +74,7 @@
                       </div>
                       <div>
                         <label for="input">JSHIR <span>*</span></label>
-                        <input nz-input type="number" placeholder="1234567890111213141516" [ngClass]="{
+                        <input class="user-input" nz-input type="number" placeholder="1234567890111213141516" [ngClass]="{
                             'is-invalid': submitted && f['passportData'].errors
                           }" formControlName="passportData" />
                         <div *ngIf="
@@ -88,7 +87,7 @@
                       </div>
                       <div>
                         <label for="input">Telefon raqami<span>*</span></label>
-                        <input nz-input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
+                        <input class="user-input input-style" nz-input type="tel" id="mobile_code" placeholder="Phone Number" name="phone"
                           formControlName="phoneNumber" [ngClass]="{
                             'is-invalid': submitted && f['phoneNumber'].errors
                           }" autocomplete="this-phoneNumber" />
@@ -104,7 +103,7 @@
                     </div>
                     <div class="extra-phone">
                       <label for="input">Qo'shimcha Telefon raqami</label>
-                      <input nz-input type="tel" id="mobile_code" placeholder="Phone Number" name="phone" class="input-style"
+                      <input class="user-input input-style" nz-input type="tel" id="mobile_code" placeholder="Phone Number" name="phone"
                         formControlName="phoneNumber" />
                     </div>
                     <br />
@@ -113,7 +112,7 @@
                     <div class="user-names">
                       <div>
                         <label for="input">Davlat<span>*</span></label>
-                        <input nz-input type="text" placeholder="AA1234567" [ngClass]="{
+                        <input class="user-input" nz-input type="text" placeholder="AA1234567" [ngClass]="{
                             'is-invalid': submitted && f['passportNum'].errors
                           }" formControlName="passportNum" />
                         <div *ngIf="
@@ -126,7 +125,7 @@
                       </div>
                       <div>
                         <label for="input">Tuman<span>*</span></label>
-                        <input nz-input type="text" placeholder="Tumanni kiriting"
+                        <input class="user-input" nz-input type="text" placeholder="Tumanni kiriting"
                           [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" formControlName="name" />
                         <div *ngIf="
                             submitted &&
@@ -138,7 +137,7 @@
                       </div>
                       <div>
                         <label for="input">Shahar/Tuman<span>*</span></label>
-                        <input nz-input type="text" placeholder="Shaharni tanglang"
+                        <input class="user-input" nz-input type="text" placeholder="Shaharni tanglang"
                           [ngClass]="{ 'is-invalid': submitted && f['city'].errors }" formControlName="name" />
                         <div *ngIf="
                             submitted &&
@@ -153,7 +152,7 @@
                     <div class="user-names">
                       <div>
                         <label for="input">Ko'cha<span>*</span></label>
-                        <input nz-input class="street" type="text" placeholder="Ko'cha manzilini kiriting"
+                        <input class="user-input" nz-input class="street" type="text" placeholder="Ko'cha manzilini kiriting"
                           [ngClass]="{ 'is-invalid': submitted && f['name'].errors }" formControlName="name" />
                         <div *ngIf="
                             submitted &&
@@ -165,7 +164,7 @@
                       </div>
                       <div>
                         <label for="input">Uy<span>*</span></label>
-                        <input nz-input type="text" placeholder="Uy Raqami" [ngClass]="{ 'is-invalid': submitted && f['city'].errors }"
+                        <input class="user-input" nz-input type="text" placeholder="Uy Raqami" [ngClass]="{ 'is-invalid': submitted && f['city'].errors }"
                           formControlName="home" />
                         <div *ngIf="
                             submitted &&
@@ -180,15 +179,15 @@
                     <div class="user-names">
                       <div>
                         <label for="input">Xonadon/ofis</label>
-                        <input nz-input type="text" placeholder="Xonadonni kiriting" />
+                        <input class="user-input" nz-input type="text" placeholder="Xonadonni kiriting" />
                       </div>
                       <div>
                         <label for="input">Podyez</label>
-                        <input nz-input type="text" placeholder="Podyezni kiriting" />
+                        <input class="user-input" nz-input type="text" placeholder="Podyezni kiriting" />
                       </div>
                       <div>
                         <label for="input">Uy kirish eshigi kodi</label>
-                        <input nz-input type="text" placeholder="Eshik kodi" />
+                        <input class="user-input" nz-input type="text" placeholder="Eshik kodi" />
                       </div>
                     </div>
                     <button>O'zgarishlarni saqlash</button>

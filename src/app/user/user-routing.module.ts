@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {AddComponent} from "./components/my-shipments/pages/add/add.component";
 import {LayoutsComponent} from "./layouts/layouts.component";
-import {MyParcelsComponent} from "./components/my-parcels/my-parcels.component";
+import {MyParcelsComponent} from "./components/dashboard/my-parcels.component";
 import {MyAddressesComponent} from "./components/my-addresses/my-addresses.component";
-import {MyAcceptancesComponent} from "./components/my-acceptances/my-acceptances.component";
-import {MySendersComponent} from "./components/my-senders/my-senders.component";
+import {MyAcceptancesComponent} from "./components/my-addresses/my-acceptances/my-acceptances.component";
+import {MySendersComponent} from "./components/my-addresses/my-senders/my-senders.component";
 import {MyShipmentsComponent} from "./components/my-shipments/my-shipments.component";
 import {WarehouseComponent} from "./components/my-shipments/pages/warehouse/warehouse.component";
 import {OnWayComponent} from "./components/my-shipments/pages/on-way/on-way.component";
 import {InCountryComponent} from "./components/my-shipments/pages/in-country/in-country.component";
 import {RecivedComponent} from "./components/my-shipments/pages/recived/recived.component";
-import {PasswordComponent} from "./components/password/password.component";
-import {PersonalInfoComponent} from "./components/personal-info/personal-info.component";
+import {PasswordComponent} from "./components/settings/password/password.component";
+import {PersonalInfoComponent} from "./components/settings/personal-info/personal-info.component";
 import {SettingsComponent} from "./components/settings/settings.component";
 
 

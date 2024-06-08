@@ -15,20 +15,6 @@
 .user-details {
   width: 450px;
   padding: 15px 15px;
-
-  button {
-    background-color: #058c42;
-    padding: 10px 10px;
-    color: #fff;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    border-radius: 8px;
-    border: 1px solid #058c42;
-    cursor: pointer;
-  }
 }
 
 .user-names {
@@ -38,6 +24,10 @@
 
   input {
     width: 200px;
+
+    &:focus{
+      border: 1px solid #058c42;
+    }
   }
 }
 
@@ -52,14 +42,16 @@
 }
 
 .user-gender {
-  display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  .checkBox{
+    display: flex;
+  }
 }
 
 .checkbox-flex {
   display: flex;
-  gap: 25px;
+  gap: 5px;
   align-items: center;
   position: relative;
 
@@ -74,7 +66,7 @@
 
   input.input-style[type="tel"] {
     border-radius: 5px;
-    border: 0.3px solid #058c42;
+    //border: 0.3px solid #058c42;
     //background: #f5f5f5;
     padding: 5px 5px;
     font-family: Inter;
@@ -126,23 +118,16 @@
   border-color: #dc3545 !important;
 }
 
-.invalid-feedback {
-  font-size: 90%;
-  color: #dc3545;
-  position: absolute;
-  top: 60px;
-}
-
 .invalid-feedback2 {
   font-size: 90%;
   color: #dc3545;
   position: absolute;
-  top: 20px;
+  top: -5px;
 }
 
-.user-gender2{
-  display: none !important;
-}
+//.user-gender2{
+//  display: none !important;
+//}
 
 @media screen and (max-width: 432px) {
   .user-passport {

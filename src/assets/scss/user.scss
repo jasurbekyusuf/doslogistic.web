@@ -72,36 +72,43 @@
 .header-title{
   color: #000;
   font-family: Inter;
-  font-size: 45px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
 }
 
 //input styles start here
-
-input {
+.user-input{
   border-radius: 5px;
   padding: 5px 5px;
   font-family: Inter;
   font-size: 17px;
   font-weight: 500;
+  border-radius: 5px;
   font-style: normal;
   line-height: normal;
-  margin-bottom: 30px !important;
+  margin-bottom: 25px !important;
   outline: none;
 
-  &:focus,
+  &:focus{
+    border: 1px solid #058c42;
+  }
   &:hover {
     border: 1px solid #058c42;
-    box-shadow: 0 0 0 2px #0bd366;
+    box-shadow: 0 0 0 2px #0eea6f;
   }
+}
+
+.user-input:focus {
+  border: 1px solid #058c42;
+  box-shadow: 0 0 0 2px #0eea6f;
 }
 
 label {
   display: inline-block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
   color: #5f5f5f;
   font-family: Inter;
   font-size: 16px;
@@ -109,8 +116,6 @@ label {
   font-weight: 500;
   line-height: normal;
 }
-
-
 
 //info styles start here
 .user-passport .info {
@@ -132,3 +137,25 @@ label {
   }
 }
 
+//Save Button style
+.userSaveBtn{
+  background-color: #058c42;
+  padding: 10px 10px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 8px;
+  border: 1px solid #058c42;
+  cursor: pointer;
+}
+
+//invalid feedback
+.invalid-feedback {
+  font-size: 90%;
+  color: #dc3545;
+  position: absolute;
+  top: 52px;
+}
