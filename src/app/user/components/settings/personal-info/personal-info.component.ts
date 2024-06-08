@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {SettingsService} from "./services/settings.service";
-import {UserModel} from "../../models/user-model";
+import {UserModel} from "../../../models/user-model";
 declare const intlTelInput: any;
 
 @Component({

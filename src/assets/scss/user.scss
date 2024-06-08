@@ -1,0 +1,161 @@
+.add-button {
+  background-color: #058c42;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0 10px 10px;
+  padding: 7px 25px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  border: 1px solid #058c42;
+  outline: none;
+
+  &:hover {
+    background-color: #10ab55;
+  }
+}
+
+.page-routing {
+  display: flex;
+  height: 60px;
+  border-bottom: 0.5px solid #8c8b8b;
+  margin-bottom: 20px;
+  margin-right: 4px;
+  gap: 20px;
+  justify-content: space-between;
+
+  div{
+    display: flex;
+  }
+
+  p {
+    color: #000000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    padding: 17px 0px;
+    margin: 0 20px 13px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #058C42;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::before,
+    &.active-link::before {
+      width: 100%;
+    }
+
+    &:hover{
+      color: #058c42;
+    }
+  }
+}
+
+.page-routing .btn1:nth-child(1) {
+  margin-left: 0 !important;
+}
+
+.header-title{
+  color: #000;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+//input styles start here
+.user-input{
+  border-radius: 5px;
+  padding: 5px 5px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 25px !important;
+  outline: none;
+
+  &:focus{
+    border: 1px solid #058c42;
+  }
+  &:hover {
+    border: 1px solid #058c42;
+    box-shadow: 0 0 0 2px #0eea6f;
+  }
+}
+
+.user-input:focus {
+  border: 1px solid #058c42;
+  box-shadow: 0 0 0 2px #0eea6f;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  color: #5f5f5f;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+//info styles start here
+.user-passport .info {
+  border: 1px solid #058c42;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 380px;
+
+  p {
+    color: #000000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+  }
+}
+
+//Save Button style
+.userSaveBtn{
+  background-color: #058c42;
+  padding: 10px 10px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 8px;
+  border: 1px solid #058c42;
+  cursor: pointer;
+}
+
+//invalid feedback
+.invalid-feedback {
+  font-size: 90%;
+  color: #dc3545;
+  position: absolute;
+  top: 52px;
+}

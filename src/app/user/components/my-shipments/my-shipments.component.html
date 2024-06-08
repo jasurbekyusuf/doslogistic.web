@@ -11,16 +11,14 @@
       </div>
       <button class="add-button" routerLinkActive="active" (click)="openModal()">Posilka qo'shish</button>
     </div>
-    <div class="mobile">
-      <p class="" routerLinkActive="active-link" [routerLink]="['order']">Qo’shildi</p>
-      <p class="" routerLinkActive="active-link" [routerLink]="['in-warehouse']">Omborxonada</p>
-      <p class="" routerLinkActive="active-link" [routerLink]="['onway']">Yo’lda</p>
-      <p class="" routerLinkActive="active-link" [routerLink]="['in-country']">Mamlakatda</p>
-      <p class="" routerLinkActive="active-link" [routerLink]="['recived']">Olindi</p>
-    </div>
+<!--    <div class="mobile">-->
+<!--      <p class="" routerLinkActive="active-link" [routerLink]="['order']">Qo’shildi</p>-->
+<!--      <p class="" routerLinkActive="active-link" [routerLink]="['in-warehouse']">Omborxonada</p>-->
+<!--      <p class="" routerLinkActive="active-link" [routerLink]="['onway']">Yo’lda</p>-->
+<!--      <p class="" routerLinkActive="active-link" [routerLink]="['in-country']">Mamlakatda</p>-->
+<!--      <p class="" routerLinkActive="active-link" [routerLink]="['recived']">Olindi</p>-->
+<!--    </div>-->
   </div>
-
-
 
   <div class="container">
     <ng-container>
@@ -93,19 +91,19 @@
                 </div>
                 <div class="name-order">
                   <p>Название товара <span>*</span></p>
-                  <input type="text" [(ngModel)]="item.itemName" placeholder="Item name">
+                  <input class="user-input" nz-input type="text" [(ngModel)]="item.itemName" placeholder="Item name">
                 </div>
                 <div class="quantity">
                   <p>Количество <span>*</span></p>
                   <div class="input-sty">
-                    <input type="number" [(ngModel)]="item.quantity" placeholder="кол-во">
+                    <input class="user-input" nz-input type="number" [(ngModel)]="item.quantity" placeholder="кол-во">
                     <div class="input-sht">шт</div>
                   </div>
                 </div>
                 <div class="quantity">
                   <p>Стоимость <span>*</span></p>
                   <div class="input-sty">
-                    <input type="number" [(ngModel)]="item.price" placeholder="цена">
+                    <input class="user-input" nz-input type="number" [(ngModel)]="item.price" placeholder="цена">
                     <div class="input-sht">$</div>
                   </div>
                 </div>
